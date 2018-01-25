@@ -1,0 +1,48 @@
+// Variables and mixins
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
+// Reset and dependencies
+@import "_base.scss";
+
+// Elements
+@import "_typography.scss";
+@import "_asian.scss";
+@import "_tables.scss";
+@import "_buttons.scss";
+@import "_forms.scss";
+@import "_labels.scss";
+@import "_codes.scss";
+@import "_media.scss";
+
+// Layout
+@import "_layout.scss";
+@import "_navbar.scss";
+
+// Components
+@import "_accordions.scss";
+@import "_autocomplete.scss";
+@import "_avatars.scss";
+@import "_badges.scss";
+@import "_breadcrumbs.scss";
+@import "_bars.scss";
+@import "_cards.scss";
+@import "_chips.scss";
+@import "_dropdowns.scss";
+@import "_empty.scss";
+@import "_menus.scss";
+@import "_modals.scss";
+@import "_navs.scss";
+@import "_pagination.scss";
+@import "_panels.scss";
+@import "_popovers.scss";
+@import "_steps.scss";
+@import "_tabs.scss";
+@import "_tiles.scss";
+@import "_toasts.scss";
+@import "_tooltips.scss";
+
+// Utility classes
+@import "_animations.scss";
+@import "_utilities.scss";

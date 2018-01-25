@@ -1,0 +1,10 @@
+{
+  "name": "Piper-2018",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@shopify/slate-tools": "0.13.0"
+  },
+  "dependencies": {
+    "spectre.css": "^0.5.0"
+  }
+}

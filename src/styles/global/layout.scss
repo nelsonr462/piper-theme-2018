@@ -1,0 +1,23 @@
+/*================ General layout styles ================*/
+body,
+html {
+  background-color: $color-body;
+}
+
+.page-width {
+  @include clearfix();
+  max-width: 92%;
+  margin: 0 auto;
+  
+  @include tablet {
+    max-width: 90%; 
+  }
+
+  @include desktop {
+    max-width: 70%;
+  }
+
+  @include hi-res {
+    max-width: 1780px;
+  }
+}

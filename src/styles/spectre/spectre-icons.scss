@@ -1,0 +1,10 @@
+// Variables and mixins
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/*! Spectre.css Icons v#{$version} | MIT License | github.com/picturepan2/spectre */
+// Icons
+@import "icons/_icons-core.scss";
+@import "icons/_icons-navigation.scss";
+@import "icons/_icons-action.scss";
+@import "icons/_icons-object.scss";

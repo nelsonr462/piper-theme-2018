@@ -1,0 +1,70 @@
+<header class="navbar">
+
+    {% comment %} Main Nav Logo {% endcomment %}
+    <section class="navbar-section">
+        <a href="#" class="navbar-brand mr-2">
+            <img src="{{ 'piper-logo-main.svg' | asset_url }}" />
+        </a>
+    </section>
+  
+    {% comment %} Nav Links Container {% endcomment %}
+    <section class="navbar-section links">
+
+        {% comment %} Mobile/Tablet Nav Links {% endcomment %}
+        <div class="show-xl off-canvas">
+
+            <a class="off-canvas-toggle" href="#sidebar">
+                <i class="icon icon-menu text-gray"></i>
+            </a>
+
+            {% comment %} Mobile Menu Content {% endcomment %}
+            <div id="sidebar" class="off-canvas-sidebar">
+                <div class="shadow-line"></div>
+
+                {% comment %} Nav Links {% endcomment %}
+                <ul class="nav">
+                    
+                    <li class="nav-item">
+                        <a href="#">Piper Computer Kit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Educators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-nav">Shop Now</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-nav inverted">Cart (2) {% include 'icon-cart' %}</button>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <a class="off-canvas-overlay" href="#close"></a>
+
+        </div>
+
+        {% comment %} Desktop Nav Links {% endcomment %}
+        <div class="hide-xl">
+            <a href="#" class="nav-link active">Piper Computer Kit</a>
+            <a href="#" class="nav-link">Educators</a>
+            <a href="#" class="nav-link">Blog</a>
+            <button class="btn btn-nav">Shop Now</button>
+            <a href="#" class="btn btn-cart badge" data-badge="2">
+                {% include 'icon-cart' %}
+            </a>
+        </div>
+
+
+    </section>
+</header>

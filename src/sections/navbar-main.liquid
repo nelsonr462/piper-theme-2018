@@ -1,7 +1,7 @@
-<header class="navbar">
+<header class="navbar" data-section-id="{{ section.id }}" data-section-type="header-section">
 
     {% comment %} Main Nav Logo {% endcomment %}
-    <section class="navbar-section">
+    <section class="navbar-section" itemscope itemtype="http://schema.org/Organization">
         <a href="#" class="navbar-brand mr-2">
             <img src="{{ 'piper-logo-main.svg' | asset_url }}" />
         </a>

@@ -1,0 +1,9 @@
+.awards-bar {
+    @extend .page-width;
+    display: flex;
+    justify-content: center;
+
+    .award {
+        display: flex;
+    }
+}

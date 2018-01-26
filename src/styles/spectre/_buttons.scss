@@ -106,6 +106,16 @@
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
+
+    &.orange {
+      color: white;
+      background: $secondary-color;
+      font-weight: bolder;
+
+      &:hover, &:active {
+        background: $secondary-color-dark;
+      }
+    }
   }
 
   // Button Block

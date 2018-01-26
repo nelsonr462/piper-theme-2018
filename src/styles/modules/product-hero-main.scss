@@ -1,0 +1,82 @@
+.product-hero-main {
+    overflow: auto;
+    color: white;
+
+    .hero-overlay {
+        background: rgba($primary-color, 0.5);
+        position: relative;
+        overflow: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-content {
+        @extend .page-width;
+        position: relative;
+    }
+
+    .product-content {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        *:not(:first-child) {
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+    
+    .price {
+        font-weight: lighter;
+        
+        span:first-child {
+            font-size: 1.3rem;
+        }
+
+        span:last-child {
+            font-size: 1.6rem;
+        }
+    }
+
+    .chip {
+        background: transparent;
+        padding: 0.5rem 1rem;
+        border: solid 1px white;
+        color: white;
+    }
+
+
+    .product-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 0.3rem;
+
+        @include tablet {
+            justify-content: left;
+        }
+
+        .link {
+            font-size: 0.9rem;
+            font-weight: lighter;
+            display: flex;
+            color: white;
+            padding: 0.5rem 0.8rem;
+
+            @include tablet {
+                padding: 0.5rem 2.4rem 0.5rem 0;
+            }
+            
+        }
+    }
+
+}

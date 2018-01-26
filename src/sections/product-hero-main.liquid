@@ -1,0 +1,54 @@
+<div class="product-hero-main" data-section-id="{{ section.id }}" style="background: center no-repeat url({{ 'demo-product-hero-bg.jpg' | asset_url }}); background-size: cover;">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            {% comment %} Breadcrumb {% endcomment %}
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Products</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Piper Computer Kit</a>
+                </li>
+            </ul>
+            
+            <div class="product-content">
+                {% comment %} Header {% endcomment %}
+                <h1>Piper Computer Kit</h1>
+    
+                {% comment %} Price {% endcomment %}
+                <div class="price">
+                    <span><strike>$299.99</strike></span>
+                    <span>$249.99</span>
+                </div>
+    
+                {% comment %} In Stock/Chip {% endcomment %}
+                <span class="chip">In Stock</span>
+    
+                {% comment %} Description {% endcomment %}
+                <p>Piper is a computer kit that lets you augment the Minecraft experience through electronics. Piper is a computer kit that lets you augment the Minecraft experience through electronics.</p>
+    
+                {% comment %} Add To Cart {% endcomment %}
+                <button class="btn btn-lg orange">Add to Cart</button>
+    
+            </div>
+    
+            {% comment %} Page Navigation {% endcomment %}
+            <div class="product-nav">
+                <a href="#" class="link">
+                    How it Works
+                </a>
+    
+                <a href="#" class="link">
+                    Features
+                </a>
+    
+                <a href="#" class="link">
+                    What's in the Box
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

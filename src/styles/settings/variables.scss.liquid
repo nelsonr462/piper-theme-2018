@@ -30,9 +30,16 @@ $font-size-base: {{ settings.type_base_size }};
 
 
 /* Custom Breakpoint Mixins */
+$mobile-width: 0px;
 $tablet-width: 600px;
 $desktop-width: 1280px;
-$hi-res-width: 1920px;
+$hi-res-width: 2560px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {

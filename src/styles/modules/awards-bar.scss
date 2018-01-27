@@ -2,8 +2,32 @@
     @extend .page-width;
     display: flex;
     justify-content: center;
+    padding: 0.5rem 0;
 
     .award {
         display: flex;
+        flex-basis: 20%;
+        width: 4rem;
+        height: 3rem;
+        padding: 0.5rem 0.5rem;
+
+        @include tablet {
+            flex-basis: initial;
+            width: 6rem;
+            height: 5rem;
+            padding: 0.5rem 1rem;
+        }
+
+        @include desktop {
+            padding: 0.5rem 1.5rem;
+            width: 8rem;
+            height: 6rem;
+        }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto;
+        }
     }
 }

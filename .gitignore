@@ -50,6 +50,7 @@ config.yml
 .Trashes
 ehthumbs.db
 Thumbs.db
+.png._00_*
 
 # Custom #
 ######################

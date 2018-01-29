@@ -19,6 +19,10 @@ body {
   font-size: $font-size;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+
+  @include desktop {
+    font-size: $font-size-lg;
+  }
 }
 
 main {

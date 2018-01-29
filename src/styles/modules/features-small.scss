@@ -14,16 +14,49 @@
     .content {
         display: flex;
         flex-wrap: wrap;
+
+        @include tablet {
+            flex-wrap: nowrap;
+        }
     }
 
     .feature {
         display: flex;
         flex-basis: 100%;
+        flex-wrap: wrap;
         padding: 1rem 0;
+        justify-content: center;
 
         @include tablet {
             flex-basis: 33%;
             padding-right: 2rem;
+        }
+
+        @include desktop {
+            justify-content: unset;
+            padding-right: 3rem;
+        }
+
+        @include hi-res {
+            padding-right: 5rem;
+        }
+
+        .image, .description {
+            display: flex;
+            flex-basis: 100%;
+        }
+
+        .image {
+            max-width: 10rem;
+            max-height: 10rem;
+            margin-bottom: 1rem;
+            display: block;
+            
+            img {
+                margin: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
     }
 

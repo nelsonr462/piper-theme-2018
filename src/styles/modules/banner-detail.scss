@@ -55,7 +55,7 @@
 
             @include desktop {
                 position: relative;
-                flex-basis: 28%;
+                flex-basis: 33%;
             }
         }
 
@@ -64,10 +64,13 @@
             height: 100%;
             margin: auto;
 
-            @include desktop {
-                position: absolute;
-                top: 2rem;
+            &.overflow {
+                @include desktop {
+                    position: absolute;
+                    top: 2rem;
+                }
             }
+            
         }
 
         &.variation-1 {
@@ -99,6 +102,17 @@
                     left: 4rem;
                     width: 4rem;
                     height: 4rem;
+                }
+            }
+        }
+
+        &.variation-2 {
+            img {
+                max-width: 9rem;
+                @include desktop {
+                    top: 0;
+                    width: 7rem;
+                    height: 7.2rem;
                 }
             }
         }

@@ -1,0 +1,74 @@
+.features-large {
+    @extend .page-width;
+    padding: 5rem 0 3rem 0;
+
+
+    h1 {
+        color: $primary-color;
+        font-weight: bold;
+        padding-bottom: 1.5rem;
+    }
+
+    h2, p {
+        color: gray;
+    }
+
+    button {
+        font-weight: bold;
+    }
+
+    .feature {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 2rem 0;
+
+        @include tablet {
+            flex-wrap: nowrap;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            padding-top: 2rem;
+
+            @include tablet {
+                flex-basis: 50%;
+                padding-right: 1rem;
+            }
+        }
+
+        .image {
+            display: flex;
+            flex-basis: 100%;
+            position: relative;
+            min-height: 10rem;
+
+            @include tablet {
+                flex-basis: 50%;
+                min-height: 12rem;
+            }
+
+            @include desktop {
+                min-height: 15rem;
+            }
+
+            @include hi-res {
+                min-height: 22rem;
+            }
+
+            .decoration {
+                position: absolute;
+                bottom: -2rem;
+                max-width: 7rem;
+            }
+        }
+    }
+
+    .feature:nth-child(3) {
+        .image .decoration {
+            bottom: -2rem;
+            right: 0;
+        }
+    }
+}

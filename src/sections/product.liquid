@@ -1,132 +1,256 @@
-<div data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" itemscope itemtype="http://schema.org/Product">
+<div data-section-id="{{ section.id }}">
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
 
-  {%- assign current_variant = product.selected_or_first_available_variant -%}
-  {%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
+      {% when 'product-hero-main' %}
+      {% include 'product-hero-main' %}
 
-  <meta itemprop="name" content="{{ product.title }}{% unless product.has_only_default_variant %} - {{ current_variant.title }}{% endunless %}">
-  <meta itemprop="url" content="{{ shop.url }}{{ current_variant.url }}">
-  <meta itemprop="brand" content="{{ product.vendor }}">
-  <meta itemprop="image" content="{{ featured_image | img_url: '600x600' }}">
-  <meta itemprop="description" content="{{ product.description | strip_html | escape }}">
+      {% when 'awards-bar' %}
+      {% include 'awards-bar' %}
 
-  {% if featured_image != blank %}
-    <img src="{{ featured_image | img_url: '480x480' }}" alt="{{ featured_image.alt | escape }}" data-product-featured-image>
-  {% endif %}
+      {% when 'banner-detail' %}
+      {% include 'banner-detail' %}
 
-  {% if product.images.size > 1 %}
-    <ul>
-      {% for image in product.images %}
-        <li>
-          <a href="{{ image.src | img_url: '480x480' }}" data-product-single-thumbnail>
-            <img src="{{ image.src | img_url: '160x160' }}" alt="{{ image.alt | escape }}">
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+      {% when 'features-small' %}
+      {% include 'features-small' %}
 
-  <h1>{{ product.title }}</h1>
-  <p>{{ product.vendor }}</p>
+      {% when 'video-section' %}
+      {% include 'video-section' %}
 
-  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-    <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-    <meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
-    <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
+      {% when 'banner-testimonial' %}
+      {% include 'banner-testimonial' %}
 
-    <form action="/cart/add" method="post" enctype="multipart/form-data">
-      {% unless product.has_only_default_variant %}
-        {% for option in product.options_with_values %}
-          <div class="selector-wrapper js">
-            <label for="SingleOptionSelector-{{ forloop.index0 }}">
-              {{ option.name }}
-            </label>
+      {% when 'features-large' %}
+      {% include 'features-large' %}
 
-            <select
-              id="SingleOptionSelector-{{ forloop.index0 }}"
-              data-single-option-selector
-              data-index="option{{ option.position }}">
-              {% for value in option.values %}
-                <option
-                  value="{{ value | escape }}"
-                  {% if option.selected_value == value %}selected="selected"{% endif %}>
-                    {{ value }}
-                </option>
-              {% endfor %}
-            </select>
-          </div>
-        {% endfor %}
-      {% endunless %}
-
-      <select name="id" class="no-js" data-product-select>
-        {% for variant in product.variants %}
-          <option
-            {% if variant == current_variant %}selected="selected"{% endif %}
-            {% unless variant.available %}disabled="disabled"{% endunless %}
-            value="{{ variant.id }}">
-              {{ variant.title }}
-          </option>
-        {% endfor %}
-      </select>
-
-      <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
-      <input type="number" id="Quantity" name="quantity" value="1" min="1">
-
-      <div data-price-wrapper>
-        <span data-product-price>
-          {{ current_variant.price | money }}
-        </span>
-
-        {% if product.compare_at_price_max > product.price %}
-          <span class="visually-hidden" data-compare-text>{{ 'products.product.regular_price' | t }}</span>
-          <s data-compare-price>
-            {% if current_variant.compare_at_price > current_variant.price %}
-              {{ current_variant.compare_at_price | money }}
-            {% endif %}
-          </s>
-        {% endif %}
-      </div>
-
-      <button
-        type="submit"
-        name="add"
-        data-add-to-cart
-        {% unless current_variant.available %}disabled="disabled"{% endunless %}>
-          <span data-add-to-cart-text>
-            {% if current_variant.available %}
-              {{ 'products.product.add_to_cart' | t }}
-            {% else %}
-              {{ 'products.product.sold_out' | t }}
-            {% endif %}
-          </span>
-      </button>
-    </form>
-
+    {% endcase %}
   </div>
-
-  <div class="rte">
-    {{ product.description }}
-  </div>
-
-  {% if section.settings.show_share_buttons %}
-    {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
-  {% endif %}
-
-  {% unless product == empty %}
-    <script type="application/json" data-product-json>
-      {{ product | json }}
-    </script>
-  {% endunless %}
+  {% endfor %}
 </div>
 
 {% schema %}
   {
-    "name": "Product pages",
-    "settings": [
+    "blocks": [
       {
-        "type": "checkbox",
-        "id": "show_share_buttons",
-        "label": "Show social sharing buttons",
-        "default": true
+        "type": "product-hero-main",
+        "name": "Main Product Hero",
+        "settings": [
+          {
+            "id": "banner_image",
+            "type": "image_picker",
+            "label": "Hero Image"
+          }
+        ]
+      },
+      {
+          "type": "awards-bar",
+          "name": "Awards Bar"
+      },
+      {
+        "type": "banner-detail",
+        "name": "Detail Banner",
+        "settings": [
+          {
+            "id": "variation",
+            "type": "select",
+            "label": "Decorations",
+            "options": [
+                {
+                    "value": "variation-1",
+                    "label": "Pieces"
+                },
+                {
+                    "value": "variation-2",
+                    "label": "Breadboard"
+                },
+                {
+                    "value": "",
+                    "label": "None"
+                }
+            ]
+
+          },
+          {
+            "id": "banner_title",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "banner_detail",
+            "type": "textarea",
+            "label": "Detail"
+          },
+          {
+            "id": "banner_image",
+            "type": "image_picker",
+            "label": "Banner Image"
+          },
+          {
+            "id": "overflow",
+            "type": "radio",
+            "label": "Decoration Overflow",
+            "options": [
+                { "value": "", "label": "Contain" },
+                { "value": "overflow", "label": "Down" }
+            ]
+
+          }
+        ]
+      },
+      {
+        "type": "features-small",
+        "name": "Small Features Bar",
+        "settings": [
+          {
+            "id": "features_small_title",
+            "type": "text",
+            "label": "Title",
+            "default": "How It Works"
+          },
+          {
+            "id": "features_small_img_1",
+            "type": "image_picker",
+            "label": "Feature 1 Image"
+          },
+          {
+            "id": "features_small_desc_1",
+            "type": "textarea",
+            "label": "Feature Description 1",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          },
+          {
+            "id": "features_small_img_2",
+            "type": "image_picker",
+            "label": "Feature 2 Image"
+          },
+          {
+            "id": "features_small_desc_2",
+            "type": "textarea",
+            "label": "Feature Description 2",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          },
+          {
+            "id": "features_small_img_3",
+            "type": "image_picker",
+            "label": "Feature 2 Image"
+          },
+          {
+            "id": "features_small_desc_3",
+            "type": "textarea",
+            "label": "Feature Description 3",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          }
+        ]
+      },
+      {
+        "type": "video-section",
+        "name": "Video Section",
+        "settings": [
+          {
+            "id": "video_title",
+            "type": "textarea",
+            "label": "Title",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          },
+          {
+            "id": "video_url",
+            "type": "url",
+            "label": "Video URL"
+          },
+          {
+            "id": "video_desc",
+            "type": "textarea",
+            "label": "Video Description",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+          }
+          
+        ]
+      },
+      {
+        "type": "banner-testimonial",
+        "name": "Testimonial Banner",
+        "settings": [
+          {
+            "id": "profile_img",
+            "type": "image_picker",
+            "label": "Profile"
+          },
+          {
+            "id": "testimonial",
+            "type": "textarea",
+            "label": "Testimonial"
+          },
+          {
+            "id": "color",
+            "type": "radio",
+            "label": "Color",
+            "options": [
+                { "value": "", "label": "Orange" },
+                { "value": "blue", "label": "Blue" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "features-large",
+        "name": "Large Features Section",
+        "settings": [
+          {
+            "id": "features_large_title",
+            "type": "text",
+            "label": "Title",
+            "default": "How It Works"
+          },
+          {
+            "id": "features_large_img_1",
+            "type": "image_picker",
+            "label": "Feature 1 Image"
+          },
+          {
+            "id": "features_large_decoration_1",
+            "type": "image_picker",
+            "label": "Feature 1 Decoration"
+          },
+          {
+            "id": "features_large_desc_1",
+            "type": "textarea",
+            "label": "Feature Description 1",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          },
+          {
+            "id": "features_large_img_2",
+            "type": "image_picker",
+            "label": "Feature 2 Image"
+          },
+          {
+            "id": "features_large_decoration_2",
+            "type": "image_picker",
+            "label": "Feature 2 Decoration"
+          },
+          {
+            "id": "features_large_desc_2",
+            "type": "textarea",
+            "label": "Feature Description 2",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          },
+          {
+            "id": "features_large_img_3",
+            "type": "image_picker",
+            "label": "Feature 2 Image"
+          },
+          {
+            "id": "features_large_decoration_3",
+            "type": "image_picker",
+            "label": "Feature 3 Decoration"
+          },
+          {
+            "id": "features_large_desc_3",
+            "type": "textarea",
+            "label": "Feature Description 3",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          }
+        ]
       }
     ]
   }

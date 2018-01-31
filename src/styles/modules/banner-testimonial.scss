@@ -2,6 +2,10 @@
     background: $secondary-color;
     color: white;
 
+    &.blue {
+        background: $primary-color;
+    }
+
     .content {
         @extend .page-width;
         display: flex;

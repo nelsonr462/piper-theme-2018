@@ -1,13 +1,13 @@
-<div class="banner-testimonial" data-section-id="{{ section.id }}">
+<div class="banner-testimonial {{ block.settings.color }}">
     <div class="content">
          <div class="profile">
-            <img src="{{ 'demo-profile-1.jpg' | asset_url}}" alt="">
+            <img src="{{ block.settings.profile_img | img_url: '200x200', crop: 'center' }}" alt="">
          </div>
 
          <div class="quote">
             
             <span><img src="{{ 'demo-quote.png' | asset_url }}" alt=""></span>
-            <p>My six-year old son loved putting it together. It is absolutely hands-on! My six-year old son loved putting it together. It is absolutely hands-on! </p>
+            <p>{{ block.settings.testimonial }}</p>
             <span><img src="{{ 'demo-quote.png' | asset_url }}" alt=""></span>
             
          </div>

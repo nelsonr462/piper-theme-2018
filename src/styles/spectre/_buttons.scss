@@ -112,9 +112,11 @@
       color: white;
       background: $secondary-color;
       font-weight: bolder;
+      border: $secondary-color;
 
       &:hover, &:active {
         background: $secondary-color-dark;
+        border: $secondary-color-light;
       }
     }
   }

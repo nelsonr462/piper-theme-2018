@@ -1,0 +1,36 @@
+<div class="card-cta">
+    <div class="content">
+        <h1>{{ block.settings.cta-title }}</h1>
+        <div class="divider"></div>
+
+        
+        {% assign item = all_products[ block.settings.cta-product ] %}
+        {% if item.variants.size > 1 %}
+            {% assign variant_id = block.settings.cta-variant | plus: 0 %}
+            {% assign variant = item.variants[ variant_id ] %}
+        {% endif %}
+
+        {% if variant %}
+            {% assign item = variant %}
+        {% endif %}
+
+        <div class="product">
+            <div class="info">
+                <h1>{{ item.title }}</h1>
+                <h3>{{ item.price | money }}</h3>
+                <p>{{ block.settings.cta-desc }}</p>
+
+                <form method="post" action="/cart/add">
+                    <input type="hidden" name="id" value="{{ item.id }}" />
+                    <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless product.available %}disabled="true"{% endunless %}/>
+                </form>
+            </div>
+
+
+            <div class="image">
+                <img src="{{ item | img_url: '300x' }}" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>

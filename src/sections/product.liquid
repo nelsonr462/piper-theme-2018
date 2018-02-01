@@ -24,6 +24,15 @@
       {% when 'features-large' %}
       {% include 'features-large' %}
 
+      {% when 'product-info' %}
+      {% include 'product-info' %}
+
+      {% when 'full-size-image' %}
+      {% include 'full-size-image' %}
+
+      {% when 'card-cta' %}
+      {% include 'card-cta' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -37,9 +46,10 @@
         "name": "Main Product Hero",
         "settings": [
           {
-            "id": "banner_image",
-            "type": "image_picker",
-            "label": "Hero Image"
+            "id": "hero-nav-links",
+            "type": "textarea",
+            "label": "Nav Links (Sections)",
+            "placeholder": "How it Works, Features, What's in the Box"
           }
         ]
       },
@@ -103,40 +113,45 @@
         "name": "Small Features Bar",
         "settings": [
           {
-            "id": "features_small_title",
+            "id": "features-small-anchor",
+            "type": "text",
+            "label": "Anchor (for hero nav links)"
+          },
+          {
+            "id": "features-small-title",
             "type": "text",
             "label": "Title",
             "default": "How It Works"
           },
           {
-            "id": "features_small_img_1",
+            "id": "features-small-img-1",
             "type": "image_picker",
             "label": "Feature 1 Image"
           },
           {
-            "id": "features_small_desc_1",
+            "id": "features-small-desc-1",
             "type": "textarea",
             "label": "Feature Description 1",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
           },
           {
-            "id": "features_small_img_2",
+            "id": "features-small-img-2",
             "type": "image_picker",
             "label": "Feature 2 Image"
           },
           {
-            "id": "features_small_desc_2",
+            "id": "features-small-desc-2",
             "type": "textarea",
             "label": "Feature Description 2",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
           },
           {
-            "id": "features_small_img_3",
+            "id": "features-small-img-3",
             "type": "image_picker",
             "label": "Feature 2 Image"
           },
           {
-            "id": "features_small_desc_3",
+            "id": "features-small-desc-3",
             "type": "textarea",
             "label": "Feature Description 3",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
@@ -197,6 +212,11 @@
         "name": "Large Features Section",
         "settings": [
           {
+            "id": "features-large-anchor",
+            "type": "text",
+            "label": "Anchor (for hero nav links)"
+          },
+          {
             "id": "features_large_title",
             "type": "text",
             "label": "Title",
@@ -249,6 +269,88 @@
             "type": "textarea",
             "label": "Feature Description 3",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          }
+        ]
+      },
+      {
+        "type": "full-size-image",
+        "name": "Full Size Image",
+        "settings": [
+          {
+            "id": "full-size-image-anchor",
+            "type": "text",
+            "label": "Anchor (for hero nav links)"
+          },
+          {
+            "id": "full-size-image-title",
+            "type": "text",
+            "label": "Image Title",
+            "default": "What's in the box?"
+          },
+          {
+            "id": "full-size-image-img",
+            "type": "image_picker",
+            "label": "Image"
+          }
+        ]
+      },
+      {
+        "type": "product-info",
+        "name": "Product Info",
+        "settings": [
+          {
+            "id": "product-info-subtitle",
+            "type": "text",
+            "label": "Info Subtitle",
+            "default": "Items"
+          },
+          {
+            "id": "product-info-items",
+            "type": "textarea",
+            "label": "Item List (Comma Separated)",
+            "default": "Item 1, Item 2, Item 3"
+          }
+        ]
+      },
+      {
+        "type": "expandable-section",
+        "name": "Expandable Section",
+        "settings": [
+          {
+            "id": "expand-title",
+            "type": "text",
+            "label": "Title",
+            "default": "Lorem Ipsum dolor set"
+          }
+        ]
+      },
+      {
+        "type": "card-cta",
+        "name": "Call to Action Card",
+        "settings": [
+          {
+            "id": "cta-title",
+            "type": "text",
+            "label": "Title",
+            "default": "Get your child's first DIY computer!"
+          },
+          {
+            "id": "cta-product",
+            "type": "text",
+            "label": "Product Handle",
+            "default": "piper-computer-kit"
+          },
+          {
+            "id": "cta-variant",
+            "type": "text",
+            "label": "Product Variant (Array Index)",
+            "default":"0"
+          },
+          {
+            "id": "cta-desc",
+            "type": "textarea",
+            "label": "Product Description",
+            "default": "Build a full computer and control the virtual game world by building and programming electronics!"
           }
         ]
       }

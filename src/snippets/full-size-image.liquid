@@ -1,0 +1,7 @@
+<div class="full-size-image" id="section-{{ block.settings.full-size-image-anchor }}">
+    {% if block.settings.full-size-image-title %}
+        <h1>{{ block.settings.full-size-image-title }}</h1>
+    {% endif %}
+
+    <img src="{{ block.settings.full-size-image-img | img_url: '900x' }}" alt="">
+</div>

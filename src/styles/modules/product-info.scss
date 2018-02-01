@@ -1,0 +1,25 @@
+.product-info {
+    @extend .page-width;
+    padding: 3rem 0;
+
+    h3 {
+        color: gray;
+    }
+
+    .item-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+
+        li {
+            flex-basis: 100%;
+            font-size: 1.3rem;
+            color: gray;
+
+            @include tablet {
+                flex-basis: 33%;
+            }
+        }
+    }
+
+}

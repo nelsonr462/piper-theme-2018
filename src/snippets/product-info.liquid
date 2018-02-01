@@ -1,0 +1,12 @@
+<div class="product-info">
+    <h3>{{ block.settings.product-info-subtitle }}</h3>
+    <ul class="item-list">
+        {% assign itemList = block.settings.product-info-items | split: ', ' %}
+        {% for item in itemList %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul> 
+    
+
+
+</div>

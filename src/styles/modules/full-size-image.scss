@@ -1,0 +1,13 @@
+.full-size-image {
+    @extend .page-width;
+    
+    h1 {
+        padding-top: 2.5rem;
+        color: $primary-color;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -4,7 +4,7 @@
     .content {
         @extend .page-width;
         padding: 2rem 1.5rem;
-        color: gray;
+        color: $gray-color-dark;
         @include prefix(box-shadow, 0 3px 12px 0px #d9d9d9, moz webkit ms spec);
     }
 
@@ -39,9 +39,8 @@
         }
 
         .image {
-            display: flex;
             flex-basis: 100%;
-            justify-content: center;
+            text-align: center;
 
             @include tablet {
                 flex-basis: 50%;

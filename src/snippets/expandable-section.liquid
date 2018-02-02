@@ -1,3 +1,24 @@
 <div class="expandable-section">
+    <h1>{{ block.settings.expand-title }}</h1>
+
+    {% assign sections = block.settings.expand-sections | split: '/'%}
+
+    {% for item in sections %}
+        {% assign section-index = 'expand-section-' | append: forloop.index %}
+        <div class="content">
+            <div class="accordion" >
+                <input type="checkbox" id="accordion-{{ forloop.index }}" name="accordion-checkbox" hidden>
+                <label class="accordion-header" for="accordion-{{ forloop.index }}">
+                    {{ item }}
+                    <img src="{{ 'rounded-plus.png' | asset_url }}" class="icon"></img>
+                </label>
+                <div class="accordion-body">
+                    <!-- Accordions content -->
+                    <p>{{ block.settings[section-index] }}</p>
+                </div>
+            </div>
+        </div>    
+    {% endfor %}
+    
     
 </div>

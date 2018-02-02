@@ -1,74 +1,125 @@
-<footer>
+<div class="footer">
+    <div class="content">
+        <!-- Logo, links -->
+        <div class="sitemap">
+            <!-- brand -->
+            <div class="brand">
+                <img src="{{ 'piper-logo-wires.svg' | asset_url }}" alt="Piper Wires Logo">
+                <h5>Kids can build anything.<br>We can help teach them that.</h5>
+            </div>
 
-  {%- assign social_accounts = 'Facebook, Twitter, Pinterest, Instagram, Snapchat, Tumblr, YouTube, Vimeo,' | split: ', ' -%}
-  <ul>
-    {% for social in social_accounts %}
-      {%- assign social_handle = social | handleize -%}
-      {% capture social_link %}social_{{ social_handle }}_link{% endcapture %}
-      {% capture social_icon %}icon-{{ social_handle }}{% endcapture %}
+            <!-- nav links -->
+            <div class="links">
+                <div class="group">
+                    <p>Company</p>
+                    <div class="link">
+                        <a href="#">How it Works</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Our Story</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Press Kit</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <div class="group">
+                    <p>Support</p>
+                    <div class="link">
+                        <a href="#">How it Works</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Our Story</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Press Kit</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <div class="group">
+                    <p>Shop</p>
+                    <div class="link">
+                        <a href="#">How it Works</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Our Story</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Press Kit</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <div class="group">
+                    <p>Educators</p>
+                   <div class="link">
+                        <a href="#">How it Works</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Our Story</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Careers</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Press Kit</a>
+                    </div>
+                    <div class="link">
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
 
-      {% if settings[social_link] != blank %}
-        <li>
-          <a href="{{ settings[social_link] }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: social }}">
-            {% include social_icon %}
-            <span class="icon-fallback-text">{{ social }}</span>
-          </a>
-        </li>
-      {% endif %}
+        </div>
 
-    {% endfor %}
-  </ul>
+        <!-- Social Links/Email Entry -->
+        <div class="social">
+            <div class="social-content">
+                <h5>Win a Piper Computer Kit!</h5>
+                <div class="input-group">
+                    <input type="text" class="form-input input" placeholder="email">
+                    <button class="btn orange input-group-btn">Submit</button>
+                </div>
 
-  {% if section.settings.show_payment_icons %}
-    {% unless shop.enabled_payment_types == empty %}
-      {%- assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,maestro,master,paypal,visa' | split: ',' -%}
+                <div class="links">
+                    <a href="#">
+                        {% include 'icon-facebook' %}
+                    </a>
+                    <a href="#">
+                        {% include 'icon-twitter' %}
+                    </a>
+                    <a href="#">
+                        {% include 'icon-instagram' %}
+                    </a>
+                    <a href="#">
+                        {% include 'icon-youtube' %}
+                    </a>
+                </div>
 
-      <span class="visually-hidden">{{ 'layout.footer.payment_methods' | t }}</span>
-      <ul class="payment-icons">
-        {% for type in shop.enabled_payment_types %}
-          {% if payment_icons_available contains type %}
-            <li>
-              {%- assign icon_name = type | prepend: 'icon-' -%}
-              {% include icon_name %}
-              <span class="visually-hidden">{{ type | capitalize | replace: '_', ' ' }}</span>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endunless %}
-  {% endif %}
+            </div>
+        </div>
+    </div>
 
-  {%- assign footer_linklist = section.settings.footer_linklist -%}
-  {% if linklists[footer_linklist].links.size > 0 %}
-    <ul>
-      {% for link in linklists[footer_linklist].links %}
-        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+    
 
-  <div>
-    <small>{{ 'layout.footer.copyright' | t }} &copy; {{ 'now' | date: "%Y" }}, {{ 'Piperrrrrrrrrrrr' | link_to: '/' }}. {{ powered_by_link }}</small>
-  </div>
-</footer>
-
-{% schema %}
-  {
-    "name": "Footer",
-    "settings": [
-      {
-        "type": "link_list",
-        "id": "footer_linklist",
-        "label": "First menu",
-        "default": "footer"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_payment_icons",
-        "label": "Show payment icons",
-        "default": false
-      }
-    ]
-  }
-
-{% endschema %}
+    <!-- Copyright, disclaimer -->
+    <div class="notes">
+        <div class="divider"></div>
+        <p>Copyright Piper 2018</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>

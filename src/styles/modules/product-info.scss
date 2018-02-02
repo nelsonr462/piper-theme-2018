@@ -3,7 +3,7 @@
     padding: 3rem 0;
 
     h3 {
-        color: gray;
+        color: $gray-color-dark;
     }
 
     .item-list {
@@ -14,7 +14,7 @@
         li {
             flex-basis: 100%;
             font-size: 1.3rem;
-            color: gray;
+            color: $gray-color-dark;
 
             @include tablet {
                 flex-basis: 33%;

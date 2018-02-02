@@ -30,6 +30,9 @@
       {% when 'full-size-image' %}
       {% include 'full-size-image' %}
 
+      {% when 'expandable-section' %}
+      {% include 'expandable-section' %}
+
       {% when 'card-cta' %}
       {% include 'card-cta' %}
 
@@ -321,6 +324,28 @@
             "type": "text",
             "label": "Title",
             "default": "Lorem Ipsum dolor set"
+          },
+          {
+            "id": "expand-sections",
+            "type": "textarea",
+            "label": "Section titles",
+            "placeholder": "International Shipping/Customs, Taxes, and Duties/Language Support",
+            "info": "maximum of 3 sections, separated by a /"
+          },
+          {
+            "id": "expand-section-1",
+            "type": "textarea",
+            "label": "Section 1 Content"
+          },
+          {
+            "id": "expand-section-2",
+            "type": "textarea",
+            "label": "Section 2 Content"
+          },
+          {
+            "id": "expand-section-3",
+            "type": "textarea",
+            "label": "Section 3 Content"
           }
         ]
       },

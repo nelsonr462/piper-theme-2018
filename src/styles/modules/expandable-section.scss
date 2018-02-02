@@ -1,0 +1,30 @@
+.expandable-section {
+    @extend .page-width;
+    padding: 2rem 0;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    .content {
+        padding: 2rem 1.5rem;
+        margin: 1rem 0;
+        color: $gray-color-dark;
+        @include prefix(box-shadow, 0 3px 12px 0px #d9d9d9, moz webkit ms spec);
+    }
+
+    .accordion-header {
+        display: flex;
+        padding: 0.2rem 0;
+        font-size: 1.5rem;
+        align-items: center;
+
+        .icon {
+            margin-left: auto;
+        }
+    }
+
+    .accordion-body p {
+        padding-top: 1rem;
+    }
+}

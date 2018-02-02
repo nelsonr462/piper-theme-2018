@@ -107,18 +107,6 @@
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
-
-    &.orange {
-      color: white;
-      background: $secondary-color;
-      font-weight: bolder;
-      border: $secondary-color;
-
-      &:hover, &:active {
-        background: $secondary-color-dark;
-        border: $secondary-color-light;
-      }
-    }
   }
 
   // Button Block
@@ -162,6 +150,19 @@
 
     &::before {
       content: "\2715";
+    }
+  }
+
+  // Orange button
+  &.orange {
+    color: white;
+    background: $secondary-color;
+    font-weight: bolder;
+    border: $secondary-color;
+
+    &:hover, &:active {
+      background: $secondary-color-dark;
+      border: $secondary-color-light;
     }
   }
 }

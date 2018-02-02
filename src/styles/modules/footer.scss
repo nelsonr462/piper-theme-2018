@@ -1,0 +1,152 @@
+.footer {
+    background: #ebebeb;
+    color: $gray-color;
+    padding: 2rem 0 3rem 0;
+
+    .content, .notes {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sitemap {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+        @include tablet {
+            flex-basis: 55%;
+        }
+
+        @include desktop {
+            flex-basis: 65%;
+        }
+
+        .brand {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-basis: 100%;
+            align-items: center;
+
+            img {
+                max-width: 5rem;
+            }
+
+            h5 {
+                font-weight: bold;
+                font-size: 0.8rem;
+                padding-left: 1rem;
+
+                @include tablet {
+                    font-size: 1rem;
+                    padding: 0 1.25rem;
+                }
+
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            
+        }
+
+        .group {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 50%;
+            padding: 0.5rem 0 1rem 0;
+
+            @include desktop {
+                flex-basis: 25%;
+            }
+
+            @include hi-res {
+                flex-basis: 15%;
+            }
+
+            p {
+                font-size: 0.7rem;
+                font-weight: bold;
+                flex-basis: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .link {
+                flex-basis: 100%;
+            }
+
+            a {
+                font-size: 0.7rem;
+                color: $gray-color;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        padding-top: 1rem;
+
+        @include tablet {
+            flex-basis: 45%;
+        }
+
+        @include desktop {
+            flex-basis: 35%;
+        }
+
+        h5 {
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            padding-top: 1rem;
+
+            a {
+                padding: 0 1rem 0 0;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .social-content {
+        flex-basis: 100%;
+
+        .input-group {
+            max-width: 15rem;
+        }
+
+        input {
+            border: none;
+            border-bottom-left-radius: 0.4rem;
+            border-top-left-radius: 0.4rem;
+        }
+
+        button {
+            border-top-right-radius: 0.4rem;
+            border-bottom-right-radius: 0.4rem;
+            padding: 0.35rem 1.5rem;
+            color: white;
+            background: #f0ca03;
+            font-weight: bold;
+            border: none;
+        }
+    }
+
+    .notes {
+         p {
+            font-size: 0.5rem;
+            color: $gray-color;
+            margin: 0.5rem 0 0.25rem 0;
+        }
+        
+        .divider {
+            width: 100%;
+            
+        }
+    }
+}

@@ -9,6 +9,14 @@
     h1 {
         color: $primary-color;
         font-weight: bold;
+
+        &.purple {
+            color: $purple-color;
+        }
+
+        &.gray {
+            color: $gray-color;
+        }
     }
 
     .content {

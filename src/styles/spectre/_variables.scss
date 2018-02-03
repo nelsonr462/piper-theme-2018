@@ -28,6 +28,10 @@ $warning-color: #ffb700 !default;
 $error-color: #e85600 !default;
 
 // Other colors
+$purple-color: #a864a8 !default;
+$purple-color-light: lighten($purple-color, 20%) !default;
+$purple-color-overlay: rgba($purple-color-light, 0.9);
+
 $code-color: #e06870 !default;
 $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;

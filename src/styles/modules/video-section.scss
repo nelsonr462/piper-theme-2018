@@ -3,6 +3,26 @@
     color: white;
     padding: 2rem 0;
 
+    &.purple {
+        background: $purple-color;
+        color: white;
+    }
+
+    &.white-blue {
+        color: $primary-color;
+    }
+
+    &.white-purple {
+        color: $purple-color;
+    }
+
+    &.white-blue, &.white-purple {
+        background: white;
+        p {
+            color: $gray-color;
+        }
+    }
+
     .content {
         @extend .page-width;
         display: flex;

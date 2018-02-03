@@ -1,0 +1,44 @@
+<div class="page-hero-main" style="background: center no-repeat url({{ 'demo-edu-hero-bg.jpg' | asset_url }}); background-size: cover;">
+    {% comment %} Subnav {% endcomment %}
+    <div class="subnav-container">
+        <div class="page-hero-nav">
+            {% assign page_nav_links = block.settings.page-nav-links | split: ', ' %}
+            {% for link in page_nav_links %}
+                <a href="#section-{{ forloop.index }}" class="link">
+                    {{ link }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+
+
+    <div class="hero-overlay">
+        <div class="hero-content">
+            
+            
+            <div class="page-content">
+                {% comment %} Header {% endcomment %}
+                <h1>{{ block.settings.page-hero-title }}</h1>
+    
+                {% comment %} Description {% endcomment %}
+                <p>{{ block.settings.page-hero-description }}</p>
+    
+                {% comment %} Get a Quote {% endcomment %}
+                <div>
+                    <a href="#">
+                        <button class="btn btn-lg orange">Get a Quote</button>
+                    </a>
+                </div>
+                
+    
+            </div>
+
+            <div class="hero-image">
+                <img src="{{ 'demo-edu-hero.png' | asset_url }}" alt="">
+            </div>
+    
+            
+        </div>
+    </div>
+</div>

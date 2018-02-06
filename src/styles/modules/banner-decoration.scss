@@ -1,0 +1,18 @@
+.banner-decoration {
+    .content {
+        @extend .page-width;
+        overflow: hidden;
+    }
+
+    img {
+        margin-top: -3rem;
+        display: block;
+        max-width: 10rem;
+
+        @include tablet {
+            margin-top: -4rem;
+            max-width: 15rem;
+        }
+    }
+
+}

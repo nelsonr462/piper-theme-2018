@@ -1,6 +1,8 @@
 .page-hero-main {
     overflow: auto;
     color: white;
+    position: relative;
+    z-index: 1;
 
     .hero-overlay {
         background: $purple-color-overlay;

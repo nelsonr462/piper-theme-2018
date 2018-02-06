@@ -1,0 +1,15 @@
+.banner-image-xl {
+    margin: 2rem 0 0 0;
+    background: $purple-color;
+    color: white;
+
+    > img {
+        width: 100%;
+    }
+
+    .banner-container {
+        @extend .page-width;
+        padding: 2rem 0;
+
+    }
+}

@@ -1,0 +1,55 @@
+<div class="bundle-breakdown">
+    {% assign item = all_products[ block.settings.bundle-breakdown-product ] %}
+    {% if item.variants.size > 1 %}
+        {% assign variant_id = block.settings.bundle-breakdown-variant | plus: 0 %}
+        {% assign variant = item.variants[ variant_id ] %}
+    {% endif %}
+
+    {% if variant %}
+        {% assign item = variant %}
+    {% endif %}
+    <div class="content">
+
+        <div class="product-card">
+            <div class="product-img">
+                <img src="{{ item | img_url: '300x300', crop: 'center' }}" alt="">
+            </div>
+            <h3>{{ item.title }}</h3>
+            <div class="price">
+                {% if item.compare_at_price > 0 %}
+                <span><strike>{{ item.compare_at_price | money }}</strike></span>    
+                {% endif %}
+                <span>{{ item.price | money }}</span>
+            </div>
+
+            <p>{{ block.settings.bundle-breakdown-desc }}</p>
+
+            <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ item.id }}" />
+                <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless item.available %}disabled="true"{% endunless %}/>
+            </form> 
+            
+        </div>
+
+
+
+
+        <div class="bundle-info">
+            <div class="list-container">
+                <h3>{{ item.title }} includes:</h3>
+
+                <ul>
+                    {% assign feature_list = block.settings.bundle-breakdown-list | split: '/' %}
+                    {% for bullet in feature_list %}
+                        {% assign line = bullet | split: '*' %}
+                        {% if line.size == 2 %}
+                            <li><strong>{{ line[0] }}</strong>{{ line[1] }}<i class="icon icon-check"></i></li>    
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% assign item = nil %}
+    {% assign variant = nil %}
+    </div>
+</div>

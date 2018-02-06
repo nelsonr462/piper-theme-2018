@@ -1,9 +1,15 @@
 .full-size-image {
     @extend .page-width;
+    color: $primary-color;
+    padding-bottom: 2rem;
     
+    &.purple {
+        color: $purple-color;
+    }
+
     h1 {
         padding-top: 2.5rem;
-        color: $primary-color;
+        font-weight: bold;
     }
 
     img {

@@ -42,6 +42,15 @@
       {% when 'card-cta' %}
       {% include 'card-cta' %}
 
+      {% when 'banner-image-xl' %}
+      {% include 'banner-image-xl' %}
+
+      {% when 'banner-decoration' %}
+      {% include 'banner-decoration' %}
+
+      {% when 'bundle-breakdown' %}
+      {% include 'bundle-breakdown' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -371,6 +380,16 @@
             "default": "What's in the box?"
           },
           {
+            "id": "full-size-image-color-variant",
+            "type": "select",
+            "label": "Color Variant",
+            "options": [
+              { "value": "", "label": "Blue Header"},
+              { "value": "purple", "label": "Purple Header"}
+            ],
+            "default": ""
+          },
+          {
             "id": "full-size-image-img",
             "type": "image_picker",
             "label": "Image"
@@ -458,7 +477,72 @@
             "default": "Build a full computer and control the virtual game world by building and programming electronics!"
           }
         ]
-      }
+      },
+      {
+        "type": "banner-image-xl",
+        "name": "XL Image Banner",
+        "settings": [
+          {
+            "id": "banner-image-xl-img",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "banner-image-xl-title",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "banner-image-xl-desc",
+            "type": "textarea",
+            "label": "Description",
+            "placeholder": "Lorem ipsum dolor sit amet, consector adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        ]
+      },
+      {
+       "type": "banner-decoration",
+       "name": "Banner Decoration",
+       "settings": [
+         {
+           "id": "banner-decoration-img",
+           "label": "Decoration Image",
+           "type": "image_picker"
+         }
+       ] 
+      },
+      {
+        "type": "bundle-breakdown",
+        "name": "Bundle Breakdown",
+        "settings": [
+          {
+            "id": "bundle-breakdown-product",
+            "label": "Product Handle",
+            "type": "text",
+            "placeholder": "piper-computer-kit",
+            "info": "Shopify Product Handle"
+          },
+          {
+            "id": "bundle-breakdown-variant",
+            "label": "Product Variant Index",
+            "type": "text",
+            "info": "If product has no variants, leave at 0. Else, choose variant by number [0-10] depending on position in variants list, 0 being the first variant."
+          },
+          {
+            "id": "bundle-breakdown-desc",
+            "label": "Bundle Description",
+            "type": "textarea",
+            "placeholder": "Lorem ipsum dolor sit amet, consectetur adipsisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+          },
+          {
+            "id": "bundle-breakdown-list",
+            "label": "Feature List",
+            "type": "textarea",
+            "placeholder": "10* Piper Computer Kits/12* Lesson Plans ",
+            "info": "List format: BOLD* item 1 text/BOLD* item 2 text"
+          }
+        ] 
+       }
     ]
   }
 {% endschema %}

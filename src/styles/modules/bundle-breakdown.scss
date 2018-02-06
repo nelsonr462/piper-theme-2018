@@ -1,0 +1,99 @@
+.bundle-breakdown {
+
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap;
+        color: $gray-color-dark;
+        padding: 2rem 0;
+
+    }
+
+    .product-card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 1rem;
+        @include prefix(box-shadow, 0 3px 12px 0px #d9d9d9, moz webkit ms spec);
+
+
+        @include tablet {
+            flex-basis: 40%;
+        }
+
+        @include desktop {
+            flex-basis: 35%;
+        }
+
+        .product-img {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        h3, .price, p, form {
+            flex-basis: 100%;
+            margin: 0.25rem 0;
+        }
+
+        .price {
+            span {
+                font-size: 1rem;
+                color: $gray-color-light;
+            }
+
+            span:nth-child(2) {
+                font-weight: bold;
+                color: $gray-color-dark;
+            }
+        }
+
+        form {
+            margin: 0.5rem 0;
+        }
+
+
+    }
+
+    .bundle-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 1rem;
+
+        @include tablet {
+            flex-basis: 60%;
+        }
+
+        @include desktop {
+            flex-basis: 65%;
+        }
+
+        h3, .list-container, ul {
+            flex-basis: 100%;
+        }
+
+        li {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #e0e0e0;
+
+            @include tablet {
+                font-size: 0.9rem;
+            }
+
+            i {
+                color: $green-color;
+                float: right;
+            }
+        }
+    }
+
+}

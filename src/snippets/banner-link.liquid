@@ -1,0 +1,18 @@
+<div class="banner-link {{ block.settings.banner-link-theme }} {{ block.settings.banner-link-img-style }}">
+    <div class="content {{ block.settings.banner-link-direction }}">
+
+        <div class="copy">
+            <h1>{{ block.settings.banner-link-title }}</h1>
+            <h3>{{ block.settings.banner-link-subtitle }}</h3>
+            <p>{{ block.settings.banner-link-desc }}</p>
+            <a href="#">
+                <button class="btn {{ block.settings.banner-link-button-style }} btn-lg">{{ block.settings.banner-link-btn-text }}</button>
+            </a>
+        </div>
+
+        <div class="image">
+            <img src="{{ block.settings.banner-link-img | img_url: '400x' }}" alt="">
+        </div>
+
+    </div>
+</div>

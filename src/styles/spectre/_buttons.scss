@@ -52,7 +52,7 @@
   // Button Primary
   &.btn-primary {
     background: $primary-color;
-    border-color: $primary-color-dark;
+    border-color: $primary-color;
     color: $light-color;
     &:focus,
     &:hover {
@@ -107,6 +107,7 @@
     font-size: $font-size-lg;
     height: $control-size-lg;
     padding: $control-padding-y-lg $control-padding-x-lg;
+    font-weight: bold;
   }
 
   // Button Block
@@ -153,7 +154,7 @@
     }
   }
 
-  // Orange button
+  // Custom buttons
   &.orange {
     color: white;
     background: $secondary-color;
@@ -163,6 +164,30 @@
     &:hover, &:active {
       background: $secondary-color-dark;
       border: $secondary-color-light;
+    }
+  }
+
+  &.white-outline {
+    color: white;
+    background: transparent;
+    border: $border-width solid white;
+
+    &:hover, &:active {
+      color: $purple-color;
+      background: white;
+      border: $border-width solid $purple-color;
+    }
+  }
+
+  &.gray-outline {
+    color: $gray-color-dark;
+    background: transparent;
+    border: $border-width solid $gray-color-dark;
+
+    &:hover, &:active {
+      color: white;
+      background: $gray-color-dark;
+      border: $border-width solid $gray-color-dark;
     }
   }
 }

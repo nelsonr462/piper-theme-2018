@@ -51,6 +51,12 @@
       {% when 'bundle-breakdown' %}
       {% include 'bundle-breakdown' %}
 
+      {% when 'banner-link' %}
+      {% include 'banner-link' %}
+
+      {% when 'social-feed' %}
+      {% include 'social-feed' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -542,6 +548,126 @@
             "info": "List format: BOLD* item 1 text/BOLD* item 2 text"
           }
         ] 
+       },
+       {
+         "type": "banner-link",
+         "name": "Link Banner",
+         "settings": [
+           {
+             "id": "banner-link-title",
+             "label": "Title",
+             "type": "text",
+             "placeholder": "Resources"
+           },
+           {
+             "id": "banner-link-subtitle",
+             "label": "Subtitle",
+             "type": "text",
+             "placeholder": "Start up guides, walkthroughs, and much more"
+           },
+           {
+             "id": "banner-link-desc",
+             "label": "Description",
+             "type": "textarea"
+           },
+           {
+             "id": "banner-link-btn-text",
+             "label": "Button Text",
+             "type": "text",
+             "default": "Learn More"
+           },
+           {
+             "id": "banner-link-btn-link",
+             "label": "Button Link",
+             "type": "text",
+             "placeholder": "/pages/educators"
+           },
+           {
+             "id": "banner-link-img",
+             "label": "Image",
+             "type": "image_picker",
+             "info": "PNGs with transparency are highly suggested"
+           },
+           {
+             "id": "banner-link-img-style",
+             "label": "Image Style",
+             "type": "select",
+             "default": "",
+             "options": [
+                { "value": "", "label": "Normal"},
+                { "value": "img-overflow", "label": "Overflow"}
+             ],
+             "info": "Overflow images must be pre-formatted to 'clip' at top"
+           },
+           {
+             "id": "banner-link-theme",
+             "label": "Theme Color",
+             "type": "select",
+             "default": "",
+             "options": [
+                { "value": "", "label": "White/Blue" },
+                { "value": "blue", "label": "Blue/White"},
+                { "value": "purple", "label": "Purple/White"}
+             ]
+           },
+           {
+             "id": "banner-link-button-style",
+             "label": "Button Style",
+             "type": "select",
+             "default": "btn-primary",
+             "options": [
+                { "value": "btn-primary", "label": "Blue" },
+                { "value": "white-outline", "label": "White Transparent"},
+                { "value": "gray-outline", "label": "Gray Transparent"}
+             ]
+           },
+           {
+             "id": "banner-link-direction",
+             "label": "Direction",
+             "type": "select",
+             "default": "",
+             "options": [
+                { "value": "", "label": "Left" },
+                { "value": "right", "label": "Right"}
+             ]
+           }
+         ]
+       },
+       {
+         "type": "social-feed",
+         "name": "Social Feed",
+         "settings": [
+            {
+              "id": "social-feed-bg",
+              "label": "Background Image",
+              "type": "image_picker",
+              "info": "Background images need not be more than 100kB and may be lower quality due to overlay blurring"
+            },
+            {
+              "id": "social-feed-title",
+              "label": "Title",
+              "type": "text",
+              "placeholder": "What the world is saying about Piper"
+            },
+            {
+              "id": "social-feed-subtitle",
+              "label": "Subtitle",
+              "type": "text",
+              "placeholder": "Wowzers and more wowzers!"
+            },
+            {
+              "id": "social-feed-enable-ambassadors",
+              "label": "Show Ambassadors Section",
+              "type": "checkbox",
+              "default": true
+            },
+            {
+              "id": "social-feed-ambassadors-title",
+              "label": "Ambassadors Section Title",
+              "type": "text",
+              "placeholder": "Our Piper Ambassadors"
+            }
+         ]
        }
     ]
   }

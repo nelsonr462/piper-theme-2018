@@ -1,0 +1,84 @@
+.banner-link {
+    padding: 3rem 0;
+    background: transparent;
+    color: $gray-color-dark;
+
+    &.blue {
+        background: $primary-color;
+        color: white;
+    }
+
+    &.purple {
+        background: $purple-color;
+        color: white;
+    }
+
+    &.img-overflow {
+        padding: 0 0 3rem 0;
+
+        .copy {
+            padding-top: 1rem;
+            @include tablet {
+                padding-top: 3rem;
+            }
+        }
+
+        .image {
+            padding: 40%;
+
+            @include tablet {
+                padding: 0;
+            }
+        }
+    }
+
+    
+
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        &.right {
+            flex-direction: row-reverse;
+        }
+
+    }
+
+    .copy {
+        flex-basis: 100%;
+        padding-top: 1rem;
+
+        @include tablet {
+            padding-top: 0;
+            flex-basis: 50%;
+        }
+
+        h3 {
+            font-weight: lighter;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .image {
+        position: relative;
+        padding: 50%;
+        display: flex;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+        min-height: 10rem;
+
+        @include tablet {
+            padding: 0;
+            flex-basis: 50%;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

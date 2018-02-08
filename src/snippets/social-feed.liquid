@@ -3,11 +3,66 @@
         <div class="content">
             <h1>{{ block.settings.social-feed-title }}</h1>
             <h4>{{ block.settings.social-feed-subtitle }}</h4>
-
             <div class="carousel-container">
+
+                {%- comment -%} BEGIN CAROUSEL {%- endcomment -%}
+                <div class="carousel">
+                    {% for i in (1..6) %}
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="slide-img">
+                                <img src="{{ 'demo-slider.jpg' | asset_url }}" alt="">
+                            </div>
+                            
+                            <div class="profile">
+                                <figure class="avatar avatar-lg">
+                                    <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
+                                </figure>
+                            </div>
+                            
+                            <h5>Gordon Redzic</h5>
+                            <p>Nice work by the boys on trh piper such a great deducation asdkfnas adsf mfdll; dfmds</p>
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {%- comment -%} END CAROUSEL {%- endcomment -%}
+                
+                <!-- <div class="carousel-controls">
+                    <div class="control prev">
+                        <i class="icon icon-arrow-left"></i>
+                    </div>
+                    <div class="control next">
+                        <i class="icon icon-arrow-right"></i>
+                    </div>
+                </div> -->
+
+                <div class="carousel-nav">
+                    {% for i in (1..6) %}
+                    <div class="carousel-nav-button"></div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="ambassador-container">
+                <h1>Our Piper Ambassadors</h1>
+
+                {% for i in (1..4) %}
+                <div class="ambassador">
+                    <div class="profile">
+                        <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
+                    </div>
+                    <h5>Thomas Whitaker</h5>
+                    <p class="position">4th Grade Teacher,</p>
+                    <p class="company">Cabello Elementary School</p>
+                    <p class="testimonial">"The kids loved it. All the kids wanted to play with Piper after school."</p>
+                </div>
+                {% endfor %}
                 
             </div>
-            
 
         </div>
     </div>

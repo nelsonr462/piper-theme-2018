@@ -20,9 +20,144 @@
     }
 
     .carousel-container {
-        @extend .page-width;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+
+        #tns1-iw.ie {
+            display: inline;
+        }
+
     }
 
+    .carousel {
+        background: transparent;
+    }
+
+    .carousel-nav {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+
+        .carousel-nav-button {
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: white;
+            margin: 1rem 0.5rem 2rem 0.5rem;
+            cursor: pointer;
+
+            *:hover {
+                background: $gray-color-light;
+            }
+
+            &.tns-nav-active {
+                background: $gray-color;
+            }
+        }
+    }
+
+    .slide {
+        display: inline-block;
+        color: $gray-color-dark;
+    }
+
+    .slide-content {
+        background: white;
+        padding: 0.75rem;
+        flex-wrap: wrap;
+
+        > * {
+            flex-basis: 100%;
+        }
+
+        .profile {
+            margin-bottom: 0.25rem;
+        }
+
+        h5 {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+        
+        p {
+            font-size: 0.7rem;
+        }
+    }
    
+    .slide-img {
+        position: relative;
+        padding: 50%;
+        min-height: 5rem;
+        min-width: 5rem;
+        margin-bottom: 0.75rem;
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .divider {
+        flex-basis: 100%;
+        border-width: 2px;
+    }
+
+    .ambassador-container {
+        margin: 2rem 0;
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .ambassador {
+            flex-basis: 100%;
+            justify-content: center;
+            text-align: center;
+            padding: 0.25rem 0.9rem 1rem 0.9rem;
+
+            @include tablet {
+                flex-basis: 50%;
+            }
+
+            @include desktop {
+                flex-basis: 25%;
+            }
+        }
+
+        .profile {
+            max-height: 6rem;
+            max-width: 6rem;
+            margin: 0.5rem auto;
+
+            img {
+                border: 3px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        p {
+            &.position {
+                font-size: 0.7rem;
+                font-weight: bold;
+                margin: 0.25rem 0;
+            }
+
+            &.company {
+                font-size: 0.7rem;
+                margin: 0.25rem 0;
+            }
+
+            &.testimonial {
+                font-size: 0.8rem;
+                margin: 0.5rem 0;
+            }
+        }
+    }
 
 }

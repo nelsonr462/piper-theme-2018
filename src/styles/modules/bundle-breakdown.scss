@@ -7,6 +7,10 @@
         color: $gray-color-dark;
         padding: 2rem 0;
 
+        @include tablet{
+            flex-wrap: nowrap;
+        }
+
     }
 
     .product-card {

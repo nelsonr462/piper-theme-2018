@@ -1,1 +1,14 @@
-{% section 'custom-page-content' %}
+{% case page.handle %}
+    {% when 'educators' %}
+        {% section 'edu-main' %}
+    
+    {% when 'quote' %}
+        {% section 'edu-quote' %}
+
+
+    {% else %}
+        {% section 'edu-main' %}
+{% endcase %}
+
+
+

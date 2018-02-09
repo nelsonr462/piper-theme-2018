@@ -57,6 +57,13 @@
       {% when 'social-feed' %}
       {% include 'social-feed' %}
 
+      {% when 'banner-contact-us' %}
+      {% include 'banner-contact-us' %}
+
+      {% when 'quote-tool' %}
+      {% include 'quote-tool' %}
+
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -507,15 +514,15 @@
         ]
       },
       {
-       "type": "banner-decoration",
-       "name": "Banner Decoration",
-       "settings": [
-         {
+        "type": "banner-decoration",
+        "name": "Banner Decoration",
+        "settings": [
+          {
            "id": "banner-decoration-img",
            "label": "Decoration Image",
            "type": "image_picker"
-         }
-       ] 
+          }
+        ] 
       },
       {
         "type": "bundle-breakdown",
@@ -546,97 +553,97 @@
             "type": "textarea",
             "placeholder": "10* Piper Computer Kits/12* Lesson Plans ",
             "info": "List format: BOLD* item 1 text/BOLD* item 2 text"
-          }
-        ] 
-       },
-       {
-         "type": "banner-link",
-         "name": "Link Banner",
-         "settings": [
-           {
-             "id": "banner-link-title",
-             "label": "Title",
-             "type": "text",
-             "placeholder": "Resources"
-           },
-           {
-             "id": "banner-link-subtitle",
-             "label": "Subtitle",
-             "type": "text",
-             "placeholder": "Start up guides, walkthroughs, and much more"
-           },
-           {
-             "id": "banner-link-desc",
-             "label": "Description",
-             "type": "textarea"
-           },
-           {
-             "id": "banner-link-btn-text",
-             "label": "Button Text",
-             "type": "text",
-             "default": "Learn More"
-           },
-           {
-             "id": "banner-link-btn-link",
-             "label": "Button Link",
-             "type": "text",
-             "placeholder": "/pages/educators"
-           },
-           {
-             "id": "banner-link-img",
-             "label": "Image",
-             "type": "image_picker",
-             "info": "PNGs with transparency are highly suggested"
-           },
-           {
-             "id": "banner-link-img-style",
-             "label": "Image Style",
-             "type": "select",
-             "default": "",
-             "options": [
+            }
+          ] 
+        },
+        {
+          "type": "banner-link",
+          "name": "Link Banner",
+          "settings": [
+            {
+              "id": "banner-link-title",
+              "label": "Title",
+              "type": "text",
+              "placeholder": "Resources"
+            },
+            {
+              "id": "banner-link-subtitle",
+              "label": "Subtitle",
+              "type": "text",
+              "placeholder": "Start up guides, walkthroughs, and much more"
+            },
+            {
+              "id": "banner-link-desc",
+              "label": "Description",
+              "type": "textarea"
+            },
+            {
+              "id": "banner-link-btn-text",
+              "label": "Button Text",
+              "type": "text",
+              "default": "Learn More"
+            },
+            {
+              "id": "banner-link-btn-link",
+              "label": "Button Link",
+              "type": "text",
+              "placeholder": "/pages/educators"
+            },
+            {
+              "id": "banner-link-img",
+              "label": "Image",
+              "type": "image_picker",
+              "info": "PNGs with transparency are highly suggested"
+            },
+            {
+              "id": "banner-link-img-style",
+              "label": "Image Style",
+              "type": "select",
+              "default": "",
+              "options": [
                 { "value": "", "label": "Normal"},
                 { "value": "img-overflow", "label": "Overflow"}
-             ],
-             "info": "Overflow images must be pre-formatted to 'clip' at top"
+              ],
+              "info": "Overflow images must be pre-formatted to 'clip' at top"
            },
-           {
-             "id": "banner-link-theme",
-             "label": "Theme Color",
-             "type": "select",
-             "default": "",
-             "options": [
+            {
+              "id": "banner-link-theme",
+              "label": "Theme Color",
+              "type": "select",
+              "default": "",
+              "options": [
                 { "value": "", "label": "White/Blue" },
                 { "value": "blue", "label": "Blue/White"},
                 { "value": "purple", "label": "Purple/White"}
-             ]
+              ]
            },
            {
-             "id": "banner-link-button-style",
-             "label": "Button Style",
-             "type": "select",
-             "default": "btn-primary",
-             "options": [
+              "id": "banner-link-button-style",
+              "label": "Button Style",
+              "type": "select",
+              "default": "btn-primary",
+              "options": [
                 { "value": "btn-primary", "label": "Blue" },
                 { "value": "white-outline", "label": "White Transparent"},
                 { "value": "gray-outline", "label": "Gray Transparent"}
-             ]
-           },
-           {
-             "id": "banner-link-direction",
-             "label": "Direction",
-             "type": "select",
-             "default": "",
-             "options": [
+              ]
+            },
+            {
+              "id": "banner-link-direction",
+              "label": "Direction",
+              "type": "select",
+              "default": "",
+              "options": [
                 { "value": "", "label": "Left" },
                 { "value": "right", "label": "Right"}
-             ]
-           }
-         ]
-       },
-       {
-         "type": "social-feed",
-         "name": "Social Feed",
-         "settings": [
+              ]
+            }
+          ]
+        },
+        {
+          "type": "social-feed",
+          "name": "Social Feed",
+          "settings": [
             {
               "id": "social-feed-bg",
               "label": "Background Image",
@@ -666,9 +673,58 @@
               "label": "Ambassadors Section Title",
               "type": "text",
               "placeholder": "Our Piper Ambassadors"
+            },
+            {
+              "id": "social-feed-color",
+              "label": "Background color",
+              "type": "select",
+              "default": "",
+              "options": [
+                { "value": "", "label": "Blue" },
+                { "value": "purple", "label": "Purple" }
+              ]
             }
-         ]
-       }
+          ]
+        },
+        {
+          "type": "banner-contact-us",
+          "name": "Contact Us Banner",
+          "settings": [
+            {
+              "id": "banner-contact-us-title",
+              "label": "Title",
+              "type": "text",
+              "default": "Questions? Contact Us"
+            },
+            {
+              "id": "banner-contact-us-email",
+              "label": "Email",
+              "type": "text",
+              "default": "educators@buildpiper.com"
+            },
+            {
+              "id": "banner-contact-us-phone",
+              "label": "Phone Number",
+              "type": "text",
+              "default": "(888) 767-1941"
+            },
+            {
+              "id": "banner-contact-us-img",
+              "label": "Image",
+              "type": "image_picker"
+            },
+            {
+              "id": "banner-contact-us-color",
+              "label": "Header Color",
+              "type": "select",
+              "default": "",
+              "options": [
+                {"value": "", "label": "Blue"},
+                {"value": "purple", "label": "Purple"}
+              ]
+            }
+          ]
+        }
     ]
   }
 {% endschema %}

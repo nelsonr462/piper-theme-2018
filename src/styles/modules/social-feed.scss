@@ -1,6 +1,10 @@
 .social-feed {
     .overlay {
         background: rgba($primary-color, 0.8);
+
+        &.purple {
+            background: rgba($purple-color-light, 0.8);
+        }
     }
 
     .content {

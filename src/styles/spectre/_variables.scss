@@ -33,7 +33,8 @@ $green-color-light: lighten($green-color, 10%) !default;
 $green-color-overlay: darken($green-color, 10%) !default;
 
 $purple-color: #a864a8 !default;
-$purple-color-light: lighten($purple-color, 20%) !default;
+$purple-color-light: lighten($purple-color, 17%) !default;
+$purple-color-dark: darken($purple-color, 10%) !default;
 $purple-color-overlay: rgba($purple-color-light, 0.9);
 
 $code-color: #e06870 !default;

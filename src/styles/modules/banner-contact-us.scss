@@ -1,0 +1,82 @@
+.banner-contact-us {
+    background: white;
+    color: $gray-color-dark;
+
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include tablet {
+            flex-wrap: nowrap;
+        }
+    }
+
+    .image {
+        flex-basis: 100%;
+        padding: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+            flex-basis: 35%;
+        }
+
+        @include tablet {
+            flex-basis: 50%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    .info {
+        flex-basis: 100%;
+        padding: 1rem 0 2rem 0;
+        
+
+        @include tablet {
+            flex-basis: 65%;
+            padding: 2rem 0;
+        }
+
+        @include desktop {
+            flex-basis: 50%;
+        }
+
+        h1 {
+            color: $primary-color;
+            font-weight: bold;
+            padding-bottom: 2rem;
+            text-align: center;
+
+            @include tablet {
+                text-align: left;
+            }
+
+            &.purple {
+                color: $purple-color;
+            }
+        }
+
+        h4 {
+            font-size: 1rem;
+            text-align: center;
+
+            @include tablet {
+                text-align: left;
+            }
+
+            @include desktop {
+                font-size: 1.2rem;
+            }
+        }
+
+        .icon {
+            width: 1rem;
+            margin-right: 0.4rem;
+        }
+    }
+}

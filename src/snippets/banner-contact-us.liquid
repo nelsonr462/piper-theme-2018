@@ -1,0 +1,13 @@
+<div class="banner-contact-us" style="background: center no-repeat url({{ 'demo-contact-us-bg.png' | asset_url }}); background-size: cover;">
+    <div class="content">
+        <div class="image">
+            <img src="{{ block.settings.banner-contact-us-img | img_url: '350x' }}" alt="">
+        </div>
+
+        <div class="info">
+            <h1 class="{{ block.settings.banner-contact-us-color }}">{{ block.settings.banner-contact-us-title }}</h1>
+            <h4>{% include 'icon-email' %} {{ block.settings.banner-contact-us-email}}</h3>
+            <h4>{% include 'icon-fax' %} {{ block.settings.banner-contact-us-phone}}</h3>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+.quote-tool {
+    color: $gray-color-dark;
+    padding: 2rem 0;
+
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        flex-basis: 100%;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    .input {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem 0;
+
+        @include tablet {
+            flex-basis: 65%;
+        }
+
+        .form {
+            font-size: 1rem;
+            font-weight: bold;
+            flex-basis: 100%;
+            align-self: flex-end;
+
+            input {
+                max-width: 3rem;
+                text-align: center;
+            }
+        }
+
+        .note {
+            font-size: 0.7rem;
+            flex-basis: 100%;
+        }
+    }
+
+    .output{
+        flex-basis: 100%;
+        text-align: center;
+
+        @include tablet {
+            flex-basis: 35%;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+        
+        span {
+            color: $green-color;
+            font-weight: bold;
+        }
+
+        .price {
+            border: 1px solid $gray-color;
+            border-radius: 0.25rem;
+            padding: 1rem;
+        }
+
+    }
+
+    .detail {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        padding: 1rem;
+
+        h3, ul {
+            flex-basis: 100%;
+        }
+
+        li {
+            padding: 1rem 0;
+            margin: 0;
+            font-size: 0.8rem;
+            border-bottom: 1px solid #e0e0e0;
+
+            @include tablet {
+                font-size: 0.9rem;
+            }
+
+            i {
+                float: right;
+                margin-top: 0.25rem;
+
+                &.icon-check {
+                    color: $green-color;
+                }
+
+                &.icon-cross {
+                    color: $red-color;
+                }
+            }
+        }
+    }
+}

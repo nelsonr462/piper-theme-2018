@@ -71,10 +71,14 @@
         display: flex;
         flex-wrap: wrap;
         flex-basis: 100%;
-        padding: 1rem;
+        padding: 1rem 0;
 
         h3, ul {
             flex-basis: 100%;
+        }
+
+        ul {
+            padding-bottom: 2rem;
         }
 
         li {
@@ -99,6 +103,10 @@
                     color: $red-color;
                 }
             }
+        }
+
+        button {
+            margin: auto;
         }
     }
 }

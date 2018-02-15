@@ -1,0 +1,27 @@
+<div class="product-gallery">
+    <div class="content">
+        <h2>Product Images</h2>
+        <div class="gallery">
+            {% for image in product.images %}
+            <div class="thumbnail">
+                <img src="{{ image.src | img_url: '200x' }}"
+                    data-jslghtbx="{{ image.src | img_url: '1024x' }}"
+                    data-jslghtbx-group="product-gallery"
+                >
+    
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var lightbox = new Lightbox();
+            lightbox.load({
+                nextImg: true,
+                prevImg: true,
+                swipe: true
+            });
+        }
+    </script>
+</div>

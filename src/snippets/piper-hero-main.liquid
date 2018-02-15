@@ -33,7 +33,7 @@
 
                     <div class="image-main show-sm">
                         <div class="image">
-                            <img src="{{ product.featured_image | img_url: '300x' }}" alt="">
+                            <img src="{{ product.featured_image | img_url: '500x' }}" alt="">
                         </div>
                     </div>
                     
@@ -50,10 +50,20 @@
                  
                 <div class="image-main hide-sm">
                     <div class="image">
-                        <img src="{{ product.featured_image | img_url: '350x' }}" alt="">
+                        <img src="{{ product.featured_image | img_url: '500x' }}" alt="">
                     </div>
                 </div>
     
+            </div>
+    
+            {% comment %} Page Navigation {% endcomment %}
+            <div class="product-nav">
+                {% assign hero_nav_links = block.settings.hero-nav-links | split: ', ' %}
+                {% for link in hero_nav_links %}
+                    <a href="#section-{{ forloop.index }}" class="link">
+                        {{ link }}
+                    </a>
+                {% endfor %}
             </div>
         </div>
     </div>

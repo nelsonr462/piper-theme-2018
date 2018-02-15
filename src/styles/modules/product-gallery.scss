@@ -1,0 +1,41 @@
+.product-gallery {
+    padding: 2rem 0;
+    
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    h2 {
+        flex-basis: 100%;
+        color: $gray-color-dark;
+        padding-bottom: 2rem;
+    }
+
+    .gallery {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .thumbnail {
+        flex-basis: 50%;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+
+        @include tablet {
+            flex-basis: 25%;
+        }
+
+        @include hi-res {
+            flex-basis: 20%;
+        }
+
+        img {
+            padding: 0.5rem;
+        }
+    }
+}

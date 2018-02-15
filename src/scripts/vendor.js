@@ -10,6 +10,12 @@
 
 
 /*!
+ * jsOnlyLightbox.js: https://github.com/felixhagspiel/jsOnlyLightbox
+ */ 
+// =require vendor/lightbox.min.js
+
+
+/*!
  * tiny-slider.js: https://github.com/ganlanyuan/tiny-slider
  */ 
 // =require vendor/tiny-slider.js

@@ -46,11 +46,16 @@
 @import url('modules/full-size-image.scss');
 @import url('modules/navbar-main.scss');
 @import url('modules/page-hero-main.scss');
+@import url('modules/piper-hero-main.scss');
+@import url('modules/product-gallery.scss');
 @import url('modules/product-hero-main.scss');
 @import url('modules/product-info.scss');
 @import url('modules/quote-tool.scss');
 @import url('modules/social-feed.scss');
-@import url('modules/video-section.scss'); 
+@import url('modules/video-section.scss');
+
+/*================= VENDOR =================*/ 
+@import url('vendor/lightbox.min.css');
 
 // -- Gift Card Template
 @import url('modules/gift-card-template.scss');

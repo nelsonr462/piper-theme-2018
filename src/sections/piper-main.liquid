@@ -9,6 +9,9 @@
       {% when 'page-hero-main' %}
       {% include 'page-hero-main' %}
 
+      {% when 'piper-hero-main' %}
+      {% include 'piper-hero-main' %}
+
       {% when 'awards-bar' %}
       {% include 'awards-bar' %}
 
@@ -83,6 +86,36 @@
             "type": "textarea",
             "label": "Page Hero Description",
             "placeholder": "Lorem ipsum dolor sit amet.."
+          }
+        ]
+      },
+      {
+        "type": "piper-hero-main",
+        "name": "Piper Hero",
+        "settings": [
+          {
+            "id": "piper-hero-main-nav-links",
+            "type": "textarea",
+            "label": "Nav Links (Sections)",
+            "placeholder": "How it Works, Features, What's in the Box"
+          },
+          {
+            "id": "piper-hero-main-title",
+            "type": "textarea",
+            "label": "Page Hero Title",
+            "placeholder": "The best way to learn programming & engineering"
+          },
+          {
+            "id": "piper-hero-main-description",
+            "type": "textarea",
+            "label": "Page Hero Description",
+            "placeholder": "Lorem ipsum dolor sit amet.."
+          },
+          {
+            "id": "piper-hero-main-product",
+            "type": "text",
+            "label": "Product Handle",
+            "default": "piper-computer-kit"
           }
         ]
       },

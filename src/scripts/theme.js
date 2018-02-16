@@ -12,7 +12,7 @@ window.theme = window.theme || {};
 // =require slate/variants.js
 
 /*================= Modules ================*/
-// =require modules/social-feed.js
+
 
 /*================ Sections ================*/
 // =require sections/navbar-main.js

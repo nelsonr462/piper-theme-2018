@@ -25,6 +25,7 @@
         align-self: center;
         justify-content: center;
         text-align: center;
+        cursor: pointer;
 
         @include tablet {
             flex-basis: 25%;

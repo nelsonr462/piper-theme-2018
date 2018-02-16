@@ -45,6 +45,9 @@
       {% when 'product-gallery' %}
       {% include 'product-gallery' %}
 
+      {% when 'related-products' %}
+      {% include 'related-products' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -421,6 +424,25 @@
         "name": "Product Gallery",
         "settings": [
           
+        ]
+      },
+      {
+        "type": "related-products",
+        "name": "Related Products",
+        "settings": [
+          {
+            "id": "related-products-title",
+            "label": "Title",
+            "type": "text",
+            "default": "Other related products"
+          },
+          {
+            "id": "related-products-collection",
+            "label": "Collection Handle",
+            "type": "text",
+            "placeholder": "frontpage",
+            "info": "Collection to pull from and display"
+          }
         ]
       }
     ]

@@ -22,7 +22,7 @@
 
                 <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ item.id }}" />
-                    <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless product.available %}disabled="true"{% endunless %}/>
+                    <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless item.available %}disabled="true"{% endunless %}/>
                 </form>
             </div>
 

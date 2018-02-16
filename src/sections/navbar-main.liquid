@@ -2,7 +2,7 @@
 
     {% comment %} Main Nav Logo {% endcomment %}
     <section class="navbar-section" itemscope itemtype="http://schema.org/Organization">
-        <a href="#" class="navbar-brand mr-2">
+        <a href="/" class="navbar-brand mr-2">
             <img src="{{ 'piper-logo-main.svg' | asset_url }}" />
         </a>
     </section>
@@ -24,26 +24,23 @@
                 {% comment %} Nav Links {% endcomment %}
                 <ul class="nav">
                     
+                    {% for link in linklists.main-menu.links %}
                     <li class="nav-item">
-                        <a href="#">Piper Computer Kit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Educators</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Blog</a>
-                    </li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>    
+                    {% endfor %}
+
                 </ul>
 
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="#">
+                        <a href="/collections/all">
                             <button class="btn btn-nav">Shop Now</button>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">
-                            <button class="btn btn-nav inverted">Cart (2) {% include 'icon-cart' %}</button>
+                        <a href="/cart">
+                            <button class="btn btn-nav inverted">Cart ({{ cart.item_count }}) {% include 'icon-cart' %}</button>
                         </a>
                     </li>
                 </ul>
@@ -56,11 +53,14 @@
 
         {% comment %} Desktop Nav Links {% endcomment %}
         <div class="hide-xl">
-            <a href="#" class="nav-link active">Piper Computer Kit</a>
-            <a href="#" class="nav-link">Educators</a>
-            <a href="#" class="nav-link">Blog</a>
-            <button class="btn btn-nav">Shop Now</button>
-            <a href="#" class="btn btn-cart badge" data-badge="2">
+            {% for link in linklists.main-menu.links %}
+            <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
+            {% endfor %}
+            <a href="/collections/all">
+                <button class="btn btn-nav">Shop Now</button>
+            </a>
+            
+            <a href="/cart" class="btn btn-cart {% if cart.item_count > 0 %}badge{% endif %}" data-badge="{{ cart.item_count }}">
                 {% include 'icon-cart' %}
             </a>
         </div>

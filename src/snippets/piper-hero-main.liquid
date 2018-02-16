@@ -1,4 +1,5 @@
-<div class="product-hero-main" data-section-id="{{ section.id }}" style="background: center no-repeat url({{ 'demo-product-hero-bg.jpg' | asset_url }}); background-size: cover;">
+<div class="piper-hero-main" style="background: center no-repeat url({{ 'demo-product-hero-bg.jpg' | asset_url }}); background-size: cover;">
+    {% assign product = all_products[block.settings.piper-hero-main-product] %}
     <div class="hero-overlay">
         <div class="hero-content">
             {% comment %} Breadcrumb {% endcomment %}
@@ -67,4 +68,5 @@
             </div>
         </div>
     </div>
+    {% assign product = nil %}
 </div>

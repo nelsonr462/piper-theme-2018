@@ -165,6 +165,18 @@
       background: $secondary-color-dark;
       border: $secondary-color-light;
     }
+
+    &.inverted {
+      color: $secondary-color;
+      background-color: white;
+      border: solid 1px $secondary-color;
+      border-radius: 0.25rem;
+    }
+
+    &.inverted:hover, &.inverted:active {
+      background-color: $secondary-color;
+      color: white;
+    }
   }
 
   &.white-outline {

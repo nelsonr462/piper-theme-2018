@@ -1,0 +1,65 @@
+<div class="storefront-hero-main"
+    {% if block.settings.storefront-hero-main-background %}
+    style="background: center no-repeat url({{ block.settings.storefront-hero-main-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+    {% endif %}
+    >
+    
+    
+
+
+    <div class="hero-overlay {{ block.settings.storefront-hero-main-color }}">
+        <div class="hero-content">
+            
+            
+            <div class="page-content">
+                {% comment %} Header {% endcomment %}
+                <h1>{{ block.settings.storefront-hero-main-title }}</h1>
+    
+                {% comment %} Description {% endcomment %}
+                <p>{{ block.settings.storefront-hero-main-description }}</p>
+    
+                {% comment %} Button Link {% endcomment %}
+                <div>
+                    <a href="#">
+                        <button class="btn btn-lg orange">Learn More</button>
+                    </a>
+                </div>
+                
+    
+            </div>
+
+            <div class="hero-image">
+                {% if  block.settings.storefront-hero-main-img %}
+                <img src="{{ block.settings.storefront-hero-main-img | img_url: '300x' }}" alt="">
+                {% endif %}
+            </div>
+    
+            
+        </div>
+    </div>
+
+    {% comment %} Subnav {% endcomment %}
+    <div class="subnav-container">
+        <div class="page-hero-nav">
+            {% assign page_nav_links = block.settings.page-nav-links | split: ', ' %}
+            
+                <a href="#" class="link">
+                    {% include 'icon-kits' %} Kits
+                </a>
+
+                <a href="#" class="link">
+                    {% include 'icon-parts' %} Parts
+                </a>
+
+                <a href="#" class="link">
+                    {% include 'icon-merch' %} Merch
+                </a>
+
+                <a href="#" class="link">
+                    {% include 'icon-misc' %} All
+                </a>
+            
+        </div>
+    </div>
+    
+</div>

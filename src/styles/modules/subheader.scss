@@ -1,0 +1,11 @@
+.subheader {
+    @extend .page-width;
+    padding: 2rem 0 0 0;
+    text-align: center;
+
+    h1 {
+        color: $gray-color-dark;
+        font-weight: bold;
+        margin: 0;
+    }
+}

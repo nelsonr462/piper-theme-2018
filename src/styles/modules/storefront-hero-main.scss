@@ -1,0 +1,35 @@
+.storefront-hero-main {
+    @extend .page-hero-main;
+    @include prefix(box-shadow, 0px -3px 10px 0px #000000, moz ms webkit spec);
+
+
+    .subnav-container {
+        background: white;
+
+    }
+
+    .page-hero-nav {
+        padding: 0.5rem 0;
+
+        .link {
+            font-size: 0.9rem;
+            font-weight: bold;
+            align-items: center;
+            color: $gray-color-dark;
+            flex-basis: 50%;
+            justify-content: center;
+            padding: 1rem 0;
+
+            @include tablet {
+                border: none;
+                flex-basis: inherit;
+                padding: 0.5rem 2.4rem;
+            }
+            
+        }
+
+        .icon {
+            margin: 0 0.5rem 0 0;
+        }
+    }
+}

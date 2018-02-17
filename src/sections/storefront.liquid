@@ -1,0 +1,115 @@
+<div data-section-id="{{ section.id }}">
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
+
+      {% when 'storefront-hero-main' %}
+      {% include 'storefront-hero-main' %}
+
+      {% when 'subheader' %}
+      {% include 'subheader' %}
+
+      {% when 'card-cta' %}
+      {% include 'card-cta' %}
+
+      {% when 'collection-section' %}
+      {% include 'collection-section' %}
+
+    {% endcase %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "storefront-hero-main",
+        "name": "Storefront Hero",
+        "settings": [
+          {
+            "id": "storefront-hero-main-title",
+            "type": "text",
+            "label": "Title",
+            "placeholder": "This is Piper!"
+          },
+          {
+            "id": "storefront-hero-main-description",
+            "type": "textarea",
+            "label": "Description",
+            "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
+          },
+          {
+            "id": "storefront-hero-main-color",
+            "type": "select",
+            "label": "Color",
+            "default": "blue",
+            "options": [
+                { "value": "blue", "label": "Blue" },
+                { "value": "", "label": "Purple" }
+            ]
+          },
+          {
+            "id": "storefront-hero-main-img",
+            "type": "image_picker",
+            "label": "Image (Optional)"
+          },
+          {
+            "id": "storefront-hero-main-background",
+            "type": "image_picker",
+            "label": "Background (Optional)"
+          }
+        ]
+      },
+      {
+        "type": "subheader",
+        "name": "Subheader",
+        "settings": [
+          {
+            "id": "subheader-content",
+            "type": "text",
+            "label": "Content",
+            "default": "A new subheader!"
+          }
+        ]
+      },
+      {
+        "type": "card-cta",
+        "name": "Call to Action Card",
+        "settings": [
+          {
+            "id": "cta-title",
+            "type": "text",
+            "label": "Title",
+            "default": "Get your child's first DIY computer!"
+          },
+          {
+            "id": "cta-product",
+            "type": "text",
+            "label": "Product Handle",
+            "default": "piper-computer-kit"
+          },
+          {
+            "id": "cta-variant",
+            "type": "text",
+            "label": "Product Variant (Array Index)",
+            "default":"0"
+          },
+          {
+            "id": "cta-desc",
+            "type": "textarea",
+            "label": "Product Description",
+            "default": "Build a full computer and control the virtual game world by building and programming electronics!"
+          }
+        ]
+      },
+      {
+          "type": "collection-section",
+          "name": "Collection Section",
+          "settings": [
+
+          ]
+      }
+    ]
+  }
+{% endschema %}

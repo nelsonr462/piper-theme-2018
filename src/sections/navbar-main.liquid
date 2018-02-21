@@ -34,7 +34,7 @@
 
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="/collections/all">
+                        <a href="/products">
                             <button class="btn btn-nav">Shop Now</button>
                         </a>
                     </li>
@@ -56,7 +56,7 @@
             {% for link in linklists.main-menu.links %}
             <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
             {% endfor %}
-            <a href="/collections/all">
+            <a href="/products" class="nav-link-btn">
                 <button class="btn btn-nav">Shop Now</button>
             </a>
             

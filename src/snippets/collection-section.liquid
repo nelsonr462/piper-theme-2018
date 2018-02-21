@@ -1,3 +1,49 @@
-<div class="collection-section">
+<div class="collection-section {{ block.settings.collection-section-size }}">
+    {% assign collection = collections[block.settings.collection-section-handle] %}
+    <div class="content">
 
+        <a href="{{ collection.url }}">
+            <h2>{{ collection.title }}</h2>
+        </a>
+
+        {% for i in (0..3) %}
+            {% assign item = collection.products[i] %}
+
+            {% if item.handle != product.handle %}    
+            <div class="card">
+                <div class="card-content">
+                    
+                    <div class="image">
+                        <a href="{{ item.url }}">
+                            <img src="{{ item.images[0] | img_url: '250x' }}" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="details">
+                        <a href="{{ item.url }}">
+                            <h5>{{ item.title }}</h5>
+                        </a>
+                        
+                        
+                        <h5>{{ item.price | money }}</h5>
+                        {% if item.compare_at_price_max > 0 %}
+                        <h6>
+                            <strike> {{ item.compare_at_price_max | money }}</strike>
+                        </h6>
+                        {% endif %}
+    
+                        <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
+                        
+    
+                        <a class="view-link" href="{{ item.url }}">
+                            <button class="btn orange inverted">View</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
+        {% endfor %}
+    </div>
 </div>

@@ -15,25 +15,28 @@
                             <img src="{{ item.images[0] | img_url: '250x' }}" alt="">
                         </a>
                     </div>
-                    
-                    <a href="{{ item.url }}">
-                        <h5>{{ item.title }}</h5>
-                    </a>
-                    
-                    
-                    <h5>{{ item.price | money }}</h5>
-                    {% if item.compare_at_price_max > 0 %}
-                    <h6>
-                        <strike> {{ item.compare_at_price_max | money }}</strike>
-                    </h6>
-                    {% endif %}
 
-                    <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
+                    <div class="details">
+                        <a href="{{ item.url }}">
+                            <h5>{{ item.title }}</h5>
+                        </a>
+                        
+                        
+                        <h5>{{ item.price | money }}</h5>
+                        {% if item.compare_at_price_max > 0 %}
+                        <h6>
+                            <strike> {{ item.compare_at_price_max | money }}</strike>
+                        </h6>
+                        {% endif %}
+    
+                        <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
+                        
+    
+                        <a class="view-link" href="{{ item.url }}">
+                            <button class="btn orange inverted">View</button>
+                        </a>
+                    </div>
                     
-
-                    <a class="view-link" href="{{ item.url }}">
-                        <button class="btn orange inverted">View</button>
-                    </a>
                 </div>
             </div>
             {% endif %}

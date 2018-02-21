@@ -39,3 +39,8 @@
     }
 }
 
+.nav-link-btn {
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}

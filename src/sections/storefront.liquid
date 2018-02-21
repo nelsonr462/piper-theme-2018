@@ -107,7 +107,23 @@
           "type": "collection-section",
           "name": "Collection Section",
           "settings": [
-
+            {
+              "id": "collection-section-handle",
+              "label": "Collection Handle",
+              "type": "text",
+              "default": "frontpage",
+              "info": "Handle of collection to display"
+            },
+            {
+              "id": "collection-section-size",
+              "label": "Card Size",
+              "type": "select",
+              "default": "",
+              "options": [
+                { "value": "", "label": "Normal" },
+                { "value": "small", "label": "Small" }
+              ]
+            }
           ]
       }
     ]

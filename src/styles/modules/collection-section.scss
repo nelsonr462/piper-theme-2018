@@ -1,3 +1,52 @@
 .collection-section {
-    
+    @extend .related-products;
+
+    .content {
+        a {
+            color: $gray-color-dark;
+            flex-basis: 100%;
+        }
+    }
+
+    &.small {
+        .card-content {
+            flex-direction: row;
+            min-height: 8rem;
+        }
+
+        .image {
+            width: 6rem;
+            height: 6rem;
+            flex-basis: 40%;
+            margin: auto;
+
+            img {
+                max-height: 6rem;
+            }
+        }
+
+        .details {
+            flex-basis: 50%;
+        }
+
+        h5 {
+            font-size: 0.75rem;
+        }
+
+        h6 {
+            font-size: 0.6rem;
+        }
+
+        .desc {
+            display: none;
+        }
+
+        .view-link {
+            position: relative;
+            width: 75%;
+            bottom: initial;
+            left: initial;
+        }
+
+    }
 }

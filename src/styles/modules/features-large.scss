@@ -9,6 +9,12 @@
         padding-bottom: 1.5rem;
     }
 
+    h2 {
+        display: flex;
+        align-self: center;
+        padding-top: 1rem;
+    }
+
     h2, p {
         color: $gray-color-dark;
     }

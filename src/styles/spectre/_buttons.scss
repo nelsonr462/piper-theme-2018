@@ -179,7 +179,7 @@
     }
   }
 
-  &.white-outline {
+  &.white-purple {
     color: white;
     background: transparent;
     border: $border-width solid white;
@@ -188,6 +188,17 @@
       color: $purple-color;
       background: white;
       border: $border-width solid $purple-color;
+    }
+  }
+
+  &.white-blue {
+    color: white;
+    background: transparent;
+    border: $border-width solid white;
+
+    &:hover, &:active {
+      color: $primary-color;
+      background: white;
     }
   }
 

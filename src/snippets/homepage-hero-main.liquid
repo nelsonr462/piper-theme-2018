@@ -1,0 +1,47 @@
+<div class="homepage-hero-main"
+    {% if block.settings.homepage-hero-main-background %}
+    style="background: center no-repeat url({{ block.settings.homepage-hero-main-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+    {% endif %}
+    >
+
+    {% comment %} Announcement Banner {% endcomment %}
+    <div class="announcement-container">
+        <div class="announcement">
+            <h5>We're at Toyfair 2018!</h5>
+        </div>
+    </div>
+    
+
+
+    <div class="hero-overlay {{ block.settings.homepage-hero-main-color }}">
+        <div class="hero-content">
+            
+            <div class="hero-image">
+                {% if  block.settings.homepage-hero-main-img %}
+                <img src="{{ block.settings.homepage-hero-main-img | img_url: '300x' }}" alt="">
+                {% endif %}
+            </div>
+            
+            <div class="page-content">
+                {% comment %} Header {% endcomment %}
+                <h2>{{ block.settings.homepage-hero-main-title }}</h2>
+    
+                {% comment %} Description {% endcomment %}
+                <p>{{ block.settings.homepage-hero-main-description }}</p>
+    
+                {% comment %} Get a Quote {% endcomment %}
+                <div>
+                    <a href="#">
+                        <button class="btn btn-lg green">Build Yours Today!</button>
+                    </a>
+                </div>
+                
+    
+            </div>
+
+            
+    
+            
+        </div>
+    </div>
+</div>

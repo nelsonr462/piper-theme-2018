@@ -30,6 +30,7 @@ $error-color: #e85600 !default;
 // Other colors
 $green-color: #66d43d !default;
 $green-color-light: lighten($green-color, 10%) !default;
+$green-color-dark: darken($green-color, 10%) !default;
 $green-color-overlay: darken($green-color, 10%) !default;
 
 $red-color: #fc0d1b !default;

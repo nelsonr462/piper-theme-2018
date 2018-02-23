@@ -179,6 +179,26 @@
     }
   }
 
+  &.green {
+    @extend .orange;
+    background: $green-color;
+    border: $green-color;
+
+    &:hover, &:active {
+      background: $green-color-dark;
+      border: $green-color-light;
+    }
+
+    &.inverted {
+      color: $green-color;
+      border: solid 1px $green-color;
+    }
+
+    &.inverted:hover, &.inverted:active {
+      background-color: $green-color;
+    }
+  }
+
   &.white-purple {
     color: white;
     background: transparent;

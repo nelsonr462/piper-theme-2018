@@ -3,8 +3,8 @@
   <div {{ block.shopify_attributes }}>
     {% case block.type %}
 
-      {% when 'storefront-hero-main' %}
-      {% include 'storefront-hero-main' %}
+      {% when 'homepage-hero-main' %}
+      {% include 'homepage-hero-main' %}
 
       {% when 'awards-bar' %}
       {% include 'awards-bar' %}
@@ -60,23 +60,23 @@
   {
     "blocks": [
       {
-        "type": "storefront-hero-main",
-        "name": "Storefront Hero",
+        "type": "homepage-hero-main",
+        "name": "Homepage Hero",
         "settings": [
           {
-            "id": "storefront-hero-main-title",
+            "id": "homepage-hero-main-title",
             "type": "text",
             "label": "Title",
             "placeholder": "This is Piper!"
           },
           {
-            "id": "storefront-hero-main-description",
+            "id": "homepage-hero-main-description",
             "type": "textarea",
             "label": "Description",
             "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
           },
           {
-            "id": "storefront-hero-main-color",
+            "id": "homepage-hero-main-color",
             "type": "select",
             "label": "Color",
             "default": "blue",
@@ -86,12 +86,12 @@
             ]
           },
           {
-            "id": "storefront-hero-main-img",
+            "id": "homepage-hero-main-img",
             "type": "image_picker",
             "label": "Image (Optional)"
           },
           {
-            "id": "storefront-hero-main-background",
+            "id": "homepage-hero-main-background",
             "type": "image_picker",
             "label": "Background (Optional)"
           }

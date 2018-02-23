@@ -1,0 +1,17 @@
+.homepage-hero-main {
+    @extend .page-hero-main;
+
+    .announcement-container {
+        background: $red-color;
+        padding: 0.3rem 0;
+    }
+
+    .announcement {
+        @extend .page-width;
+        text-align: center;
+    }
+
+    .hero-overlay .hero-content {
+        flex-wrap: wrap; 
+    }
+}

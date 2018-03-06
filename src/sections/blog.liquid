@@ -1,0 +1,72 @@
+<div data-section-id="{{ section.id }}">
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
+
+      {% when 'blog-hero' %}
+      {% include 'blog-hero' %}
+
+      {%- comment -%}
+      {% when 'article-list' %}
+      {% include 'article-list' %}
+      {%- endcomment -%}
+
+    {% endcase %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "blog-hero",
+        "name": "Blog Hero",
+        "settings": [
+          {
+            "id": "blog-hero-color",
+            "type": "select",
+            "label": "Color",
+            "default": "blue",
+            "options": [
+                { "value": "blue", "label": "Blue" },
+                { "value": "", "label": "Purple" },
+                { "value": "transparent", "label": "Transparent" }
+            ]
+          },
+          {
+            "id": "blog-hero-background",
+            "type": "image_picker",
+            "label": "Background (Optional)"
+          },
+          {
+            "id": "blog-hero-featured-article-1",
+            "type": "article",
+            "label": "Featured Article 1",
+            "info": "Ensure the article belongs to the correct blog"
+          },
+          {
+            "id": "blog-hero-featured-article-2",
+            "type": "article",
+            "label": "Featured Article 2",
+            "info": "Ensure the article belongs to the correct blog"
+          },
+          {
+            "id": "blog-hero-featured-article-3",
+            "type": "article",
+            "label": "Featured Article 3",
+            "info": "Ensure the article belongs to the correct blog"
+          },
+          {
+            "id": "blog-hero-featured-article-4",
+            "type": "article",
+            "label": "Featured Article 4",
+            "info": "Ensure the article belongs to the correct blog"
+          }
+
+        ]
+      }
+      
+    ]
+  }
+{% endschema %}

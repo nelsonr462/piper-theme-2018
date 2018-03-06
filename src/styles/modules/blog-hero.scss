@@ -1,0 +1,78 @@
+.blog-hero {
+    @extend .page-hero-main;
+
+    .hero-overlay.transparent {
+        background: transparent;
+    }
+
+    .hero-overlay .hero-content {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+
+        @include mobile{ max-width: 100%; }
+        @include tablet {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+        @include desktop { max-width: 100%; }
+        @include hi-res { max-width: 100%; }
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        flex-basis: 100%;
+    }
+
+    .carousel {
+        background: transparent;
+        overflow: hidden;
+    }
+
+    .carousel-nav {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+
+        .carousel-nav-button {
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            background: white;
+            margin: 1rem 0.5rem 2rem 0.5rem;
+            cursor: pointer;
+
+            *:hover {
+                background: $gray-color-light;
+            }
+
+            &.tns-nav-active {
+                background: $gray-color;
+            }
+        }
+    }
+
+    .slide {
+        display: inline-block;
+        background: transparent;
+    }
+
+    .slide-content {
+        display: flex;
+        @extend .page-width;
+    }
+
+    .page-content {
+        background: transparent;
+        flex-wrap: wrap;
+
+        .author {
+            font-size: 0.7rem;
+            font-weight: lighter;
+        }
+    }
+
+    .hero-image.show-sm {
+        text-align: center;
+    }
+}

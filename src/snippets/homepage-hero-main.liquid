@@ -5,12 +5,17 @@
     >
 
     {% comment %} Announcement Banner {% endcomment %}
-    <div class="announcement-container">
-        <div class="announcement">
-            <h5>We're at Toyfair 2018!</h5>
+    {% if block.settings.homepage-hero-show-announcement %}
+
+        <div class="announcement-container">
+            <div class="announcement">
+                <a href="{{ block.settings.homepage-hero-announcement-link }}">
+                    {{ block.settings.homepage-hero-announcement-content }}
+                </a>
+            </div>
         </div>
-    </div>
-    
+
+    {% endif %}
 
 
     <div class="hero-overlay {{ block.settings.homepage-hero-main-color }}">

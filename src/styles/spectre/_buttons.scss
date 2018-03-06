@@ -198,41 +198,25 @@
       background-color: $green-color;
     }
   }
+  // LIST: $NAME, $TEXT-COLOR, $BORDER-COLOR, $HOVER-COLOR, $HOVER-BACKGROUND 
+  $transparent-button-colors: 'white-purple' white white $purple-color white,
+                              'white-blue' white white $primary-color white,
+                              'gray-outline' $gray-color-dark $gray-color-dark white $gray-color-dark;
+  
+  @each $type in $transparent-button-colors {
+    &.#{ nth($type, 1)} {
+      color: nth($type, 2);
+      background: transparent;
+      border: $border-width solid nth($type, 3);
 
-  &.white-purple {
-    color: white;
-    background: transparent;
-    border: $border-width solid white;
-
-    &:hover, &:active {
-      color: $purple-color;
-      background: white;
-      border: $border-width solid $purple-color;
+      &:hover, &:active {
+        color: nth($type, 4);
+        background: nth($type, 5);
+        border: $border-width solid nth($type, 5);
+      }
     }
-  }
+  }             
 
-  &.white-blue {
-    color: white;
-    background: transparent;
-    border: $border-width solid white;
-
-    &:hover, &:active {
-      color: $primary-color;
-      background: white;
-    }
-  }
-
-  &.gray-outline {
-    color: $gray-color-dark;
-    background: transparent;
-    border: $border-width solid $gray-color-dark;
-
-    &:hover, &:active {
-      color: white;
-      background: $gray-color-dark;
-      border: $border-width solid $gray-color-dark;
-    }
-  }
 }
 
 // Button groups

@@ -1,0 +1,77 @@
+<div class="blog-hero"
+    {% if block.settings.blog-hero-background %}
+    style="background: center no-repeat url({{ block.settings.blog-hero-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+    {% endif %}
+    >
+
+    <div class="hero-overlay {{ block.settings.blog-hero-color }}">
+        <div class="hero-content">
+            <div class="carousel-container">
+                <div class="carousel">
+
+                    {% assign article-prefix = "blog-hero-featured-article-" %}
+
+                    {% for i in (1..4) %}
+
+                        {% assign article-selector = article-prefix | append: forloop.index %}
+                        {% assign article = articles[block.settings[article-selector]] %}
+
+                        
+                        <div class="slide">
+                            <div class="slide-content">
+                        
+                                <div class="page-content">
+                                    {% comment %} Article Title {% endcomment %}
+                                    <h2>{{ article.title }}</h2>
+
+                                    <p class="author">By <strong>{{ article.author }}</strong>  -  {{ article.created_at | date: "%b %-d, %Y" }}</p>
+
+
+                                    <div class="hero-image show-sm" >
+                                        {% if  article.image %}
+                                        <img src="{{ article.image | img_url: '300x' }}" alt="">
+                                        {% endif %}
+                                    </div>
+                        
+                                    {% comment %} Description {% endcomment %}
+                                    <p>{{ article.excerpt }}</p>
+                        
+                                    {% comment %} Read More {% endcomment %}
+                                    <div>
+                                        <a href="{{ article.url }}">
+                                            <button class="btn btn-lg orange">Read More</button>
+                                        </a>
+                                    </div>
+                                    
+                        
+                                </div>
+
+                                <div class="hero-image hide-sm">
+                                    {% if  article.image %}
+                                    <img src="{{ article.image | img_url: '300x' }}" alt="">
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {% assign article-selector = nil %}
+                        {% assign article = nil %}
+
+                    {% endfor %}
+
+                </div>
+            </div>
+
+
+            <div class="carousel-nav">
+                {% for i in (1..4) %}
+                <div class="carousel-nav-button"></div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="{{ 'blog-hero.js' | asset_url }}" defer="defer"></script>
+</div>

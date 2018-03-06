@@ -3,12 +3,20 @@
 
     .announcement-container {
         background: $red-color;
-        padding: 0.3rem 0;
+        padding: 0.75rem 0;
     }
 
     .announcement {
         @extend .page-width;
         text-align: center;
+
+        a {
+            color: white;
+
+            * {
+                margin: 0;
+            }
+        }
     }
 
     .hero-overlay .hero-content {

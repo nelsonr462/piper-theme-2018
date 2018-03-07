@@ -1,0 +1,74 @@
+<div class="blog-article-list">
+    <div class="content">
+
+        {% comment %} ARTICLE LIST {% endcomment %}
+        <div class="list-container">
+            {% for article in blog.articles %}
+                
+            <div class="article">
+                
+                <div class="article-image">
+                    <a href="{{ article.url }}">
+                        <img src="{{ article.image | img_url: '300x300', format: 'pjpg', crop: 'bottom' }}" alt="">
+                    </a>
+                </div>
+
+                <div class="article-preview">
+                    <a href="{{ article.url }}">
+                        <h4 class="title">{{ article.title }}</h4>
+                    </a>    
+                    <p class="author">By <strong>{{ article.author }}</strong>  -  {{ article.created_at | date: "%b %-d, %Y" }}</p>
+                    <p class="excerpt">{{ article.excerpt }}</p>
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        {% comment %} SIDEBAR {% endcomment %}
+        <div class="sidebar">
+            
+            <div class="sidebar-section categories">
+                <h5>Categories</h5>
+                <ul>
+                {% for tag in blog.tags %}
+                    <li>
+                        {% if current_tags contains tag %}
+                            <a href="#">
+                                <strong>{{ tag }}</strong>
+                            </a>
+                        {% elsif current_tags %}
+                            <a href="{{ canonical_url }}+{{ tag | handleize }}">
+                                {{ tag }}
+                            </a>
+                        {% else %}
+                            
+                            <a href="{{ blog.url }}/tagged/{{ tag | handleize }}">
+                                {{ tag }}
+                            </a>
+
+                        {% endif %}
+                    </li>
+                {% endfor %}
+
+                {% if blog.all_tags.size > blog.tags.size %}
+                    <li class="clear-filter">
+                        <a href="{{ blog.url }}">Clear selection</a>
+                    </li>
+                {% endif %}
+                </ul>
+            </div>
+
+
+
+            <div class="sidebar-section featured-articles hide-xl">
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

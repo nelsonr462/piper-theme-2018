@@ -6,10 +6,8 @@
       {% when 'blog-hero' %}
       {% include 'blog-hero' %}
 
-      {%- comment -%}
-      {% when 'article-list' %}
-      {% include 'article-list' %}
-      {%- endcomment -%}
+      {% when 'blog-article-list' %}
+      {% include 'blog-article-list' %}
 
     {% endcase %}
   </div>
@@ -64,6 +62,13 @@
             "info": "Ensure the article belongs to the correct blog"
           }
 
+        ]
+      },
+      {
+        "type": "blog-article-list",
+        "name": "Blog Article List",
+        "settings": [
+          
         ]
       }
       

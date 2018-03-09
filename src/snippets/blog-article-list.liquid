@@ -1,5 +1,40 @@
+{% paginate blog.articles by 5 %}
 <div class="blog-article-list">
     <div class="content">
+        
+            <div class="list-header">
+                <h2>{{ blog.title }}</h2>
+                {% if current_tags %}
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Categories</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                        {% for tag in current_tags %}
+                            {% if current_tags.size == 1 %}
+                                {% assign url = blog.url %}
+                            {% else %}
+                                {% assign tag-to-remove = tag | handleize %}
+                                {% assign url = canonical_url | remove: tag-to-remove %}
+
+                            {% endif %}
+                            
+                            <span class="chip">
+                                {{ tag }}
+                                <a href="{{ url }}" 
+                                   class="btn btn-clear" 
+                                   aria-label="Close" 
+                                   role="button"
+                                ></a>
+
+                            </span>
+
+                        {% endfor %}
+                    </li>
+                </ul>
+                {% endif %}
+            </div>
 
         {% comment %} ARTICLE LIST {% endcomment %}
         <div class="list-container">
@@ -9,7 +44,9 @@
                 
                 <div class="article-image">
                     <a href="{{ article.url }}">
-                        <img src="{{ article.image | img_url: '300x300', format: 'pjpg', crop: 'bottom' }}" alt="">
+                        {% if article.image %}
+                            <img src="{{ article.image | img_url: '200x200', format: 'pjpg', crop: 'bottom' }}" alt="">
+                        {% endif %}
                     </a>
                 </div>
 
@@ -19,12 +56,18 @@
                     </a>    
                     <p class="author">By <strong>{{ article.author }}</strong>  -  {{ article.created_at | date: "%b %-d, %Y" }}</p>
                     <p class="excerpt">{{ article.excerpt }}</p>
+                    {% if article.tags.size > 0 %}
+                        <p class="tags">Categories: {{ article.tags | join: ', '}}</p>
+                    {% endif %}
                 </div>
 
             </div>
 
             {% endfor %}
 
+            {% if paginate.pages > 1 %}
+                {% include 'pagination' %}
+            {% endif %}
         </div>
 
         {% comment %} SIDEBAR {% endcomment %}
@@ -53,7 +96,7 @@
                     </li>
                 {% endfor %}
 
-                {% if blog.all_tags.size > blog.tags.size %}
+                {% if current_tags %}
                     <li class="clear-filter">
                         <a href="{{ blog.url }}">Clear selection</a>
                     </li>
@@ -64,7 +107,22 @@
 
 
             <div class="sidebar-section featured-articles hide-xl">
+                <h5>Featured Articles</h5>
+                <div class="featured-list">
+                    {% assign article = articles['news/test-post-2'] %}
+                    {% for i in (1..3) %}
+                        
+                        <div class="featured-article">
+                            <a href="{{ article.url }}">
+                                <p class="title">
+                                    {{ article.title }}
+                                </p>
+                            </a>
+                            <p class="timestamp">Posted {{ article.created_at | date: "%b %-d, %Y" }}</p>
+                        </div>
 
+                    {% endfor %}
+                </div>
             </div>
 
         </div>
@@ -72,3 +130,4 @@
 
     </div>
 </div>
+{% endpaginate %}

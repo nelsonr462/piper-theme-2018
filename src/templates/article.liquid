@@ -1,3 +1,5 @@
+{% section 'article' %}
+
 {% comment %}
   When a comment is submitted, the browser is redirected to a page that includes 
   the new comment id in its URL.
@@ -14,34 +16,6 @@
 {% endif %}
 
 <article role="article" itemscope itemtype="http://schema.org/Article">
-
-  {% if article.image %}
-    {{ article | img_url: '1024x1024' | img_tag: article.title }}
-  {% endif %}
-
-  <header role="banner">
-    <h1>{{ article.title }}</h1>
-    {% capture date %}{{ article.published_at | time_tag: format: 'month_day_year' }}{% endcapture %}
-    <p>{{ 'blogs.article.author_on_date_html' | t: author: article.author, date: date }}</p>
-  </header>
-
-  <div class="rte" itemprop="articleBody">
-    {{ article.content }}
-  </div>
-
-  {% if article.tags.size > 0 %}
-    <ul>
-      {% for tag in article.tags %}
-        <li>
-          <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% if settings.social_sharing_blog %}
-    {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-  {% endif %}
 
   {% if blog.comments_enabled? %}
     <h3>{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h3>

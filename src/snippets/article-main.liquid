@@ -1,0 +1,74 @@
+<div class="article-main">
+    
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+
+            <li class="breadcrumb-item">
+                <a href="{{ blog.url }}">{{ blog.title }}</a>
+            </li>
+
+            <li class="breadcrumb-item">
+                <a>{{ article.title }}</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <article class="content" role="article" itemscope itemtype="http://schema.org/Article">
+
+        {% comment %} TITLE + AUTHOR + TAGS {% endcomment %}
+        <header div class="article-header" role="banner">
+            <h1>{{ article.title }}</h1>
+            <p>Posted by {{ article.author }} on {{ article.created_at | date: "%b %-d, %Y" }}</p>
+            
+            {% if article.tags.size > 0 %}
+            <p>Categories: 
+                {% for tag in article.tags %}
+                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+            </p>
+            {% endif %}
+        </header>
+
+        <!-- ARTICLE CONTENT -->
+        <div class="article-content" itemprop="articleBody">
+            {{ article.content }}
+        </div>
+
+        <!-- NAVIGATION + SOCIAL -->
+        <div class="social-nav">
+            {% if settings.social_sharing_blog %}
+                {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+            {% endif %}
+        </div>
+
+
+        <!-- DISPLAY COMMENTS SECTION -->
+
+        <!-- COMMENT SUBMISSION FORM -->
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-section featured-articles hide-xl">
+            <h5>Featured Articles</h5>
+            <div class="featured-list">
+                {% assign article = articles['news/test-post-2'] %}
+                {% for i in (1..3) %}
+                    
+                    <div class="featured-article">
+                        <a href="{{ article.url }}">
+                            <p class="title">
+                                {{ article.title }}
+                            </p>
+                        </a>
+                        <p class="timestamp">Posted {{ article.created_at | date: "%b %-d, %Y" }}</p>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

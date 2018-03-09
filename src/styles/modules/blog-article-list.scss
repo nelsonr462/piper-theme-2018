@@ -8,6 +8,22 @@
         flex-wrap: wrap;
     }
 
+    .list-header {
+        display: flex;
+        flex-basis: 100%;
+        color: $gray-color-dark;
+        flex-wrap: wrap;
+
+        h2 {
+            flex-basis: 100%;
+        }
+
+        li.breadcrumb-item, a {
+            color: $gray-color-dark;
+        }
+
+    }
+
     .list-container {
         display: flex;
         flex-wrap: wrap;
@@ -15,6 +31,10 @@
 
         @include desktop {
             flex-basis: 70%;
+        }
+
+        @include hi-res {
+            flex-basis: 80%;
         }
     }
 
@@ -36,25 +56,37 @@
         display: flex;
         align-items: center;
         align-content: center;
-        padding: 0  1.2rem 1rem 1.2rem;
+        
 
         @include tablet {
             flex-basis: 30%;
-            padding: 0 0.5rem;
         }
 
         > a {
             margin: 0 auto;
+            overflow: hidden;
+            padding: 0  1.2rem 1rem 1.2rem;
+
+            @include tablet {
+                padding: 0 0.5rem;
+            }
         }
     }
 
     .article-preview {
         flex-basis: 100%;
-        padding: 0 1rem;
 
         @include tablet {
             flex-basis: 70%;
-            padding: 0 1.2rem;
+        }
+
+        > * {
+            display: block;
+            padding: 0 1rem;
+
+            @include tablet {
+                padding: 0 1.2rem;
+            }
         }
 
         .title {
@@ -71,6 +103,10 @@
             font-size: 0.8rem;
         }
 
+        .tags {
+            font-size: 0.6rem;
+        }
+
     }
 
 
@@ -83,12 +119,17 @@
         @include desktop {
             flex-basis: 30%;
         }
+
+        @include hi-res {
+            flex-basis: 20%;
+        }
     }
 
     .sidebar-section {
+        color: $gray-color-dark;
         margin: 0.5rem 0;
         padding: 1rem 1.5rem;
-        flex-basis: 100%;
+        flex-basis: auto;
         background: white;
         @include prefix(box-shadow, 0 3px 12px 0px #d9d9d9, moz webkit ms spec);
 
@@ -98,6 +139,7 @@
     }
 
     .categories {
+
         ul {
             list-style: none;
             margin: 0;
@@ -105,6 +147,17 @@
 
         .clear-filter {
             padding-top: 1rem;
+            font-size: 0.7rem;
+        }
+    }
+
+    .featured-article {
+        .title {
+            font-size: 0.9rem;
+            margin: 0 0 0.2rem 0;
+        }
+
+        .timestamp {
             font-size: 0.7rem;
         }
     }

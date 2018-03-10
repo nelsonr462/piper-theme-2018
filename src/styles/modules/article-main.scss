@@ -19,6 +19,7 @@
 
     .content {
         flex-basis: 100%;
+        padding-bottom: 1rem;
 
         @include desktop {
             flex-basis: 70%;
@@ -43,7 +44,28 @@
         }
     }
 
+    .social-nav {
+        padding-bottom: 2rem;
+    }
 
+    .comments-section {
+        .form-success {
+            color: $primary-color;
+        }
+    }
+
+    .comments-list {
+        list-style: none;
+        margin: 0;
+
+        .comment-content {
+            font-size: 0.8rem;
+        }
+
+        .author {
+            font-size: 0.7rem;
+        }
+    }
 
     .sidebar {
         display: flex;

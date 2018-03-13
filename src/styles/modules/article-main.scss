@@ -19,7 +19,7 @@
 
     .content {
         flex-basis: 100%;
-        padding-bottom: 1rem;
+        padding-bottom: 3rem;
 
         @include desktop {
             flex-basis: 70%;
@@ -44,25 +44,41 @@
         }
     }
 
+    .article-content {
+        padding: 2rem 0;
+    }
+
     .social-nav {
         padding-bottom: 2rem;
     }
 
     .comments-section {
+
+        h4 {
+            margin-bottom: 1.5rem;
+        }
+
         .form-success {
             color: $primary-color;
         }
     }
+    
 
     .comments-list {
         list-style: none;
         margin: 0;
+
+        li {
+            margin-bottom: 1.5rem;
+        }
 
         .comment-content {
             font-size: 0.8rem;
         }
 
         .author {
+            color: $gray-color;
+            padding: 1rem 0 0.5rem 0;
             font-size: 0.7rem;
         }
     }

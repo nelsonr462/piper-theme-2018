@@ -1,0 +1,24 @@
+<div data-section-id="{{ section.id }}">
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
+
+      {% when 'cart-list' %}
+      {% include 'cart-list' %}
+
+    {% endcase %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "cart-list",
+        "name": "Cart List",
+        "settings": []
+      }
+    ]
+  }
+{% endschema %}

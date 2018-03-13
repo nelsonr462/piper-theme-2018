@@ -40,28 +40,30 @@
         <div class="list-container">
             {% for article in blog.articles %}
                 
-            <div class="article">
-                
-                <div class="article-image">
-                    <a href="{{ article.url }}">
-                        {% if article.image %}
-                            <img src="{{ article.image | img_url: '200x200', format: 'pjpg', crop: 'bottom' }}" alt="">
+                {% comment %} ARTICLE TEMPLATE {% endcomment %}
+                <div class="article">
+                    
+                    <div class="article-image">
+                        <a href="{{ article.url }}">
+                            {% if article.image %}
+                                <img src="{{ article.image | img_url: '200x200', format: 'pjpg', crop: 'bottom' }}" alt="">
+                            {% endif %}
+                        </a>
+                    </div>
+
+                    <div class="article-preview">
+                        <a href="{{ article.url }}">
+                            <h4 class="title">{{ article.title }}</h4>
+                        </a>    
+                        <p class="author">By <strong>{{ article.author }}</strong>  -  {{ article.created_at | date: "%b %-d, %Y" }}</p>
+                        <p class="excerpt">{{ article.excerpt }}</p>
+                        {% if article.tags.size > 0 %}
+                            <p class="tags">Categories: {{ article.tags | join: ', '}}</p>
                         {% endif %}
-                    </a>
-                </div>
+                    </div>
 
-                <div class="article-preview">
-                    <a href="{{ article.url }}">
-                        <h4 class="title">{{ article.title }}</h4>
-                    </a>    
-                    <p class="author">By <strong>{{ article.author }}</strong>  -  {{ article.created_at | date: "%b %-d, %Y" }}</p>
-                    <p class="excerpt">{{ article.excerpt }}</p>
-                    {% if article.tags.size > 0 %}
-                        <p class="tags">Categories: {{ article.tags | join: ', '}}</p>
-                    {% endif %}
                 </div>
-
-            </div>
+                {% comment %} END ARTICLE TEMPLATE {% endcomment %}
 
             {% endfor %}
 

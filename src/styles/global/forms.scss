@@ -27,7 +27,7 @@ textarea {
 
 /*================ Custom select style ================*/
 select {
-  @include prefix(appearance, none, webkit moz spec);
+  @include prefix(appearance, none, moz webkit spec);
   background-position: right center;
   background: {
     image: url($svg-select-icon);

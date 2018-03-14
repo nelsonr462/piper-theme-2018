@@ -25,6 +25,11 @@
             min-height: 25rem;
             max-width: 100%;
         }
+
+        @include hi-res {
+            padding: 1.5rem 0 1.5rem 15%;
+            justify-content: flex-end;
+        }
     }
 
     .banner-description {
@@ -34,6 +39,22 @@
 
         @include desktop {
             flex-basis: 100%;
+        }
+
+        @include hi-res {
+            max-width: 720px;
+        }
+
+        &.none {
+            @include tablet {
+                flex-basis: 100%;
+            }
+
+            p {
+                @include desktop {
+                    padding-top: 2rem;
+                }
+            }
         }
     }
 
@@ -48,6 +69,10 @@
 
         @include desktop {
             flex-basis: 100%;
+        }
+
+        @include hi-res {
+            max-width: 540px;
         }
 
         div {
@@ -115,6 +140,10 @@
                     height: 7.2rem;
                 }
             }
+        }
+
+        &.none {
+            display: none;
         }
 
     }

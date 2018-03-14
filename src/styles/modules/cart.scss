@@ -180,4 +180,13 @@
         float: right;
     }
 
+    .empty {
+        padding: 10rem 1.6rem;
+        background: white;
+
+        .empty-icon {
+            font-size: 3rem;
+        }
+    }
+
 }

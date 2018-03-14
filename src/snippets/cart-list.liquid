@@ -109,8 +109,18 @@
     Cart empty state
     {% endcomment %}
     <div class="supports-cookies">
-        <p>{{ 'cart.general.empty' | t }}</p>
-        <p>{{ 'cart.general.continue_browsing_html' | t }}</p>
+        <div class="empty">
+            <div class="empty-icon">
+                {% include 'icon-cart' %}
+            </div>
+            <p class="empty-title h5">You have nothing in your cart</p>
+            <p class="empty-subtitle">Click the button to shop for more</p>
+            <div class="empty-action">
+                <a href="/products">
+                    <button class="btn btn-lg green">Continue Shopping</button>
+                </a>
+            </div>
+        </div>
     </div>
     
     {% comment %}

@@ -1,6 +1,6 @@
 <div class="card-cta">
     <div class="content">
-        <h1>{{ block.settings.cta-title }}</h1>
+        <h2>{{ block.settings.cta-title }}</h2>
         <div class="divider"></div>
 
         
@@ -16,8 +16,8 @@
 
         <div class="product">
             <div class="info">
-                <h1>{{ item.title }}</h1>
-                <h3>{{ item.price | money }}</h3>
+                <h3>{{ item.title }}</h3>
+                <h4>{{ item.price | money }}</h4>
                 <p>{{ block.settings.cta-desc }}</p>
 
                 <form method="post" action="/cart/add">

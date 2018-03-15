@@ -22,10 +22,11 @@
 
                 </div>
 
-                <div class="image" style="background: center no-repeat url({{ block.settings[feature_img] | img_url: '700x' }}); background-size: cover; ">
-                {% if block.settings[feature_decoration]  %}
-                    <img class="decoration" src="{{ block.settings[feature_decoration] | img_url: '200x' }}" alt="">
-                {% endif %}
+                <div class="image">
+                    <img src="{{ block.settings[feature_img] | img_url: '500x300', crop: 'bottom', format: 'pjpg' }}" alt="">
+                    {% if block.settings[feature_decoration]  %}
+                        <img class="decoration" src="{{ block.settings[feature_decoration] | img_url: '200x' }}" alt="">
+                    {% endif %}
                 </div>
             </div>
         {% endif %}

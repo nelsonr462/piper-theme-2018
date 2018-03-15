@@ -47,15 +47,16 @@
             display: flex;
             flex-basis: 100%;
             position: relative;
-            min-height: 10rem;
+            align-items: center;
+            justify-content: center;
 
             @include tablet {
                 flex-basis: 50%;
-                min-height: 12rem;
+                min-height: 10rem;
             }
 
             @include desktop {
-                min-height: 15rem;
+                min-height: 10rem;
             }
 
             @include hi-res {
@@ -65,8 +66,19 @@
             .decoration {
                 position: absolute;
                 bottom: -2rem;
-                max-width: 7rem;
+                max-width: 4rem;
+                
+                @include tablet {
+                    max-width: 7rem;
+                }
             }
+        }
+    }
+
+    .feature:nth-child(2n) {
+        .image .decoration {
+            bottom: -2rem;
+            left: 0;
         }
     }
 

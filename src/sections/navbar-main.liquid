@@ -11,7 +11,7 @@
     <section class="navbar-section links">
 
         {% comment %} Mobile/Tablet Nav Links {% endcomment %}
-        <div class="show-xl off-canvas">
+        <div class="show-lg off-canvas">
 
             <a class="off-canvas-toggle" href="#sidebar">
                 <i class="icon icon-menu text-gray"></i>
@@ -52,7 +52,7 @@
         </div>
 
         {% comment %} Desktop Nav Links {% endcomment %}
-        <div class="hide-xl">
+        <div class="hide-lg">
             {% for link in linklists.main-menu.links %}
             <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
             {% endfor %}

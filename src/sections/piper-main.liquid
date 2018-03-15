@@ -21,6 +21,9 @@
       {% when 'banner-detail' %}
       {% include 'banner-detail' %}
 
+      {% when 'banner-link' %}
+      {% include 'banner-link' %}
+
       {% when 'features-small' %}
       {% include 'features-small' %}
 
@@ -109,7 +112,7 @@
                     "label": "Breadboard"
                 },
                 {
-                    "value": "none",
+                    "value": "",
                     "label": "None"
                 }
             ]
@@ -131,6 +134,16 @@
             "label": "Banner Image"
           },
           {
+            "id": "banner-detail-image-style",
+            "type": "radio",
+            "label": "Banner Image Style",
+            "default": "cover",
+            "options": [
+              {"value": "cover", "label": "Cover"},
+              {"value": "contain", "label": "Contain"}
+            ]
+          },
+          {
             "id": "overflow",
             "type": "radio",
             "label": "Decoration Overflow",
@@ -139,6 +152,91 @@
                 { "value": "overflow", "label": "Down" }
             ]
 
+          }
+        ]
+      },
+      {
+        "type": "banner-link",
+        "name": "Link Banner",
+        "settings": [
+          {
+            "id": "banner-link-title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Resources"
+          },
+          {
+            "id": "banner-link-subtitle",
+            "label": "Subtitle",
+            "type": "text",
+            "placeholder": "Start up guides, walkthroughs, and much more"
+          },
+          {
+            "id": "banner-link-desc",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "id": "banner-link-btn-text",
+            "label": "Button Text",
+            "type": "text",
+            "default": "Learn More"
+          },
+          {
+            "id": "banner-link-btn-link",
+            "label": "Button Link",
+            "type": "text",
+            "placeholder": "/pages/educators"
+          },
+          {
+            "id": "banner-link-img",
+            "label": "Image",
+            "type": "image_picker",
+            "info": "PNGs with transparency are highly suggested"
+          },
+          {
+            "id": "banner-link-img-style",
+            "label": "Image Style",
+            "type": "select",
+            "default": "",
+            "options": [
+              { "value": "", "label": "Normal"},
+              { "value": "img-overflow", "label": "Overflow"}
+            ],
+            "info": "Overflow images must be pre-formatted to 'clip' at top"
+          },
+          {
+            "id": "banner-link-theme",
+            "label": "Theme Color",
+            "type": "select",
+            "default": "",
+            "options": [
+              { "value": "", "label": "White/Blue" },
+              { "value": "blue", "label": "Blue/White"},
+              { "value": "purple", "label": "Purple/White"}
+            ]
+          },
+          {
+            "id": "banner-link-button-style",
+            "label": "Button Style",
+            "type": "select",
+            "default": "btn-primary",
+            "options": [
+              { "value": "btn-primary", "label": "Blue" },
+              { "value": "white-purple", "label": "White/Purple Hover"},
+              { "value": "white-blue", "label": "White/Blue Hover"},
+              { "value": "gray-outline", "label": "Gray Transparent"}
+            ]
+          },
+          {
+            "id": "banner-link-direction",
+            "label": "Direction",
+            "type": "select",
+            "default": "",
+            "options": [
+              { "value": "", "label": "Left" },
+              { "value": "right", "label": "Right"}
+            ]
           }
         ]
       },

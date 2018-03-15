@@ -22,7 +22,7 @@
 
         @include desktop {
             padding: 1.5rem 1.5rem 1.5rem 15%;
-            min-height: 25rem;
+            min-height: 15rem;
             max-width: 100%;
         }
 
@@ -154,12 +154,16 @@
         min-height: 15rem;
 
         @include tablet {
-            min-height: 25rem;
+            min-height: 15rem;
         }
 
         @include desktop {
             flex-basis: 100%;
             
+        }
+
+        @include hi-res {
+            min-height: 25rem;
         }
     }
 

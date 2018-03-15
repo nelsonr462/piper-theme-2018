@@ -19,6 +19,8 @@ $sidebar-width-tablet: 15rem;
 
   .off-canvas-toggle {
     display: flex;
+    height: 100%;
+    align-items: center;
     position: relative;
     transition: none;
     z-index: $zindex-0;

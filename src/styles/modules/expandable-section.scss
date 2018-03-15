@@ -2,7 +2,7 @@
     @extend .page-width;
     padding: 2rem 0;
 
-    h1 {
+    h2 {
         color: $primary-color;
     }
 
@@ -16,11 +16,12 @@
     .accordion-header {
         display: flex;
         padding: 0.2rem 0;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         align-items: center;
 
         .icon {
             margin-left: auto;
+            font-size: 1.5rem;
         }
     }
 

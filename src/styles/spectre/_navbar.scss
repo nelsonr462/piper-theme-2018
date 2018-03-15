@@ -21,7 +21,7 @@
 
   @include desktop {
     height: $navbar-height-desktop;
-    padding: 0 15%;
+    padding: 0 10%;
     position: relative;
   }
 
@@ -36,9 +36,14 @@
     display: flex;
     flex: 1 0 auto;
 
+    @include desktop {
+      flex-basis: 15%;
+    }
+
     &.links {
       @include desktop {
-          flex: 4 0 auto;
+          flex: 5 0 auto;
+          flex-basis: 85%;
       }
     }
 
@@ -67,11 +72,12 @@
   .nav-link {
     color: $gray-color-dark;
     font-weight: bold;
-    padding: 1.35rem 1.6rem;
+    padding: 1.475rem 1.2rem;
     position: relative;
     display: inline-block;
     text-align: center;
     transition: all 0.2s ease;
+    font-size: 0.7rem;
 
     @include hi-res {
       padding: 1.7rem 2rem;

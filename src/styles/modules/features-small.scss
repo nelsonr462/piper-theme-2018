@@ -34,6 +34,7 @@
         flex-wrap: wrap;
         padding: 1rem 0;
         justify-content: center;
+        color: $gray-color-dark;
 
         @include tablet {
             flex-basis: 33%;
@@ -66,9 +67,5 @@
                 max-height: 100%;
             }
         }
-    }
-
-    .description {
-        color: $gray-color-dark;
     }
 }

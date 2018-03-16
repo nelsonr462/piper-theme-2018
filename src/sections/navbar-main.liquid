@@ -1,70 +1,71 @@
-<header class="navbar" data-section-id="{{ section.id }}" data-section-type="header-section">
-
-    {% comment %} Main Nav Logo {% endcomment %}
-    <section class="navbar-section" itemscope itemtype="http://schema.org/Organization">
-        <a href="/" class="navbar-brand mr-2">
-            <img src="{{ 'piper-logo-main.svg' | asset_url }}" />
-        </a>
-    </section>
-  
-    {% comment %} Nav Links Container {% endcomment %}
-    <section class="navbar-section links">
-
-        {% comment %} Mobile/Tablet Nav Links {% endcomment %}
-        <div class="show-lg off-canvas">
-
-            <a class="off-canvas-toggle" href="#sidebar">
-                <i class="icon icon-menu text-gray"></i>
+<header class="navbar-container" data-section-id="{{ section.id }}" data-section-type="header-section">
+    <div class="navbar">
+        {% comment %} Main Nav Logo {% endcomment %}
+        <section class="navbar-section" itemscope itemtype="http://schema.org/Organization">
+            <a href="/" class="navbar-brand mr-2">
+                <img src="{{ 'piper-logo-main.svg' | asset_url }}" />
             </a>
-
-            {% comment %} Mobile Menu Content {% endcomment %}
-            <div id="sidebar" class="off-canvas-sidebar">
-                <div class="shadow-line"></div>
-
-                {% comment %} Nav Links {% endcomment %}
-                <ul class="nav">
-                    
-                    {% for link in linklists.main-menu.links %}
-                    <li class="nav-item">
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>    
-                    {% endfor %}
-
-                </ul>
-
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="/products">
-                            <button class="btn btn-nav">Shop Now</button>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/cart">
-                            <button class="btn btn-nav inverted">Cart ({{ cart.item_count }}) {% include 'icon-cart' %}</button>
-                        </a>
-                    </li>
-                </ul>
-
+        </section>
+      
+        {% comment %} Nav Links Container {% endcomment %}
+        <section class="navbar-section links">
+    
+            {% comment %} Mobile/Tablet Nav Links {% endcomment %}
+            <div class="show-lg off-canvas">
+    
+                <a class="off-canvas-toggle" href="#sidebar">
+                    <i class="icon icon-menu text-gray"></i>
+                </a>
+    
+                {% comment %} Mobile Menu Content {% endcomment %}
+                <div id="sidebar" class="off-canvas-sidebar">
+                    <div class="shadow-line"></div>
+    
+                    {% comment %} Nav Links {% endcomment %}
+                    <ul class="nav">
+                        
+                        {% for link in linklists.main-menu.links %}
+                        <li class="nav-item">
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li>    
+                        {% endfor %}
+    
+                    </ul>
+    
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="/products">
+                                <button class="btn btn-nav">Shop Now</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/cart">
+                                <button class="btn btn-nav inverted">Cart ({{ cart.item_count }}) {% include 'icon-cart' %}</button>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </div>
+    
+                <a class="off-canvas-overlay" href="#close"></a>
+    
             </div>
-
-            <a class="off-canvas-overlay" href="#close"></a>
-
-        </div>
-
-        {% comment %} Desktop Nav Links {% endcomment %}
-        <div class="hide-lg">
-            {% for link in linklists.main-menu.links %}
-            <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
-            {% endfor %}
-            <a href="/products" class="nav-link-btn">
-                <button class="btn btn-nav">Shop Now</button>
-            </a>
-            
-            <a href="/cart" class="btn btn-cart {% if cart.item_count > 0 %}badge{% endif %}" data-badge="{{ cart.item_count }}">
-                {% include 'icon-cart' %}
-            </a>
-        </div>
-
-
-    </section>
+    
+            {% comment %} Desktop Nav Links {% endcomment %}
+            <div class="hide-lg">
+                {% for link in linklists.main-menu.links %}
+                <a href="{{ link.url }}" class="nav-link {% if link.active %}active{% endif %}">{{ link.title }}</a>
+                {% endfor %}
+                <a href="/products" class="nav-link-btn">
+                    <button class="btn btn-nav">Shop Now</button>
+                </a>
+                
+                <a href="/cart" class="btn btn-cart {% if cart.item_count > 0 %}badge{% endif %}" data-badge="{{ cart.item_count }}">
+                    {% include 'icon-cart' %}
+                </a>
+            </div>
+    
+    
+        </section>
+    </div>
 </header>

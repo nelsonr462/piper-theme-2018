@@ -30,6 +30,10 @@
             flex-basis: 100%;
             align-self: flex-end;
 
+            @include hi-res {
+                padding-top: 0.25rem;
+            }
+
             input {
                 max-width: 3rem;
                 text-align: center;

@@ -2,9 +2,21 @@
     @extend .related-products;
 
     .content {
-        a {
+        a, ul {
             color: $gray-color-dark;
             flex-basis: 100%;
+        }
+
+        .collection-nav {
+            flex-basis: 100%;
+        }
+    }
+
+    a.collection-link {
+        color: $primary-color;
+
+        &:focus {
+            box-shadow: none;
         }
     }
 

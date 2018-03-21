@@ -1,49 +1,93 @@
 <div class="collection-section {{ block.settings.collection-section-size }}">
-    {% assign collection = collections[block.settings.collection-section-handle] %}
+
+    {% assign item-count = block.settings.collection-section-item-count | plus: 0 %}
+    
+    {% unless collection %}
+        {% assign collection = collections[block.settings.collection-section-handle] %}
+        {% assign storefront = true %}
+    {% else %}
+        {% assign storefront = false %}
+    {% endunless %}
+
+
+    {% paginate collection.products by item-count %}
+
     <div class="content">
 
-        <a href="{{ collection.url }}">
-            <h2>{{ collection.title }}</h2>
-        </a>
+        <div class="collection-nav">
 
-        {% for i in (0..3) %}
-            {% assign item = collection.products[i] %}
+            <a href="{{ collection.url }}">
+                <h2>{{ collection.title }}</h2>
+            </a>
+            
+            {% unless storefront %}    
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/products">Shop</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{{ collection.url }}">{{ collection.title }}</a>
+                </li>
+            </ul>
+            
+            {% endunless %}
+            
+        </div>
 
-            {% if item.handle != product.handle %}    
-            <div class="card">
-                <div class="card-content">
-                    
-                    <div class="image">
-                        <a href="{{ item.url }}">
-                            <img src="{{ item.images[0] | img_url: '250x' }}" alt="">
-                        </a>
-                    </div>
-                    
-                    <div class="details">
-                        <a href="{{ item.url }}">
-                            <h5>{{ item.title }}</h5>
-                        </a>
-                        
-                        
-                        <h5>{{ item.price | money }}</h5>
-                        {% if item.compare_at_price_max > 0 %}
-                        <h6>
-                            <strike> {{ item.compare_at_price_max | money }}</strike>
-                        </h6>
-                        {% endif %}
-    
-                        <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
-                        
-    
-                        <a class="view-link" href="{{ item.url }}">
-                            <button class="btn orange inverted">View</button>
-                        </a>
+            {% for product in collection.products %}
+                {% assign item = product %}
 
+                <div class="card">
+                    <div class="card-content">
+                        
+                        <div class="image">
+                            <a href="{{ item.url }}">
+                                <img src="{{ item.images[0] | img_url: '250x' }}" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="details">
+                            <a href="{{ item.url }}">
+                                <h5>{{ item.title }}</h5>
+                            </a>
+                            
+                            
+                            <h5>{{ item.price | money }}</h5>
+                            {% if item.compare_at_price_max > 0 %}
+                            <h6>
+                                <strike> {{ item.compare_at_price_max | money }}</strike>
+                            </h6>
+                            {% endif %}
+        
+                            <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
+                            
+        
+                            <a class="view-link" href="{{ item.url }}">
+                                <button class="btn orange inverted">View</button>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            {% endif %}
+            {% endfor %}
+
+
+        {% if storefront %}
+            <a class="collection-link" href="{{ collection.url }}">
+                View more in {{ collection.title }}
+            </a>
+
+            {% assign collection = nil %}
+
+        {% else %}
             
-        {% endfor %}
+            {% if paginate.pages > 1 %}
+                {% include 'pagination' %}
+            {% endif %}
+
+        {% endif %}
+
     </div>
+    {% endpaginate %}
+
 </div>

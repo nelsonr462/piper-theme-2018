@@ -1,0 +1,18 @@
+.legal-hero {
+    @extend .page-hero-main;
+
+    // Slight overselection to override @extend
+    div.hero-overlay {
+        background: rgba($primary-color, 0.7);
+    }
+
+    div.subnav-container {
+        background: $primary-color;
+    }
+
+    div.page-content {
+        @include tablet {
+            flex-basis: 100%;
+        }
+    }
+}

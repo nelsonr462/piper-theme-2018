@@ -1,0 +1,28 @@
+<div class="legal-hero" style="background: center no-repeat url({{ 'demo-banner-image-xl.png' | asset_url }}); background-size: cover;">
+
+    <div class="hero-overlay">
+        <div class="hero-content">
+            
+            <div class="page-content">
+                {% comment %} Header {% endcomment %}
+                <h1>{{ page.title }}</h1>            
+    
+            </div>
+            
+        </div>
+    </div>
+
+
+    {% comment %} Subnav {% endcomment %}
+    <div class="subnav-container">
+        <div class="page-hero-nav">
+            {% assign legal-nav-links = block.settings.legal-nav-links | split: ', ' %}
+            {% for link in legal-nav-links %}
+                <a href="#" class="link">
+                    {{ link }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

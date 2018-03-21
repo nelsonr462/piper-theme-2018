@@ -2,6 +2,9 @@
     @extend .page-width;
     padding: 1rem 0 2rem 0;
 
+    form {
+        overflow: hidden;
+    }
 
     .list-container {
         display: flex;
@@ -178,6 +181,16 @@
 
     #checkout {
         float: right;
+    }
+
+    .keep-shopping {
+        float: right;
+        display: block;
+        margin-top: 1rem;
+        
+        button {
+            font-weight: bold;
+        }
     }
 
     .empty {

@@ -104,6 +104,9 @@
         <input type="submit" name="update" class="btn" id="update" value="{{ 'cart.general.update' | t }}">
         <input type="submit" name="checkout" class="btn btn-lg green" id="checkout" value="{{ 'cart.general.checkout' | t }}">
     </form>
+    <a class="keep-shopping" href="/products">
+        <button class="btn btn-primary">Continue Shopping</button>
+    </a>
 {% else %}        
     {% comment %}
     Cart empty state

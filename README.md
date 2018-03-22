@@ -1,6 +1,6 @@
 # REFERENCE
 
-### Setup
+### Setup:
 1. Clone this repo.
 2. Run `npm install` in main install directory ('piper-theme-2018')
 3. Any deployment/watch commands default to the `DEVELOPMENT` environment. You must specify `PRODUCTION` to deploy to the live theme.
@@ -35,7 +35,7 @@
 </div>
 ```
 
-    This includes the desired block liquid templates found in src/snippets/ when they are chosen from the Shopify theme editor. For example `card-cta.liquid` or `blog-hero.liquid`. However, note that all files found in `src/snippets` are **NOT** all blocks. There are other snippets used to store things such as meta tags and icons.
+This includes the desired block liquid templates found in src/snippets/ when they are chosen from the Shopify theme editor. For example `card-cta.liquid` or `blog-hero.liquid`. However, note that all files found in `src/snippets` are **NOT** all blocks. There are other snippets used to store things such as meta tags and icons.
 
 ```
 {% schema %}
@@ -70,11 +70,11 @@
 
 ```
 
-    This settings schema allows for each page to maintain unique settings for each block, and provides the customizability of each section.
+This settings schema allows for each page to maintain unique settings for each block, and provides the customizability of each section.
 
-    More documentation regarding blocks and settings schemas can be found [here](https://help.shopify.com/themes/development/sections#blocks)
+More documentation regarding blocks and settings schemas can be found [here](https://help.shopify.com/themes/development/sections#blocks)
 
 
-    Any blocks added via the if statement and settings schema should now appear in the Shopify theme editor `Add Content` menu
+Any blocks added via the if statement and settings schema should now appear in the Shopify theme editor `Add Content` menu
 
 ##### Block settings schema must unfortunately be maintained manually. i.e. every block's schema must be updated if new settings are added to one section, if the same setting is desired across the theme.

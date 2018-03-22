@@ -1,0 +1,43 @@
+<div data-section-id="{{ section.id }}">
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+            {% case block.type %}
+
+              {% when 'page-hero-main' %}
+              {% include 'page-hero-main' %}
+
+              {% when 'page-content-container' %}
+              {% include 'page-content-container' %}
+
+
+          {% endcase %}
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      
+      {
+        "type": "page-hero-main",
+        "name": "Page Hero",
+        "settings": [
+          {
+            "id": "page-hero-main-nav-links",
+            "type": "textarea",
+            "label": "Nav Links (Sections)",
+            "placeholder": "How it Works, Features, What's in the Box"
+          }
+        ]
+      },
+      {
+        "type": "page-content-container",
+        "name": "Page Content",
+        "settings": [
+
+        ]
+      }
+    ]
+  }
+{% endschema %}

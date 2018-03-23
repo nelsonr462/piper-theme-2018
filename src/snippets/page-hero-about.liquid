@@ -1,10 +1,16 @@
-<div class="legal-hero" style="background: center no-repeat url({{ 'demo-banner-image-xl.png' | asset_url }}); background-size: cover;">
+<div class="page-hero-about" 
+
+    {% if block.settings.page-hero-about-background %}
+        style="background: center no-repeat url({{ block.settings.page-hero-about-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+    {% endif %}
+    
+    >
 
     <div class="hero-overlay">
         <div class="hero-content">
-
             
             <div class="page-content">
+
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a href="/">Home</a>
@@ -13,9 +19,10 @@
                         <a href="{{ page.url }}">{{ page.title }}</a>
                     </li>
                 </ul>
-                
+
                 {% comment %} Header {% endcomment %}
-                <h1>{{ page.title }}</h1>            
+                <h1>{{ page.title }}</h1>
+
             </div>
             
         </div>
@@ -25,8 +32,8 @@
     {% comment %} Subnav {% endcomment %}
     <div class="subnav-container">
         <div class="page-hero-nav">
-            {% assign legal-nav-links = block.settings.legal-nav-links | split: ', ' %}
-            {% for link in legal-nav-links %}
+            {% assign page-hero-about-nav-links = block.settings.page-hero-about-nav-links | split: ', ' %}
+            {% for link in page-hero-about-nav-links %}
                 <a href="#" class="link">
                     {{ link }}
                 </a>

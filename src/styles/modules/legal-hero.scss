@@ -10,6 +10,14 @@
         background: $primary-color;
     }
 
+    div.hero-content {
+        align-items: initial;
+
+        h1 {
+            padding-top: 1rem;
+        }
+    }
+
     div.page-content {
         @include tablet {
             flex-basis: 100%;

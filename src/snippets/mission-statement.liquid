@@ -1,0 +1,13 @@
+<div class="mission-statement">
+    <div class="content">
+        <h2>{{ block.settings.mission-statement-title }}</h2>
+        <p>{{ block.settings.mission-statement-copy }}</p>
+        <h5>&mdash; Mark &amp; Joel</h5>
+        
+        {% if block.settings.mission-statement-signatures %}
+            <img src="{{ block.settings.mission-statement-signatures | img_url: '300x', format: 'pjpg' }}" alt="">
+        {% endif %}
+        
+    </div>
+
+</div>

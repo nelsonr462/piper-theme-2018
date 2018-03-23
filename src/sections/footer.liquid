@@ -1,4 +1,4 @@
-<div class="footer">
+<div class="footer" data-section-id="{{ section.id }}">
     <div class="content">
         <!-- Logo, links -->
         <div class="sitemap">
@@ -10,78 +10,25 @@
 
             <!-- nav links -->
             <div class="links">
-                <div class="group">
-                    <p>Company</p>
-                    <div class="link">
-                        <a href="#">How it Works</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Our Story</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Careers</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Press Kit</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-                <div class="group">
-                    <p>Support</p>
-                    <div class="link">
-                        <a href="#">How it Works</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Our Story</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Careers</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Press Kit</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-                <div class="group">
-                    <p>Shop</p>
-                    <div class="link">
-                        <a href="#">How it Works</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Our Story</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Careers</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Press Kit</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-                <div class="group">
-                    <p>Educators</p>
-                   <div class="link">
-                        <a href="#">How it Works</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Our Story</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Careers</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Press Kit</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
+                {% for i in (1..4) %}
+                    {% assign list-title = "footer-list-title-" | append: forloop.index %}
+                    {% assign link-list = "footer-link-list-" | append: forloop.index %}
+
+                    {% if section.settings[list-title] != blank and section.settings[link-list] != blank %}
+                        <div class="group">
+                            <p>{{ section.settings[list-title] }}</p>
+
+                            {% assign list = linklists[section.settings[link-list]] %}
+
+                            {% for link in list.links %}
+                                <div class="link">
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
             </div>
 
         </div>
@@ -119,7 +66,66 @@
     <!-- Copyright, disclaimer -->
     <div class="notes">
         <div class="divider"></div>
-        <p>Copyright Piper 2018</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Copyright © 2018 Piper Inc. All rights reserved.</p>
+        <p>{{ section.settings.footer-legal-note }}</p>
     </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "footer-list-title-1",
+        "label": "List Title 1",
+        "placeholder": "Company"
+      },
+      {
+        "type": "link_list",
+        "id": "footer-link-list-1",
+        "label": "Link List 1"
+      },
+      {
+        "type": "text",
+        "id": "footer-list-title-2",
+        "label": "List Title 2",
+        "placeholder": "Support"
+      },
+      {
+        "type": "link_list",
+        "id": "footer-link-list-2",
+        "label": "Link List 2"
+      },
+      {
+        "type": "text",
+        "id": "footer-list-title-3",
+        "label": "List Title 3",
+        "placeholder": "Educators"
+      },
+      {
+        "type": "link_list",
+        "id": "footer-link-list-3",
+        "label": "Link List 3"
+      },
+      {
+        "type": "text",
+        "id": "footer-list-title-4",
+        "label": "List Title 4",
+        "placeholder": "Legal"
+      },
+      {
+        "type": "link_list",
+        "id": "footer-link-list-4",
+        "label": "Link List 4"
+      },
+      {
+        "type": "textarea",
+        "id": "footer-legal-note",
+        "label": "Footer Legal Note(s)",
+        "placeholder": "Not official Minecraft product."
+      }
+
+    ]
+  }
+{% endschema %}

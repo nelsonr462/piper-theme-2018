@@ -7,6 +7,10 @@
         color: $purple-color;
     }
 
+    &.gray {
+        color: $gray-color-dark;
+    }
+
     h1 {
         padding-top: 2.5rem;
         font-weight: bold;

@@ -34,7 +34,7 @@
         <div class="page-hero-nav">
             {% assign page-hero-about-nav-links = block.settings.page-hero-about-nav-links | split: ', ' %}
             {% for link in page-hero-about-nav-links %}
-                <a href="#" class="link">
+                <a href="#{{ link | handleize }}" class="link">
                     {{ link }}
                 </a>
             {% endfor %}

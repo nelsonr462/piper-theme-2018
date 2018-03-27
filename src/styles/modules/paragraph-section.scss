@@ -1,0 +1,11 @@
+.paragraph-content {
+    padding: 2rem 0;
+
+    .content {
+        @extend .page-width;
+    }
+
+    h4 {
+        font-weight: lighter;
+    }
+}

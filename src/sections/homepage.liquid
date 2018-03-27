@@ -51,6 +51,9 @@
       {% when 'banner-contact-us' %}
       {% include 'banner-contact-us' %}
 
+      {% when 'banner-email-signup' %}
+      {% include 'banner-email-signup' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -349,6 +352,17 @@
         "name": "Large Features Section",
         "settings": [
           {
+            "id": "features-large-title-color",
+            "type": "select",
+            "label": "Title Color",
+            "default": "",
+            "options": [
+              { "value": "", "label": "Blue" },
+              { "value": "purple", "label": "Purple" },
+              { "value": "gray", "label": "Gray" }
+            ]
+          },
+          {
             "id": "features-large-anchor",
             "type": "text",
             "label": "Anchor (for hero nav links)"
@@ -358,6 +372,13 @@
             "type": "text",
             "label": "Title",
             "default": "How It Works"
+          },
+          {
+            "id": "features-large-profiles",
+            "type": "checkbox",
+            "label": "Profiles",
+            "default": false,
+            "info": "Use when smaller images are necessary (such as profiles)."
           },
           {
             "id": "features-large-name-1",
@@ -456,6 +477,17 @@
             "type": "text",
             "label": "Image Title",
             "default": "What's in the box?"
+          },
+          {
+            "id": "full-size-image-color-variant",
+            "type": "select",
+            "label": "Color Variant",
+            "options": [
+              { "value": "", "label": "Blue Header"},
+              { "value": "purple", "label": "Purple Header"},
+              { "value": "gray", "label": "Gray Header"}
+            ],
+            "default": ""
           },
           {
             "id": "full-size-image-img",
@@ -693,6 +725,24 @@
                 {"value": "", "label": "Blue"},
                 {"value": "purple", "label": "Purple"}
               ]
+            }
+          ]
+        },
+        {
+          "type": "banner-email-signup",
+          "name": "Email Signup Banner",
+          "settings": [
+            {
+              "id": "banner-email-signup-callout",
+              "label": "Callout (Title)",
+              "type": "text",
+              "placeholder": "Keep in touch!"
+            },
+            {
+              "id": "banner-email-signup-detail",
+              "label": "Detail (Subtitile)",
+              "type": "text",
+              "placeholder": "Find out what we're making next!"
             }
           ]
         }

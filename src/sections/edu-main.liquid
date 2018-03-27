@@ -339,6 +339,17 @@
         "name": "Large Features Section",
         "settings": [
           {
+            "id": "features-large-title-color",
+            "type": "select",
+            "label": "Title Color",
+            "default": "",
+            "options": [
+              { "value": "", "label": "Blue" },
+              { "value": "purple", "label": "Purple" },
+              { "value": "gray", "label": "Gray" }
+            ]
+          },
+          {
             "id": "features-large-anchor",
             "type": "text",
             "label": "Anchor (for hero nav links)"
@@ -348,6 +359,13 @@
             "type": "text",
             "label": "Title",
             "default": "How It Works"
+          },
+          {
+            "id": "features-large-profiles",
+            "type": "checkbox",
+            "label": "Profiles",
+            "default": false,
+            "info": "Use when smaller images are necessary (such as profiles)."
           },
           {
             "id": "features-large-name-1",
@@ -453,7 +471,8 @@
             "label": "Color Variant",
             "options": [
               { "value": "", "label": "Blue Header"},
-              { "value": "purple", "label": "Purple Header"}
+              { "value": "purple", "label": "Purple Header"},
+              { "value": "gray", "label": "Gray Header"}
             ],
             "default": ""
           },

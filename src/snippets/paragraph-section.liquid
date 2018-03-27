@@ -1,0 +1,12 @@
+<div class="paragraph-content" id="{{ block.settings.paragraph-section-anchor | handleize }}">
+    <div class="content">
+        <h1>{{ block.settings.paragraph-section-header }}</h1>
+
+        {% if block.settings.paragraph-section-size == 'large' %}
+            <h4>{{ block.settings.paragraph-section-content }}</h4>
+        {% else %}
+            <p>{{ block.settings.paragraph-section-content }}</p>
+        {% endif %}
+
+    </div>
+</div>

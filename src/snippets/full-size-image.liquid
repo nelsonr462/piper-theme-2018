@@ -1,4 +1,4 @@
-<div class="full-size-image {{ block.settings.full-size-image-color-variant }}" id="section-{{ block.settings.full-size-image-anchor }}">
+<div class="full-size-image {{ block.settings.full-size-image-color-variant }}" id="{{ block.settings.full-size-image-anchor | handleize }}">
     {% if block.settings.full-size-image-title %}
         <h1>{{ block.settings.full-size-image-title }}</h1>
     {% endif %}

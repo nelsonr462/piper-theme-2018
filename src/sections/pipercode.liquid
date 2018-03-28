@@ -1,0 +1,337 @@
+<div data-section-id="{{ section.id }}">
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+            {% case block.type %}
+
+              {% when 'features-small' %}
+              {% include 'features-small' %}
+
+              {% when 'banner-detail' %}
+              {% include 'banner-detail' %}
+
+              {% when 'banner-link' %}
+              {% include 'banner-link' %}
+
+              {% when 'card-cta' %}
+              {% include 'card-cta' %}
+
+
+          {% endcase %}
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+  "blocks": [
+    {
+      "type": "features-small",
+      "name": "Small Features Bar",
+      "settings": [
+        {
+          "id": "features-small-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        },
+        {
+          "id": "features-small-header-color",
+          "type": "select",
+          "label": "Header Color",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue"
+            },
+            {
+              "value": "purple",
+              "label": "Purple"
+            },
+            {
+              "value": "gray",
+              "label": "Gray"
+            }
+          ]
+        },
+        {
+          "id": "features-small-title",
+          "type": "text",
+          "label": "Title",
+          "default": "How It Works"
+        },
+        {
+          "id": "features-small-subheader-1",
+          "type": "text",
+          "label": "Subheader 1"
+        },
+        {
+          "id": "features-small-img-1",
+          "type": "image_picker",
+          "label": "Feature 1 Image"
+        },
+        {
+          "id": "features-small-desc-1",
+          "type": "textarea",
+          "label": "Feature Description 1",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-small-subheader-2",
+          "type": "text",
+          "label": "Subheader 2"
+        },
+        {
+          "id": "features-small-img-2",
+          "type": "image_picker",
+          "label": "Feature 2 Image"
+        },
+        {
+          "id": "features-small-desc-2",
+          "type": "textarea",
+          "label": "Feature Description 2",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-small-subheader-3",
+          "type": "text",
+          "label": "Subheader 3"
+        },
+        {
+          "id": "features-small-img-3",
+          "type": "image_picker",
+          "label": "Feature 2 Image"
+        },
+        {
+          "id": "features-small-desc-3",
+          "type": "textarea",
+          "label": "Feature Description 3",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        }
+      ]
+    },
+    {
+      "type": "banner-detail",
+      "name": "Detail Banner",
+      "settings": [
+        {
+          "id": "variation",
+          "type": "select",
+          "label": "Decorations",
+          "options": [
+            {
+              "value": "variation-1",
+              "label": "Pieces"
+            },
+            {
+              "value": "variation-2",
+              "label": "Breadboard"
+            },
+            {
+              "value": "",
+              "label": "None"
+            }
+          ]
+        },
+        {
+          "id": "banner_title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "banner_detail",
+          "type": "textarea",
+          "label": "Detail"
+        },
+        {
+          "id": "banner_image",
+          "type": "image_picker",
+          "label": "Banner Image"
+        },
+        {
+          "id": "banner-detail-image-style",
+          "type": "radio",
+          "label": "Banner Image Style",
+          "default": "cover",
+          "options": [
+            {
+              "value": "cover",
+              "label": "Cover"
+            },
+            {
+              "value": "contain",
+              "label": "Contain"
+            }
+          ]
+        },
+        {
+          "id": "overflow",
+          "type": "radio",
+          "label": "Decoration Overflow",
+          "options": [
+            {
+              "value": "",
+              "label": "Contain"
+            },
+            {
+              "value": "overflow",
+              "label": "Down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "banner-link",
+      "name": "Link Banner",
+      "settings": [
+        {
+          "id": "banner-link-title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Resources"
+        },
+        {
+          "id": "banner-link-subtitle",
+          "label": "Subtitle",
+          "type": "text",
+          "placeholder": "Start up guides, walkthroughs, and much more"
+        },
+        {
+          "id": "banner-link-desc",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "id": "banner-link-btn-text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Learn More"
+        },
+        {
+          "id": "banner-link-btn-link",
+          "label": "Button Link",
+          "type": "text",
+          "placeholder": "/pages/educators"
+        },
+        {
+          "id": "banner-link-img",
+          "label": "Image",
+          "type": "image_picker",
+          "info": "PNGs with transparency are highly suggested"
+        },
+        {
+          "id": "banner-link-img-style",
+          "label": "Image Style",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Normal"
+            },
+            {
+              "value": "img-overflow",
+              "label": "Overflow"
+            }
+          ],
+          "info": "Overflow images must be pre-formatted to 'clip' at top"
+        },
+        {
+          "id": "banner-link-theme",
+          "label": "Theme Color",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "White/Blue"
+            },
+            {
+              "value": "blue",
+              "label": "Blue/White"
+            },
+            {
+              "value": "purple",
+              "label": "Purple/White"
+            },
+            {
+              "value": "orange",
+              "label": "Orange/White"
+            }
+          ]
+        },
+        {
+          "id": "banner-link-button-style",
+          "label": "Button Style",
+          "type": "select",
+          "default": "btn-primary",
+          "options": [
+            {
+              "value": "btn-primary",
+              "label": "Blue"
+            },
+            {
+              "value": "white-purple",
+              "label": "White/Purple Hover"
+            },
+            {
+              "value": "white-blue",
+              "label": "White/Blue Hover"
+            },
+            {
+              "value": "gray-outline",
+              "label": "Gray Transparent"
+            }
+          ]
+        },
+        {
+          "id": "banner-link-direction",
+          "label": "Direction",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "card-cta",
+      "name": "Call to Action Card",
+      "settings": [
+        {
+          "id": "cta-title",
+          "type": "text",
+          "label": "Title",
+          "default": "Get your child's first DIY computer!"
+        },
+        {
+          "id": "cta-product",
+          "type": "text",
+          "label": "Product Handle",
+          "default": "piper-computer-kit"
+        },
+        {
+          "id": "cta-variant",
+          "type": "text",
+          "label": "Product Variant (Array Index)",
+          "default": "0"
+        },
+        {
+          "id": "cta-desc",
+          "type": "textarea",
+          "label": "Product Description",
+          "default": "Build a full computer and control the virtual game world by building and programming electronics!"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

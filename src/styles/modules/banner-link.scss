@@ -13,6 +13,11 @@
         color: white;
     }
 
+    &.orange {
+        background: $secondary-color;
+        color: white;
+    }
+
     &.img-overflow {
         padding: 0 0 3rem 0;
 
@@ -41,6 +46,14 @@
 
         &.right {
             flex-direction: row-reverse;
+
+            .copy > * {
+                @include tablet {
+                    margin-right: 0;
+                    margin-left: 1rem;
+                }
+            }
+
         }
 
     }
@@ -52,6 +65,13 @@
         @include tablet {
             padding-top: 0;
             flex-basis: 50%;
+        }
+
+        > * {
+
+            @include tablet {
+                margin-right: 1rem;
+            }
         }
 
         h3 {

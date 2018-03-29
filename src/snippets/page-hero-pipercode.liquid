@@ -1,0 +1,16 @@
+<div class="page-hero-pipercode" style="background: center no-repeat url({{ block.settings.page-hero-pipercode-background | img_url: '1200x' }}); background-size: cover;">
+    <div class="content">
+        <div class="image">
+            <img class="hero-img" src="{{ block.settings.page-hero-pipercode-img | img_url: '500x' }}" alt="">
+            <img class="action-btn" src="{{ block.settings.page-hero-pipercode-play-btn | img_url: '75x' }}" alt="">
+        </div>
+        <h1>
+            {% if block.settings.page-hero-pipercode-title-icon %}
+                <img class="title-icon" src="{{ block.settings.page-hero-pipercode-title-icon | img_url: '20x' }}"/>
+            {% endif %}
+            PiperCode
+        </h1>
+        <p class="desc">Your introduction to coding &amp; programming electronics</p>
+        <img class="arrow" src="{{ block.settings.page-hero-pipercode-arrow | img_url: '50x' }}" alt="">
+    </div>
+</div>

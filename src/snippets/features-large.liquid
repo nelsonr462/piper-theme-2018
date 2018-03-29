@@ -22,7 +22,7 @@
 
                 </div>
 
-                <div class="image">
+                <div class="image {% if block.settings.features-large-profiles %}profile{% endif %}">
                     {% if block.settings.features-large-profiles %}
                         <img src="{{ block.settings[feature_img] | img_url: '300x', format: 'pjpg' }}" alt="">
                     {% else %}
@@ -30,7 +30,7 @@
                     {% endif %}
 
                     {% if block.settings[feature_decoration]  %}
-                        <img class="decoration" src="{{ block.settings[feature_decoration] | img_url: '200x' }}" alt="">
+                        <img class="decoration" src="{{ block.settings[feature_decoration] | img_url: '100x' }}" alt="">
                     {% endif %}
                 </div>
             </div>

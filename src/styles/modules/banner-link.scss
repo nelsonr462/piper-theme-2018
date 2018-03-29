@@ -70,7 +70,7 @@
         > * {
 
             @include tablet {
-                margin-right: 1rem;
+                margin-right: 2rem;
             }
         }
 
@@ -97,6 +97,7 @@
         img {
             position: absolute;
             top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
             margin: auto;

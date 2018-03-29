@@ -3,6 +3,9 @@
         <div {{ block.shopify_attributes }}>
             {% case block.type %}
 
+              {% when 'page-hero-pipercode' %}
+              {% include 'page-hero-pipercode' %}
+
               {% when 'features-small' %}
               {% include 'features-small' %}
 
@@ -24,6 +27,49 @@
 {% schema %}
 {
   "blocks": [
+    {
+      "type": "page-hero-pipercode",
+      "name": "PiperCode Hero",
+      "settings": [
+        {
+          "id": "page-hero-pipercode-title",
+          "type": "text",
+          "label": "Title",
+          "placeholder": "PiperCode"
+        },
+        {
+          "id": "page-hero-pipercode-title-icon",
+          "type": "image_picker",
+          "label": "Title Icon"
+        },
+        {
+          "id": "page-hero-pipercode-desc",
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "Your introduction to coding & electronics"
+        },
+        {
+          "id": "page-hero-pipercode-background",
+          "type": "image_picker",
+          "label": "Background"
+        },
+        {
+          "id": "page-hero-pipercode-img",
+          "type": "image_picker",
+          "label": "Hero Image"
+        },
+        {
+          "id": "page-hero-pipercode-play-btn",
+          "type": "image_picker",
+          "label": "Play Button"
+        },
+        {
+          "id": "page-hero-pipercode-arrow",
+          "type": "image_picker",
+          "label": "Arrow"
+        }
+      ]
+    },
     {
       "type": "features-small",
       "name": "Small Features Bar",

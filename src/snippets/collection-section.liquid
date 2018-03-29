@@ -53,11 +53,14 @@
                             
                             
                             <h5>{{ item.price | money }}</h5>
-                            {% if item.compare_at_price_max > 0 %}
+
                             <h6>
-                                <strike> {{ item.compare_at_price_max | money }}</strike>
+                                {% if item.compare_at_price_max > 0 %}
+                                    <strike> {{ item.compare_at_price_max | money }}</strike>
+                                {% else %}
+                                    &nbsp;
+                                {% endif %}
                             </h6>
-                            {% endif %}
         
                             <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
                             

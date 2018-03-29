@@ -45,6 +45,12 @@
             max-width: 720px;
         }
 
+        > * {
+            @include tablet {
+                margin-right: 2rem;
+            }
+        }
+
         &.none {
             @include tablet {
                 flex-basis: 100%;

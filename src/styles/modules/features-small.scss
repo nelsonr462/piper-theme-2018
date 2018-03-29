@@ -43,7 +43,7 @@
             }
 
             &:nth-child(2) {
-                padding: .5rem;
+                padding: 1rem .5rem;
             }
 
             &:nth-child(3) {
@@ -87,8 +87,6 @@
         }
 
         .image {
-            max-width: 15rem;
-            max-height: 15rem;
             display: block;
             margin: 0 auto 1rem auto;
             

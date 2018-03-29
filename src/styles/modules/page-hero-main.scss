@@ -14,7 +14,7 @@
         display: flex;
 
         &.blue {
-            background: rgba($primary-color, 0.75);
+            background: rgba($primary-color, 0.65);
         }
     }
 
@@ -44,6 +44,11 @@
 
         *:not(:first-child) {
             margin: 1.75rem 0;
+        }
+
+        .desc {
+            margin: 1rem 0 2rem 0;
+            font-weight: 500;
         }
     }
 

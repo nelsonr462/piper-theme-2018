@@ -10,7 +10,16 @@
         <div class="announcement-container">
             <div class="announcement">
                 <a href="{{ block.settings.homepage-hero-announcement-link }}">
+                
+                    {% if block.settings.homepage-hero-announcement-icon %}
+                        <img class="leading" src="{{ block.settings.homepage-hero-announcement-icon | img_url: 'x40' }}" />
+                    {% endif %}
+
                     {{ block.settings.homepage-hero-announcement-content }}
+
+                    {% if block.settings.homepage-hero-announcement-arrow %}
+                        <img class="trailing" src="{{ block.settings.homepage-hero-announcement-arrow | img_url: 'x40' }}" />
+                    {% endif %}
                 </a>
             </div>
         </div>
@@ -23,7 +32,7 @@
             
             <div class="hero-image">
                 {% if  block.settings.homepage-hero-main-img %}
-                <img src="{{ block.settings.homepage-hero-main-img | img_url: '300x' }}" alt="">
+                <img src="{{ block.settings.homepage-hero-main-img | img_url: '350x' }}" alt="">
                 {% endif %}
             </div>
             
@@ -32,7 +41,7 @@
                 <h2>{{ block.settings.homepage-hero-main-title }}</h2>
     
                 {% comment %} Description {% endcomment %}
-                <p>{{ block.settings.homepage-hero-main-description }}</p>
+                <p class="desc">{{ block.settings.homepage-hero-main-description }}</p>
     
                 {% comment %} Call to Action {% endcomment %}
                 <div class="cta">

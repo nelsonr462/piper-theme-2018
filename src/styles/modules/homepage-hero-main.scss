@@ -2,7 +2,7 @@
     @extend .page-hero-main;
 
     .announcement-container {
-        background: $red-color;
+        background: #555555;
         padding: 0.75rem 0;
     }
 
@@ -15,12 +15,33 @@
 
             * {
                 margin: 0;
+                display: inline-block;
+            }
+
+            img.leading {
+                vertical-align: middle;
+
+                @include tablet {
+                    margin-right: 1rem;
+                }
+            }
+
+            img.trailing {
+                vertical-align: middle;
+
+                @include tablet {
+                    margin-left: 1rem;
+                }
             }
         }
     }
 
     .hero-overlay .hero-content {
         flex-wrap: wrap; 
+    }
+
+    div.hero-overlay .hero-content .hero-image img {
+        max-height: none;
     }
 
 }

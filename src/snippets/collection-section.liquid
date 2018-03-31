@@ -47,7 +47,7 @@
                         </div>
                         
                         <div class="details">
-                            <a href="{{ item.url }}">
+                            <a href="{{ item.url }}" alt="{{ item.title }}" title="{{ item.title }}">
                                 <h5>{{ item.title }}</h5>
                             </a>
                             
@@ -65,7 +65,7 @@
                             <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
                             
         
-                            <a class="view-link" href="{{ item.url }}">
+                            <a class="view-link" href="{{ item.url }}" title="View Product">
                                 <button class="btn orange inverted">View</button>
                             </a>
 

@@ -95,6 +95,10 @@
         .image .decoration {
             bottom: -2rem;
             left: 0;
+
+            @include hi-res {
+                left: 10%;
+            }
         }
     }
 
@@ -102,6 +106,10 @@
         .image .decoration {
             bottom: -2rem;
             right: 0;
+
+            @include hi-res {
+                right: 10%;
+            }
         }
     }
 }

@@ -19,7 +19,7 @@
     }
 
     .input-group {
-        max-width: 20-rem;
+        max-width: 20rem;
     }
 
     input {
@@ -28,6 +28,11 @@
         border-right: none;
         border-bottom-left-radius: 0.4rem;
         border-top-left-radius: 0.4rem;
+        width: 62%;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     button {

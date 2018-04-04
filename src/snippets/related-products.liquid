@@ -3,7 +3,9 @@
     <div class="content">
         <h2>{{ block.settings.related-products-title }}</h2>
 
-        {% for i in (0..3) %}
+        {% assign item-count = block.settings.related-products-item-count | minus: 1 %}
+
+        {% for i in (0..item-count) %}
             {% assign item = collection.products[i] %}
 
             {% if item.handle != product.handle %}    

@@ -25,11 +25,13 @@
                 <p class="desc">{{ block.settings.page-hero-description }}</p>
     
                 {% comment %} Call to Action {% endcomment %}
-                <div class="cta">
-                    <a href="/pages/quote">
-                        <button class="btn btn-lg orange">Get a Quote</button>
-                    </a>
-                </div>
+                {% if block.settings.page-hero-button-text != blank %}
+                    <div class="cta">
+                        <a href="{{ block.settings.page-hero-button-link }}">
+                            <button class="btn btn-lg orange">{{ block.settings.page-hero-button-text }}</button>
+                        </a>
+                    </div>
+                {% endif %}
                 
     
             </div>

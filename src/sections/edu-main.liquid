@@ -3,9 +3,6 @@
   <div {{ block.shopify_attributes }}>
     {% case block.type %}
 
-      {% when 'product-hero-main' %}
-      {% include 'product-hero-main' %}
-
       {% when 'page-hero-main' %}
       {% include 'page-hero-main' %}
 
@@ -69,18 +66,6 @@
 {
   "blocks": [
     {
-      "type": "product-hero-main",
-      "name": "Main Product Hero",
-      "settings": [
-        {
-          "id": "hero-nav-links",
-          "type": "textarea",
-          "label": "Nav Links (Sections)",
-          "placeholder": "How it Works, Features, What's in the Box"
-        }
-      ]
-    },
-    {
       "type": "page-hero-main",
       "name": "Main Page Hero",
       "settings": [
@@ -101,6 +86,17 @@
           "type": "textarea",
           "label": "Page Hero Description",
           "placeholder": "Lorem ipsum dolor sit amet.."
+        },
+        {
+          "id": "page-hero-button-text",
+          "type": "text",
+          "label": "Button Text",
+          "placeholder": "Get a Quote"
+        },
+        {
+          "id": "page-hero-button-link",
+          "type": "url",
+          "label": "Button Link"
         }
       ]
     },
@@ -711,8 +707,12 @@
               "label": "Normal"
             },
             {
-              "value": "img-overflow",
-              "label": "Overflow"
+              "value": "img-overflow-up",
+              "label": "Overflow Up"
+            },
+            {
+              "value": "img-overflow-down",
+              "label": "Overflow Down"
             }
           ],
           "info": "Overflow images must be pre-formatted to 'clip' at top"

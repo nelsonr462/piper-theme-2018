@@ -3,6 +3,10 @@
     background: white;
     position: relative;
     z-index: 300;
+
+    @include desktop {
+        @include prefix(box-shadow, 0 -5px 10px 3px black, moz webkit ms spec);
+    }
 }
 
 .btn.btn-cart {

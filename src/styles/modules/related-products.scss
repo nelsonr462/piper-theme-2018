@@ -32,7 +32,7 @@
 
         @include desktop {
             flex-basis: 33%;
-            -ms-flex-preferred-size: 32%;
+            -ms-flex-preferred-size: 31%;
 
             &:nth-child(odd), &:nth-child(even) {
                 padding: 1rem 0.5rem;

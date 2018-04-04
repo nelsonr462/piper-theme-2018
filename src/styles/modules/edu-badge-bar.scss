@@ -5,20 +5,17 @@
         .logo {
             flex-basis: initial;
             width: 7rem;
-            height: 4rem;
             padding: 0.5rem 0.5rem;
 
             @include tablet {
-                flex-basis: initial;
+                flex-basis: 30%;
                 width: 15rem;
-                height: 5rem;
                 padding: 0.5rem 1rem;
             }
 
             @include desktop {
                 padding: 0.5rem 1.5rem;
                 width: 20rem;
-                height: 7rem;
             }        
         }
     }

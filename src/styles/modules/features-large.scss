@@ -19,7 +19,7 @@
     h2 {
         display: flex;
         align-self: center;
-        padding-top: 1rem;
+        padding-top: 3rem;
 
         @include tablet {
             padding: 0;
@@ -77,6 +77,10 @@
 
             @include hi-res {
                 min-height: 15rem;
+            }
+
+            img {
+                flex-shrink: 0;
             }
 
             .decoration {

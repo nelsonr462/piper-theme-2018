@@ -38,7 +38,7 @@ $red-color: #fc0d1b !default;
 $purple-color: #a864a8 !default;
 $purple-color-light: lighten($purple-color, 17%) !default;
 $purple-color-dark: darken($purple-color, 10%) !default;
-$purple-color-overlay: rgba($purple-color-light, 0.9);
+$purple-color-overlay: rgba($purple-color, 0.75);
 
 $code-color: #e06870 !default;
 $highlight-color: #ffe9b3 !default;

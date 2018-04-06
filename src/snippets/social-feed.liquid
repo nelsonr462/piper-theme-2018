@@ -45,24 +45,29 @@
                 </div>
             </div>
 
-            <div class="divider"></div>
 
-            <div class="ambassador-container">
-                <h1>{{ block.settings.social-feed-ambassadors-title }}</h1>
+            {% if block.settings.social-feed-enable-ambassadors %}
+                
+                <div class="divider"></div>
 
-                {% for i in (1..4) %}
-                <div class="ambassador">
-                    <div class="profile">
-                        <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
+                <div class="ambassador-container">
+                    <h1>{{ block.settings.social-feed-ambassadors-title }}</h1>
+
+                    {% for i in (1..4) %}
+                    <div class="ambassador">
+                        <div class="profile">
+                            <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
+                        </div>
+                        <h5>Thomas Whitaker</h5>
+                        <p class="position"><strong>4th Grade Teacher,</strong></p>
+                        <p class="company">Cabello Elementary School</p>
+                        <p class="testimonial">"The kids loved it. All the kids wanted to play with Piper after school."</p>
                     </div>
-                    <h5>Thomas Whitaker</h5>
-                    <p class="position"><strong>4th Grade Teacher,</strong></p>
-                    <p class="company">Cabello Elementary School</p>
-                    <p class="testimonial">"The kids loved it. All the kids wanted to play with Piper after school."</p>
-                </div>
-                {% endfor %}
+                    {% endfor %}
 
-            </div>
+                </div>
+                
+            {% endif %}
 
         </div>
     </div>

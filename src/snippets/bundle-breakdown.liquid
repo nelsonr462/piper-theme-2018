@@ -1,4 +1,4 @@
-<div class="bundle-breakdown">
+<div class="bundle-breakdown" id="{{ block.settings.bundle-breakdown-anchor-link }}">
     {% assign item = all_products[ block.settings.bundle-breakdown-product ] %}
     {% if item.variants.size > 1 %}
         {% assign variant_id = block.settings.bundle-breakdown-variant | plus: 0 %}

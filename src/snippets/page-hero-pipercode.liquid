@@ -2,7 +2,7 @@
     <div class="content">
         <div class="image">
             <img class="hero-img" src="{{ block.settings.page-hero-pipercode-img | img_url: '500x' }}" alt="">
-            <img class="action-btn" src="{{ block.settings.page-hero-pipercode-play-btn | img_url: '75x' }}" alt="">
+            <img class="action-btn" id="openVideo" src="{{ block.settings.page-hero-pipercode-play-btn | img_url: '75x' }}" alt="">
         </div>
         <h1>
             {% if block.settings.page-hero-pipercode-title-icon %}
@@ -13,4 +13,26 @@
         <p class="desc">Your introduction to coding &amp; programming electronics</p>
         <img class="arrow" src="{{ block.settings.page-hero-pipercode-arrow | img_url: '50x' }}" alt="">
     </div>
+
+    <div class="modal" id="videoModal">
+        <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+        <div class="modal-container">
+            
+            <div class="modal-header">
+                <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title h4">What is PiperCode?</div>
+            </div>
+
+            <div class="modal-body">
+                <div class="content" data-embed-code='{{ block.settings.page-hero-pipercode-embed-code }}'>
+                    <!-- Video gets inserted here -->
+                </div>    
+            </div>
+
+            <div class="modal-footer">
+            </div>
+
+        </div>
+    </div>
+    <script src="{{ 'pipercode.js' | asset_url }}" defer="defer"></script>
 </div>

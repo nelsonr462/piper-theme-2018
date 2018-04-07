@@ -120,7 +120,7 @@
             max-width: 15rem;
         }
 
-        input {
+        .input {
             border: none;
             border-bottom-left-radius: 0.4rem;
             border-top-left-radius: 0.4rem;
@@ -131,7 +131,7 @@
             }
         }
 
-        button {
+        .input-group-btn {
             border-top-right-radius: 0.4rem;
             border-bottom-right-radius: 0.4rem;
             padding: 0.35rem 1.5rem;

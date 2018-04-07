@@ -1,0 +1,12 @@
+.page-404 {
+    @extend .page-width;
+    height: 75vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > * {
+        flex-basis: 100%;
+    }
+}

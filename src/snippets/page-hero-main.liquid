@@ -1,15 +1,18 @@
 <div class="page-hero-main" style="background: center no-repeat url({{ 'demo-banner-image-xl.png' | asset_url }}); background-size: cover;">
+    
     {% comment %} Subnav {% endcomment %}
-    <div class="subnav-container">
-        <div class="page-hero-nav">
-            {% assign page_nav_links = block.settings.page-nav-links | split: ', ' %}
-            {% for link in page_nav_links %}
-                <a href="#section-{{ forloop.index }}" class="link">
-                    {{ link }}
-                </a>
-            {% endfor %}
+    {% if block.settings.page-nav-links != blank %}
+        <div class="subnav-container">
+            <div class="page-hero-nav">
+                {% assign page_nav_links = block.settings.page-nav-links | split: ', ' %}
+                {% for link in page_nav_links %}
+                    <a href="#section-{{ forloop.index }}" class="link">
+                        {{ link }}
+                    </a>
+                {% endfor %}
+            </div>
         </div>
-    </div>
+    {% endif %}
     
 
 

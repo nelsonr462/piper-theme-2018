@@ -1,4 +1,8 @@
-<div class="page-hero-main" style="background: center no-repeat url({{ 'demo-banner-image-xl.png' | asset_url }}); background-size: cover;">
+<div class="page-hero-main"
+    {% if block.settings.page-hero-background %}
+        style="background-image: url({{ block.settings.page-hero-background | img_url: '1200x', format: 'pjpg' }});"
+    {% endif %}
+>
     
     {% comment %} Subnav {% endcomment %}
     {% if block.settings.page-nav-links != blank %}
@@ -40,7 +44,9 @@
             </div>
 
             <div class="hero-image">
-                <img src="{{ 'demo-edu-hero.png' | asset_url }}" alt="">
+                {% if block.settings.page-hero-image %}
+                    <img src="{{ block.settings.page-hero-image | img_url: '500x' }}" alt="">
+                {% endif %}
             </div>
     
             

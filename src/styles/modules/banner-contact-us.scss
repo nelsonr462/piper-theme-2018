@@ -1,6 +1,13 @@
 .banner-contact-us {
     background: white;
     color: $gray-color-dark;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include hi-res {
+        background-position-y: -15rem;
+    }
 
     .content {
         @extend .page-width;

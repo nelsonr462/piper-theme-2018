@@ -5,7 +5,7 @@
         display: flex;
         flex-wrap: wrap;
         color: $gray-color-dark;
-        padding: 2rem 0;
+        padding: 3rem 0;
 
         @include tablet{
             flex-wrap: nowrap;

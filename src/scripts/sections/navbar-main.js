@@ -1,6 +1,7 @@
 var openLink = '#sidebar';
 var closeLink = '#close';
 var toggle = document.querySelector('.off-canvas-toggle[href="#sidebar"]');
+var hamburger = $('button.hamburger');
 
 // Support for IE11 hashchange event
 if(!window.HashChangeEvent)(function(){
@@ -17,8 +18,10 @@ window.addEventListener('hashchange', function(event) {
     setTimeout(function() {
         if(event.newURL.indexOf('#sidebar') == -1) {
             toggle.href = openLink;
+            hamburger.removeClass("is-active");
         } else {
             toggle.href = closeLink;
+            hamburger.addClass("is-active");
         }
     }, 100);
 });

@@ -1,6 +1,11 @@
 .page-hero-pipercode {
     color: white;
-    padding: 3rem 0;
+
+    .overlay {
+        padding: 3rem 0;
+        width: 100%;
+        background: rgba($primary-color, 0.75);        
+    }
 
     .content {
         @extend .page-width;

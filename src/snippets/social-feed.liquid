@@ -6,37 +6,39 @@
             <div class="carousel-container">
 
                 {%- comment -%} BEGIN CAROUSEL {%- endcomment -%}
+
                 <div class="carousel">
                     {% for i in (1..6) %}
-                    <div class="slide">
-                        <div class="slide-content">
-                            <div class="slide-img">
-                                <img src="{{ 'demo-slider.jpg' | asset_url }}" alt="">
-                            </div>
-                            
-                            <div class="profile">
-                                <figure class="avatar avatar-lg">
-                                    <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
-                                </figure>
-                            </div>
-                            
-                            <h5>Gordon Redzic</h5>
-                            <p>Nice work by the boys on trh piper such a great deducation asdkfnas adsf mfdll; dfmds</p>
+                        {% assign tweetSelector = "social-feed-tweet-" | append: forloop.index %}
+                        {% assign tweet = block.settings[tweetSelector] %}
 
-                        </div>
-                    </div>
+
+                        {% if tweet != "" %}
+                            <div class="slide">
+                                <div class="draggable-overlay"></div>
+                                {{ tweet }}
+                            </div>
+                        {% endif %}
+
+                        {% assign tweetSelector = nil %}
+                        {% assign tweet = nil %}
+
                     {% endfor %}
                 </div>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                 {%- comment -%} END CAROUSEL {%- endcomment -%}
                 
-                <!-- <div class="carousel-controls">
+                {% comment %}
+                <div class="carousel-controls">
                     <div class="control prev">
                         <i class="icon icon-arrow-left"></i>
                     </div>
                     <div class="control next">
                         <i class="icon icon-arrow-right"></i>
                     </div>
-                </div> -->
+                </div>
+                {% endcomment %}
 
                 <div class="carousel-nav">
                     {% for i in (1..6) %}

@@ -6,6 +6,7 @@ var sliderConfig = {
   // controlsContainer: '.carousel-controls',
   navContainer: '.carousel-nav',
   items: 1,
+  loop: false,
   slideBy: 1,
   autoplay: true,
   autoplayTimeout: 5000,

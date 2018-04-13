@@ -14,6 +14,11 @@
  */ 
 // =require vendor/lightbox.min.js
 
+/*!
+ * jquery-ajaxchimp: https://github.com/scdoshi/jquery-ajaxchimp
+ */ 
+// =require vendor/jquery.ajaxchimp.min.js
+
 
 /*!
  * tiny-slider.js: https://github.com/ganlanyuan/tiny-slider

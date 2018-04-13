@@ -2,7 +2,7 @@
     
 <div class="blog-hero"
     {% if block.settings.blog-hero-background %}
-    style="background: center no-repeat url({{ block.settings.blog-hero-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+        style="background-image: url({{ block.settings.blog-hero-background | img_url: '900x', format: 'pjpg' }});"
     {% endif %}
     >
 

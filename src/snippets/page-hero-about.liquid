@@ -1,9 +1,8 @@
 <div class="page-hero-about" 
 
     {% if block.settings.page-hero-about-background %}
-        style="background: center no-repeat url({{ block.settings.page-hero-about-background | img_url: '900x', format: 'pjpg' }}); background-size: cover;"
+        style="background-image: url({{ block.settings.page-hero-about-background | img_url: '900x', format: 'pjpg' }});"
     {% endif %}
-    
     >
 
     <div class="hero-overlay">

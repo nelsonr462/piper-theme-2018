@@ -1,4 +1,8 @@
-<div class="product-hero-main" data-section-id="{{ section.id }}" style="background: center no-repeat url({{ 'demo-product-hero-bg.jpg' | asset_url }}); background-size: cover;">
+<div class="product-hero-main"
+    {% if block.settings.product-hero-background %}
+        style="background-image: url({{ block.settings.product-hero-background | img_url: '900x', format: 'pjpg' }});"
+    {% endif %}
+>
     <div class="hero-overlay">
         <div class="hero-content">
             {% comment %} Breadcrumb {% endcomment %}

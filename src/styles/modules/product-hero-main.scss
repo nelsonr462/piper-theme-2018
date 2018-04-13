@@ -3,6 +3,9 @@
     color: white;
     position: relative;
     z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .hero-overlay {
         background: rgba($primary-color, 0.75);

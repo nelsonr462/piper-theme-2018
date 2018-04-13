@@ -55,4 +55,34 @@ $(document).ready(function() {
   if (slate.cart.cookiesEnabled()) {
     document.documentElement.className = document.documentElement.className.replace('supports-no-cookies', 'supports-cookies');
   }
+
+  // Ajaxify Mailchimp forms
+  var activeMailchimpForm = null;
+
+  $('[name="mc-embedded-subscribe-form"]').ajaxChimp({
+    callback: mailchimpCallback
+  });
+
+  $('[name="mc-embedded-subscribe-form"]').on('submit', function(event) {
+    console.log(event.target.parentElement);
+    activeMailchimpForm = $(event.target.parentElement).attr('data-component');
+    console.log(activeMailchimpForm);
+  })
+
+  function mailchimpCallback(resp) {
+    var responseSelector = activeMailchimpForm + ' [data-id="mce-response"]';
+
+    if(resp.result === 'success') {
+      $(responseSelector).addClass('active success');
+      $(responseSelector).text('Thanks! A confirmation email has been sent!');
+    } else {
+      $(responseSelector).addClass('active error');
+      $(responseSelector).text('Error: ' + resp.msg.substr(3));
+    }
+
+    setTimeout(function() {
+      $(responseSelector).removeClass('active success error');
+    }, 5000);
+  }
+
 });

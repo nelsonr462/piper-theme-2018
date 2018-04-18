@@ -125,16 +125,13 @@
             border-bottom-left-radius: 0.4rem;
             border-top-left-radius: 0.4rem;
             width: 64%;
-
-            @include tablet {
-                width: 100%;
-            }
         }
 
         .input-group-btn {
             border-top-right-radius: 0.4rem;
             border-bottom-right-radius: 0.4rem;
             padding: 0.35rem 1.5rem;
+            font-size: 0.8rem;
             color: white;
             background: #f0ca03;
             font-weight: bold;
@@ -142,6 +139,16 @@
 
             &:hover, &:focus {
                 background: darken( #f0ca03, 10% );
+            }
+
+            @include tablet {
+                padding: 0.35rem 1rem;
+                font-size: 0.6rem;
+            }
+
+            @include desktop {
+                padding: 0.35rem 1.5rem;
+                font-size: 0.8rem;
             }
         }
     }

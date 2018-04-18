@@ -70,6 +70,7 @@
         @extend .page-width;
         display: flex;
         flex-wrap: wrap-reverse;
+        min-height: 15rem;
 
         &.right {
             flex-direction: row-reverse;

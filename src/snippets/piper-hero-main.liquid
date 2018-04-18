@@ -1,4 +1,8 @@
-<div class="piper-hero-main" style="background: center no-repeat url({{ 'demo-product-hero-bg.jpg' | asset_url }}); background-size: cover;">
+<div class="piper-hero-main" 
+    {% if block.settings.piper-hero-main-background %}
+        style="background-image: url({{ block.settings.piper-hero-main-background | img_url: '1200x', format: 'pjpg' }});"
+    {% endif %}
+>
     {% assign product = all_products[block.settings.piper-hero-main-product] %}
     <div class="hero-overlay">
         <div class="hero-content">

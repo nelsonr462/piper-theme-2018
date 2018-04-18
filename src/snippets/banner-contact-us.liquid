@@ -1,4 +1,8 @@
-<div class="banner-contact-us" style="background-image: url({{ 'demo-contact-us-bg.png' | asset_url }});">
+<div class="banner-contact-us"
+    {% if block.settings.banner-contact-us-background %}
+        style="background-image: url({{ block.settings.banner-contact-us-background | img_url: '1200x' }});"
+    {% endif %}
+>
     <div class="content">
         <div class="image">
             <img src="{{ block.settings.banner-contact-us-img | img_url: '350x' }}" alt="">

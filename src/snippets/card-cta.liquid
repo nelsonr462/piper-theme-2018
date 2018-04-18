@@ -17,7 +17,11 @@
         <div class="product">
             <div class="info">
                 <h3>{{ item.title }}</h3>
-                <h4>{{ item.price | money }}</h4>
+                <h3 class="price">
+                    {% if block.settings.cta-compare %}
+                        <strike>{{ item.compare_at_price | money }}</strike>
+                    {% endif %}
+                    {{ item.price | money | prepend: ' '}}</h3>
                 <p>{{ block.settings.cta-desc }}</p>
 
                 <form method="post" action="/cart/add">

@@ -1,7 +1,7 @@
 <div class="card-cta">
     <div class="content">
-        <h2>{{ block.settings.cta-title }}</h2>
-        <div class="divider"></div>
+        {% comment %} <h2>{{ block.settings.cta-title }}</h2>
+        <div class="divider"></div> {% endcomment %}
 
         
         {% assign item = all_products[ block.settings.cta-product ] %}
@@ -32,7 +32,7 @@
 
 
             <div class="image">
-                <img src="{{ item | img_url: '400x' }}" alt="">
+                <img src="{{ item | img_url: '500x' }}" alt="">
             </div>
 
         </div>

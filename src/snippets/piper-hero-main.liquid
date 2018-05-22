@@ -23,7 +23,7 @@
         
                     {% comment %} Price {% endcomment %}
                     <div class="price">
-                        {% if product.compare_at_price_max > 0 %}
+                        {% if product.compare_at_price_max > 0 and block.settings.piper-hero-main-compareprice %}
                         <span><strike>{{ product.compare_at_price_max | money }}</strike></span>    
                         {% endif %}
                         <span>{{ product.price | money }}</span>

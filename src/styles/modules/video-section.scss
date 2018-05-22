@@ -1,28 +1,34 @@
 .video-section {
-    background: $primary-color;
-    color: white;
-    padding: 2rem 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    &.purple {
-        background: $purple-color;
+    .overlay {
+        background: rgba($primary-color, 0.8);
         color: white;
-    }
+        padding: 2rem 0;
 
-    &.white-blue {
-        color: $primary-color;
-    }
-
-    &.white-purple {
-        color: $purple-color;
-    }
-
-    &.white-blue, &.white-purple {
-        background: white;
-        p {
-            color: $gray-color;
+        &.purple {
+            background: $purple-color-overlay;
+            color: white;
+        }
+        
+        &.white-blue {
+            color: $primary-color;
+        }
+        
+        &.white-purple {
+            color: $purple-color;
+        }
+        
+        &.white-blue, &.white-purple {
+            background: rgba(white, 0.8);
+            p {
+                color: $gray-color;
+            }
         }
     }
-
+        
     .content {
         @extend .page-width;
         display: flex;

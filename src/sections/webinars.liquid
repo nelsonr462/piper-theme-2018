@@ -1,0 +1,246 @@
+<div data-section-id="{{ section.id }}">
+    {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>
+            {% case block.type %}
+
+              {% when 'page-hero-main' %}
+              {% include 'page-hero-main' %}
+
+              {% when 'banner-link' %}
+              {% include 'banner-link' %}
+
+              {% when 'banner-contact-us' %}
+              {% include 'banner-contact-us' %}
+
+          {% endcase %}
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "page-hero-main",
+        "name": "Main Page Hero",
+        "settings": [
+          {
+            "id": "page-nav-links",
+            "type": "textarea",
+            "label": "Nav Links (Sections)",
+            "placeholder": "How it Works, Features, What's in the Box"
+          },
+          {
+            "id": "page-hero-background",
+            "type": "image_picker",
+            "label": "Background Image"
+          },
+          {
+            "id": "page-hero-title",
+            "type": "textarea",
+            "label": "Page Hero Title",
+            "placeholder": "The best way to learn programming & engineering"
+          },
+          {
+            "id": "page-hero-description",
+            "type": "textarea",
+            "label": "Page Hero Description",
+            "placeholder": "Lorem ipsum dolor sit amet.."
+          },
+          {
+            "id": "page-hero-button-text",
+            "type": "text",
+            "label": "Button Text",
+            "placeholder": "Get a Quote"
+          },
+          {
+            "id": "page-hero-button-link",
+            "type": "url",
+            "label": "Button Link"
+          },
+          {
+            "id": "page-hero-image",
+            "type": "image_picker",
+            "label": "Hero Image"
+          }
+        ]
+      },
+      {
+        "type": "banner-link",
+        "name": "Link Banner",
+        "settings": [
+          {
+            "id": "banner-link-title",
+            "label": "Title",
+            "type": "text",
+            "placeholder": "Resources"
+          },
+          {
+            "id": "banner-link-subtitle",
+            "label": "Subtitle",
+            "type": "text",
+            "placeholder": "Start up guides, walkthroughs, and much more"
+          },
+          {
+            "id": "banner-link-desc",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "id": "banner-link-btn-text",
+            "label": "Button Text",
+            "type": "text",
+            "default": "Learn More"
+          },
+          {
+            "id": "banner-link-btn-link",
+            "label": "Button Link",
+            "type": "text",
+            "placeholder": "/pages/educators"
+          },
+          {
+            "id": "banner-link-img",
+            "label": "Image",
+            "type": "image_picker",
+            "info": "PNGs with transparency are highly suggested"
+          },
+          {
+            "id": "banner-link-img-style",
+            "label": "Image Style",
+            "type": "select",
+            "default": "",
+            "options": [
+              {
+                "value": "",
+                "label": "Normal"
+              },
+              {
+                "value": "img-overflow-up",
+                "label": "Overflow Up"
+              },
+              {
+                "value": "img-overflow-down",
+                "label": "Overflow Down"
+              }
+            ],
+            "info": "Overflow images must be pre-formatted to 'clip' at top"
+          },
+          {
+            "id": "banner-link-theme",
+            "label": "Theme Color",
+            "type": "select",
+            "default": "",
+            "options": [
+              {
+                "value": "",
+                "label": "White/Blue"
+              },
+              {
+                "value": "blue",
+                "label": "Blue/White"
+              },
+              {
+                "value": "purple",
+                "label": "Purple/White"
+              },
+              {
+                "value": "orange",
+                "label": "Orange/White"
+              }
+            ]
+          },
+          {
+            "id": "banner-link-button-style",
+            "label": "Button Style",
+            "type": "select",
+            "default": "btn-primary",
+            "options": [
+              {
+                "value": "btn-primary",
+                "label": "Blue"
+              },
+              {
+                "value": "white-purple",
+                "label": "White/Purple Hover"
+              },
+              {
+                "value": "white-blue",
+                "label": "White/Blue Hover"
+              },
+              {
+                "value": "gray-outline",
+                "label": "Gray Transparent"
+              }
+            ]
+          },
+          {
+            "id": "banner-link-direction",
+            "label": "Direction",
+            "type": "select",
+            "default": "",
+            "options": [
+              {
+                "value": "",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "banner-contact-us",
+        "name": "Contact Us Banner",
+        "settings": [
+          {
+            "id": "banner-contact-us-title",
+            "label": "Title",
+            "type": "text",
+            "default": "Questions? Contact Us"
+          },
+          {
+            "id": "banner-contact-us-background",
+            "label": "Background",
+            "type": "image_picker"
+          },
+          {
+            "id": "banner-contact-us-email",
+            "label": "Email",
+            "type": "text",
+            "default": "educators@buildpiper.com"
+          },
+          {
+            "id": "banner-contact-us-phone",
+            "label": "Phone Number",
+            "type": "text",
+            "default": "(888) 767-1941"
+          },
+          {
+            "id": "banner-contact-us-img",
+            "label": "Image",
+            "type": "image_picker"
+          },
+          {
+            "id": "banner-contact-us-color",
+            "label": "Header Color",
+            "type": "select",
+            "default": "",
+            "options": [
+              {
+                "value": "",
+                "label": "Blue"
+              },
+              {
+                "value": "purple",
+                "label": "Purple"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

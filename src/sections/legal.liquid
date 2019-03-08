@@ -1,18 +1,110 @@
 <div data-section-id="{{ section.id }}">
-    {% for block in section.blocks %}
-        <div {{ block.shopify_attributes }}>
-            {% case block.type %}
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
 
-              {% when 'page-hero-legal' %}
-              {% include 'page-hero-legal' %}
+      {% when 'awards-bar'%}
+      {% include 'awards-bar'%}
 
-              {% when 'page-content-container' %}
-              {% include 'page-content-container' %}
+      {% when 'banner-contact-us'%}
+      {% include 'banner-contact-us'%}
 
+      {% when 'banner-decoration'%}
+      {% include 'banner-decoration'%}
 
-          {% endcase %}
-        </div>
-    {% endfor %}
+      {% when 'banner-detail'%}
+      {% include 'banner-detail'%}
+
+      {% when 'banner-email-signup'%}
+      {% include 'banner-email-signup'%}
+
+      {% when 'banner-image-xl'%}
+      {% include 'banner-image-xl'%}
+
+      {% when 'banner-link'%}
+      {% include 'banner-link'%}
+
+      {% when 'banner-testimonial'%}
+      {% include 'banner-testimonial'%}
+
+      {% when 'bundle-breakdown'%}
+      {% include 'bundle-breakdown'%}
+
+      {% when 'card-cta'%}
+      {% include 'card-cta'%}
+
+      {% when 'collection-section'%}
+      {% include 'collection-section'%}
+
+      {% when 'edu-badge-bar'%}
+      {% include 'edu-badge-bar'%}
+
+      {% when 'expandable-section'%}
+      {% include 'expandable-section'%}
+
+      {% when 'features-large'%}
+      {% include 'features-large'%}
+
+      {% when 'features-small'%}
+      {% include 'features-small'%}
+
+      {% when 'full-size-image'%}
+      {% include 'full-size-image'%}
+
+      {% when 'homepage-hero-main'%}
+      {% include 'homepage-hero-main'%}
+
+      {% when 'mission-statement'%}
+      {% include 'mission-statement'%}
+
+      {% when 'page-content-container'%}
+      {% include 'page-content-container'%}
+
+      {% when 'page-hero-about'%}
+      {% include 'page-hero-about'%}
+
+      {% when 'page-hero-legal'%}
+      {% include 'page-hero-legal'%}
+
+      {% when 'page-hero-main'%}
+      {% include 'page-hero-main'%}
+
+      {% when 'page-hero-pipercode'%}
+      {% include 'page-hero-pipercode'%}
+
+      {% when 'paragraph-section'%}
+      {% include 'paragraph-section'%}
+
+      {% when 'piper-hero-main'%}
+      {% include 'piper-hero-main'%}
+
+      {% when 'product-gallery'%}
+      {% include 'product-gallery'%}
+
+      {% when 'product-hero-main'%}
+      {% include 'product-hero-main'%}
+
+      {% when 'product-info'%}
+      {% include 'product-info'%}
+
+      {% when 'related-products'%}
+      {% include 'related-products'%}
+
+      {% when 'social-feed'%}
+      {% include 'social-feed'%}
+
+      {% when 'storefront-hero-main'%}
+      {% include 'storefront-hero-main'%}
+
+      {% when 'subheader'%}
+      {% include 'subheader'%}
+
+      {% when 'video-section'%}
+      {% include 'video-section'%}
+
+    {% endcase%}
+  </div>
+  {% endfor %}
 </div>
 
 {% schema %}
@@ -512,7 +604,131 @@
         }
       ]
     },
-    null,
+    {
+      "type": "features-large",
+      "name": "Large Features Section",
+      "settings": [
+        {
+          "id": "features-large-title-color",
+          "type": "select",
+          "label": "Title Color",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue"
+            },
+            {
+              "value": "purple",
+              "label": "Purple"
+            },
+            {
+              "value": "gray",
+              "label": "Gray"
+            }
+          ]
+        },
+        {
+          "id": "features-large-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        },
+        {
+          "id": "features-large-title",
+          "type": "text",
+          "label": "Title",
+          "default": "How It Works"
+        },
+        {
+          "id": "features-large-profiles",
+          "type": "checkbox",
+          "label": "Profiles",
+          "default": false,
+          "info": "Use when smaller images are necessary (such as profiles)."
+        },
+        {
+          "id": "features-large-name-1",
+          "type": "text",
+          "label": "Feature 1 Name",
+          "placeholder": "Piperstory"
+        },
+        {
+          "id": "features-large-img-1",
+          "type": "image_picker",
+          "label": "Feature 1 Image"
+        },
+        {
+          "id": "features-large-decoration-1",
+          "type": "image_picker",
+          "label": "Feature 1 Decoration"
+        },
+        {
+          "id": "features-large-desc-1",
+          "type": "textarea",
+          "label": "Feature Description 1",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-large-link-1",
+          "type": "url",
+          "label": "Feature Link 1"
+        },
+        {
+          "id": "features-large-name-2",
+          "type": "text",
+          "label": "Feature 2 Name",
+          "placeholder": "Piperstory"
+        },
+        {
+          "id": "features-large-img-2",
+          "type": "image_picker",
+          "label": "Feature 2 Image"
+        },
+        {
+          "id": "features-large-decoration-2",
+          "type": "image_picker",
+          "label": "Feature 2 Decoration"
+        },
+        {
+          "id": "features-large-desc-2",
+          "type": "textarea",
+          "label": "Feature Description 2",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-large-link-2",
+          "type": "url",
+          "label": "Feature Link 2"
+        },
+        {
+          "id": "features-large-name-3",
+          "type": "text",
+          "label": "Feature 3 Name",
+          "placeholder": "Piperstory"
+        },
+        {
+          "id": "features-large-img-3",
+          "type": "image_picker",
+          "label": "Feature 3 Image"
+        },
+        {
+          "id": "features-large-decoration-3",
+          "type": "image_picker",
+          "label": "Feature 3 Decoration"
+        },
+        {
+          "id": "features-large-desc-3",
+          "type": "textarea",
+          "label": "Feature Description 3",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-large-link-3",
+          "type": "url",
+          "label": "Feature Link 3"
+        }
+      ]
+    },
     {
       "type": "features-small",
       "name": "Small Features Bar",

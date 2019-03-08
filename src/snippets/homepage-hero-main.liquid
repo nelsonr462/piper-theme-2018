@@ -30,12 +30,6 @@
     <div class="hero-overlay {{ block.settings.homepage-hero-main-color }}">
         <div class="hero-content">
             
-            <div class="hero-image">
-                {% if  block.settings.homepage-hero-main-img %}
-                <img src="{{ block.settings.homepage-hero-main-img | img_url: '350x' }}" alt="">
-                {% endif %}
-            </div>
-            
             <div class="page-content">
                 {% comment %} Header {% endcomment %}
                 <h2>{{ block.settings.homepage-hero-main-title }}</h2>
@@ -53,6 +47,12 @@
     
             </div>
 
+            
+            <div class="hero-image">
+                {% if  block.settings.homepage-hero-main-img %}
+                <img src="{{ block.settings.homepage-hero-main-img | img_url: '550x' }}" alt="">
+                {% endif %}
+            </div>
             
     
             

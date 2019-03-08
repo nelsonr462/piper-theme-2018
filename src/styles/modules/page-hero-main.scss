@@ -19,6 +19,10 @@
         &.blue {
             background: rgba($primary-color, 0.65);
         }
+
+        &.white {
+            background: $color-offwhite;
+        }
     }
 
     .hero-content {

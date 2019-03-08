@@ -1,5 +1,6 @@
 const replace = require('replace-in-file');
 const jsonFormat = require('json-format');
+const dedent = require('dedent-js');
 const blockSchema = require('./includes/block-schema.json');
 const schemaTypeList = require('./includes/schema-type-list.json')
 
@@ -26,7 +27,34 @@ function createSchema(list) {
     formattedSchema = jsonFormat(schema, config);
     formattedSchema = "{% schema %}\n" + formattedSchema + "\n{% endschema %}";
 
-    return formattedSchema;
+    let sectionTemplate = getSectionTemplate(list);
+
+    return sectionTemplate + formattedSchema;
+
+}
+
+function getSectionTemplate(list) {
+    const indent = "  ";
+    let sectionStart = dedent`
+    <div data-section-id="{{ section.id }}">
+      {% for block in section.blocks %}
+      <div {{ block.shopify_attributes }}>
+        {% case block.type %}\n\n\n`;
+
+    let sectionEnd = dedent`
+        {% endcase%}
+      </div>
+      {% endfor %}
+    </div>\n\n\n`;
+
+    let sectionIncludes = "";
+
+    for(let i in list) {
+        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% when '${list[i]}'%}\n`;
+        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% include '${list[i]}'%}\n\n`;
+    }
+
+    return sectionStart + sectionIncludes + sectionEnd;
 
 }
 
@@ -41,10 +69,10 @@ async function updateFiles() {
         let files = categories[type].files.map(filename => {
             return "../src/sections/" + filename;
         })
-
+        
         let options = {
             files:  files,
-            from: /{% schema %}([\s\S]*){% endschema %}/m,
+            from: /[\s\S]*/m,
             to: newSchema
         }
 

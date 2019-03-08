@@ -1,16 +1,16 @@
 <div data-section-id="{{ section.id }}">
-    {% for block in section.blocks %}
-    <div {{ block.shopify_attributes }}>
-        {% case block.type %}
-    
-        {% when 'article-main' %}
-        {% include 'article-main' %}
+  {% for block in section.blocks %}
+  <div {{ block.shopify_attributes }}>
+    {% case block.type %}
 
-        {% endcase %}
-    </div>
-    {% endfor %}
+      {% when 'article-main'%}
+      {% include 'article-main'%}
+
+    {% endcase%}
+  </div>
+  {% endfor %}
 </div>
-    
+
 {% schema %}
 {
   "blocks": [

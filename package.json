@@ -4,6 +4,7 @@
   "devDependencies": {
     "@shopify/slate-tools": "0.13.0",
     "chalk": "^2.4.2",
+    "dedent-js": "^1.0.1",
     "gulp-gzip": "^1.4.2",
     "json-format": "^1.0.1",
     "replace-in-file": "^3.4.3"

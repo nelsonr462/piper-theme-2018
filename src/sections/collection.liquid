@@ -3,16 +3,16 @@
   <div {{ block.shopify_attributes }}>
     {% case block.type %}
 
-      {% when 'subheader' %}
-      {% include 'subheader' %}
+      {% when 'card-cta'%}
+      {% include 'card-cta'%}
 
-      {% when 'card-cta' %}
-      {% include 'card-cta' %}
+      {% when 'collection-section'%}
+      {% include 'collection-section'%}
 
-      {% when 'collection-section' %}
-      {% include 'collection-section' %}
+      {% when 'subheader'%}
+      {% include 'subheader'%}
 
-    {% endcase %}
+    {% endcase%}
   </div>
   {% endfor %}
 </div>

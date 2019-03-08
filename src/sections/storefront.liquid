@@ -21,137 +21,1206 @@
 </div>
 
 {% schema %}
-  {
-    "blocks": [
-      {
-        "type": "storefront-hero-main",
-        "name": "Storefront Hero",
-        "settings": [
-          {
-            "id": "storefront-hero-main-title",
-            "type": "text",
-            "label": "Title",
-            "placeholder": "This is Piper!"
-          },
-          {
-            "id": "storefront-hero-main-description",
-            "type": "textarea",
-            "label": "Description",
-            "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
-          },
-          {
-            "id": "storefront-hero-main-button-text",
-            "type": "text",
-            "label": "Button Text",
-            "placeholder": "Learn More"
-          },
-          {
-            "id": "storefront-hero-main-button-link",
-            "type": "url",
-            "label": "Button Link"
-          },
-          {
-            "id": "storefront-hero-main-color",
-            "type": "select",
-            "label": "Color",
-            "default": "blue",
-            "options": [
-                { "value": "blue", "label": "Blue" },
-                { "value": "", "label": "Purple" }
-            ]
-          },
-          {
-            "id": "storefront-hero-main-img",
-            "type": "image_picker",
-            "label": "Image (Optional)"
-          },
-          {
-            "id": "storefront-hero-main-background",
-            "type": "image_picker",
-            "label": "Background (Optional)"
-          }
-        ]
-      },
-      {
-        "type": "subheader",
-        "name": "Subheader",
-        "settings": [
-          {
-            "id": "subheader-content",
-            "type": "text",
-            "label": "Content",
-            "default": "A new subheader!"
-          }
-        ]
-      },
-      {
-        "type": "card-cta",
-        "name": "Call to Action Card",
-        "settings": [
-          {
-            "id": "cta-title",
-            "type": "text",
-            "label": "Title",
-            "default": "Get your child's first DIY computer!"
-          },
-          {
-            "id": "cta-product",
-            "type": "text",
-            "label": "Product Handle",
-            "default": "piper-computer-kit"
-          },
-          {
-            "id": "cta-variant",
-            "type": "text",
-            "label": "Product Variant (Array Index)",
-            "default":"0"
-          },
-          {
-            "id": "cta-compare",
-            "type": "checkbox",
-            "label": "Display Compare Price",
-            "default": false
-          },
-          {
-            "id": "cta-desc",
-            "type": "textarea",
-            "label": "Product Description",
-            "default": "Build a full computer and control the virtual game world by building and programming electronics!"
-          }
-        ]
-      },
-      {
-          "type": "collection-section",
-          "name": "Collection Section",
-          "settings": [
+{
+  "blocks": [
+    {
+      "type": "awards-bar",
+      "name": "Awards Bar"
+    },
+    {
+      "type": "banner-contact-us",
+      "name": "Contact Us Banner",
+      "settings": [
+        {
+          "id": "banner-contact-us-title",
+          "label": "Title",
+          "type": "text",
+          "default": "Questions? Contact Us"
+        },
+        {
+          "id": "banner-contact-us-background",
+          "label": "Background",
+          "type": "image_picker"
+        },
+        {
+          "id": "banner-contact-us-email",
+          "label": "Email",
+          "type": "text",
+          "default": "educators@buildpiper.com"
+        },
+        {
+          "id": "banner-contact-us-phone",
+          "label": "Phone Number",
+          "type": "text",
+          "default": "(888) 767-1941"
+        },
+        {
+          "id": "banner-contact-us-img",
+          "label": "Image",
+          "type": "image_picker"
+        },
+        {
+          "id": "banner-contact-us-color",
+          "label": "Header Color",
+          "type": "select",
+          "default": "",
+          "options": [
             {
-              "id": "collection-section-handle",
-              "label": "Collection Handle",
-              "type": "text",
-              "default": "frontpage",
-              "info": "Handle of collection to display"
+              "value": "",
+              "label": "Blue"
             },
             {
-              "id": "collection-section-size",
-              "label": "Card Size",
-              "type": "select",
-              "default": "",
-              "options": [
-                { "value": "", "label": "Normal" },
-                { "value": "small", "label": "Small" }
-              ]
-            },
-            {
-              "id": "collection-section-item-count",
-              "label": "Section Item Count",
-              "type": "range",
-              "min": 3,
-              "max": 12,
-              "step": 3,
-              "default": 3
+              "value": "purple",
+              "label": "Purple"
             }
           ]
-      }
-    ]
-  }
+        }
+      ]
+    },
+    {
+      "type": "banner-decoration",
+      "name": "Banner Decoration",
+      "settings": [
+        {
+          "id": "banner-decoration-img",
+          "label": "Decoration Image",
+          "type": "image_picker"
+        }
+      ]
+    },
+    {
+      "type": "banner-detail",
+      "name": "Detail Banner",
+      "settings": [
+        {
+          "id": "variation",
+          "type": "select",
+          "label": "Decorations",
+          "options": [
+            {
+              "value": "variation-1",
+              "label": "Pieces"
+            },
+            {
+              "value": "variation-2",
+              "label": "Breadboard"
+            },
+            {
+              "value": "",
+              "label": "None"
+            }
+          ]
+        },
+        {
+          "id": "banner_title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "banner_detail",
+          "type": "textarea",
+          "label": "Detail"
+        },
+        {
+          "id": "banner_image",
+          "type": "image_picker",
+          "label": "Banner Image"
+        },
+        {
+          "id": "banner-detail-image-style",
+          "type": "radio",
+          "label": "Banner Image Style",
+          "default": "cover",
+          "options": [
+            {
+              "value": "cover",
+              "label": "Cover"
+            },
+            {
+              "value": "contain",
+              "label": "Contain"
+            }
+          ]
+        },
+        {
+          "id": "overflow",
+          "type": "radio",
+          "label": "Decoration Overflow",
+          "options": [
+            {
+              "value": "",
+              "label": "Contain"
+            },
+            {
+              "value": "overflow",
+              "label": "Down"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "banner-email-signup",
+      "name": "Email Signup Banner",
+      "settings": [
+        {
+          "id": "banner-email-signup-callout",
+          "label": "Callout (Title)",
+          "type": "text",
+          "placeholder": "Keep in touch!"
+        },
+        {
+          "id": "banner-email-signup-detail",
+          "label": "Detail (Subtitile)",
+          "type": "text",
+          "placeholder": "Find out what we're making next!"
+        },
+        {
+          "id": "banner-email-signup-note",
+          "label": "Note (Small text)",
+          "type": "text"
+        },
+        {
+          "id": "banner-email-signup-background",
+          "label": "Background",
+          "type": "image_picker"
+        }
+      ]
+    },
+    {
+      "type": "banner-image-xl",
+      "name": "XL Image Banner",
+      "settings": [
+        {
+          "id": "banner-image-xl-img",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "banner-image-xl-title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "banner-image-xl-desc",
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "Lorem ipsum dolor sit amet, consector adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    },
+    {
+      "type": "banner-link",
+      "name": "Link Banner",
+      "settings": [
+        {
+          "id": "banner-link-title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Resources"
+        },
+        {
+          "id": "banner-link-subtitle",
+          "label": "Subtitle",
+          "type": "text",
+          "placeholder": "Start up guides, walkthroughs, and much more"
+        },
+        {
+          "id": "banner-link-desc",
+          "label": "Description",
+          "type": "textarea"
+        },
+        {
+          "id": "banner-link-btn-text",
+          "label": "Button Text",
+          "type": "text",
+          "default": "Learn More"
+        },
+        {
+          "id": "banner-link-btn-link",
+          "label": "Button Link",
+          "type": "text",
+          "placeholder": "/pages/educators"
+        },
+        {
+          "id": "banner-link-img",
+          "label": "Image",
+          "type": "image_picker",
+          "info": "PNGs with transparency are highly suggested"
+        },
+        {
+          "id": "banner-link-img-style",
+          "label": "Image Style",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Normal"
+            },
+            {
+              "value": "img-overflow-up",
+              "label": "Overflow Up"
+            },
+            {
+              "value": "img-overflow-down",
+              "label": "Overflow Down"
+            }
+          ],
+          "info": "Overflow images must be pre-formatted to 'clip' at top"
+        },
+        {
+          "id": "banner-link-theme",
+          "label": "Theme Color",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "White/Blue"
+            },
+            {
+              "value": "blue",
+              "label": "Blue/White"
+            },
+            {
+              "value": "purple",
+              "label": "Purple/White"
+            },
+            {
+              "value": "orange",
+              "label": "Orange/White"
+            }
+          ]
+        },
+        {
+          "id": "banner-link-button-style",
+          "label": "Button Style",
+          "type": "select",
+          "default": "btn-primary",
+          "options": [
+            {
+              "value": "btn-primary",
+              "label": "Blue"
+            },
+            {
+              "value": "white-purple",
+              "label": "White/Purple Hover"
+            },
+            {
+              "value": "white-blue",
+              "label": "White/Blue Hover"
+            },
+            {
+              "value": "gray-outline",
+              "label": "Gray Transparent"
+            }
+          ]
+        },
+        {
+          "id": "banner-link-direction",
+          "label": "Direction",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "banner-testimonial",
+      "name": "Testimonial Banner",
+      "settings": [
+        {
+          "id": "profile_img",
+          "type": "image_picker",
+          "label": "Profile"
+        },
+        {
+          "id": "testimonial",
+          "type": "textarea",
+          "label": "Testimonial"
+        },
+        {
+          "id": "color",
+          "type": "radio",
+          "label": "Color",
+          "options": [
+            {
+              "value": "",
+              "label": "Orange"
+            },
+            {
+              "value": "blue",
+              "label": "Blue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bundle-breakdown",
+      "name": "Bundle Breakdown",
+      "settings": [
+        {
+          "id": "bundle-breakdown-anchor-link",
+          "label": "Anchor Link (for hero button/nav links)",
+          "type": "text",
+          "placeholder": "bundle-breakdown",
+          "info": "Optional"
+        },
+        {
+          "id": "bundle-breakdown-product",
+          "label": "Product Handle",
+          "type": "text",
+          "placeholder": "piper-computer-kit",
+          "info": "Shopify Product Handle"
+        },
+        {
+          "id": "bundle-breakdown-variant",
+          "label": "Product Variant Index",
+          "type": "text",
+          "info": "If product has no variants, leave at 0. Else, choose variant by number [0-10] depending on position in variants list, 0 being the first variant."
+        },
+        {
+          "id": "bundle-breakdown-desc",
+          "label": "Bundle Description",
+          "type": "textarea",
+          "placeholder": "Lorem ipsum dolor sit amet, consectetur adipsisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+        },
+        {
+          "id": "bundle-breakdown-list",
+          "label": "Feature List",
+          "type": "textarea",
+          "placeholder": "10* Piper Computer Kits/12* Lesson Plans ",
+          "info": "List format: BOLD* item 1 text/BOLD* item 2 text"
+        }
+      ]
+    },
+    {
+      "type": "card-cta",
+      "name": "Call to Action Card",
+      "settings": [
+        {
+          "id": "cta-title",
+          "type": "text",
+          "label": "Title",
+          "default": "Get your child's first DIY computer!"
+        },
+        {
+          "id": "cta-product",
+          "type": "text",
+          "label": "Product Handle",
+          "default": "piper-computer-kit"
+        },
+        {
+          "id": "cta-variant",
+          "type": "text",
+          "label": "Product Variant (Array Index)",
+          "default": "0"
+        },
+        {
+          "id": "cta-compare",
+          "type": "checkbox",
+          "label": "Display Compare Price",
+          "default": false
+        },
+        {
+          "id": "cta-desc",
+          "type": "textarea",
+          "label": "Product Description",
+          "default": "Build a full computer and control the virtual game world by building and programming electronics!"
+        }
+      ]
+    },
+    {
+      "type": "collection-section",
+      "name": "Collection Section",
+      "settings": [
+        {
+          "id": "collection-section-handle",
+          "label": "Collection Handle",
+          "type": "text",
+          "default": "frontpage",
+          "info": "Handle of collection to display"
+        },
+        {
+          "id": "collection-section-size",
+          "label": "Card Size",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Normal"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ]
+        },
+        {
+          "id": "collection-section-item-count",
+          "label": "Section Item Count",
+          "type": "range",
+          "min": 3,
+          "max": 12,
+          "step": 3,
+          "default": 3
+        }
+      ]
+    },
+    {
+      "type": "edu-badge-bar",
+      "name": "EDU Badge Bar"
+    },
+    {
+      "type": "expandable-section",
+      "name": "Expandable Section",
+      "settings": [
+        {
+          "id": "expand-title",
+          "type": "text",
+          "label": "Title",
+          "default": "Lorem Ipsum dolor set"
+        },
+        {
+          "id": "expand-sections",
+          "type": "textarea",
+          "label": "Section titles",
+          "placeholder": "International Shipping/Customs, Taxes, and Duties/Language Support",
+          "info": "maximum of 3 sections, separated by a /"
+        },
+        {
+          "id": "expand-section-1",
+          "type": "textarea",
+          "label": "Section 1 Content"
+        },
+        {
+          "id": "expand-section-2",
+          "type": "textarea",
+          "label": "Section 2 Content"
+        },
+        {
+          "id": "expand-section-3",
+          "type": "textarea",
+          "label": "Section 3 Content"
+        }
+      ]
+    },
+    null,
+    {
+      "type": "features-small",
+      "name": "Small Features Bar",
+      "settings": [
+        {
+          "id": "features-small-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        },
+        {
+          "id": "features-small-header-color",
+          "type": "select",
+          "label": "Header Color",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue"
+            },
+            {
+              "value": "purple",
+              "label": "Purple"
+            },
+            {
+              "value": "gray",
+              "label": "Gray"
+            }
+          ]
+        },
+        {
+          "id": "features-small-title",
+          "type": "text",
+          "label": "Title",
+          "default": "How It Works"
+        },
+        {
+          "id": "features-small-subheader-1",
+          "type": "text",
+          "label": "Subheader 1"
+        },
+        {
+          "id": "features-small-img-1",
+          "type": "image_picker",
+          "label": "Feature 1 Image"
+        },
+        {
+          "id": "features-small-desc-1",
+          "type": "textarea",
+          "label": "Feature Description 1",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-small-subheader-2",
+          "type": "text",
+          "label": "Subheader 2"
+        },
+        {
+          "id": "features-small-img-2",
+          "type": "image_picker",
+          "label": "Feature 2 Image"
+        },
+        {
+          "id": "features-small-desc-2",
+          "type": "textarea",
+          "label": "Feature Description 2",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        },
+        {
+          "id": "features-small-subheader-3",
+          "type": "text",
+          "label": "Subheader 3"
+        },
+        {
+          "id": "features-small-img-3",
+          "type": "image_picker",
+          "label": "Feature 2 Image"
+        },
+        {
+          "id": "features-small-desc-3",
+          "type": "textarea",
+          "label": "Feature Description 3",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+        }
+      ]
+    },
+    {
+      "type": "full-size-image",
+      "name": "Full Size Image",
+      "settings": [
+        {
+          "id": "full-size-image-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        },
+        {
+          "id": "full-size-image-title",
+          "type": "text",
+          "label": "Image Title",
+          "default": "What's in the box?"
+        },
+        {
+          "id": "full-size-image-color-variant",
+          "type": "select",
+          "label": "Color Variant",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue Header"
+            },
+            {
+              "value": "purple",
+              "label": "Purple Header"
+            },
+            {
+              "value": "gray",
+              "label": "Gray Header"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "id": "full-size-image-img",
+          "type": "image_picker",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "homepage-hero-main",
+      "name": "Homepage Hero",
+      "settings": [
+        {
+          "id": "homepage-hero-show-announcement",
+          "type": "checkbox",
+          "label": "Show announcement banner",
+          "default": false
+        },
+        {
+          "id": "homepage-hero-announcement-icon",
+          "type": "image_picker",
+          "label": "Announcement Icon"
+        },
+        {
+          "id": "homepage-hero-announcement-content",
+          "type": "richtext",
+          "label": "Announcement banner content",
+          "default": "<p>This is an announcement!</p>"
+        },
+        {
+          "id": "homepage-hero-announcement-arrow",
+          "type": "image_picker",
+          "label": "Announcement Arrow/Trailing Icon"
+        },
+        {
+          "id": "homepage-hero-announcement-link",
+          "type": "url",
+          "label": "Announcement banner link"
+        },
+        {
+          "id": "homepage-hero-main-title",
+          "type": "text",
+          "label": "Title",
+          "placeholder": "This is Piper!"
+        },
+        {
+          "id": "homepage-hero-main-description",
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
+        },
+        {
+          "id": "homepage-hero-main-button-text",
+          "type": "text",
+          "label": "Button Text",
+          "placeholder": "Build Yours Today!"
+        },
+        {
+          "id": "homepage-hero-main-button-link",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+          "id": "homepage-hero-main-color",
+          "type": "select",
+          "label": "Color",
+          "default": "blue",
+          "options": [
+            {
+              "value": "blue",
+              "label": "Blue"
+            },
+            {
+              "value": "",
+              "label": "Purple"
+            },
+            {
+              "value": "white",
+              "label": "White"
+            }
+          ]
+        },
+        {
+          "id": "homepage-hero-main-img",
+          "type": "image_picker",
+          "label": "Image (Optional)"
+        },
+        {
+          "id": "homepage-hero-main-background",
+          "type": "image_picker",
+          "label": "Background (Optional)"
+        }
+      ]
+    },
+    {
+      "type": "mission-statement",
+      "name": "Mission Statement",
+      "settings": [
+        {
+          "id": "mission-statement-title",
+          "type": "text",
+          "label": "Title",
+          "placeholder": "Inspiring the Inventors of Tomorrow",
+          "default": "Inspiring the Inventors of Tomorrow"
+        },
+        {
+          "id": "mission-statement-copy",
+          "type": "textarea",
+          "label": "Statement Copy",
+          "placeholder": "Today's kids grow up with 'black box' phones..."
+        },
+        {
+          "id": "mission-statement-signatures",
+          "type": "image_picker",
+          "label": "Signatures"
+        },
+        {
+          "id": "mission-statement-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        }
+      ]
+    },
+    {
+      "type": "page-content-container",
+      "name": "Page Content",
+      "settings": []
+    },
+    {
+      "type": "page-hero-about",
+      "name": "About Page Hero",
+      "settings": [
+        {
+          "id": "page-hero-about-background",
+          "type": "image_picker",
+          "label": "Background Image"
+        },
+        {
+          "id": "page-hero-about-nav-links",
+          "type": "textarea",
+          "label": "Nav Links (Sections)",
+          "placeholder": "How it Works, Features, What's in the Box"
+        }
+      ]
+    },
+    {
+      "type": "page-hero-legal",
+      "name": "Legal Page Hero",
+      "settings": [
+        {
+          "id": "legal-hero-background",
+          "type": "image_picker",
+          "label": "Hero Background"
+        },
+        {
+          "id": "legal-hero-nav-links",
+          "type": "link_list",
+          "label": "Legal Nav Links"
+        }
+      ]
+    },
+    {
+      "type": "page-hero-main",
+      "name": "Main Page Hero",
+      "settings": [
+        {
+          "id": "page-nav-links",
+          "type": "textarea",
+          "label": "Nav Links (Sections)",
+          "placeholder": "How it Works, Features, What's in the Box"
+        },
+        {
+          "id": "page-hero-background",
+          "type": "image_picker",
+          "label": "Background Image"
+        },
+        {
+          "id": "page-hero-title",
+          "type": "textarea",
+          "label": "Page Hero Title",
+          "placeholder": "The best way to learn programming & engineering"
+        },
+        {
+          "id": "page-hero-description",
+          "type": "textarea",
+          "label": "Page Hero Description",
+          "placeholder": "Lorem ipsum dolor sit amet.."
+        },
+        {
+          "id": "page-hero-button-text",
+          "type": "text",
+          "label": "Button Text",
+          "placeholder": "Get a Quote"
+        },
+        {
+          "id": "page-hero-button-link",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+          "id": "page-hero-image",
+          "type": "image_picker",
+          "label": "Hero Image"
+        }
+      ]
+    },
+    {
+      "type": "page-hero-pipercode",
+      "name": "PiperCode Hero",
+      "settings": [
+        {
+          "id": "page-hero-pipercode-title",
+          "type": "text",
+          "label": "Title",
+          "placeholder": "PiperCode"
+        },
+        {
+          "id": "page-hero-pipercode-title-icon",
+          "type": "image_picker",
+          "label": "Title Icon"
+        },
+        {
+          "id": "page-hero-pipercode-desc",
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "Your introduction to coding & electronics"
+        },
+        {
+          "id": "page-hero-pipercode-background",
+          "type": "image_picker",
+          "label": "Background"
+        },
+        {
+          "id": "page-hero-pipercode-img",
+          "type": "image_picker",
+          "label": "Hero Image"
+        },
+        {
+          "id": "page-hero-pipercode-play-btn",
+          "type": "image_picker",
+          "label": "Play Button"
+        },
+        {
+          "id": "page-hero-pipercode-embed-code",
+          "type": "textarea",
+          "label": "Video Embed Code",
+          "info": "Paste the whole iframe embed code here."
+        },
+        {
+          "id": "page-hero-pipercode-arrow",
+          "type": "image_picker",
+          "label": "Arrow"
+        }
+      ]
+    },
+    {
+      "type": "paragraph-section",
+      "name": "Paragraph Section",
+      "settings": [
+        {
+          "id": "paragraph-section-header",
+          "type": "text",
+          "label": "Section Header",
+          "placeholder": "Our Story"
+        },
+        {
+          "id": "paragraph-section-content",
+          "type": "textarea",
+          "label": "Section Content",
+          "placeholder": "Headquartered in San Francisco CA Piper..."
+        },
+        {
+          "id": "paragraph-section-size",
+          "type": "select",
+          "label": "Content Size",
+          "default": "small",
+          "options": [
+            {
+              "label": "Small",
+              "value": "small"
+            },
+            {
+              "label": "Large",
+              "value": "large"
+            }
+          ]
+        },
+        {
+          "id": "paragraph-section-anchor",
+          "type": "text",
+          "label": "Anchor (for hero nav links)"
+        }
+      ]
+    },
+    {
+      "type": "piper-hero-main",
+      "name": "Piper Hero",
+      "settings": [
+        {
+          "id": "piper-hero-main-background",
+          "type": "image_picker",
+          "label": "Page Hero Background"
+        },
+        {
+          "id": "piper-hero-main-description",
+          "type": "textarea",
+          "label": "Page Hero Description",
+          "placeholder": "Lorem ipsum dolor sit amet.."
+        },
+        {
+          "id": "piper-hero-main-product",
+          "type": "text",
+          "label": "Product Handle",
+          "default": "piper-computer-kit"
+        },
+        {
+          "id": "piper-hero-main-compareprice",
+          "type": "checkbox",
+          "label": "Show compare price",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "product-gallery",
+      "name": "Product Gallery",
+      "settings": []
+    },
+    {
+      "type": "product-hero-main",
+      "name": "Main Product Hero",
+      "settings": [
+        {
+          "id": "product-hero-background",
+          "type": "image_picker",
+          "label": "Hero Background"
+        }
+      ]
+    },
+    {
+      "type": "product-info",
+      "name": "Product Info",
+      "settings": [
+        {
+          "id": "product-info-subtitle",
+          "type": "text",
+          "label": "Info Subtitle",
+          "default": "Items"
+        },
+        {
+          "id": "product-info-items",
+          "type": "textarea",
+          "label": "Item List (Comma Separated)",
+          "default": "Item 1, Item 2, Item 3"
+        }
+      ]
+    },
+    {
+      "type": "related-products",
+      "name": "Related Products",
+      "settings": [
+        {
+          "id": "related-products-title",
+          "label": "Title",
+          "type": "text",
+          "default": "Other related products"
+        },
+        {
+          "id": "related-products-collection",
+          "label": "Collection Handle",
+          "type": "text",
+          "placeholder": "frontpage",
+          "info": "Collection to pull from and display"
+        }
+      ]
+    },
+    {
+      "type": "social-feed",
+      "name": "Social Feed",
+      "settings": [
+        {
+          "id": "social-feed-bg",
+          "label": "Background Image",
+          "type": "image_picker",
+          "info": "Background images need not be more than 100kB and may be lower quality due to overlay blurring"
+        },
+        {
+          "id": "social-feed-title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "What the world is saying about Piper"
+        },
+        {
+          "id": "social-feed-subtitle",
+          "label": "Subtitle",
+          "type": "text",
+          "placeholder": "Wowzers and more wowzers!"
+        },
+        {
+          "id": "social-feed-tweet-1",
+          "label": "Tweet 1",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-tweet-2",
+          "label": "Tweet 2",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-tweet-3",
+          "label": "Tweet 3",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-tweet-4",
+          "label": "Tweet 4",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-tweet-5",
+          "label": "Tweet 5",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-tweet-6",
+          "label": "Tweet 6",
+          "type": "textarea",
+          "info": "Retrieve embed code from Twitter > tweet > 'Embed this Tweet'"
+        },
+        {
+          "id": "social-feed-enable-ambassadors",
+          "label": "Show Ambassadors Section",
+          "type": "checkbox",
+          "default": true
+        },
+        {
+          "id": "social-feed-ambassadors-title",
+          "label": "Ambassadors Section Title",
+          "type": "text",
+          "placeholder": "Our Piper Ambassadors"
+        },
+        {
+          "id": "social-feed-color",
+          "label": "Background color",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue"
+            },
+            {
+              "value": "purple",
+              "label": "Purple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "storefront-hero-main",
+      "name": "Storefront Hero",
+      "settings": [
+        {
+          "id": "storefront-hero-main-title",
+          "type": "text",
+          "label": "Title",
+          "placeholder": "This is Piper!"
+        },
+        {
+          "id": "storefront-hero-main-description",
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
+        },
+        {
+          "id": "storefront-hero-main-button-text",
+          "type": "text",
+          "label": "Button Text",
+          "placeholder": "Learn More"
+        },
+        {
+          "id": "storefront-hero-main-button-link",
+          "type": "url",
+          "label": "Button Link"
+        },
+        {
+          "id": "storefront-hero-main-color",
+          "type": "select",
+          "label": "Color",
+          "default": "blue",
+          "options": [
+            {
+              "value": "blue",
+              "label": "Blue"
+            },
+            {
+              "value": "",
+              "label": "Purple"
+            }
+          ]
+        },
+        {
+          "id": "storefront-hero-main-img",
+          "type": "image_picker",
+          "label": "Image (Optional)"
+        },
+        {
+          "id": "storefront-hero-main-background",
+          "type": "image_picker",
+          "label": "Background (Optional)"
+        }
+      ]
+    },
+    {
+      "type": "subheader",
+      "name": "Subheader",
+      "settings": [
+        {
+          "id": "subheader-content",
+          "type": "text",
+          "label": "Content",
+          "default": "A new subheader!"
+        }
+      ]
+    },
+    {
+      "type": "video-section",
+      "name": "Video Section",
+      "settings": [
+        {
+          "id": "video-title",
+          "type": "textarea",
+          "label": "Title",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        },
+        {
+          "id": "video-embed-code",
+          "type": "textarea",
+          "label": "Video Embed Code",
+          "info": "Paste the whole iframe embed code here."
+        },
+        {
+          "id": "video-desc",
+          "type": "textarea",
+          "label": "Video Description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        },
+        {
+          "id": "video-section-background",
+          "type": "image_picker",
+          "label": "Section Background"
+        },
+        {
+          "id": "video-color",
+          "type": "select",
+          "label": "Video Background Color",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Blue"
+            },
+            {
+              "value": "purple",
+              "label": "Purple"
+            },
+            {
+              "value": "white-blue",
+              "label": "White (Blue Header)"
+            },
+            {
+              "value": "white-purple",
+              "label": "White (Purple Header)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

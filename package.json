@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "spectre.css": "^0.5.8"
+  },
+  "scripts": {
+    "updateSchema": "cd tools && node update-sections-schema.js"
   }
 }

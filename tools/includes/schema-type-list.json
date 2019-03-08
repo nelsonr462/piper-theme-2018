@@ -1,0 +1,104 @@
+{
+    "categories": [
+        {
+            "name": "article",
+            "template": [
+                "article-main"
+            ],
+            "files": [
+                "article.liquid"
+            ]
+        },
+        {
+            "name": "blog",
+            "template": [
+                "blog-article-list",
+                "blog-hero"
+            ],
+            "files": [
+                "blog.liquid"
+            ]
+        },
+        {
+            "name": "cart",
+            "template": [
+                "cart-list"
+            ],
+            "files": [
+                "cart-section.liquid"
+            ]
+        },
+        {
+            "name": "collection",
+            "template": [
+                "card-cta",
+                "collection-section",
+                "subheader"
+            ],
+            "files": [
+                "collection.liquid"
+            ]
+        },
+        {
+            "name": "page",
+            "template": [
+                "awards-bar",
+                "banner-contact-us",
+                "banner-decoration",
+                "banner-detail",
+                "banner-email-signup",
+                "banner-image-xl",
+                "banner-link",
+                "banner-testimonial",
+                "bundle-breakdown",
+                "card-cta",
+                "collection-section",
+                "edu-badge-bar",
+                "expandable-section",
+                "feature-large",
+                "features-small",
+                "full-size-image",
+                "homepage-hero-main",
+                "mission-statement",
+                "page-content-container",
+                "page-hero-about",
+                "page-hero-legal",
+                "page-hero-main",
+                "page-hero-pipercode",
+                "paragraph-section",
+                "piper-hero-main",
+                "product-gallery",
+                "product-hero-main",
+                "product-info",
+                "related-products",
+                "social-feed",
+                "storefront-hero-main",
+                "subheader",
+                "video-section"
+            ],
+            "files": [
+                "about-us.liquid",
+                "edu-main.liquid",
+                "homepage.liquid",
+                "legal.liquid",
+                "piper-main.liquid",
+                "pipercode.liquid",
+                "product.liquid",
+                "storefront.liquid",
+                "webinars.liquid"
+            ]
+        },
+        {
+            "name": "quote",
+            "template": [
+                "banner-contact-us",
+                "edu-badge-bar",
+                "page-hero-main",
+                "quote-tool"
+            ],
+            "files": [
+                "edu-quote.liquid"
+            ]
+        }
+    ]
+}

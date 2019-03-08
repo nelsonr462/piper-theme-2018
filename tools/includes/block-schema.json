@@ -67,6 +67,10 @@
               {
                 "value": "",
                 "label": "Purple"
+              },
+              {
+                "value": "white",
+                "label": "White"
               }
             ]
           },

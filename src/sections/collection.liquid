@@ -18,88 +18,94 @@
 </div>
 
 {% schema %}
-  {
-    "blocks": [
-      {
-        "type": "subheader",
-        "name": "Subheader",
-        "settings": [
-          {
-            "id": "subheader-content",
-            "type": "text",
-            "label": "Content",
-            "default": "A new subheader!"
-          }
-        ]
-      },
-      {
-        "type": "card-cta",
-        "name": "Call to Action Card",
-        "settings": [
-          {
-            "id": "cta-title",
-            "type": "text",
-            "label": "Title",
-            "default": "Get your child's first DIY computer!"
-          },
-          {
-            "id": "cta-product",
-            "type": "text",
-            "label": "Product Handle",
-            "default": "piper-computer-kit"
-          },
-          {
-            "id": "cta-variant",
-            "type": "text",
-            "label": "Product Variant (Array Index)",
-            "default":"0"
-          },
-          {
-            "id": "cta-compare",
-            "type": "checkbox",
-            "label": "Display Compare Price",
-            "default": false
-          },
-          {
-            "id": "cta-desc",
-            "type": "textarea",
-            "label": "Product Description",
-            "default": "Build a full computer and control the virtual game world by building and programming electronics!"
-          }
-        ]
-      },
-      {
-          "type": "collection-section",
-          "name": "Collection Section",
-          "settings": [
+{
+  "blocks": [
+    {
+      "type": "card-cta",
+      "name": "Call to Action Card",
+      "settings": [
+        {
+          "id": "cta-title",
+          "type": "text",
+          "label": "Title",
+          "default": "Get your child's first DIY computer!"
+        },
+        {
+          "id": "cta-product",
+          "type": "text",
+          "label": "Product Handle",
+          "default": "piper-computer-kit"
+        },
+        {
+          "id": "cta-variant",
+          "type": "text",
+          "label": "Product Variant (Array Index)",
+          "default": "0"
+        },
+        {
+          "id": "cta-compare",
+          "type": "checkbox",
+          "label": "Display Compare Price",
+          "default": false
+        },
+        {
+          "id": "cta-desc",
+          "type": "textarea",
+          "label": "Product Description",
+          "default": "Build a full computer and control the virtual game world by building and programming electronics!"
+        }
+      ]
+    },
+    {
+      "type": "collection-section",
+      "name": "Collection Section",
+      "settings": [
+        {
+          "id": "collection-section-handle",
+          "label": "Collection Handle",
+          "type": "text",
+          "default": "frontpage",
+          "info": "Handle of collection to display"
+        },
+        {
+          "id": "collection-section-size",
+          "label": "Card Size",
+          "type": "select",
+          "default": "",
+          "options": [
             {
-              "id": "collection-section-handle",
-              "label": "Collection Handle",
-              "type": "text",
-              "default": "frontpage",
-              "info": "Handle of collection to display"
+              "value": "",
+              "label": "Normal"
             },
             {
-              "id": "collection-section-size",
-              "label": "Card Size",
-              "type": "select",
-              "default": "",
-              "options": [
-                { "value": "", "label": "Normal" },
-                { "value": "small", "label": "Small" }
-              ]
-            },
-            {
-              "id": "collection-section-item-count",
-              "label": "Section Item Count",
-              "type": "range",
-              "min": 3,
-              "max": 12,
-              "step": 3,
-              "default": 3
+              "value": "small",
+              "label": "Small"
             }
           ]
-      }
-    ]
-  }
+        },
+        {
+          "id": "collection-section-item-count",
+          "label": "Section Item Count",
+          "type": "range",
+          "min": 3,
+          "max": 12,
+          "step": 3,
+          "default": 3
+        }
+      ]
+    },
+    {
+      "type": "subheader",
+      "name": "Subheader",
+      "settings": [
+        {
+          "id": "subheader-content",
+          "type": "text",
+          "label": "Content",
+          "default": "A new subheader!"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

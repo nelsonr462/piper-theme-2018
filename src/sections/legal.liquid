@@ -3,8 +3,8 @@
         <div {{ block.shopify_attributes }}>
             {% case block.type %}
 
-              {% when 'legal-hero' %}
-              {% include 'legal-hero' %}
+              {% when 'page-hero-legal' %}
+              {% include 'page-hero-legal' %}
 
               {% when 'page-content-container' %}
               {% include 'page-content-container' %}
@@ -20,7 +20,7 @@
     "blocks": [
       
       {
-        "type": "legal-hero",
+        "type": "page-hero-legal",
         "name": "Legal Page Hero",
         "settings": [
           {

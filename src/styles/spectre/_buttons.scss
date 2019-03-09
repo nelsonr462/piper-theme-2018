@@ -202,7 +202,7 @@
   $transparent-button-colors: 'white-purple' white white $purple-color white,
                               'white-blue' white white $primary-color white,
                               'gray-outline' $gray-color-dark $gray-color-dark white $gray-color-dark,
-                              'red-outline' $red-color $red-color white $red-color;
+                              'primary-outline' $primary-color $primary-color white $primary-color;
   
   @each $type in $transparent-button-colors {
     &.#{ nth($type, 1)} {

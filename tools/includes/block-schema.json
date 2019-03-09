@@ -32,16 +32,31 @@
             "label": "Announcement banner link"
           },
           {
+            "id": "homepage-hero-main-text-color",
+            "type": "select",
+            "label": "Text Color",
+            "options": [
+              {
+                "value": "",
+                "label": "White"
+              },
+              {
+                "value": "primary",
+                "label": "Primary"
+              }
+            ]
+          },
+          {
             "id": "homepage-hero-main-title",
-            "type": "text",
+            "type": "html",
             "label": "Title",
-            "placeholder": "This is Piper!"
+            "default": "<div><h2>This is Piper!</h2><div>"
           },
           {
             "id": "homepage-hero-main-description",
-            "type": "textarea",
+            "type": "html",
             "label": "Description",
-            "placeholder": "Lorem ipsum filler text blah blabsabla blah blah"
+            "default": "<div>Lorem ipsum filler text blah blabsabla blah blah</div>"
           },
           {
             "id": "homepage-hero-main-button-text",

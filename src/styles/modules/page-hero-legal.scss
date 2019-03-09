@@ -2,15 +2,15 @@
     @extend .page-hero-main;
 
     // Slight overselection to override @extend
-    div.hero-overlay {
+    .hero-overlay {
         background: rgba($primary-color, 0.7);
     }
 
-    div.subnav-container {
+    .subnav-container {
         background: $primary-color;
     }
 
-    div.hero-content {
+    .hero-content {
         align-items: initial;
 
         h1 {
@@ -22,7 +22,7 @@
         }
     }
 
-    div.page-content {
+    .page-content {
         @include tablet {
             flex-basis: 100%;
         }

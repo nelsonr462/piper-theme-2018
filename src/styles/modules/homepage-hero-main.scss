@@ -41,41 +41,21 @@
         min-height: 30rem;
     }
 
-    div.page-content {
-        flex-basis: 100%;
-        padding: 0;
-        margin: 1rem 0 2rem 0;
-
+    .page-content {
         @include tablet {
             flex-basis: 40%;
             margin: 2rem 0;
         }
 
-        *:not(:first-child) {
-            margin: 1.75rem 0;
-        }
-
-        .desc {
-            margin: 1rem 0 2rem 0;
-            font-weight: 500;
+        &.primary {
+            color: $primary-color;
         }
     }
 
-    div.hero-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 100%;
-        padding: 1rem 1rem 0 1rem;
-
+    .hero-image {
         @include tablet {
             flex-basis: 60%;
             padding: 1rem 0;
-        }
-
-        img {
-            max-height: 15rem;
-            -ms-flex: 1 1 0px;
         }
     }
 

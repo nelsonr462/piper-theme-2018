@@ -28,6 +28,10 @@
 
 
 /*================ MODULES ================*/
+// - Extendable Components
+@import url('modules/page-hero-main.scss');
+
+
 // -- Components
 @import url('modules/article-main.scss');
 @import url('modules/awards-bar.scss');
@@ -57,7 +61,6 @@
 @import url('modules/page-content-container.scss');
 @import url('modules/page-hero-about.scss');
 @import url('modules/page-hero-legal.scss');
-@import url('modules/page-hero-main.scss');
 @import url('modules/page-hero-pipercode.scss');
 @import url('modules/paragraph-section.scss');
 @import url('modules/piper-hero-main.scss');

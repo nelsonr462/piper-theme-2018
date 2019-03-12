@@ -15,7 +15,36 @@
 
         <div class="image">
             <img src="{{ block.settings.banner-link-img | img_url: '500x' }}" alt="">
+            {% if block.settings.banner-link-is-video %}
+                <div class="action-btn" id="openVideo" src="{{ block.settings.banner-link-play-btn | img_url: '75x' }}" alt="">
+                    {% include 'icon-playvideo' %}
+                </div>
+            {% endif %}
         </div>
 
     </div>
+
+    {% if block.settings.banner-link-is-video %}
+        <div class="modal" id="videoModal">
+            <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                
+                <div class="modal-header">
+                    <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                    <div class="modal-title h4">Discover Piper</div>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="content" data-embed-code='{{ block.settings.banner-link-embed-code }}'>
+                        <!-- Video gets inserted here -->
+                    </div>    
+                </div>
+                
+                <div class="modal-footer">
+                </div>
+                
+            </div>
+        </div>
+    {% endif %}
+
 </div>

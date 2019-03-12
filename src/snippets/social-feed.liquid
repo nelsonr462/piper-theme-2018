@@ -1,4 +1,8 @@
-<div class="social-feed" style="background-image: url({{ block.settings.social-feed-bg | img_url: '900x', format: 'pjpg' }});">
+<div class="social-feed"
+    {% if block.settings.social-feed-bg %}
+    style="background-image: url({{ block.settings.social-feed-bg | img_url: '900x', format: 'pjpg' }});"
+    {% endif %}
+    >
     <div class="overlay {{ block.settings.social-feed-color }}">
         <div class="content">
             <h1>{{ block.settings.social-feed-title }}</h1>
@@ -8,7 +12,7 @@
                 {%- comment -%} BEGIN CAROUSEL {%- endcomment -%}
 
                 <div class="carousel">
-                    {% for i in (1..6) %}
+                    {% for i in (1..5) %}
                         {% assign tweetSelector = "social-feed-tweet-" | append: forloop.index %}
                         {% assign tweet = block.settings[tweetSelector] %}
 
@@ -41,7 +45,7 @@
                 {% endcomment %}
 
                 <div class="carousel-nav">
-                    {% for i in (1..6) %}
+                    {% for i in (1..5) %}
                     <div class="carousel-nav-button"></div>
                     {% endfor %}
                 </div>

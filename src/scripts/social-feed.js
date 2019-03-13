@@ -9,12 +9,13 @@ var sliderConfig = {
   loop: false,
   slideBy: 1,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 7500,
   autoplayButton: false,
   autoplayButtonOutput: false,
   lazyload: true,
   gutter: 10,
   mouseDrag: true,
+  swipeAngle: 30,
   responsive: {
       "600": {
           items: 2

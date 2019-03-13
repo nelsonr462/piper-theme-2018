@@ -1,33 +1,37 @@
 window.onload = function() {
     // Get all necessary elements
-    var openVideoButton = document.getElementById("openVideo");
+    var openVideoButtons = [...document.querySelectorAll("[data-modal-action= 'openVideo']")];
     var videoModal = document.getElementById("videoModal");
     var closeModalButtons = document.querySelectorAll("[href='#close-modal']");
-    var modalContent = document.querySelector("#videoModal .modal-body .content");
+    var modalContent = document.querySelector("#videoModal .modal-content");
 
-    // ========== MAIN ==========
-    openVideoButton.addEventListener('click', function( event ) {
-        var videoElement = document.createElement('div');
-        var loadingElement = document.createElement('div');
+    openVideoButtons.map(button => {
+        // ========== MAIN ==========
+        button.addEventListener('click', function( event ) {
+            var videoElement = document.createElement('div');
+            var loadingElement = document.createElement('div');
+    
+            // Add Spectre loading classes and append to modal
+            loadingElement.className = 'loading loading-lg';
+            modalContent.appendChild(loadingElement);
+    
+            // Add video responsive and use embed code from Shopify Theme Editor
+            videoElement.classList.add('video-responsive');
+            videoElement.innerHTML = this.getAttribute("data-embed-code");
+    
+            // Remove loading animation on iframe load
+            var iframeElement = videoElement.firstChild;
+            iframeElement.onload = function() {
+                modalContent.removeChild(loadingElement);
+            }
+            
+            // Append iframe, open modal
+            modalContent.appendChild(videoElement);
+            videoModal.classList.add("active");
+        })
 
-        // Add Spectre loading classes and append to modal
-        loadingElement.className = 'loading loading-lg';
-        modalContent.appendChild(loadingElement);
-
-        // Add video responsive and use embed code from Shopify Theme Editor
-        videoElement.classList.add('video-responsive');
-        videoElement.innerHTML = modalContent.getAttribute("data-embed-code");
-
-        // Remove loading animation on iframe load
-        var iframeElement = videoElement.firstChild;
-        iframeElement.onload = function() {
-            modalContent.removeChild(loadingElement);
-        }
-        
-        // Append iframe, open modal
-        modalContent.appendChild(videoElement);
-        videoModal.classList.add("active");
     })
+
 
     // Setup closing 
     for( var i = 0; i < closeModalButtons.length; i++ ) {

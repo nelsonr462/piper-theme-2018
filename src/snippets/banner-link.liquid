@@ -16,7 +16,11 @@
         <div class="image">
             <img src="{{ block.settings.banner-link-img | img_url: '500x' }}" alt="">
             {% if block.settings.banner-link-is-video %}
-                <div class="action-btn" id="openVideo" src="{{ block.settings.banner-link-play-btn | img_url: '75x' }}" alt="">
+                <div class="action-btn"
+                    data-modal-action="openVideo"
+                    src="{{ block.settings.banner-link-play-btn | img_url: '75x' }}"
+                    data-embed-code='{{ block.settings.banner-link-embed-code }}'
+                    alt="">
                     {% include 'icon-playvideo' %}
                 </div>
             {% endif %}
@@ -35,7 +39,7 @@
                 </div>
                 
                 <div class="modal-body">
-                    <div class="content" data-embed-code='{{ block.settings.banner-link-embed-code }}'>
+                    <div class="modal-content">
                         <!-- Video gets inserted here -->
                     </div>    
                 </div>

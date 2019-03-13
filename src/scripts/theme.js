@@ -13,6 +13,9 @@ window.theme = window.theme || {};
 
 /*================= Modules ================*/
 
+/*================ Templates ================*/
+// =require video-modals.js
+
 
 /*================ Sections ================*/
 // =require sections/navbar-main.js

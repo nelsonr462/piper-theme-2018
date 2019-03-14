@@ -1,11 +1,11 @@
 window.onload = function() {
     // Get all necessary elements
-    var openVideoButtons = [...document.querySelectorAll("[data-modal-action= 'openVideo']")];
+    var openVideoButtons = document.querySelectorAll("[data-modal-action= 'openVideo']");
     var videoModal = document.getElementById("videoModal");
     var closeModalButtons = document.querySelectorAll("[href='#close-modal']");
     var modalContent = document.querySelector("#videoModal .modal-content");
 
-    openVideoButtons.map(button => {
+    Array.prototype.forEach.call(openVideoButtons, function (button) {
         // ========== MAIN ==========
         button.addEventListener('click', function( event ) {
             var videoElement = document.createElement('div');
@@ -40,7 +40,10 @@ window.onload = function() {
             var loadingElement = document.querySelector("#videoModal .loading");
             videoModal.classList.remove('active');
             modalContent.removeChild(videoElement);
-            modalContent.removeChild(loadingElement);
+
+            if (loadingElement) {
+                modalContent.removeChild(loadingElement);
+            }
         })        
     }
 }

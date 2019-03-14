@@ -1429,6 +1429,63 @@
             "default": "A new subheader!"
           }
         ]
+      },
+      {
+        "type": "pipeline-section",
+        "name": "Pipeline Section",
+        "settings": [
+          {
+            "id": "pipeline-section-title",
+            "type": "text",
+            "label": "Title",
+            "default": "This is a Pipeline Section!"
+          },
+          {
+            "id": "pipeline-section-node-img-1",
+            "type": "image_picker",
+            "label": "Subsection 1 Image"
+          },
+          {
+            "id": "pipeline-section-node-title-1",
+            "type": "text",
+            "label": "Subsection 1 Title"
+          },
+          {
+            "id": "pipeline-section-node-desc-1",
+            "type": "textarea",
+            "label": "Subsection 1 Description"
+          },
+          {
+            "id": "pipeline-section-node-img-2",
+            "type": "image_picker",
+            "label": "Subsection 2 Image"
+          },
+          {
+            "id": "pipeline-section-node-title-2",
+            "type": "text",
+            "label": "Subsection 2 Title"
+          },
+          {
+            "id": "pipeline-section-node-desc-2",
+            "type": "textarea",
+            "label": "Subsection 2 Description"
+          },
+          {
+            "id": "pipeline-section-node-img-3",
+            "type": "image_picker",
+            "label": "Subsection 3 Image"
+          },
+          {
+            "id": "pipeline-section-node-title-3",
+            "type": "text",
+            "label": "Subsection 3 Title"
+          },
+          {
+            "id": "pipeline-section-node-desc-3",
+            "type": "textarea",
+            "label": "Subsection 3 Description"
+          }
+        ]
       }      
     ]
   }

@@ -59,16 +59,19 @@
                 <div class="ambassador-container">
                     <h1>{{ block.settings.social-feed-ambassadors-title }}</h1>
 
-                    {% for i in (1..4) %}
-                    <div class="ambassador">
-                        <div class="profile">
-                            <img src="{{ 'demo-profile-2.jpg' | asset_url }}" alt="">
+                    {% for i in (1..3) %}
+                        {% assign testimonial = "social-feed-testimonial-" | append: forloop.index %}
+                        {% assign author = "social-feed-author-" | append: forloop.index %}
+                        {% assign position = "social-feed-position-" | append: forloop.index %}
+                        <div class="ambassador">
+                            <div class="profile">
+                                <img src="{{ 'amazon-5-stars.png' | asset_img_url: '150x' }}" alt="">
+                            </div>
+                            <p class="testimonial">{{ block.settings[testimonial] }}</p>
+                            <h5>{{ block.settings[author] }}</h5>
+                            <p class="position"><strong>{{ block.settings[position] }}</strong></p>
+                            {% comment %} <p class="company">Cabello Elementary School</p> {% endcomment %}
                         </div>
-                        <h5>Thomas Whitaker</h5>
-                        <p class="position"><strong>4th Grade Teacher,</strong></p>
-                        <p class="company">Cabello Elementary School</p>
-                        <p class="testimonial">"The kids loved it. All the kids wanted to play with Piper after school."</p>
-                    </div>
                     {% endfor %}
 
                 </div>

@@ -1,3 +1,7 @@
+$pipeline-point-height: 0.75rem;
+$pipeline-point-width: 0.75rem;
+$pipeline-path-width: 0.25rem;
+
 .pipeline-section {
     padding: 3rem 0;
 
@@ -18,13 +22,12 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        overflow: hidden;
 
         &:before {
             @include desktop {
                 content: '';
-                width: 0.75rem;
-                height: 0.75rem;
+                width: $pipeline-point-height;
+                height: $pipeline-point-width;
                 background: $primary-color;
                 position: absolute;
                 left: calc(50% - 0.375rem);
@@ -35,7 +38,7 @@
         &:after {
             @include desktop {
                 content: '';
-                width: 0.25rem;
+                width: $pipeline-path-width;
                 height: 100%;
                 background: $primary-color;
                 position: absolute;
@@ -45,6 +48,7 @@
 
         @include desktop {
             flex-direction: row-reverse;
+            overflow: hidden;
         }
     }
 
@@ -68,6 +72,11 @@
                     &:before {
                         left: unset;
                         right: -1.65rem;
+                    }
+
+                    &:after {
+                        left: unset;
+                        right: -2.12rem;
                     }
                 }
             }
@@ -108,10 +117,37 @@
             }
         }
 
+        &:after {
+            content: '';
+            width: $pipeline-point-width;
+            height: $pipeline-point-height;
+            background: $primary-color;
+            position: absolute;
+            border-radius: 100%;
+            top: 0.65rem;
+            left: -2.12rem;
+        }
+
         .step-count {
             display: flex;
             align-items: center;
         }
     }
 
+
+    .path-cap {
+        display: none;
+        position: absolute;
+        width: $pipeline-point-width;
+        height: $pipeline-point-height;
+        background: $primary-color;
+        border-radius: 100%;
+        z-index: 1;
+        bottom: 0;
+        left: calc(50% - #{$pipeline-point-width}/2);
+
+        @include desktop {
+            display: initial;
+        }
+    }
 }

@@ -1242,6 +1242,51 @@
                 "label": "White"
               }
             ]
+          },
+          {
+            "id": "social-feed-testimonial-1",
+            "label": "Testimonial 1",
+            "type": "textarea"
+          },
+          {
+            "id": "social-feed-author-1",
+            "label": "Author 1",
+            "type": "text"
+          },
+          {
+            "id": "social-feed-position-1",
+            "label": "Author Title 1",
+            "type": "text"
+          },
+          {
+            "id": "social-feed-testimonial-2",
+            "label": "Testimonial 2",
+            "type": "textarea"
+          },
+          {
+            "id": "social-feed-author-2",
+            "label": "Author 2",
+            "type": "text"
+          },
+          {
+            "id": "social-feed-position-2",
+            "label": "Author Title 2",
+            "type": "text"
+          },
+          {
+            "id": "social-feed-testimonial-3",
+            "label": "Testimonial 3",
+            "type": "textarea"
+          },
+          {
+            "id": "social-feed-author-3",
+            "label": "Author 3",
+            "type": "text"
+          },
+          {
+            "id": "social-feed-position-3",
+            "label": "Author Title 3",
+            "type": "text"
           }
         ]
       },

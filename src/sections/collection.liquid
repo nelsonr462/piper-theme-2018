@@ -100,9 +100,35 @@
       "settings": [
         {
           "id": "subheader-content",
-          "type": "text",
+          "type": "html",
           "label": "Content",
           "default": "A new subheader!"
+        },
+        {
+          "id": "subheader-color",
+          "type": "select",
+          "label": "Color",
+          "default": "",
+          "options": [
+            {
+              "label": "Gray",
+              "value": ""
+            },
+            {
+              "label": "Primary",
+              "value": "primary"
+            },
+            {
+              "label": "Secondary",
+              "value": "secondary"
+            }
+          ]
+        },
+        {
+          "id": "subheader-divider",
+          "type": "checkbox",
+          "label": "Show Divider",
+          "default": false
         }
       ]
     }

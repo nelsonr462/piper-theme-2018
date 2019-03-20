@@ -8,4 +8,24 @@
     h4 {
         font-weight: lighter;
     }
+
+    &.center {
+        .content h1 {
+            text-align: center;
+        }
+    }
+
+    &.narrow {
+        .content h4, .content p {
+            @include tablet {
+                max-width: 75%;
+                margin: auto;
+            }
+
+            @include desktop {
+                max-width: 50%;
+                margin: auto;
+            }
+        }
+    }
 }

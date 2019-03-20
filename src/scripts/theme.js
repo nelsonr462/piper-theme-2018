@@ -15,7 +15,7 @@ window.theme = window.theme || {};
 
 /*================ Templates ================*/
 // =require video-modals.js
-
+// =require homepage-active.js
 
 /*================ Sections ================*/
 // =require sections/navbar-main.js

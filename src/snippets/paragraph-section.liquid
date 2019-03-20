@@ -1,4 +1,8 @@
-<div class="paragraph-content" id="{{ block.settings.paragraph-section-anchor | handleize }}">
+<div class="paragraph-content
+    {{block.settings.paragraph-section-alignment}}
+    {{block.settings.paragraph-section-padding}}"
+    id="{{ block.settings.paragraph-section-anchor | handleize }}"
+>
     <div class="content">
         <h1>{{ block.settings.paragraph-section-header }}</h1>
 

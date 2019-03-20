@@ -8,4 +8,27 @@
         font-weight: bold;
         margin: 0;
     }
+    
+    &.divide {
+        &:after {
+            background: $gray-color-dark;
+            content: "";
+            height: 2px;
+            width: 25%;
+            margin: 2rem auto 0 auto;
+        }
+    }
+
+    $subheader-colors:  'primary' $primary-color,
+                        'secondary' $secondary-color;
+                        
+    @each $type in $subheader-colors {
+        &.#{ nth($type, 1) } {
+            h1{
+                color: nth($type, 2)
+            }
+        }
+    }
+
+    
 }

@@ -262,6 +262,27 @@
             "type": "textarea",
             "label": "Feature Description 3",
             "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+          },
+          {
+            "id": "features-small-is-video",
+            "type": "checkbox",
+            "label": "Enable Video Links",
+            "default": false
+          },
+          {
+            "id": "features-small-embed-code-1",
+            "label": "Video Embed Code 1",
+            "type": "textarea"
+          },
+          {
+            "id": "features-small-embed-code-2",
+            "label": "Video Embed Code 2",
+            "type": "textarea"
+          },
+          {
+            "id": "features-small-embed-code-3",
+            "label": "Video Embed Code 3",
+            "type": "textarea"
           }
         ]
       },
@@ -635,8 +656,8 @@
           {
             "id": "banner-link-title",
             "label": "Title",
-            "type": "text",
-            "placeholder": "Resources"
+            "type": "html",
+            "default": "This is a link banner!"
           },
           {
             "id": "banner-link-subtitle",
@@ -740,11 +761,6 @@
             "id": "banner-link-is-video",
             "label": "Enable Video Link",
             "type": "checkbox"
-          },
-          {
-            "id": "banner-link-play-btn",
-            "label": "Play Button Image",
-            "type": "image_picker"
           },
           {
             "id": "banner-link-embed-code",
@@ -899,15 +915,15 @@
         "settings": [
           {
             "id": "paragraph-section-header",
-            "type": "text",
+            "type": "html",
             "label": "Section Header",
-            "placeholder": "Our Story"
+            "default": "Our Story"
           },
           {
             "id": "paragraph-section-content",
-            "type": "textarea",
+            "type": "html",
             "label": "Section Content",
-            "placeholder": "Headquartered in San Francisco CA Piper..."
+            "default": "Headquartered in San Francisco CA Piper..."
           },
           {
             "id": "paragraph-section-size",
@@ -918,6 +934,27 @@
               { "label": "Small", "value": "small"},
               { "label": "Large", "value": "large"}
             ]
+          },
+          {
+            "id": "paragraph-section-padding",
+            "type": "select",
+            "label": "Paragraph Width",
+            "options": [
+              {"label": "Wide", "value": ""},
+              {"label": "Narrow", "value": "narrow"}
+            ],
+            "default": ""
+          },
+          {
+            "id": "paragraph-section-alignment",
+            "type": "select",
+            "label": "Alignment",
+            "options": [
+              { "label": "Left", "value": ""},
+              { "label": "Center", "value": "center"}
+            ],
+            "default": ""
+
           },
           {
             "id": "paragraph-section-anchor",
@@ -932,9 +969,26 @@
         "settings": [
           {
             "id": "subheader-content",
-            "type": "text",
+            "type": "html",
             "label": "Content",
             "default": "A new subheader!"
+          },
+          {
+            "id": "subheader-color",
+            "type": "select",
+            "label": "Color",
+            "default": "",
+            "options": [
+              {"label": "Gray", "value": ""},
+              {"label": "Primary", "value": "primary"},
+              {"label": "Secondary", "value": "secondary"}
+            ]
+          },
+          {
+            "id": "subheader-divider",
+            "type": "checkbox",
+            "label": "Show Divider",
+            "default": false
           }
         ]
       },

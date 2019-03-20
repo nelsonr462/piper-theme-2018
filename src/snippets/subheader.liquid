@@ -1,3 +1,10 @@
-<div class="subheader">
+<div class=
+    "subheader {{block.settings.subheader-color | prepend: ' '}}
+    
+    {%- if block.settings.subheader-divider -%}
+     divide
+    {%- endif -%}
+    "
+>
     <h1>{{ block.settings.subheader-content }}</h1>
 </div>

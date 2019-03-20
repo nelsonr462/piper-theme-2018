@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
     // Get all necessary elements
     var openVideoButtons = document.querySelectorAll("[data-modal-action= 'openVideo']");
     var videoModal = document.getElementById("videoModal");
@@ -46,4 +46,4 @@ window.onload = function() {
             }
         })        
     }
-}
+});

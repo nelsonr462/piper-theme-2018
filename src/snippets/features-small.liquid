@@ -6,10 +6,19 @@
             {% assign feature-name = "features-small-subheader-" | append: forloop.index %}
             {% assign feature-img = "features-small-img-" | append: forloop.index %}
             {% assign feature-desc = "features-small-desc-" | append: forloop.index %}
+            {% assign embed-code = "features-small-embed-code-" | append: forloop.index %}
 
             <div class="feature">
                 <div class="image">
                     <img src="{{ block.settings[feature-img] | img_url: '400x' }}" />
+                    {% if block.settings.features-small-is-video %}
+                        <div class="action-btn"
+                            data-modal-action="openVideo"
+                            data-embed-code='{{ block.settings[embed-code] }}'
+                            alt="">
+                            {% include 'icon-playvideo' %}
+                        </div>
+                    {% endif %}
                 </div>
                 <h5>{{ block.settings[feature-name] }}</h5>
                 <div class="description">{{ block.settings[feature-desc] }}</div>  
@@ -17,5 +26,27 @@
         {% endfor %}
 
     </div>
+
+    {% if block.settings.features-small-is-video %}
+        <div class="modal" id="videoModal">
+            <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                
+                <div class="modal-header">
+                    <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <!-- Video gets inserted here -->
+                    </div>    
+                </div>
+                
+                <div class="modal-footer">
+                </div>
+                
+            </div>
+        </div>
+    {% endif %}
 </div>
 

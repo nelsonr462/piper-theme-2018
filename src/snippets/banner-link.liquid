@@ -18,7 +18,6 @@
             {% if block.settings.banner-link-is-video %}
                 <div class="action-btn"
                     data-modal-action="openVideo"
-                    src="{{ block.settings.banner-link-play-btn | img_url: '75x' }}"
                     data-embed-code='{{ block.settings.banner-link-embed-code }}'
                     alt="">
                     {% include 'icon-playvideo' %}
@@ -35,7 +34,6 @@
                 
                 <div class="modal-header">
                     <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
-                    <div class="modal-title h4">Discover Piper</div>
                 </div>
                 
                 <div class="modal-body">

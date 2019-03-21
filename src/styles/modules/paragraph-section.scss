@@ -18,14 +18,14 @@
     &.narrow {
         .content h4, .content p {
             @include tablet {
-                max-width: 75%;
+                max-width: 70%;
                 margin: auto;
             }
 
-            @include desktop {
+            @include hi-res {
                 max-width: 50%;
-                margin: auto;
             }
+
         }
     }
 }

@@ -83,6 +83,12 @@ $pipeline-path-width: 0.25rem;
         }
     }
 
+    .node-image {
+        img {
+            border-radius: 0.5rem;
+        }
+    }
+
     .node-step {
         display: flex;
         position: absolute;

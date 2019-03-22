@@ -1,5 +1,9 @@
 <div class="banner-image-xl">
+    {% if block.settings.banner-image-xl-compress %}
     <img src="{{ block.settings.banner-image-xl-img | img_url: '900x', format: 'pjpg'}}" alt="">
+    {% else %}
+    <img src="{{ block.settings.banner-image-xl-img | img_url: '900x'}}" alt="">
+    {% endif %}
     <div class="banner-container">
         <div class="content">
             <h1>{{ block.settings.banner-image-xl-title }}</h1>

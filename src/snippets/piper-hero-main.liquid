@@ -1,6 +1,9 @@
-<div class="piper-hero-main" 
-    {% if block.settings.piper-hero-main-background %}
+<div  
+    {% if block.settings.piper-hero-main-background and block.settings.piper-hero-main-bg-type == "" %}
+        class="piper-hero-main"
         style="background-image: url({{ block.settings.piper-hero-main-background | img_url: '1200x', format: 'pjpg' }});"
+    {%- else -%}
+        class="piper-hero-main {{ block.settings.piper-hero-main-bg-type }}"
     {% endif %}
 >
     {% assign product = all_products[block.settings.piper-hero-main-product] %}
@@ -36,7 +39,7 @@
                     <span class="chip">Out of Stock</span>
                     {% endif %}
 
-                    <div class="image-main show-sm">
+                    <div class="image-main">
                         <div class="image">
                             <img src="{{ product.featured_image | img_url: '500x' }}" alt="">
                         </div>
@@ -53,7 +56,7 @@
                     </form>
                 </div>
                  
-                <div class="image-main hide-sm">
+                <div class="image-main">
                     <div class="image">
                         <img src="{{ product.featured_image | img_url: '500x' }}" alt="">
                     </div>

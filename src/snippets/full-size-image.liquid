@@ -3,5 +3,13 @@
         <h1>{{ block.settings.full-size-image-title }}</h1>
     {% endif %}
 
-    <img src="{{ block.settings.full-size-image-img | img_url: '1200x', format: 'pjpg' }}" alt="">
+    {% if block.settings.full-size-image-compress %}
+    <img src="{{ block.settings.full-size-image-img | img_url: '1200x', format: 'pjpg' }}"
+        style="width: {{ block.settings.full-size-image-display-size }}%"
+        alt="">
+    {% else %}
+    <img src="{{ block.settings.full-size-image-img | img_url: '1200x' }}"
+        style="width: {{ block.settings.full-size-image-display-size }}%"
+        alt="">
+    {% endif %}
 </div>

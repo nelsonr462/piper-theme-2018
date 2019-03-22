@@ -296,6 +296,13 @@
           "type": "textarea",
           "label": "Description",
           "placeholder": "Lorem ipsum dolor sit amet, consector adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "id": "banner-image-xl-compress",
+          "label": "Compress Image (Recommended)",
+          "type": "checkbox",
+          "info": "If transparency is required, uncheck this.",
+          "default": true
         }
       ]
     },
@@ -893,6 +900,23 @@
           "id": "full-size-image-img",
           "type": "image_picker",
           "label": "Image"
+        },
+        {
+          "id": "full-size-image-compress",
+          "label": "Compress Image (Recommended)",
+          "type": "checkbox",
+          "info": "If transparency is required, uncheck this.",
+          "default": true
+        },
+        {
+          "id": "full-size-image-display-size",
+          "label": "Image Display Size",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 100
         }
       ]
     },
@@ -1296,6 +1320,22 @@
       "name": "Piper Hero",
       "settings": [
         {
+          "id": "piper-hero-main-bg-type",
+          "type": "select",
+          "label": "Background Type",
+          "options": [
+            {
+              "label": "Image and Colored Overlay",
+              "value": ""
+            },
+            {
+              "label": "Angled Color",
+              "value": "angled-bg"
+            }
+          ],
+          "default": ""
+        },
+        {
           "id": "piper-hero-main-background",
           "type": "image_picker",
           "label": "Page Hero Background"
@@ -1614,6 +1654,23 @@
           "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
         },
         {
+          "id": "video-section-title-pos",
+          "type": "select",
+          "label": "Title Position",
+          "default": "top",
+          "options": [
+            {
+              "label": "Top",
+              "value": "top"
+            },
+            {
+              "label": "Bottom",
+              "value": "bottom"
+            }
+          ],
+          "info": "Choosing 'Top' removes the description text."
+        },
+        {
           "id": "video-embed-code",
           "type": "textarea",
           "label": "Video Embed Code",
@@ -1626,6 +1683,26 @@
           "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
         },
         {
+          "id": "video-section-bg-type",
+          "type": "select",
+          "label": "Background Type",
+          "options": [
+            {
+              "label": "Image with Transparent Overlay",
+              "value": ""
+            },
+            {
+              "label": "Primary Color",
+              "value": "primary-solid"
+            },
+            {
+              "label": "Secondary Color",
+              "value": "secondary-solid"
+            }
+          ],
+          "default": ""
+        },
+        {
           "id": "video-section-background",
           "type": "image_picker",
           "label": "Section Background"
@@ -1633,12 +1710,12 @@
         {
           "id": "video-color",
           "type": "select",
-          "label": "Video Background Color",
+          "label": "Image Overlay/Text Color",
           "default": "",
           "options": [
             {
               "value": "",
-              "label": "Blue"
+              "label": "Primary Overlay"
             },
             {
               "value": "purple",

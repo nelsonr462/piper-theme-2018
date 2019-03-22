@@ -1,14 +1,29 @@
-<div class="video-section"
+<div 
     {% if block.settings.video-section-background %}
+        class="video-section"
         style="background-image: url({{ block.settings.video-section-background | img_url: '1200x' }});"
+    {% else %}
+        class="video-section {{ block.settings.video-section-bg-type }}"
     {% endif %}
 >
+    {% if block.settings.video-section-bg-type == "" %}
     <div class="overlay {{ block.settings.video-color }}">
+    {% else %}
+    <div class="overlay {{ block.settings.video-section-bg-type }}">
+    {% endif %}
         <div class="content">
+            {% if block.settings.video-section-title-pos == "top" %}
             <h1>{{ block.settings.video-title }}</h1>
+            {% endif %}
+            
             <div class="video-responsive" >
                 {{ block.settings.video-embed-code }}
             </div>
+
+            {% if block.settings.video-section-title-pos == "bottom" %}
+            <h2>{{ block.settings.video-title }}</h2>
+            {% endif %}
+
             <p>{{ block.settings.video-desc }}</p>
         </div>
     </div>

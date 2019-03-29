@@ -4,10 +4,13 @@
     {% else %}
     <img src="{{ block.settings.banner-image-xl-img | img_url: '900x'}}" alt="">
     {% endif %}
+
+    {% if block.settings.banner-image-xl-title != "" or block.settings.banner-image-xl-desc != "" %}    
     <div class="banner-container">
         <div class="content">
             <h1>{{ block.settings.banner-image-xl-title }}</h1>
             <p>{{ block.settings.banner-image-xl-desc }}</p>
         </div>
     </div>
+    {% endif %}
 </div>

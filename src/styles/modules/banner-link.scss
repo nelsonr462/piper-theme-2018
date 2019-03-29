@@ -89,6 +89,9 @@
     .copy {
         flex-basis: 100%;
         padding-top: 1rem;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
 
         @include tablet {
             padding-top: 0;

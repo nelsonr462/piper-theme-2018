@@ -48,7 +48,7 @@
         }
 
         h1 {
-            color: $primary-color;
+            color: $gray-color-dark;
             font-weight: bold;
             padding-bottom: 2rem;
             text-align: center;
@@ -57,8 +57,12 @@
                 text-align: left;
             }
 
-            &.purple {
-                color: $purple-color;
+            &.primary {
+                color: $primary-color;
+            }
+
+            &.primary {
+                color: $secondary-color;
             }
         }
 

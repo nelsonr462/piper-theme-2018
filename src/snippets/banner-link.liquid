@@ -3,7 +3,9 @@
 
         <div class="copy">
             <h2>{{ block.settings.banner-link-title }}</h2>
+            {% if block.settings.banner-link-subtitle != "" %}
             <h3>{{ block.settings.banner-link-subtitle }}</h3>
+            {% endif %}
             <p>{{ block.settings.banner-link-desc }}</p>
 
             {% if block.settings.banner-link-btn-text != blank %}

@@ -1,22 +1,32 @@
-.features-small {
-    @extend .page-width;
-    padding: 1rem 0;
+.features-split {
 
-    @include desktop {
-        padding: 1rem 0 2rem 0;
+    // Color Schemes: $NAME, $HEADER-COLOR, $DESC-COLOR, $BACKGROUND, $BUTTON-TYPE
+    $color-schemes: 'white-primary' $primary-color-dark $gray-color-dark white '',
+                    'white-secondary' $secondary-color-dark $gray-color-dark white '',
+                    'primary-white' white white $primary-color 'white-primary',
+                    'secondary-white' white white $secondary-color 'white-secondary';
+
+    @each $type in $color-schemes {
+        &.#{ nth($type, 1) } {
+            h1 { color: nth($type, 2); }
+            .feature { color: nth($type, 3); }
+            background: nth($type, 4);
+        }
+    }
+
+    .overlay {
+        @extend .page-width;
+        padding: 2rem 0;
+    
+        @include desktop {
+            padding: 2rem 0 2rem 0;
+        }
     }
 
     h1 {
-        color: $primary-color;
+        text-align: center;
+        color: $gray-color-dark;
         font-weight: bold;
-
-        &.purple {
-            color: $purple-color;
-        }
-
-        &.gray {
-            color: $gray-color;
-        }
     }
 
     .content {
@@ -36,17 +46,13 @@
         color: $gray-color-dark;
 
         @include tablet {
-            flex-basis: 33%;
+            flex-basis: 50%;
 
             &:nth-child(1) {
                 padding-right: 1rem;
             }
 
             &:nth-child(2) {
-                padding: 1rem .5rem;
-            }
-
-            &:nth-child(3) {
                 padding-left: 1rem;
             }
         }
@@ -59,10 +65,6 @@
             }
 
             &:nth-child(2) {
-                padding: 1rem .75rem;
-            }
-
-            &:nth-child(3) {
                 padding-left: 1.5rem;
             }
         }
@@ -73,10 +75,6 @@
             }
 
             &:nth-child(2) {
-                padding: 1rem 1.25rem;
-            }
-
-            &:nth-child(3) {
                 padding-left: 2.5rem;
             }
         }
@@ -97,6 +95,10 @@
                 max-height: 100%;
                 border-radius: 0.5rem;
             }
+        }
+
+        .description {
+            padding-bottom: 2rem;
         }
     }
 

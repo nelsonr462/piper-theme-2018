@@ -4,36 +4,24 @@
     background-repeat: no-repeat;
 
     .overlay {
-        background: rgba($primary-color, 0.8);
-        color: white;
+        background: white;
+        color: $gray-color-dark;
         padding: 2rem 0;
 
-        &.purple {
-            background: $purple-color-overlay;
-            color: white;
-        }
-        
-        &.white-blue {
+        &.white-primary {
             color: $primary-color;
         }
         
-        &.white-purple {
-            color: $purple-color;
-        }
-        
-        &.white-blue, &.white-purple {
-            background: rgba(white, 0.8);
-            p {
-                color: $gray-color;
-            }
+        &.white-secondary {
+            color: $secondary-color;
         }
 
-        &.primary-solid {
+        &.primary-white {
             background: $primary-color;
             color: white;
         }
 
-        &.secondary-solid {
+        &.secondary-white {
             background: $secondary-color;
             color: white;
         }

@@ -114,21 +114,30 @@
         "name": "Detail Banner",
         "settings": [
           {
-            "id": "variation",
+            "id": "banner-detail-color",
             "type": "select",
-            "label": "Decorations",
+            "label": "Color Scheme",
+            "default": "",
             "options": [
               {
-                "value": "variation-1",
-                "label": "Pieces"
-              },
-              {
-                "value": "variation-2",
-                "label": "Breadboard"
-              },
-              {
                 "value": "",
-                "label": "None"
+                "label": "White, Gray Header"
+              },
+              {
+                "value": "white-primary",
+                "label": "White, Primary Header"
+              },
+              {
+                "value": "white-secondary",
+                "label": "White, Secondary Header"
+              },
+              {
+                "value": "primary-white",
+                "label": "Primary, White Header"
+              },
+              {
+                "value": "secondary-white",
+                "label": "Secondary, White Header"
               }
             ]
           },
@@ -287,6 +296,104 @@
         ]
       },
       {
+        "type": "features-split",
+        "name": "Split Features",
+        "settings": [
+          {
+            "id": "features-split-section-title",
+            "type": "html",
+            "label": "Section Title",
+            "default": "TEACHER TESTED</br>TEACHER APPROVED"
+          },
+          {
+            "id": "features-split-color-scheme",
+            "type": "select",
+            "label": "Section Color Scheme",
+            "options": [
+              {"label": "White Background, Gray Header", "value": ""},
+              {"label": "White Background, Primary Header", "value": "white-primary"},
+              {"label": "White Background, Secondary Header", "value": "white-secondary"},
+              {"label": "Primary Background, White Header", "value": "primary-white"},
+              {"label": "Secondary Background, White Header", "value": "secondary-white"}
+            ],
+            "default": ""
+          },
+          {
+            "id": "features-split-button-type",
+            "type": "select",
+            "label": "Section Buton Type",
+            "options": [
+              {"label": "Default", "value": ""},
+              {"label": "Gray Outline", "value": "gray-outline"},
+              {"label": "White, Primary Hover", "value": "white-primary"},
+              {"label": "White, Secondary Hover", "value": "white-secondary"}            ],
+            "default": ""
+          },
+          {
+            "id": "features-split-subheader-1",
+            "type": "text",
+            "label": "Feature 1 Title",
+            "default": "Feature 1"
+          },
+          {
+            "id": "features-split-img-1",
+            "type": "image_picker",
+            "label": "Feature 1 Description"
+          },
+          {
+            "id": "features-split-desc-1",
+            "type": "textarea",
+            "label": "Feature 1 Description",
+            "default": "Feature 1"
+          },
+          {
+            "id": "features-split-button-1",
+            "type": "text",
+            "label": "Feature 1 Button Text",
+            "default": "LEARN MORE"
+          },
+          {
+            "id": "features-split-link-1",
+            "type": "url",
+            "label": "Feature 1 Button Link"
+          },
+          {
+            "id": "features-split-subheader-2",
+            "type": "text",
+            "label": "Feature 2 Title",
+            "default": "Feature 2"
+          },
+          {
+            "id": "features-split-img-2",
+            "type": "image_picker",
+            "label": "Feature 2 Image"
+          },
+          {
+            "id": "features-split-desc-2",
+            "type": "textarea",
+            "label": "Feature 2 Description",
+            "default": "Feature 2"
+          },
+          {
+            "id": "features-split-button-2",
+            "type": "text",
+            "label": "Feature 2 Button Text",
+            "default": "LEARN MORE"
+          },
+          {
+            "id": "features-split-link-2",
+            "type": "url",
+            "label": "Feature 2 Button Link"
+          },
+          {
+            "id": "features-split-is-video",
+            "type": "checkbox",
+            "label": "Enable Video Links",
+            "default": false
+          }
+        ]
+      },
+      {
         "type": "video-section",
         "name": "Video Section",
         "settings": [
@@ -304,7 +411,7 @@
             "options": [
               {"label": "Top", "value": "top"},
               {"label": "Bottom", "value": "bottom"}
-            ],
+            ]
           },
           {
             "id": "video-embed-code",
@@ -342,19 +449,23 @@
             "options": [
               {
                 "value": "",
-                "label": "Primary Overlay"
+                "label": "White Background, Gray Text"
               },
               {
-                "value": "purple",
-                "label": "Purple"
+                "value": "white-primary",
+                "label": "White Background, Primary Color Text"
               },
               {
-                "value": "white-blue",
-                "label": "White (Blue Header)"
+                "value": "white-secondary",
+                "label": "White Background, Secondary Color Text"
               },
               {
-                "value": "white-purple",
-                "label": "White (Purple Header)"
+                "value": "primary-white",
+                "label": "Primary Background, White Text"
+              },
+              {
+                "value": "secondary-white",
+                "label": "Secondary Background, White Text"
               }
             ]
           }
@@ -869,11 +980,15 @@
             "options": [
               {
                 "value": "",
-                "label": "Blue"
+                "label": "Gray"
               },
               {
-                "value": "purple",
-                "label": "Purple"
+                "value": "Primary",
+                "label": "primary"
+              },
+              {
+                "value": "Secondary",
+                "label": "secondary"
               }
             ]
           }
@@ -1151,7 +1266,7 @@
           },
           {
             "id": "page-hero-title",
-            "type": "textarea",
+            "type": "html",
             "label": "Page Hero Title",
             "placeholder": "The best way to learn programming & engineering"
           },

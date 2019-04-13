@@ -1,6 +1,20 @@
 .banner-detail {
-    color: white;
-    background: $primary-color;
+    color: $gray-color-dark;
+    background: white;
+
+    // Color Schemes: $NAME, $HEADER-COLOR, $DESC-COLOR, $BACKGROUND
+    $color-schemes: 'white-primary' $primary-color-dark $gray-color-dark white,
+                    'white-secondary' $secondary-color-dark $gray-color-dark white,
+                    'primary-white' white white $primary-color,
+                    'secondary-white' white white $secondary-color;
+
+    @each $type in $color-schemes {
+        &.#{ nth($type, 1) } {
+            h1 { color: nth($type, 2); }
+            p { color: nth($type, 3); }
+            background: nth($type, 4);
+        }
+    }
 
     .banner-container {
         @include desktop {

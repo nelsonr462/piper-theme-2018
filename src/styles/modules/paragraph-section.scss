@@ -10,7 +10,7 @@
     }
 
     &.center {
-        .content h1 {
+        .content > * {
             text-align: center;
         }
     }

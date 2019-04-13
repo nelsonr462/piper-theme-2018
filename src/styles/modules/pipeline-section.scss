@@ -140,6 +140,13 @@ $pipeline-path-width: 0.25rem;
         }
     }
 
+    .node-copy {
+        @include tablet {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
 
     .path-cap {
         display: none;

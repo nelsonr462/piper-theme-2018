@@ -1,5 +1,5 @@
 .banner-link {
-    padding: 3.5rem 0;
+    padding: 2rem 0;
     background: transparent;
     color: $gray-color-dark;
 
@@ -29,8 +29,6 @@
         }
 
         .image {
-            padding: 40%;
-
             @include tablet {
                 padding: 0;
             }
@@ -52,8 +50,6 @@
         }
 
         .image {
-            padding: 30%;
-
             @include tablet {
                 padding: 0;
             }
@@ -99,6 +95,7 @@
         }
 
         > * {
+            flex-basis: 100%;
 
             @include tablet {
                 margin-right: 2rem;
@@ -113,7 +110,7 @@
 
     .image {
         position: relative;
-        padding: 50%;
+        padding: 30%;
         display: flex;
         flex-basis: 100%;
         align-content: center;

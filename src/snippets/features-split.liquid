@@ -1,0 +1,66 @@
+<div class="features-split {{block.settings.features-split-color-scheme}}">
+    <div class="overlay"> 
+        {% if block.settings.features-split-section-title != "" %}
+        <h1>{{ block.settings.features-split-section-title }}</h1>
+        {% endif %}
+        <div class="content">
+
+            {% for i in (1..2) %}
+                {% assign feature-name = "features-split-subheader-" | append: forloop.index %}
+                {% assign feature-img = "features-split-img-" | append: forloop.index %}
+                {% assign feature-desc = "features-split-desc-" | append: forloop.index %}
+                {% assign embed-code = "features-split-embed-code-" | append: forloop.index %}
+                {% assign button-text =  "features-split-button-" | append: forloop.index %}
+                {% assign button-link =  "features-split-link-" | append: forloop.index %}
+
+                <div class="feature">
+                    <div class="image">
+                        <img src="{{ block.settings[feature-img] | img_url: '600x' }}" />
+                        {% if block.settings.features-split-is-video %}
+                            <div class="action-btn"
+                                data-modal-action="openVideo"
+                                data-embed-code='{{ block.settings[embed-code] }}'
+                                alt="">
+                                {% include 'icon-playvideo' %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    <h4>{{ block.settings[feature-name] }}</h4>
+                    <div class="description">{{ block.settings[feature-desc] }}</div>  
+
+                    {% if block.settings[button-text] != blank %}
+                        <a href="{{ block.settings[button-link] }}">
+                            <button class="btn btn-lg {{ block.settings.features-split-button-type }}">{{ block.settings[button-text] }}</button>
+                        </a>
+                    {% endif %}
+
+                </div>    
+            {% endfor %}
+
+        </div>
+
+        {% if block.settings.features-split-is-video %}
+            <div class="modal" id="videoModal">
+                <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container">
+                    
+                    <div class="modal-header">
+                        <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <!-- Video gets inserted here -->
+                        </div>    
+                    </div>
+                    
+                    <div class="modal-footer">
+                    </div>
+                    
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+

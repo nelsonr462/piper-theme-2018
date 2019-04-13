@@ -200,7 +200,8 @@
   }
   // LIST: $NAME, $TEXT-COLOR, $BORDER-COLOR, $HOVER-COLOR, $HOVER-BACKGROUND 
   $transparent-button-colors: 'white-purple' white white $purple-color white,
-                              'white-blue' white white $primary-color white,
+                              'white-primary' white white $primary-color white,
+                              'white-secondary' white white $secondary-color white,
                               'gray-outline' $gray-color-dark $gray-color-dark white $gray-color-dark,
                               'primary-outline' $primary-color $primary-color white $primary-color;
   

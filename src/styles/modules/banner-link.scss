@@ -68,6 +68,10 @@
         flex-wrap: wrap-reverse;
         min-height: 20rem;
 
+        @include tablet {
+            height: 20rem;
+        }
+
         &.right {
             flex-direction: row-reverse;
 
@@ -131,6 +135,7 @@
             margin: auto;
             max-width: 100%;
             max-height: 100%;
+            border-radius: 0.5rem;
         }
     }
 
@@ -144,6 +149,8 @@
         width: 4rem;
         height: 4rem;
         color: $primary-color;
+        background: white;
+        border-radius: 100%;
     }
 
     .modal-content {

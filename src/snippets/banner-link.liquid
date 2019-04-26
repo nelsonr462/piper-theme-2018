@@ -1,3 +1,4 @@
+{% capture block-content %}
 <div class="banner-link {{ block.settings.banner-link-theme }} {{ block.settings.banner-link-img-style }}">
     <div class="content {{ block.settings.banner-link-direction }}">
 
@@ -19,7 +20,7 @@
             <img src="{{ block.settings.banner-link-img | img_url: '500x' }}" alt="">
             {% if block.settings.banner-link-is-video %}
                 <div class="action-btn"
-                    data-modal-action="openVideo"
+                    href="#openVideo"
                     data-embed-code='{{ block.settings.banner-link-embed-code }}'
                     alt="">
                     {% include 'icon-playvideo' %}
@@ -40,7 +41,7 @@
                 
                 <div class="modal-body">
                     <div class="modal-content">
-                        <!-- Video gets inserted here -->
+                        {%- comment -%} Video gets inserted here {%- endcomment -%}
                     </div>    
                 </div>
                 
@@ -52,3 +53,29 @@
     {% endif %}
 
 </div>
+{% endcapture %}
+
+
+{% if block.settings.banner-link-collection-display %}    
+    {% assign display-block = false %}
+
+    {%- comment -%} Check for display collection and set flag if found.{%- endcomment -%}
+    {% for collection in product.collections %}
+        {% if collection.handle == block.settings.banner-link-collection %}
+            {% assign display-block = true %}
+        {% endif %}
+    {% endfor %}
+
+    {% if display-block %}
+        {{ block-content }}
+    {% endif %}
+
+    {%- comment -%} Reset variable in case multiple blocks present on same page. {%- endcomment -%}
+    {% assign display-block = nil %}
+
+{% else %}
+    {{ block-content }}
+{% endif %}
+
+{%- comment -%} Cleanup block-content variable. {%- endcomment -%}
+{% assign block-content = nil %}

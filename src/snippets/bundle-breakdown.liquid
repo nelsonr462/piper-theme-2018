@@ -1,3 +1,4 @@
+{% capture block-content %}
 <div class="bundle-breakdown" id="{{ block.settings.bundle-breakdown-anchor-link }}">
     {% assign item = all_products[ block.settings.bundle-breakdown-product ] %}
     {% if item.variants.size > 1 %}
@@ -12,7 +13,7 @@
 
         <div class="product-card">
             <div class="product-img">
-                <img src="{{ item | img_url: '300x300', crop: 'center' }}" alt="">
+                <img src="{{ item | img_url: '420x' }}" alt="">
             </div>
             <h3>{{ item.title }}</h3>
             <div class="price">
@@ -26,7 +27,7 @@
 
             <form method="post" action="/cart/add">
                 <input type="hidden" name="id" value="{{ item.selected_or_first_available_variant.id }}" />
-                <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless item.available %}disabled="true"{% endunless %}/>
+                <input type="submit" value="SHOP NOW" class="btn btn-lg orange" {% unless item.available %}disabled="true"{% endunless %}/>
             </form> 
             
         </div>
@@ -53,3 +54,16 @@
     {% assign variant = nil %}
     </div>
 </div>
+{% endcapture %}
+
+
+{% if block.settings.bundle-breakdown-product-display %}    
+    {% if product.handle == block.settings.bundle-breakdown-product-page %}
+        {{ block-content }}
+    {% endif %}
+{% else %}
+    {{ block-content }}
+{% endif %}
+
+{%- comment -%} Cleanup block-content variable. {%- endcomment -%}
+{% assign block-content = nil %}

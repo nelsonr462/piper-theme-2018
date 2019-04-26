@@ -342,7 +342,7 @@
           },
           {
             "id": "features-split-desc-1",
-            "type": "textarea",
+            "type": "html",
             "label": "Feature 1 Description",
             "default": "Feature 1"
           },
@@ -355,7 +355,8 @@
           {
             "id": "features-split-link-1",
             "type": "url",
-            "label": "Feature 1 Button Link"
+            "label": "Feature 1 Button Link",
+            "info": "To open embedded video, enter #openVideo as the link to the button"
           },
           {
             "id": "features-split-subheader-2",
@@ -370,7 +371,7 @@
           },
           {
             "id": "features-split-desc-2",
-            "type": "textarea",
+            "type": "html",
             "label": "Feature 2 Description",
             "default": "Feature 2"
           },
@@ -383,13 +384,27 @@
           {
             "id": "features-split-link-2",
             "type": "url",
-            "label": "Feature 2 Button Link"
+            "label": "Feature 2 Button Link",
+            "info": "To open embedded video, enter #openVideo as the link to the button"
           },
           {
-            "id": "features-split-is-video",
+            "id": "features-split-enable-video",
             "type": "checkbox",
             "label": "Enable Video Links",
-            "default": false
+            "default": false,
+            "info": "Enables play buttons on images. Videos may also be linked via the button links."
+          },
+          {
+            "id": "features-split-embed-code-1",
+            "type": "textarea",
+            "label": "Video Embed Code 1",
+            "info": "Paste the whole embed code here."
+          },
+          {
+            "id": "features-split-embed-code-2",
+            "type": "textarea",
+            "label": "Video Embed Code 2",
+            "info": "Paste the whole embed code here."
           }
         ]
       },
@@ -699,8 +714,8 @@
           {
             "id": "product-info-items",
             "type": "textarea",
-            "label": "Item List (Comma Separated)",
-            "default": "Item 1, Item 2, Item 3"
+            "label": "Item List (Double Comma Separated)",
+            "default": "Item 1,, Item 2,, Item 3"
           }
         ]
       },
@@ -723,17 +738,17 @@
           },
           {
             "id": "expand-section-1",
-            "type": "textarea",
+            "type": "html",
             "label": "Section 1 Content"
           },
           {
             "id": "expand-section-2",
-            "type": "textarea",
+            "type": "html",
             "label": "Section 2 Content"
           },
           {
             "id": "expand-section-3",
-            "type": "textarea",
+            "type": "html",
             "label": "Section 3 Content"
           }
         ]
@@ -768,7 +783,7 @@
           },
           {
             "id": "cta-desc",
-            "type": "textarea",
+            "type": "html",
             "label": "Product Description",
             "default": "Build a full computer and control the virtual game world by building and programming electronics!"
           },
@@ -937,6 +952,19 @@
                 "label": "Right"
               }
             ]
+          },
+          {
+            "id": "banner-link-collection-display",
+            "label": "Enable product-specific display",
+            "type": "checkbox",
+            "default": false,
+            "info": "Toggles specific product page display via collections."
+          },
+          {
+            "id": "banner-link-collection",
+            "label": "Display Collection",
+            "type": "collection",
+            "info": "Collection of product pages that this block will display on."
           }
         ]
       },
@@ -1339,18 +1367,24 @@
         "name": "Bundle Breakdown",
         "settings": [
           {
-            "id": "bundle-breakdown-anchor-link",
-            "label": "Anchor Link (for hero button/nav links)",
-            "type": "text",
-            "placeholder": "bundle-breakdown",
-            "info": "Optional"
+            "id": "bundle-breakdown-product-display",
+            "label": "Enable product-specific display",
+            "type": "checkbox",
+            "default": false,
+            "info": "Toggles specific product page display."
+          },
+          {
+            "id": "bundle-breakdown-product-page",
+            "label": "Display Product",
+            "type": "product",
+            "info": "Product page that this block will display on."
           },
           {
             "id": "bundle-breakdown-product",
             "label": "Product Handle",
             "type": "text",
             "placeholder": "piper-computer-kit",
-            "info": "Shopify Product Handle"
+            "info": "Shopify Product Handle. Pulls image and price info."
           },
           {
             "id": "bundle-breakdown-variant",
@@ -1581,6 +1615,12 @@
             "type": "checkbox",
             "label": "Show compare price",
             "default": false
+          },
+          {
+            "id": "piper-hero-main-breadcrumb",
+            "type": "checkbox",
+            "label": "Show breadcrumb",
+            "default": true
           }
         ]
       },
@@ -1637,6 +1677,16 @@
         "type": "product-hero-main",
         "name": "Main Product Hero",
         "settings": [
+          {
+            "id": "product-hero-bg-type",
+            "type": "select",
+            "label": "Background Type",
+            "options": [
+              {"label": "Image and Colored Overlay", "value": ""},
+              {"label": "Angled Color", "value": "angled-bg"}
+            ],
+            "default": ""
+          },
           {
             "id": "product-hero-background",
             "type": "image_picker",

@@ -93,8 +93,12 @@
         {% comment %} ENDCART SUBTOTAL {% endcomment %}
         
         {% if settings.cart_notes_enable %}
-        <label for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
-        <textarea name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+        <div class="cart-notes-container">
+            <div class="form-group">
+                <label class="form-label" for="CartSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+                <textarea class="form-input" name="note" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+            </div>
+        </div>
         {% endif %}
         
         {% if cart.total_discounts > 0 %}
@@ -105,7 +109,7 @@
         <input type="submit" name="checkout" class="btn btn-lg green" id="checkout" value="{{ 'cart.general.checkout' | t }}">
     </form>
     <a class="keep-shopping" href="/products">
-        <button class="btn btn-primary">Continue Shopping</button>
+        <button class="btn btn-lg btn-primary">Continue Shopping</button>
     </a>
 {% else %}        
     {% comment %}

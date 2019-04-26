@@ -42,7 +42,7 @@ function getSectionTemplate(list) {
         {% case block.type %}\n\n\n`;
 
     let sectionEnd = dedent`
-        {% endcase%}
+        {% endcase %}
       </div>
       {% endfor %}
     </div>\n\n\n`;
@@ -50,8 +50,8 @@ function getSectionTemplate(list) {
     let sectionIncludes = "";
 
     for(let i in list) {
-        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% when '${list[i]}'%}\n`;
-        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% include '${list[i]}'%}\n\n`;
+        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% when '${list[i]}' %}\n`;
+        sectionIncludes = sectionIncludes + `${indent.repeat(3)}{% include '${list[i]}' %}\n\n`;
     }
 
     return sectionStart + sectionIncludes + sectionEnd;

@@ -12,7 +12,7 @@
   position: fixed;
   background: white;
   padding: 0 4%;
-  @include prefix(box-shadow, 0 -5px 10px 3px black, moz webkit ms spec);
+  @include prefix(box-shadow, 0 -9px 8px 3px black, moz webkit ms spec);
 
   @include tablet {
     height: $navbar-height-tablet;
@@ -23,14 +23,14 @@
   @include desktop {
     height: $navbar-height-desktop;
     padding: 0 10%;
-    position: relative;
-    box-shadow: none;
+    // position: relative;
+    // box-shadow: none;
   }
 
   @include hi-res {
     height: $navbar-height-hi-res;
-    padding: 0;
-    max-width: 1440px; 
+    padding: 0 15%;
+    // max-width: 1440px; 
   }
 
   .navbar-section {

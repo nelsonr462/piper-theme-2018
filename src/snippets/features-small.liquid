@@ -15,7 +15,7 @@
                     <img src="{{ block.settings[feature-img] | img_url: '400x' }}" />
                     {% if block.settings.features-small-is-video %}
                         <div class="action-btn"
-                            data-modal-action="openVideo"
+                            href="#openVideo"
                             data-embed-code='{{ block.settings[embed-code] }}'
                             alt="">
                             {% include 'icon-playvideo' %}

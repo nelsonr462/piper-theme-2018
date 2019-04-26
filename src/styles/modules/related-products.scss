@@ -63,17 +63,20 @@
 
 
     .image {
-        width: 10rem;
+        width: 12rem;
         height: 12rem;
         margin: 0 auto;
         position: relative;
         padding-bottom: 1rem;
 
         img {
+            max-height: 12rem;
             position: absolute;
-            top: 0;
             margin: auto;
+            top: 0;
             bottom: 0;
+            left: 0;
+            right: 0;
         }
     }
 

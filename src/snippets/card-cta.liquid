@@ -1,7 +1,10 @@
 <div class="card-cta">
     <div class="content">
-        {% comment %} <h2>{{ block.settings.cta-title }}</h2>
-        <div class="divider"></div> {% endcomment %}
+
+        {% if block.settings.cta-title != '' %}
+        <h2>{{ block.settings.cta-title }}</h2>
+        <div class="divider"></div>
+        {% endif %}
 
         
         {% assign item = all_products[ block.settings.cta-product ] %}

@@ -3,16 +3,16 @@
   <div {{ block.shopify_attributes }}>
     {% case block.type %}
 
-      {% when 'card-cta'%}
-      {% include 'card-cta'%}
+      {% when 'card-cta' %}
+      {% include 'card-cta' %}
 
-      {% when 'collection-section'%}
-      {% include 'collection-section'%}
+      {% when 'collection-section' %}
+      {% include 'collection-section' %}
 
-      {% when 'subheader'%}
-      {% include 'subheader'%}
+      {% when 'subheader' %}
+      {% include 'subheader' %}
 
-    {% endcase%}
+    {% endcase %}
   </div>
   {% endfor %}
 </div>
@@ -50,7 +50,7 @@
         },
         {
           "id": "cta-desc",
-          "type": "textarea",
+          "type": "html",
           "label": "Product Description",
           "default": "Build a full computer and control the virtual game world by building and programming electronics!"
         },

@@ -9,7 +9,12 @@
     .item-list {
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
+        margin: 0 0 0 1rem;
+        list-style: disc outside;
+
+        @include tablet {
+            margin: 0;
+        }
 
         li {
             flex-basis: 100%;
@@ -18,6 +23,9 @@
 
             @include tablet {
                 flex-basis: 33%;
+                p {
+                    padding-right: 1rem;
+                }
             }
         }
     }

@@ -1,6 +1,9 @@
-<div class="product-hero-main"
-    {% if block.settings.product-hero-background %}
+<div 
+    {% if block.settings.product-hero-background and block.settings.product-hero-bg-type %}
+        class="product-hero-main"
         style="background-image: url({{ block.settings.product-hero-background | img_url: '900x', format: 'pjpg' }});"
+    {% else %}
+        class="product-hero-main {{ block.settings.product-hero-bg-type }}"
     {% endif %}
 >
     <div class="hero-overlay">
@@ -18,7 +21,11 @@
             <div class="product-content">
                 <div class="info">
                     {% comment %} Header {% endcomment %}
-                    <h1>{{ product.title }}</h1>
+                    <h1>
+                        <a class="product-link" href="{{ product.url }}">
+                            {{ product.title }}
+                        </a>
+                    </h1>
         
                     {% comment %} Price {% endcomment %}
                     <div class="price">
@@ -48,13 +55,13 @@
                     {% comment %} Add To Cart {% endcomment %}
                     <form method="post" action="/cart/add">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless product.available %}disabled="true"{% endunless %}/>
+                        <input type="submit" value="ADD TO CART" class="btn btn-lg btn-primary" {% unless product.available %}disabled="true"{% endunless %}/>
                     </form>
                 </div>
                  
                 <div class="image-main">
                     <div class="image">
-                        <img src="{{ product.featured_image | img_url: '300x' }}" alt="">
+                        <img src="{{ product.featured_image | img_url: '500x' }}" alt="">
                     </div>
                 </div>
     

@@ -1,1 +1,19 @@
-{% section 'product' %}
+
+
+{% case product.handle %}
+
+    {% when 'piper-computer-kit-2' %}
+        {% section 'product-piper-computer-kit' %}
+
+    {% when 'piper-education-starter-kit' %}
+        {% section 'product-piper-education-starter-kit' %}
+        
+    {% when 'piper-station' %}
+        {% section 'product-piper-station' %}
+
+    {% when 'piper-classroom-bundle' %}
+        {% section 'product-piper-classroom-bundle' %}
+        
+    {% else %}
+        {% section 'product' %}
+{% endcase %}

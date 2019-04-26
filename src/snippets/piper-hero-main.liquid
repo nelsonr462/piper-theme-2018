@@ -9,8 +9,13 @@
     {% assign product = all_products[block.settings.piper-hero-main-product] %}
     <div class="hero-overlay">
         <div class="hero-content">
+
             {% comment %} Breadcrumb {% endcomment %}
+            {% if block.settings.piper-hero-main-breadcrumb %}
             <ul class="breadcrumb">
+            {% else %}
+            <ul class="breadcrumb d-invisible">
+            {% endif %}
                 <li class="breadcrumb-item">
                     <a href="/products">Products</a>
                 </li>
@@ -22,7 +27,12 @@
             <div class="product-content">
                 <div class="info">
                     {% comment %} Header {% endcomment %}
-                    <h1>{{ product.title }}</h1>
+                    
+                    <h1>
+                        <a class="product-link" href="{{ product.url }}">
+                            {{ product.title }}
+                        </a>
+                    </h1>
         
                     {% comment %} Price {% endcomment %}
                     <div class="price">
@@ -52,7 +62,7 @@
                     {% comment %} Add To Cart {% endcomment %}
                     <form method="post" action="/cart/add">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input type="submit" value="Add To Cart" class="btn btn-lg orange" {% unless product.available %}disabled="true"{% endunless %}/>
+                        <input type="submit" value="ADD TO CART" class="btn btn-lg btn-primary" {% unless product.available %}disabled="true"{% endunless %}/>
                     </form>
                 </div>
                  

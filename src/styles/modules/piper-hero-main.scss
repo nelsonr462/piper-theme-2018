@@ -1,31 +1,6 @@
 .piper-hero-main {
     @extend .product-hero-main;
 
-    &.angled-bg {
-        .hero-overlay:before {
-            content: '';
-            position: absolute;
-            background: $primary-color;
-            z-index: 0;
-            top: -10rem;
-            width: 100%;
-            height: 28rem;
-            transform: skewY(14deg);
-
-            @include tablet {
-                transform: skewY(0deg);
-                transform: skewX(-14deg);
-                left: -40vw;
-                top: 0;
-            }
-        }
-
-        .hero-overlay {
-            background: white;
-            overflow: hidden;
-        }
-    }
-
     .product-nav {
         flex-basis: 100%;
         display: flex;

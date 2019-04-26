@@ -33,7 +33,11 @@ main {
   }
 
   @include desktop {
-    padding-top: 0;
+    padding-top: $navbar-height-desktop;
+  }
+
+  @include hi-res {
+    padding-top: $navbar-height-hi-res;
   }
 }
 

@@ -83,9 +83,14 @@
                 "edu-main.liquid",
                 "homepage.liquid",
                 "legal.liquid",
+                "page-default.liquid",
                 "piper-main.liquid",
                 "pipercode.liquid",
                 "product.liquid",
+                "product-piper-classroom-bundle.liquid",
+                "product-piper-computer-kit.liquid",
+                "product-piper-education-starter-kit.liquid",
+                "product-piper-station.liquid",
                 "storefront.liquid",
                 "webinars.liquid"
             ]

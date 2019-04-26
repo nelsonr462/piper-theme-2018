@@ -22,6 +22,7 @@ $pipeline-path-width: 0.25rem;
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        flex-basis: 100%;
 
         &:before {
             @include desktop {
@@ -43,6 +44,7 @@ $pipeline-path-width: 0.25rem;
                 background: $primary-color;
                 position: absolute;
                 left: calc(50% - 0.125rem);
+                top: 1.5rem;
             }
         }
 
@@ -59,23 +61,31 @@ $pipeline-path-width: 0.25rem;
 
         @include desktop {
             flex-basis: 50%;
-            padding: 0 0 0 2.25rem;
+            
+
+            &:nth-child(odd) >* {
+                padding: 0 0 0 2.25rem;
+            }
+
+            &:nth-child(even) >* {
+                padding: 0 2.25rem 0 0;
+            }
 
             &:nth-child(even) {
                 margin-top: 18rem;
-                padding: 0 2.25rem 0 0;
+                // padding: 0 2.25rem 0 0;
 
                 .node-step {
-                    left: unset;
+                    left: auto;
                     right: 1.5rem;
 
                     &:before {
-                        left: unset;
+                        left: auto;
                         right: -1.65rem;
                     }
 
                     &:after {
-                        left: unset;
+                        left: auto;
                         right: -2.12rem;
                     }
                 }
@@ -160,7 +170,7 @@ $pipeline-path-width: 0.25rem;
         left: calc(50% - #{$pipeline-point-width}/2);
 
         @include desktop {
-            display: initial;
+            display: block;
         }
     }
 }

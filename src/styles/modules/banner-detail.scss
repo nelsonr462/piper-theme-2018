@@ -78,11 +78,12 @@
         min-height: 15rem;
 
         @include tablet {
-            min-height: 15rem;
+            min-height: 20rem;
         }
 
         @include desktop {
             flex-basis: 100%;
+            min-height: 25rem;
             
         }
     }

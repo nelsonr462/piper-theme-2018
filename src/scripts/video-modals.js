@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Get all necessary elements
-    var openVideoButtons = document.querySelectorAll("[data-modal-action= 'openVideo']");
+    var openVideoButtons = document.querySelectorAll("[href='#openVideo']");
     var videoModal = document.getElementById("videoModal");
     var closeModalButtons = document.querySelectorAll("[href='#close-modal']");
     var modalContent = document.querySelector("#videoModal .modal-content");

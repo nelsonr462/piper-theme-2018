@@ -22,6 +22,10 @@
         margin: 2rem 0;
     }
 
+    .title a {
+        color: $gray-color-dark;
+    }
+
     .product {
         display: flex;
         flex-wrap: wrap-reverse;

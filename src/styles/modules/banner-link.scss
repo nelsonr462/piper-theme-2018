@@ -67,10 +67,16 @@
         display: flex;
         flex-wrap: wrap-reverse;
         min-height: 20rem;
-
-        @include tablet {
-            height: 20rem;
+        
+        &:after {
+            content:'';
+            min-height:inherit;
+            font-size:0;
         }
+
+        // @include tablet {
+        //     height: 20rem;
+        // }
 
         &.right {
             flex-direction: row-reverse;

@@ -765,9 +765,8 @@
           },
           {
             "id": "cta-product",
-            "type": "text",
-            "label": "Product Handle",
-            "default": "piper-computer-kit"
+            "type": "product",
+            "label": "Product"
           },
           {
             "id": "cta-variant",
@@ -1814,6 +1813,32 @@
             "id": "pipeline-section-background",
             "type": "image_picker",
             "label": "Pipeline Background"
+          }
+        ]
+      },
+      {
+        "type": "storefront-nav",
+        "name": "Storefront Nav",
+        "settings": [
+          {
+            "id": "storefront-nav-link-1",
+            "type": "url",
+            "label": "Link 1"
+          },
+          {
+            "id": "storefront-nav-link-2",
+            "type": "url",
+            "label": "Link 2"
+          },
+          {
+            "id": "storefront-nav-link-3",
+            "type": "url",
+            "label": "Link 3"
+          },
+          {
+            "id": "storefront-nav-link-4",
+            "type": "url",
+            "label": "Link 4"
           }
         ]
       }      

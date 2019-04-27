@@ -12,7 +12,7 @@
   position: fixed;
   background: white;
   padding: 0 4%;
-  @include prefix(box-shadow, 0 -9px 8px 3px black, moz webkit ms spec);
+  @include prefix(box-shadow, 0 -7px 7px 3px black, moz webkit ms spec);
 
   @include tablet {
     height: $navbar-height-tablet;

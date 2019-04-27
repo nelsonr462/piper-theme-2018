@@ -8,18 +8,14 @@
 
         
         {% assign item = all_products[ block.settings.cta-product ] %}
-        {% if item.variants.size > 1 %}
-            {% assign variant_id = block.settings.cta-variant | plus: 0 %}
-            {% assign variant = item.variants[ variant_id ] %}
-        {% endif %}
 
-        {% if variant %}
-            {% assign item = variant %}
-        {% endif %}
+        {% assign variant_id = block.settings.cta-variant | plus: 0 %}
+        {% assign variant = item.variants[ variant_id ] %}
+
 
         <div class="product">
             <div class="info">
-                <h3>{{ item.title }}</h3>
+                <h3 class="title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
                 <h3 class="price">
                     {% if block.settings.cta-compare %}
                         <strike>{{ item.compare_at_price | money }}</strike>
@@ -28,16 +24,20 @@
                 <p>{{ block.settings.cta-desc }}</p>
 
                 <form method="post" action="/cart/add">
-                    <input type="hidden" name="id" value="{{ item.id }}" />
+                    <input type="hidden" name="id" value="{{ variant.id }}" />
                     <input type="submit" value="{{ block.settings.cta-button }}" class="btn btn-primary btn-lg" {% unless item.available %}disabled="true"{% endunless %}/>
                 </form>
             </div>
 
 
-            <div class="image">
+            <a href="{{ item.url }}" class="image">
                 <img src="{{ item | img_url: '500x' }}" alt="">
-            </div>
+            </a>
 
         </div>
     </div>
 </div>
+
+{% assign item = nil %}
+{% assign variant = nil %}
+{% assign variant_id = nil %}

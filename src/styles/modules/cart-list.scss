@@ -220,6 +220,11 @@
         }
     }
 
+    .supports-cookies, .supports-no-cookies {
+        margin: 0 auto;
+        min-height: 25rem;
+    }
+
     .empty {
         padding: 15% 1.6rem;
         background: white;

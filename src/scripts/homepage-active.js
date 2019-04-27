@@ -3,7 +3,7 @@
 $(document).ready(function() {
     
     // Carrer Text Loop
-    var careers = ["Engineers", "Artists", "Scientists", "Inventors", "Teachers", "Entrepreneurs"];
+    var careers = ["Engineers", "Artists", "Scientists", "Inventors", "Teachers"];
     var careerElement = $("#careerLoop");
 
     function careerLoop(index) {

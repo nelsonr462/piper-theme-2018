@@ -1,0 +1,41 @@
+.storefront-nav {
+    background: white;
+    @include prefix(box-shadow, 0px -8px 8px 3px #000000, moz ms webkit spec);
+
+    .page-nav {
+        @extend .page-width;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+
+        @include tablet {
+            justify-content: center;
+        }
+        
+    }
+
+    .link {
+        font-size: 0.9rem;
+        font-weight: bold;
+        line-height: 1.65;
+        display: flex;
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: center;
+        color: $gray-color-dark;
+        padding: 1rem 0;
+
+        @include tablet {
+            border: none;
+            flex-basis: inherit;
+            padding: 0.5rem 2.4rem;
+        }
+        
+    }
+
+    .icon {
+        margin: 0 0.5rem 0 0;
+    }
+}

@@ -41,6 +41,10 @@
             // height: 10rem;
         }
 
+        h3 a {
+            color: $gray-color-dark;
+        }
+
         h3, .price, p, form {
             flex-basis: 100%;
             margin: 0.25rem 0;

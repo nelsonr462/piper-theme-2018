@@ -1,0 +1,21 @@
+<div class="eng-ts ts-start active" id="{{ block.settings.eng-ts-start-anchor | remove: '#'}}">
+    <div class="content">
+        <div class="img">
+            <img src="{{ block.settings.eng-ts-start-img | img_url: '250x' }}">
+        </div>
+
+        <div class="copy">
+            <h2>{{ block.settings.eng-ts-start-header }}</h2>
+            <p>{{ block.settings.eng-ts-start-content }}</p>
+        </div>
+
+        <div class="link">
+            <a  class="stepLink"
+                href="{{ block.settings.eng-ts-start-btn-link }}"
+                data-current="{{ block.settings.eng-ts-start-anchor }}">
+                <button class="btn btn-lg btn-primary" >{{ block.settings.eng-ts-start-btn-copy }}</button>
+            </a>
+        </div>
+    </div>   
+</div>
+<script defer src="{{ 'engineer-troubleshooter.js' | asset_url }}"></script>

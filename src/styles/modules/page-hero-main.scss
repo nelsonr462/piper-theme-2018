@@ -36,10 +36,14 @@
         display: flex;
         flex-wrap: wrap-reverse;
         align-items: center;
-        min-height: 35rem;
+        min-height: 30rem;
 
         @include tablet {
             flex-wrap: nowrap;
+        }
+
+        @include hi-res {
+            min-height: 45rem;
         }
     }
 
@@ -51,6 +55,12 @@
         @include tablet {
             flex-basis: 50%;
             margin: 2rem 0;
+        }
+
+        @include hi-res {
+            h1 {
+                font-size: 3rem;
+            }
         }
 
         *:not(:first-child) {

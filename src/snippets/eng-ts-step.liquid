@@ -1,0 +1,40 @@
+<div class="eng-ts ts-step" id="{{ block.settings.eng-ts-step-anchor | remove: '#'}}">
+    <div class="content">
+        <div class="copy">
+            <h2>{{ block.settings.eng-ts-step-header }}</h2>
+            <p>{{ block.settings.eng-ts-step-desc }}</p>
+        </div>
+
+        {%- if block.settings.eng-ts-step-video != '' -%}
+            <div class="video">
+                {{ block.settings.eng-ts-step-video }}
+            </div>
+        {%- elsif block.settings.eng-ts-step-img -%}
+            <div class="img">
+                <img src="{{ block.settings.eng-ts-step-img | img_url: 'x315' }}">
+            </div>
+        {%- endif -%}
+
+        <div class="test">
+            <h4>{{ block.settings.eng-ts-step-test }}</h4>
+            
+            <div class="answer">
+                <a  class="stepLink" 
+                    href="{{ block.settings.eng-ts-step-btn-link-1 }}" 
+                    data-device="{{ block.settings.eng-ts-step-device }}" 
+                    data-msg="{{ block.settings.eng-ts-step-msg }}"
+                    data-current="{{ block.settings.eng-ts-step-anchor }}">
+                    <button class="btn btn-lg green">YES</button>
+                </a>
+
+                <a  class="stepLink"
+                    href="{{ block.settings.eng-ts-step-btn-link-2 }}"
+                    data-device="{{ block.settings.eng-ts-step-device }}"
+                    data-msg="{{ block.settings.eng-ts-step-msg }}"
+                    data-current="{{ block.settings.eng-ts-step-anchor }}">
+                    <button class="btn btn-lg btn-primary">NO</button>
+                </a>
+            </div>
+        </div>
+    </div>   
+</div>

@@ -491,14 +491,14 @@
         "name": "Testimonial Banner",
         "settings": [
           {
-            "id": "profile_img",
-            "type": "image_picker",
-            "label": "Profile"
-          },
-          {
-            "id": "testimonial",
+            "id": "banner-testimonial-content",
             "type": "textarea",
             "label": "Testimonial"
+          },
+          {
+            "id": "banner-testimonial-author",
+            "type": "textarea",
+            "label": "Testimonial Author"
           },
           {
             "id": "color",
@@ -1841,6 +1841,10 @@
             "label": "Link 4"
           }
         ]
-      }      
+      },
+      {
+        "type": "engineer-troubleshooter",
+        "name": "Engineer Troubleshooter"
+      }
     ]
   }

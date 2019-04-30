@@ -1,15 +1,15 @@
 <div class="banner-testimonial {{ block.settings.color }}">
     <div class="content">
-         <div class="profile">
-            <img src="{{ block.settings.profile_img | img_url: '200x200', crop: 'center' }}" alt="">
-         </div>
-
          <div class="quote">
             
             <span><img src="{{ 'demo-quote.png' | asset_url }}" alt=""></span>
-            <p>{{ block.settings.testimonial }}</p>
+            <p>{{ block.settings.banner-testimonial-content }}</p>
             <span><img src="{{ 'demo-quote.png' | asset_url }}" alt=""></span>
             
+         </div>
+
+         <div class="author">
+            <p class="text-bold">{{ block.settings.banner-testimonial-author }}</p>
          </div>
     </div>
      

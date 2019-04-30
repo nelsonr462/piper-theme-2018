@@ -14,9 +14,6 @@
         padding: 1rem 0;
         flex-wrap: wrap;
 
-        @include tablet {
-            flex-wrap: nowrap;
-        }
     }
 
     .profile {
@@ -90,5 +87,18 @@
             @include prefix(transform, rotateY(180deg) rotateX(180deg), moz ms webkit spec);
         }
 
+    }
+
+    .author {
+        display: flex;
+        flex-basis: 100%;
+
+        p {
+            margin: auto;
+
+            @include tablet {
+                margin: 0 0 0 12%;
+            }
+        }
     }
 }

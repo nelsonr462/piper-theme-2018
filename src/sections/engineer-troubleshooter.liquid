@@ -1,0 +1,230 @@
+<div data-section-id="{{ section.id }}">
+    {% for block in section.blocks %}
+    <div {{ block.shopify_attributes }}>
+        {% case block.type %}
+    
+        {% when 'eng-ts-start' %}
+        {% include 'eng-ts-start' %}
+    
+        {% when 'eng-ts-step' %}
+        {% include 'eng-ts-step' %}
+    
+        {% when 'eng-ts-link' %}
+        {% include 'eng-ts-link' %}
+    
+        {% when 'eng-ts-end' %}
+        {% include 'eng-ts-end' %}
+
+        {% when 'eng-ts-submit' %}
+        {% include 'eng-ts-submit' %}
+    
+        {% endcase %}
+    </div>
+    {% endfor %}
+</div>
+      
+{% schema %}
+      {
+        "blocks": [
+          {
+            "type": "eng-ts-start",
+            "name": "Troubleshooter Start",
+            "settings": [
+              {
+                "id": "eng-ts-start-anchor",
+                "label": "Start Anchor",
+                "type": "text",
+                "default": "#ts-start"
+              },
+              {
+                "id": "eng-ts-start-img",
+                "label": "Start Image",
+                "type": "image_picker"
+              },
+              {
+                "id": "eng-ts-start-header",
+                "label": "Start Header",
+                "type": "text",
+                "default": "Are you having issues with your kit?"
+              },
+              {
+                "id": "eng-ts-start-content",
+                "label": "Start Content",
+                "type": "html"
+              },
+              {
+                "id": "eng-ts-start-btn-copy",
+                "label": "Button Copy",
+                "type": "text",
+                "default": "BEGIN"
+              },
+              {
+                "id": "eng-ts-start-btn-link",
+                "label": "Button Link",
+                "type": "url"
+              }
+            ]
+          },
+          {
+            "type": "eng-ts-step",
+            "name": "Troubleshooter Step",
+            "settings": [
+              {
+                "id": "eng-ts-step-anchor",
+                "label": "Step Anchor",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-step-header",
+                "label": "Step Header",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-step-desc",
+                "label": "Step Description",
+                "type": "textarea"
+              },
+              {
+                "id": "eng-ts-step-video",
+                "label": "Step Video Embed Code",
+                "type": "textarea",
+                "info": "If enabled, will replace image by default."
+              },
+              {
+                "id": "eng-ts-step-img",
+                "label": "Step Image",
+                "type": "image_picker",
+                "info": "If image selected, ensure there is no content in the Video Embed Code input above."
+              },
+              {
+                "id": "eng-ts-step-test",
+                "label": "Step Test Question",
+                "type": "textarea",
+                "default": "Is there a red light?"
+              },
+              {
+                "id": "eng-ts-step-btn-link-1",
+                "label": "Button Link 1",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-step-btn-link-2",
+                "label": "Button Link 2",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-step-device",
+                "label": "Result Device",
+                "type": "text",
+                "info": "Accepted values are: display, microusb, hdmi, pi, sd"
+              },
+              {
+                "id": "eng-ts-step-msg",
+                "label": "Result Message",
+                "type": "textarea",
+                "info": "Primary error message to be shown on result page."
+              }
+            ]
+          },
+          {
+            "type": "eng-ts-link",
+            "name": "Troubleshooter Link",
+            "settings": [
+              {
+                "id": "eng-ts-link-anchor",
+                "label": "Link Page Anchor",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-link-content",
+                "label": "Link Page Content",
+                "type": "html",
+                "default": "We're sorry to hear you're still having issues."
+              },
+              {
+                "id": "eng-ts-link-img",
+                "label": "Link Page Image",
+                "type": "image_picker",
+                "info": "If image selected, ensure there is no content in the Video Embed Code input above."
+              },
+              {
+                "id": "eng-ts-link-btn-copy",
+                "label": "Button Copy",
+                "type": "textarea",
+                "default": "SCHEDULE A SESSION"
+              },
+              {
+                "id": "eng-ts-link-btn-link",
+                "label": "Button Link",
+                "type": "url"
+              }
+            ]
+          },
+          {
+            "type": "eng-ts-end",
+            "name": "Troubleshooter End",
+            "settings": [
+              {
+                "id": "eng-ts-end-anchor",
+                "label": "Step Anchor",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-end-img",
+                "label": "End Page Image",
+                "type": "image_picker"
+              },
+              {
+                "id": "eng-ts-end-header",
+                "label": "End Page Header",
+                "type": "textarea",
+                "default": "TROUBLESHOOTER COMPLETE"
+              },
+              {
+                "id": "eng-ts-end-content",
+                "label": "End Page Content",
+                "type": "html",
+                "default": "TROUBLESHOOTER COMPLETE"
+              },
+              {
+                "id": "eng-ts-end-btn-copy",
+                "label": "End Page Button Copy",
+                "type": "text",
+                "default": "SUBMIT"
+              }
+            ]
+          },
+          {
+            "type": "eng-ts-submit",
+            "name": "Submit Screen",
+            "settings": [
+              {
+                "id": "eng-ts-submit-anchor",
+                "label": "Submit Page Anchor",
+                "type": "text"
+              },
+              {
+                "id": "eng-ts-submit-header",
+                "label": "Submit Page Header",
+                "type": "textarea"
+              },
+              {
+                "id": "eng-ts-submit-content",
+                "label": "Submit Page Content",
+                "type": "html"
+              },
+              {
+                "id": "eng-ts-submit-btn-link",
+                "label": "Submit Page Link",
+                "type": "url"
+              },
+              {
+                "id": "eng-ts-submit-btn-copy",
+                "label": "Submit Page Button Copy",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+{% endschema %}

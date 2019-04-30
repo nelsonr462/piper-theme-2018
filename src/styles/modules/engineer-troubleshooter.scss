@@ -1,0 +1,45 @@
+.eng-ts {
+    min-height: 40rem;
+    margin: 5rem 0;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    .content {
+        @extend .page-width;
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > * {
+            flex-basis: 100%;
+            text-align: center;
+        }
+    }
+
+    .img {
+        margin-bottom: 2rem;
+    }
+
+    .copy {
+        max-width: 30rem;
+    }
+
+    .test {
+        h4 {
+            margin: 2rem 0;
+        }
+    }
+
+    .form {
+        > * {
+            max-width: 15rem;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+}

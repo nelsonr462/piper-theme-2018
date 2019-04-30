@@ -1,0 +1,16 @@
+<div class="eng-ts ts-submit" id="{{ block.settings.eng-ts-submit-anchor | remove: '#'}}">
+    <div class="content">    
+        <div class="copy">
+            <h2>{{ block.settings.eng-ts-submit-header }}</h2>
+            <p>{{ block.settings.eng-ts-submit-content }}</p>
+        </div>
+
+        {%- if block.settings.eng-ts-submit-btn-copy != '' -%}
+        <div class="link">
+            <a href="{{ block.settings.eng-ts-submit-btn-link }}">
+                <button class="btn btn-lg green">{{ block.settings.eng-ts-submit-btn-copy }}</button>
+            </a>
+        </div>
+        {%- endif -%}
+    </div>   
+</div>

@@ -77,7 +77,7 @@
 
         {% if storefront %}
             <a class="collection-link" href="{{ collection.url }}">
-                View more in {{ collection.title }}
+                {{ block.settings.collection-section-view }}
             </a>
 
             {% assign collection = nil %}

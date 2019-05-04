@@ -105,6 +105,7 @@
         <p class="note">{{ 'cart.general.savings' | t }} {{ cart.total_discounts | money }}</p>
         {% endif %}
         <p class="note">{{ 'cart.general.shipping_at_checkout' | t }}</p>
+        <p class="note"><strong>International shipping available.<br />Local taxes may be applied depending on your country.</strong></p>
         <input type="submit" name="update" class="btn" id="update" value="{{ 'cart.general.update' | t }}">
         <input type="submit" name="checkout" class="btn btn-lg green" id="checkout" value="{{ 'cart.general.checkout' | t }}">
     </form>

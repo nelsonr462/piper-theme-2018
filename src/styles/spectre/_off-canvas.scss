@@ -44,7 +44,8 @@ $sidebar-width-tablet: 15rem;
     overflow-y: auto;
     position: fixed;
     top: 60px;
-    transform: translateX(100vw);
+    // transform: translateX(100vw) translateX(50rem);
+    @include prefix(transform, translateX(50rem), moz ms webkit spec);
     transition: transform .25s ease;
     z-index: $zindex-3;
 

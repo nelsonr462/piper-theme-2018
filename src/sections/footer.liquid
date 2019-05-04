@@ -85,6 +85,13 @@
                     </a>
                 </div>
 
+                <div class="links">
+                    {% if section.settings.footer-badge-img-1 %}
+                    <a href="https://www.stem.org/services/credentialing.html#products">
+                        <img src="{{ section.settings.footer-badge-img-1 | img_url: '150x' }}" alt="">
+                    </a>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
@@ -152,6 +159,11 @@
         "id": "footer-legal-note",
         "label": "Footer Legal Note(s)",
         "placeholder": "Not official Minecraft product."
+      },
+      {
+        "type": "image_picker",
+        "id": "footer-badge-img-1",
+        "label": "Footer Badge 1"
       }
 
     ]

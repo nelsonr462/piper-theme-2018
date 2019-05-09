@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_primary }}">
+  <meta name="google-site-verification" content="_TgwkXqnDaJ6T9jwemJIkILLZ2-C09rG-ZxFa1s3HhI" />
   <link rel="canonical" href="{{ canonical_url }}">
   {% comment %} <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet"> {% endcomment %}
 
@@ -47,6 +48,10 @@
       moneyFormat: {{ shop.money_format | json }}
     };
   </script>
+
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5654926.js"></script>
+  <!-- End of HubSpot Embed Code -->
 
   {% if template.directory == 'customers' %}
     <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->

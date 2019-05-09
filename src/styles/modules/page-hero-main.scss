@@ -63,7 +63,7 @@
             }
         }
 
-        *:not(:first-child) {
+        > *:not(:first-child) {
             margin: 1.75rem 0;
         }
 

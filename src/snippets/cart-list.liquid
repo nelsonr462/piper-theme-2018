@@ -33,11 +33,12 @@
                     <div class="item-info">
                         <div class="titles">
                             <a class="item-title" href="{{ item.url }}">{{ item.product.title }}</a>
+                            {% unless item.product.has_only_default_variant %}
                             <p class="variant-title">
-                                {% unless item.product.has_only_default_variant %}
                                 {{ item.variant.title }}
-                                {% endunless %}
                             </p>
+                            {% endunless %}
+                            {{ discount.title }}
                         </div>
                         <p class="price">{{ item.price | money }}</p>
 
@@ -87,6 +88,12 @@
 
 
         {% comment %} CART SUBTOTAL {% endcomment %}
+            {% if cart.cart_level_discount_applications.size > 0 %}
+                {% for discount in cart.cart_level_discount_applications %}
+                <p>PROMOS ACTIVE: {{ discount.total_allocated_amount | money }}</p>
+                {% endfor %}
+            {% endif %}
+
             <p class="cart-subtotal">
                 Subtotal: {{ cart.total_price | money }}
             </p>

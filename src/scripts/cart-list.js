@@ -32,3 +32,13 @@ window.onload = function() {
         updateButton.click();
     }
 }
+
+function getCookie(name) {
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
+}
+
+if(getCookie("discount_code") != '') {
+    var subtotal = document.querySelector('.cart-subtotal');
+    subtotal.innerHTML += "<br /><span class='discount-msg text-success'>Discounts will be applied at checkout.</span>"
+}

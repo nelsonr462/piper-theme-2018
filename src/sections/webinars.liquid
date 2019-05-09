@@ -30,6 +30,9 @@
       {% when 'bundle-breakdown' %}
       {% include 'bundle-breakdown' %}
 
+      {% when 'bundle-promo' %}
+      {% include 'bundle-promo' %}
+
       {% when 'card-cta' %}
       {% include 'card-cta' %}
 
@@ -543,6 +546,38 @@
         },
         {
           "id": "bundle-breakdown-list",
+          "label": "Feature List",
+          "type": "textarea",
+          "placeholder": "10* Piper Computer Kits/12* Lesson Plans ",
+          "info": "List format: BOLD* item 1 text/BOLD* item 2 text"
+        }
+      ]
+    },
+    {
+      "type": "bundle-promo",
+      "name": "Bundle Promo",
+      "settings": [
+        {
+          "id": "bundle-promo-product",
+          "label": "Product Handle",
+          "type": "text",
+          "placeholder": "piper-computer-kit",
+          "info": "Shopify Product Handle. Pulls image and price info."
+        },
+        {
+          "id": "bundle-promo-variant",
+          "label": "Product Variant Index",
+          "type": "text",
+          "info": "If product has no variants, leave at 0. Else, choose variant by number [0-10] depending on position in variants list, 0 being the first variant."
+        },
+        {
+          "id": "bundle-promo-desc",
+          "label": "Bundle Description",
+          "type": "textarea",
+          "placeholder": "Lorem ipsum dolor sit amet, consectetur adipsisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+        },
+        {
+          "id": "bundle-promo-list",
           "label": "Feature List",
           "type": "textarea",
           "placeholder": "10* Piper Computer Kits/12* Lesson Plans ",

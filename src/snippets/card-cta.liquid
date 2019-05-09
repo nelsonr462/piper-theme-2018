@@ -22,11 +22,15 @@
                     {% endif %}
                     {{ item.price | money | prepend: ' '}}</h3>
                 <p>{{ block.settings.cta-desc }}</p>
-
+                
+                {% if block.settings.cta-button != '' %}
+                    
                 <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ variant.id }}" />
                     <input type="submit" value="{{ block.settings.cta-button }}" class="btn btn-primary btn-lg" {% unless item.available %}disabled="true"{% endunless %}/>
                 </form>
+
+                {% endif %}
             </div>
 
 

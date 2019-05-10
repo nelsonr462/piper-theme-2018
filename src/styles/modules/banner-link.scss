@@ -66,17 +66,18 @@
         @extend .page-width;
         display: flex;
         flex-wrap: wrap-reverse;
-        // min-height: 20rem;
+        min-height: 12rem;
         
         &:after {
             content:'';
             min-height:inherit;
             font-size:0;
+            display: block;
         }
 
-        // @include tablet {
-        //     height: 20rem;
-        // }
+        @include tablet {
+            height: 20rem;
+        }
 
         &.right {
             flex-direction: row-reverse;

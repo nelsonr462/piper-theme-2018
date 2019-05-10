@@ -38,7 +38,6 @@
                                 {{ item.variant.title }}
                             </p>
                             {% endunless %}
-                            {{ discount.title }}
                         </div>
                         <p class="price">{{ item.price | money }}</p>
 
@@ -88,12 +87,6 @@
 
 
         {% comment %} CART SUBTOTAL {% endcomment %}
-            {% if cart.cart_level_discount_applications.size > 0 %}
-                {% for discount in cart.cart_level_discount_applications %}
-                <p>PROMOS ACTIVE: {{ discount.total_allocated_amount | money }}</p>
-                {% endfor %}
-            {% endif %}
-
             <p class="cart-subtotal">
                 Subtotal: {{ cart.total_price | money }}
             </p>

@@ -1,0 +1,35 @@
+<div class="popup modal" id="popupModal">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+    {% if block.settings.popup-bg-type == "bg-img" %}
+    <div 
+        class="modal-container"
+        style="background-image: url({{ block.settings.popup-bg-img | img_url: '640x', format: 'pjpg' }});"
+        >
+    {% else %}
+    <div class="modal-container">
+    {% endif %}
+
+        {% if block.settings.popup-bg-type == "bg-img" %}
+        <div class="overlay bg-img">
+        {% else %}
+        <div class="overlay">
+        {% endif %}
+            
+            <div class="modal-header">
+                <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title h2">{{ block.settings.popup-title }}</div>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-content">
+                    <!-- Popup content gets inserted here -->
+                    {{ block.settings.popup-content }}
+                </div>    
+            </div>
+            
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <script src="{{ 'modal-popup.js' | asset_url }}" defer="defer"></script>
+</div>

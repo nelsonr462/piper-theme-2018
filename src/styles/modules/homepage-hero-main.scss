@@ -39,6 +39,10 @@
     .hero-overlay .hero-content {
         // flex-wrap: wrap; 
         min-height: 30rem;
+
+        &.small {
+            min-height: 15rem;
+        }
     }
 
     .page-content {

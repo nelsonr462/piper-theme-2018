@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Get all necessary elements
     var openVideoButtons = document.querySelectorAll("[href='#openVideo']");
     var videoModal = document.getElementById("videoModal");
-    var closeModalButtons = document.querySelectorAll("[href='#close-modal']");
+    var closeModalButtons = document.querySelectorAll("#videoModal [href='#close-modal']");
     var modalContent = document.querySelector("#videoModal .modal-content");
 
     Array.prototype.forEach.call(openVideoButtons, function (button) {

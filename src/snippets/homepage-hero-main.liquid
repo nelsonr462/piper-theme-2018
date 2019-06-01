@@ -28,7 +28,7 @@
 
 
     <div class="hero-overlay {{ block.settings.homepage-hero-main-color }}">
-        <div class="hero-content">
+        <div class="hero-content {{ block.settings.homepage-hero-size }}">
             {% assign textColor = block.settings.homepage-hero-main-text-color %}
             
             <div class="page-content {{textColor}}">
@@ -39,11 +39,13 @@
                 <p class="desc">{{ block.settings.homepage-hero-main-description }}</p>
     
                 {% comment %} Call to Action {% endcomment %}
+                {% if block.settings.homepage-hero-main-button-text != '' %}
                 <div class="cta">
                     <a href="{{ block.settings.homepage-hero-main-button-link }}">
                         <button class="btn btn-lg primary-outline">{{ block.settings.homepage-hero-main-button-text }}</button>
                     </a>
                 </div>
+                {% endif %}
                 
     
             </div>

@@ -1,0 +1,50 @@
+{% section 'piper-command-center' %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
+<script src="{{ 'github-embed.min.js' | asset_url }}"></script>
+
+{{ 'github-embed.css' | asset_url | stylesheet_tag }}
+<script>
+    var defaultFirmware = {
+        "type": "arduino",
+        "label": "Controller Default",
+        "path": "/DefaultController/DefaultController.ino"
+    }
+
+    var commandCenterTest = {
+        "type": "arduino",
+        "label": "Command Center Test Code",
+        "path": "/CommandCenterTest/CommandCenterTest.ino"
+    }
+
+    var settings = {
+        "repo": "CommandCenterBeta",
+        "owner": "buildwithpiper",
+        "ref": "master",
+        "embed": []
+    }
+
+    settings.embed[0] = commandCenterTest;
+    githubEmbed('#commandCenterTest', settings);
+
+    settings.embed[0] = defaultFirmware;
+    githubEmbed("#firmware", settings);
+
+    // var expandableCheckboxes = $("[name='accordion-checkbox']");
+    // if(document.cookie.match('(^|;) ?' + "expand-sections" + '=([^;]*)(;|$)') == null) {
+    //     expandableCheckboxes.prop('checked', true);
+    // }
+
+    // Array.prototype.forEach.call(closePopupButtons, function(button) {
+    //     button.addEventListener('click', function(event) {
+    //         popup.removeClass("active");
+    //         // Set cookie on close
+    //         var date = new Date();
+    //         var maxAgeDays = 30;
+    //         date.setTime(date.getTime() + (maxAgeDays*24*60*60*1000));
+    //         var expires = "expires="+date.toUTCString();
+    //         document.cookie = "expand-sections=false;" + expires + ";path=/";
+    //     })
+    // })
+
+
+</script>

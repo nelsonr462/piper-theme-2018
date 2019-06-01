@@ -12,8 +12,6 @@ window.theme = window.theme || {};
 // =require slate/variants.js
 
 /*================= Modules ================*/
-
-/*================ Templates ================*/
 // =require video-modals.js
 // =require homepage-active.js
 

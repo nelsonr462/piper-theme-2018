@@ -1,1 +1,9 @@
+{% if blog.handle == 'piper-command-center' %}
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
+<script src="{{ 'github-embed.min.js' | asset_url }}"></script>
+
+{{ 'github-embed.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 {% section 'article' %}

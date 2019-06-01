@@ -60,6 +60,9 @@
       {% when 'homepage-hero-main' %}
       {% include 'homepage-hero-main' %}
 
+      {% when 'link-cards' %}
+      {% include 'link-cards' %}
+
       {% when 'mission-statement' %}
       {% include 'mission-statement' %}
 
@@ -86,6 +89,9 @@
 
       {% when 'piper-hero-main' %}
       {% include 'piper-hero-main' %}
+
+      {% when 'popup' %}
+      {% include 'popup' %}
 
       {% when 'product-gallery' %}
       {% include 'product-gallery' %}
@@ -1221,11 +1227,11 @@
           "options": [
             {
               "value": "blue",
-              "label": "Blue"
+              "label": "Primary"
             },
             {
               "value": "",
-              "label": "Purple"
+              "label": "Dark Image Overlay"
             },
             {
               "value": "white",
@@ -1239,9 +1245,205 @@
           "label": "Image (Optional)"
         },
         {
+          "id": "homepage-hero-size",
+          "type": "select",
+          "label": "Hero Size",
+          "options": [
+            {
+              "value": "",
+              "label": "Default"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ],
+          "default": ""
+        },
+        {
           "id": "homepage-hero-main-background",
           "type": "image_picker",
           "label": "Background (Optional)"
+        }
+      ]
+    },
+    {
+      "type": "link-cards",
+      "name": "Link Cards",
+      "settings": [
+        {
+          "id": "link-cards-anchor",
+          "label": "Section Anchor",
+          "type": "text",
+          "default": "resources",
+          "info": "<div> ID that can be linked to from within the page."
+        },
+        {
+          "id": "link-cards-title",
+          "label": "Section Title",
+          "type": "text",
+          "default": "Resources"
+        },
+        {
+          "id": "link-cards-size",
+          "label": "Card Size",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Normal"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ]
+        },
+        {
+          "id": "link-cards-item-count",
+          "label": "Section Item Count",
+          "type": "range",
+          "min": 3,
+          "max": 9,
+          "step": 3,
+          "default": 3
+        },
+        {
+          "id": "link-cards-url-1",
+          "label": "Link URL 1",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-1",
+          "label": "Link Image 1",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-1",
+          "label": "Link Copy 1",
+          "type": "html",
+          "default": "<div class='card-header'><h4>TEST</h4></div><div class='card-body'>test</div>"
+        },
+        {
+          "id": "link-cards-url-2",
+          "label": "Link URL 2",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-2",
+          "label": "Link Image 2",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-2",
+          "label": "Link Copy 2",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-3",
+          "label": "Link URL 3",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-3",
+          "label": "Link Image 3",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-3",
+          "label": "Link Copy 3",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-4",
+          "label": "Link URL 4",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-4",
+          "label": "Link Image 4",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-4",
+          "label": "Link Copy 4",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-5",
+          "label": "Link URL 5",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-5",
+          "label": "Link Image 5",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-5",
+          "label": "Link Copy 5",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-6",
+          "label": "Link URL 6",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-6",
+          "label": "Link Image 6",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-6",
+          "label": "Link Copy 6",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-7",
+          "label": "Link URL 7",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-7",
+          "label": "Link Image 7",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-7",
+          "label": "Link Copy 7",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-8",
+          "label": "Link URL 8",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-8",
+          "label": "Link Image 8",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-8",
+          "label": "Link Copy 8",
+          "type": "html"
+        },
+        {
+          "id": "link-cards-url-9",
+          "label": "Link URL 9",
+          "type": "url"
+        },
+        {
+          "id": "link-cards-img-9",
+          "label": "Link Image 9",
+          "type": "image_picker"
+        },
+        {
+          "id": "link-cards-copy-9",
+          "label": "Link Copy 9",
+          "type": "html"
         }
       ]
     },
@@ -1354,6 +1556,12 @@
           "id": "page-hero-image",
           "type": "image_picker",
           "label": "Hero Image"
+        },
+        {
+          "id": "page-hero-fulltext",
+          "type": "checkbox",
+          "label": "Full Text Hero",
+          "default": false
         }
       ]
     },
@@ -1587,6 +1795,43 @@
           "type": "checkbox",
           "label": "Show breadcrumb",
           "default": true
+        }
+      ]
+    },
+    {
+      "type": "popup",
+      "name": "Popup",
+      "settings": [
+        {
+          "id": "popup-title",
+          "type": "html",
+          "label": "Popup Title"
+        },
+        {
+          "id": "popup-content",
+          "type": "html",
+          "label": "Popup Content"
+        },
+        {
+          "id": "popup-bg-type",
+          "type": "select",
+          "label": "Popup Background Type",
+          "options": [
+            {
+              "label": "White",
+              "value": ""
+            },
+            {
+              "label": "Image",
+              "value": "bg-img"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "id": "popup-bg-img",
+          "type": "image_picker",
+          "label": "Popup Background Image"
         }
       ]
     },

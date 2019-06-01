@@ -1,0 +1,85 @@
+.link-cards {
+    @extend .related-products;
+
+    .content {
+        a, ul {
+            color: $gray-color-dark;
+            flex-basis: 100%;
+        }
+
+        .collection-nav {
+            flex-basis: 100%;
+        }
+    }
+
+    .card-content {
+        min-height: initial;
+        padding: 0;
+    }
+
+    .image {
+        padding-bottom: 0;
+        height: 14rem;
+        width: 12rem;
+
+        img {
+            max-height: 14rem;
+        }
+    }
+
+    a.collection-link {
+        color: $primary-color;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &.small {
+        .card-content {
+            // flex-direction: row;
+            min-height: 14rem; // 8rem for original small cards
+        }
+
+        .image {
+            width: 6rem;
+            height: 6rem;
+            flex-basis: 40%;
+            margin: auto;
+
+            img {
+                max-height: 6rem;
+            }
+        }
+
+        .details {
+            flex-basis: 50%;
+        }
+
+        h5 {
+            font-size: 0.75rem;
+        }
+
+        h6 {
+            font-size: 0.6rem;
+        }
+
+        .desc {
+            display: none;
+        }
+
+        .view-link {
+            position: relative;
+            display: block;
+            width: 50%;
+            margin: auto;
+            bottom: 0;
+            left: 0;
+        }
+
+    }
+
+    .popover-container .card {
+        text-align: center;
+    }
+}

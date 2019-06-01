@@ -23,8 +23,11 @@
     <div class="hero-overlay">
         <div class="hero-content">
             
-            
-            <div class="page-content">
+            {% if block.settings.page-hero-fulltext %}
+                <div class="page-content fulltext">
+            {% else %}
+                <div class="page-content">
+            {% endif %}
                 {% comment %} Header {% endcomment %}
                 <h1>{{ block.settings.page-hero-title }}</h1>
     
@@ -43,11 +46,13 @@
     
             </div>
 
+            {% unless block.settings.page-hero-fulltext %}
             <div class="hero-image">
                 {% if block.settings.page-hero-image %}
-                    <img src="{{ block.settings.page-hero-image | img_url: '500x' }}" alt="">
+                <img src="{{ block.settings.page-hero-image | img_url: '500x' }}" alt="">
                 {% endif %}
             </div>
+            {% endunless %}
     
             
         </div>

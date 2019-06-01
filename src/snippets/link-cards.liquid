@@ -1,0 +1,48 @@
+<div class="link-cards {{ block.settings.link-cards-section-size }}">
+        <span style="display: block; height: 8rem; margin-top: -8rem; visibility: hidden;" id="{{ block.settings.link-cards-anchor }}"></span>
+
+        {% assign item-count = block.settings.link-cards-item-count | plus: 0 %}
+            
+        <div class="content">
+    
+            <div class="collection-nav">
+    
+                
+                <h2>{{ block.settings.link-cards-title }}</h2>
+                
+                
+            </div>
+    
+                {% for i in (1..item-count) %}
+                    {% assign link-url = "link-cards-url-" | append: forloop.index %}
+                    {% assign link-img = "link-cards-img-" | append: forloop.index %}
+                    {% assign link-copy = "link-cards-copy-" | append: forloop.index %}
+    
+                    <div class="card">
+                        <div class="card-content popover">
+                            
+                            <div class="image">
+                                <a target="_blank" href="{{ block.settings[link-url] }}">
+                                    <img src="{{ block.settings[link-img] | img_url: '250x' }}" alt="">
+                                </a>
+                            </div>
+                            <div class="popover-container">
+                                    <div class="card">
+                                      {{ block.settings[link-copy] }}
+                                        <div class="card-footer">
+                                            <a target="_blank" href="{{ block.settings[link-url] }}">
+                                                <button class="btn btn-lg btn-primary">START</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+                    {% assign link-url = nil %}
+                    {% assign link-img = nil %}
+                    {% assign link-copy = nil %}
+                {% endfor %}
+    
+        </div>
+    
+    </div>

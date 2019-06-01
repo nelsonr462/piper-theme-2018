@@ -1,24 +1,27 @@
 {% if page.id == 15363964972 %}
     {% section 'landing-page' %}
-
-    <script>console.log("Mother's Day Promo");</script>
     <script src="{{ 'landing-page.js' | asset_url }}" defer></script>
 
 {% elsif page.id == 15363932204%}
     {% section 'landing-page-edu' %}
-
-    <script>console.log("EDU Year End Promo")</script>
     <script src="{{ 'landing-page-edu.js' | asset_url }}" defer></script>
-
+    
+{% elsif page.id == 15419408428 %}
+    {% section 'landing-page-cc-beta' %}
+    <script src="{{ 'landing-page-cc-beta.js' | asset_url }}" defer></script>
 {% endif %}
 
 
 
 {%- comment -%}
 
-<form id="quick-checkout" method="post" action="/cart/add">
-    <input type="hidden" name="id" value="13285654167596" />
-    <input type="submit" value="ADD TO CART" class="btn btn-primary btn-lg"/>
+<form class="quick-checkout" method="post" action="/cart/add">
+    <div class="form-group">
+        <input type="hidden" name="id" value="13285654167596">
+        <input type="submit" value="ADD TO CART" class="btn btn-primary btn-lg qc-submit">
+        <p class="form-input-hint qc-hint d-invisible" style="color: white;">Creating your order...<i style="padding-right: 2rem" class="form-icon loading"></i></p>
+        <h6>Promo code automatically applied at checkout</h6>
+    </div>
 </form>
 
 {%- endcomment -%}

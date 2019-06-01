@@ -167,25 +167,4 @@
 
     </article>
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-section featured-articles hide-xl">
-            <h5>Featured Articles</h5>
-            <div class="featured-list">
-                {% assign article = articles['news/test-post-2'] %}
-                {% for i in (1..3) %}
-                    
-                    <div class="featured-article">
-                        <a href="{{ article.url }}">
-                            <p class="title">
-                                {{ article.title }}
-                            </p>
-                        </a>
-                        <p class="timestamp">Posted {{ article.created_at | date: "%b %-d, %Y" }}</p>
-                    </div>
-
-                {% endfor %}
-            </div>
-        </div>
-    </div>
 </div>

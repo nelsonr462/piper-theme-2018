@@ -1,0 +1,14 @@
+.popup {
+    .modal-container {
+        padding: 0;
+    }
+    .overlay {
+        padding: 0 0.8rem;
+        text-align: center;
+
+        &.bg-img {
+            background: rgba(black, 0.75);
+            color: white;
+        }
+    }
+}

@@ -82,6 +82,7 @@
         .image, .description {
             display: flex;
             flex-basis: 100%;
+            flex-wrap: wrap;
         }
 
         .image {

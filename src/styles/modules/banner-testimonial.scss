@@ -1,6 +1,8 @@
 .banner-testimonial {
     background: $secondary-color;
     color: white;
+    z-index: 1;
+    position: relative;
 
     &.blue {
         background: $primary-color;

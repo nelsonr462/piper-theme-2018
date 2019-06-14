@@ -76,7 +76,7 @@
         }
 
         @include tablet {
-            height: 20rem;
+            min-height: 20rem;
         }
 
         &.right {

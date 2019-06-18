@@ -1,4 +1,5 @@
 window.onload = function() {
+    // Handle Quantity Input Field
     var updateButton = document.getElementById('update');
     var quantityFields = document.querySelectorAll('.quantity-input');
     var highValueInput = document.createElement('input');
@@ -31,6 +32,23 @@ window.onload = function() {
     function newInputBlur() {
         updateButton.click();
     }
+
+    // Handle Quote Modal
+    var trigger = $("#triggerQuote");
+    var popup = $("#quoteModal");
+    var closePopupButtons = $("#quoteModal [href='#close-modal']");
+    
+    trigger.click(function (event) {
+        event.preventDefault();
+        popup.addClass("active");
+    })
+
+    Array.prototype.forEach.call(closePopupButtons, function(button) {
+        button.addEventListener('click', function(event) {
+            popup.removeClass("active");
+        })
+    })
+
 }
 
 function getCookie(name) {

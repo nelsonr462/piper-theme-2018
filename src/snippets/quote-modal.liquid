@@ -1,0 +1,39 @@
+<div class="modal" id="quoteModal">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+        <div class="overlay">
+            
+            <div class="modal-header">
+                <a href="#close-modal" class="btn btn-clear float-right" aria-label="Close"></a>
+                <div class="modal-title h2">Get a Quote</div>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-content">
+                    <!-- Popup content gets inserted here -->
+                    <div class="quote-container">
+                        {% include 'shipping-calculator' %}
+                        <div class="eq-email-wrapper">
+                            <div class="form-group">
+                                {% if customer.email == nil %}
+                                    <label class="form-label" for="Email" >Customer Email</label>
+                                    <input class="form-input" type="text" id="Email" />
+                                {% else %}
+                                    <input type="hidden" id="cartEmail" value="{{customer.email}}"/>
+                                {% endif %}
+                            </div>
+                            <p id="easyquote-status"></p>
+                            <a href="#" id="create-quote">
+                                <button class="btn btn-lg btn-primary">Create Quote</button>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

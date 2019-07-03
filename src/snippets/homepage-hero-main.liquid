@@ -50,12 +50,17 @@
     
             </div>
 
-            
-            <div class="hero-image">
-                {% if  block.settings.homepage-hero-main-img %}
-                <img src="{{ block.settings.homepage-hero-main-img | img_url: '750x' }}" alt="">
-                {% endif %}
-            </div>
+            {% if block.settings.homepage-hero-main-img-link != nil %}
+                <a class="hero-image"  href="{{ block.settings.homepage-hero-main-img-link }}">
+                {% assign closingTag = "</a>" %}
+            {% else %}
+                <div class="hero-image">
+                {% assign closingTag = "</div>" %}
+            {% endif %}
+                    {% if  block.settings.homepage-hero-main-img %}
+                    <img src="{{ block.settings.homepage-hero-main-img | img_url: '750x' }}" alt="">
+                    {% endif %}
+            {{ closingTag }}
             
     
             

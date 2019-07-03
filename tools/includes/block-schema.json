@@ -95,6 +95,12 @@
             "label": "Image (Optional)"
           },
           {
+            "id": "homepage-hero-main-img-link",
+            "type": "url",
+            "label": "Image link",
+            "info": "Leave blank to remove link"
+          },
+          {
             "id": "homepage-hero-size",
             "type": "select",
             "label": "Hero Size",

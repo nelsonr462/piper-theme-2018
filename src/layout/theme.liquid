@@ -57,12 +57,29 @@
       webWidget: {
         launcher: {
           label: {
-            "*": "Chat with us"
+            "*": "Contact Us"
           }
+        },
+        contactOptions: {
+          enabled: true,
+          contactFormLabel: { '*': 'Contact Us' },
+          contactButton: { '*': 'Contact Us' }
+        },
+        contactForm: {
+          title: { '*': 'Contact Us' }
         }
       }
     };
+
+    function showZendeskWidget() {
+      if (zE('webWidget:get', 'display') === "hidden" ) {
+        window.location.href = "https://www.playpiper.com/pages/contact-us";
+      } else {
+        zE('webWidget', 'open');
+      }
+    }
   </script>
+
   <!-- End of playpiper Zendesk Widget script -->
 
   <!-- Start of HubSpot Embed Code -->

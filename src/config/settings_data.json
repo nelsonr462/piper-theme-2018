@@ -1,5 +1,1997 @@
 {
-  "current": "Default",
+  "current": {
+    "type_base_size": "16px",
+    "color_primary": "#000",
+    "color_body_text": "#000",
+    "social_sharing_blog": true,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_snapchat_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "cart_notes_enable": true,
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32_6dca19f0-848a-46b3-8361-13224349114f.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_3a324a03-7e13-4246-ae29-fdb3cae14085.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "collection-list-0": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-list-1": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-list-2": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "collection-list-0",
+          "collection-list-1",
+          "collection-list-2"
+        ],
+        "settings": {
+          "title": "Collection list"
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "frontpage"
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "settings": {
+          "product": "",
+          "show_share_buttons": false
+        }
+      },
+      "navbar-main": {
+        "type": "navbar-main",
+        "settings": {
+        }
+      },
+      "homepage": {
+        "type": "homepage",
+        "blocks": {
+          "1552013850598": {
+            "type": "homepage-hero-main",
+            "settings": {
+              "homepage-hero-show-announcement": true,
+              "homepage-hero-announcement-icon": "",
+              "homepage-hero-announcement-content": "<p>Just launched: Piper Premium Curriculum is now available! Pre-order for back to school.<\/p>",
+              "homepage-hero-announcement-arrow": "",
+              "homepage-hero-announcement-link": "shopify:\/\/pages\/premium-curriculum",
+              "homepage-hero-main-text-color": "primary",
+              "homepage-hero-main-title": "<span style=\"font-size: 1.1rem\">INTRODUCING THE<\/span><br><span style=\"font-size: 4.5rem; letter-spacing: 3px; margin-left:-4px;\">PIPER<\/span><br>COMPUTER KIT",
+              "homepage-hero-main-description": "STEAM MADE SIMPLE.<br>INSPIRING THE INVENTORS OF TOMORROW.",
+              "homepage-hero-main-button-text": "SHOP NOW",
+              "homepage-hero-main-button-link": "\/products",
+              "homepage-hero-main-color": "white",
+              "homepage-hero-main-img": "shopify:\/\/shop_images\/Homepage_Frontview_Iste_Award_20190626_AB.png",
+              "homepage-hero-main-img-link": "https:\/\/www.techlearning.com\/news\/tech-and-learning-names-the-winners-of-the-iste-best-of-show-2019",
+              "homepage-hero-size": "",
+              "homepage-hero-main-background": ""
+            }
+          },
+          "1555357804001": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "<span style=\"font-size:2rem;\">FROM CURIOUS TO CAPABLE<\/span>",
+              "banner-link-subtitle": "LEARNING BY BUILDING",
+              "banner-link-desc": "The Piper Computer Kit is the ultimate D.I.Y. computer-building experience, for ages 8-13. Build a REAL computer from start to finish while playing Minecraft: Raspberry Pi Edition to learn how to code and make STEAM connections to the real-world.",
+              "banner-link-btn-text": "SHOP NOW",
+              "banner-link-btn-link": "\/products",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A2219_1.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555545325053": {
+            "type": "features-small",
+            "settings": {
+              "features-small-anchor": "",
+              "features-small-header-color": "",
+              "features-small-title": "",
+              "features-small-subheader-1": "THE PIPER EXPERIENCE",
+              "features-small-img-1": "shopify:\/\/shop_images\/2X7A1915.jpg",
+              "features-small-desc-1": "Piper is a perfect way to inspire students to invent with electronics and coding through a Minecraft: Raspberry Pi Edition story mode.",
+              "features-small-subheader-2": "LOVED BY EDUCATORS",
+              "features-small-img-2": "shopify:\/\/shop_images\/2X7A2741_a3f36ada-612e-4cb8-9547-db704e38d11c.jpg",
+              "features-small-desc-2": "Used in classrooms all over the world to inspire and engage students with coding, design-thinking, and engineering.",
+              "features-small-subheader-3": "CREATIVITY + COMPUTING",
+              "features-small-img-3": "shopify:\/\/shop_images\/2X7A3695.jpg",
+              "features-small-desc-3": "Piper captures the imagination of students by harnessing their creative potential and providing tools to solve the technology challenges of tomorrow.",
+              "features-small-is-video": true,
+              "features-small-embed-code-1": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/Bfyg0jE1nj0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "features-small-embed-code-2": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/jPeb2KAt0s0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "features-small-embed-code-3": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/k7PO47QsPHg\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>"
+            }
+          },
+          "1555357882338": {
+            "type": "video-section",
+            "settings": {
+              "video-title": "WHAT IS PIPER?",
+              "video-section-title-pos": "top",
+              "video-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/d-a_opTohQI?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "video-desc": "",
+              "video-section-bg-type": "",
+              "video-section-background": "",
+              "video-color": "primary-white"
+            }
+          },
+          "1555357919865": {
+            "type": "pipeline-section",
+            "settings": {
+              "pipeline-section-title": "HOURS OF DISCOVERY",
+              "pipeline-section-node-img-1": "shopify:\/\/shop_images\/2X7A2764_Builtbykids.jpg",
+              "pipeline-section-node-title-1": "BUILD A WORKING COMPUTER FROM A BLUEPRINT",
+              "pipeline-section-node-desc-1": "As soon as students open the box, they are immersed. Piper engages students in a rich, tactile building experience with laser-cut wooden parts, a Raspberry Pi microcomputer, and a collection of electronic components.",
+              "pipeline-section-node-img-2": "shopify:\/\/shop_images\/PlayIt.jpg",
+              "pipeline-section-node-title-2": "MAKE CONNECTIONS PHYSICALLY AND MENTALLY",
+              "pipeline-section-node-desc-2": "Kids build hardware and connect circuitry to progress through a captivating series of Minecraft: Raspberry Pi Edition story adventures.",
+              "pipeline-section-node-img-3": "shopify:\/\/shop_images\/CodeIt_971a3d2b-79ca-414a-bc50-84b010fd4311.jpg",
+              "pipeline-section-node-title-3": "LEARN TO CODE",
+              "pipeline-section-node-desc-3": "Coding is made tangible (and more engaging) by connecting and controlling buttons, LEDs, switches, and new electronic creations.",
+              "pipeline-section-background": "shopify:\/\/shop_images\/pipeline-bg.png"
+            }
+          },
+          "1555358099093": {
+            "type": "social-feed",
+            "settings": {
+              "social-feed-bg": "",
+              "social-feed-title": "WHAT PEOPLE ARE SAYING ABOUT PIPER",
+              "social-feed-subtitle": "",
+              "social-feed-tweet-1": "<blockquote class=\"twitter-tweet\" data-lang=\"en\">\n<p lang=\"en\" dir=\"ltr\">Our final day of <a href=\"https:\/\/twitter.com\/hashtag\/CScampBCOE?src=hash&ref_src=twsrc%5Etfw\">#CScampBCOE<\/a>! We got to meet <a href=\"https:\/\/twitter.com\/StartWithPiper?ref_src=twsrc%5Etfw\">@StartWithPiper<\/a> representatives and expand our knowledge of sensor technology! <a href=\"https:\/\/twitter.com\/ButteCountyCTE?ref_src=twsrc%5Etfw\">@ButteCountyCTE<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/ButteCOE?src=hash&ref_src=twsrc%5Etfw\">#ButteCOE<\/a> <a href=\"https:\/\/t.co\/CnV5ncXLAv\">pic.twitter.com\/CnV5ncXLAv<\/a><\/p>— Laurie York (@MsYorksClass) <a href=\"https:\/\/twitter.com\/MsYorksClass\/status\/1119101858331541504?ref_src=twsrc%5Etfw\">April 19, 2019<\/a>\n<\/blockquote>",
+              "social-feed-tweet-2": "<blockquote class=\"twitter-tweet\" data-lang=\"en\">\n<p lang=\"en\" dir=\"ltr\">Tolani built her first Piper Computer Kit with Raising Smart Girls and is now considering becoming an <a href=\"https:\/\/twitter.com\/hashtag\/engineer?src=hash&ref_src=twsrc%5Etfw\">#engineer<\/a>! We can't wait to see what Tolani will accomplish with her new <a href=\"https:\/\/twitter.com\/hashtag\/STEAM?src=hash&ref_src=twsrc%5Etfw\">#STEAM<\/a> skills. :muscle:<a href=\"https:\/\/twitter.com\/hashtag\/inspiring?src=hash&ref_src=twsrc%5Etfw\">#inspiring<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/education?src=hash&ref_src=twsrc%5Etfw\">#education<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/raisingsmartgirls?src=hash&ref_src=twsrc%5Etfw\">#raisingsmartgirls<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/computerscience?src=hash&ref_src=twsrc%5Etfw\">#computerscience<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/edtech?src=hash&ref_src=twsrc%5Etfw\">#edtech<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/girlswhocode?src=hash&ref_src=twsrc%5Etfw\">#girlswhocode<\/a> <a href=\"https:\/\/t.co\/c1Wy5F7i0f\">pic.twitter.com\/c1Wy5F7i0f<\/a><\/p>— Piper (@StartWithPiper) <a href=\"https:\/\/twitter.com\/StartWithPiper\/status\/1118327918529261568?ref_src=twsrc%5Etfw\">April 17, 2019<\/a>\n<\/blockquote>",
+              "social-feed-tweet-3": "<blockquote class=\"twitter-tweet\" data-lang=\"en\">\n<p lang=\"en\" dir=\"ltr\">The <a href=\"https:\/\/twitter.com\/hashtag\/students?src=hash&ref_src=twsrc%5Etfw\">#students<\/a> in Ms. Kwiatkoski's 6th grade class <a href=\"https:\/\/twitter.com\/StLukeOakville?ref_src=twsrc%5Etfw\">@StLukeOakville<\/a> are making progress with their Piper Computer Kits. Look at those <a href=\"https:\/\/twitter.com\/hashtag\/STEAM?src=hash&ref_src=twsrc%5Etfw\">#STEAM<\/a> superheroes go! :eyes::clap:<a href=\"https:\/\/twitter.com\/hashtag\/education?src=hash&ref_src=twsrc%5Etfw\">#education<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/learning?src=hash&ref_src=twsrc%5Etfw\">#learning<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/edtech?src=hash&ref_src=twsrc%5Etfw\">#edtech<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/weloveteachers?src=hash&ref_src=twsrc%5Etfw\">#weloveteachers<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/computerscience?src=hash&ref_src=twsrc%5Etfw\">#computerscience<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/PBL?src=hash&ref_src=twsrc%5Etfw\">#PBL<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/handson?src=hash&ref_src=twsrc%5Etfw\">#handson<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/makermovement?src=hash&ref_src=twsrc%5Etfw\">#makermovement<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/kidswhocode?src=hash&ref_src=twsrc%5Etfw\">#kidswhocode<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/playpiper?src=hash&ref_src=twsrc%5Etfw\">#playpiper<\/a> <a href=\"https:\/\/t.co\/xDsaELF0Mt\">pic.twitter.com\/xDsaELF0Mt<\/a><\/p>— Piper (@StartWithPiper) <a href=\"https:\/\/twitter.com\/StartWithPiper\/status\/1115363889443745792?ref_src=twsrc%5Etfw\">April 8, 2019<\/a>\n<\/blockquote>",
+              "social-feed-tweet-4": "<blockquote class=\"twitter-tweet\" data-lang=\"en\">\n<p lang=\"en\" dir=\"ltr\">Day 2 <a href=\"https:\/\/twitter.com\/withpiper?ref_src=twsrc%5Etfw\">@withpiper<\/a> We have some still building and others have power. Too much fun and so engaging!!! <a href=\"https:\/\/twitter.com\/hashtag\/bestyearever?src=hash&ref_src=twsrc%5Etfw\">#bestyearever<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/hvepride?src=hash&ref_src=twsrc%5Etfw\">#hvepride<\/a> <a href=\"https:\/\/t.co\/ELHYgQ43w0\">pic.twitter.com\/ELHYgQ43w0<\/a><\/p>— Taryn Flamson (@tflamson) <a href=\"https:\/\/twitter.com\/tflamson\/status\/971108207316762624?ref_src=twsrc%5Etfw\">March 6, 2018<\/a>\n<\/blockquote>",
+              "social-feed-tweet-5": "<blockquote class=\"twitter-tweet\" data-lang=\"en\">\n<p lang=\"en\" dir=\"ltr\"><a href=\"https:\/\/twitter.com\/twhanley?ref_src=twsrc%5Etfw\">@twhanley<\/a> and I birthed this today! Thank you <a href=\"https:\/\/twitter.com\/iluveducating?ref_src=twsrc%5Etfw\">@iluveducating<\/a> and <a href=\"https:\/\/twitter.com\/withpiper?ref_src=twsrc%5Etfw\">@withpiper<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/ncties18?src=hash&ref_src=twsrc%5Etfw\">#ncties18<\/a> <a href=\"https:\/\/twitter.com\/hashtag\/ncdlcn?src=hash&ref_src=twsrc%5Etfw\">#ncdlcn<\/a> <a href=\"https:\/\/t.co\/l9fp3VRAVi\">pic.twitter.com\/l9fp3VRAVi<\/a><\/p>— Marsha Moore Sirkin (@MarshaSirkin) <a href=\"https:\/\/twitter.com\/MarshaSirkin\/status\/969246304277876737?ref_src=twsrc%5Etfw\">March 1, 2018<\/a>\n<\/blockquote>",
+              "social-feed-tweet-6": "",
+              "social-feed-enable-ambassadors": true,
+              "social-feed-ambassadors-title": "",
+              "social-feed-color": "white",
+              "social-feed-testimonial-1": "\"As an educator who is a Piper customer, I have observed kids attain the maker-mindset and start on the road to becoming creators of technology rather than simply learning passively...  I am convinced that the success they experienced completing the exercises gave them the confidence they needed for such an undertaking. Does Piper install confidence? It does.\"",
+              "social-feed-author-1": "Paul Tremblett",
+              "social-feed-position-1": "Teacher, Southwest Virginia",
+              "social-feed-testimonial-2": "“My son really loved being able to put it together. He loves building things and he really enjoyed using the little screwdriver and being able to watch it go from pieces to product. He also enjoyed being able to watch it come on and work at the end. This is a great product!!”",
+              "social-feed-author-2": "Alissa Higgins",
+              "social-feed-position-2": "Amazon Customer",
+              "social-feed-testimonial-3": "“This is so much more than a computer... so much more than an awesome case... so much more than an awesome software game that teaches basic circuit design... it's an end-to-end well-designed and well-integrated product. At one point he quietly turned to me and emphatically said 'I really really like this kit,' and went right back to working on it.”",
+              "social-feed-author-3": "Nathan Arthur",
+              "social-feed-position-3": "Amazon Customer"
+            }
+          },
+          "1555358197410": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "<h1>Inspiring Future <br><span id=\"careerLoop\" style=\"color:#ff4f57\">Engineers<\/span>\n<\/h1>",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "<h2 style=\"font-weight:400;\">\"I love Piper because it represents what technology enabled me to do with my life.\"<\/h2><br><br><h4>-Steve Wozniak,  Co-Founder of Apple<\/h4>",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/img-05_7840f6bc-6c24-43a8-a70a-1e87ad4caa41.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/eu_zCkEEyyM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555545952698": {
+            "type": "banner-email-signup",
+            "settings": {
+              "banner-email-signup-callout": "Join the Piper Newsletter",
+              "banner-email-signup-detail": "Connect with us for updates, promos, STEAM projects, and more.",
+              "banner-email-signup-note": "",
+              "banner-email-signup-background": "shopify:\/\/shop_images\/contact-us-bg.png"
+            }
+          }
+        },
+        "block_order": [
+          "1552013850598",
+          "1555357804001",
+          "1555545325053",
+          "1555357882338",
+          "1555357919865",
+          "1555358099093",
+          "1555358197410",
+          "1555545952698"
+        ],
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer-list-title-1": "Resources",
+          "footer-link-list-1": "2019-footer-resources",
+          "footer-list-title-2": "Company",
+          "footer-link-list-2": "2019-footer-company",
+          "footer-list-title-3": "Support",
+          "footer-link-list-3": "2019-footer-support",
+          "footer-list-title-4": "Legal",
+          "footer-link-list-4": "legal",
+          "footer-legal-note": "Not official Minecraft product. Not approved by or associated with Mojang. The Raspberry Pi Edition of Minecraft by the Raspberry Pi Foundation is licensed under the Creative Commons Attribution 4.0 International License.",
+          "footer-badge-img-1": "shopify:\/\/shop_images\/stemorgbadge.png"
+        }
+      },
+      "product": {
+        "type": "product",
+        "blocks": {
+          "1555723581436": {
+            "type": "product-hero-main",
+            "settings": {
+              "product-hero-bg-type": "angled-bg",
+              "product-hero-background": ""
+            }
+          },
+          "1555723656561": {
+            "type": "product-gallery",
+            "settings": {
+            }
+          },
+          "1555725732139": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": true,
+              "bundle-breakdown-product-page": "piper-station",
+              "bundle-breakdown-product": "piper-station",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "",
+              "bundle-breakdown-list": "3x Piper Computer Kits* \/1x Spare Parts Kit* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1556210526246": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": true,
+              "bundle-breakdown-product-page": "piper-classroom-bundle",
+              "bundle-breakdown-product": "piper-school",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "",
+              "bundle-breakdown-list": "10x Piper Computer Kits* \/3x  Spare Parts Kits* \/1x 10-port USB Charger* \/1 Hour Professional Development* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1555724809005": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BECOME A PIPER PRO!",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Education Ambassador Program is designed to recognize, engage, and celebrate the exemplary work of pioneer educators. Piper Pros are dedicated to transforming STEAM teaching &amp; learning in their classrooms and beyond and are willing to share their work with the Piper Education Community.",
+              "banner-link-btn-text": "APPLY NOW",
+              "banner-link-btn-link": "\/pages\/piper-pros",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-pro-image.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": true,
+              "banner-link-collection": "education"
+            }
+          }
+        },
+        "block_order": [
+          "1555723581436",
+          "1555723656561",
+          "1555725732139",
+          "1556210526246",
+          "1555724809005"
+        ],
+        "settings": {
+        }
+      },
+      "storefront": {
+        "type": "storefront",
+        "blocks": {
+          "1555723902134": {
+            "type": "piper-hero-main",
+            "settings": {
+              "piper-hero-main-bg-type": "angled-bg",
+              "piper-hero-main-background": "",
+              "piper-hero-main-description": "The Piper Computer Kit includes everything needed to teach students about computer science, electronics, and coding through an engaging Minecraft: Raspberry Pi Edition StoryMode. Ideal for ages 8+.",
+              "piper-hero-main-product": "piper-computer-kit-2",
+              "piper-hero-main-compareprice": false,
+              "piper-hero-main-breadcrumb": false
+            }
+          },
+          "1556317875651": {
+            "type": "storefront-nav",
+            "settings": {
+              "storefront-nav-link-1": "shopify:\/\/collections\/screen-products",
+              "storefront-nav-link-2": "shopify:\/\/collections\/all-parts",
+              "storefront-nav-link-3": "shopify:\/\/collections\/merch",
+              "storefront-nav-link-4": "\/collections\/all"
+            }
+          },
+          "1561166696231": {
+            "type": "card-cta",
+            "settings": {
+              "cta-title": "",
+              "cta-product": "piper-command-center-beta",
+              "cta-variant": "0",
+              "cta-compare": false,
+              "cta-desc": "<a href=\"\/pages\/command-center\"><strong>BETA Launch:<\/strong><\/a> As part of an exclusive first look, you're invited to assemble a real working game controller, understand the basics of an Arduino, and discover physical computing by configuring a joystick, buttons, and more. Take command of the maker movement by building and customizing a microcontroller to hack and create an arcade-ready game controller, a spatial mapping tool, or a robo-commander. Perfect for ages 13+.<br><br><a href=\"\/pages\/command-center\"><button class=\"btn btn-lg green\">LEARN MORE<\/button><\/a>",
+              "cta-button": "ADD TO CART"
+            }
+          },
+          "1555556411846": {
+            "type": "collection-section",
+            "settings": {
+              "collection-section-handle": "education",
+              "collection-section-size": "",
+              "collection-section-item-count": 3,
+              "collection-section-view": "View more in Education"
+            }
+          },
+          "1556662397455": {
+            "type": "collection-section",
+            "settings": {
+              "collection-section-handle": "piper-computer-kit-2019-parts",
+              "collection-section-size": "small",
+              "collection-section-item-count": 3,
+              "collection-section-view": "View more Piper Computer Kit 2019 Parts"
+            }
+          },
+          "1556662449831": {
+            "type": "collection-section",
+            "settings": {
+              "collection-section-handle": "piper-computer-kit-2016-parts",
+              "collection-section-size": "small",
+              "collection-section-item-count": 3,
+              "collection-section-view": "View more Piper Computer Kit 2016 Parts"
+            }
+          }
+        },
+        "block_order": [
+          "1555723902134",
+          "1556317875651",
+          "1561166696231",
+          "1555556411846",
+          "1556662397455",
+          "1556662449831"
+        ],
+        "settings": {
+        }
+      },
+      "cart-section": {
+        "type": "cart-section",
+        "blocks": {
+          "1555556515442": {
+            "type": "cart-list",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "1555556515442"
+        ],
+        "settings": {
+        }
+      },
+      "edu-main": {
+        "type": "edu-main",
+        "blocks": {
+          "1555557216581": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/HeroBANNER_PC02_EDU.png",
+              "page-hero-title": "<span style=\"font-size: 0.85rem;\">INSPIRE INVENTION WITH<\/span><br><span style=\"font-size:2rem;\">HANDS-ON<\/span><br><span style=\"font-size: 3rem; line-height: 2.5rem;\">STEAM<br>LEARNING<\/span>",
+              "page-hero-description": "",
+              "page-hero-button-text": "SHOP NOW",
+              "page-hero-button-link": "\/products",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1555557290251": {
+            "type": "subheader",
+            "settings": {
+              "subheader-content": "<span>ENGAGE YOUR STUDENTS WITH PIPER<\/span>",
+              "subheader-color": "",
+              "subheader-divider": false
+            }
+          },
+          "1555557303955": {
+            "type": "paragraph-section",
+            "settings": {
+              "paragraph-section-header": "",
+              "paragraph-section-content": "With Piper, students will be immersed in inquiry-based and project-based experiences to learn STEAM &amp; computer science from the inside-out.",
+              "paragraph-section-size": "large",
+              "paragraph-section-padding": "narrow",
+              "paragraph-section-alignment": "center",
+              "paragraph-section-anchor": ""
+            }
+          },
+          "1555557327017": {
+            "type": "features-small",
+            "settings": {
+              "features-small-anchor": "",
+              "features-small-header-color": "",
+              "features-small-title": "",
+              "features-small-subheader-1": "Digital Fluency",
+              "features-small-img-1": "shopify:\/\/shop_images\/DigitalFluency_A.png",
+              "features-small-desc-1": "The Piper experience includes learning in mechanics, electronics, circuitry, and coding so that students develop the 21st century skills they’ll need for the technological future.",
+              "features-small-subheader-2": "Problem-Solving",
+              "features-small-img-2": "shopify:\/\/shop_images\/ProblemSolving_A.png",
+              "features-small-desc-2": "Building a Piper Computer Kit requires students to follow visuals and turn 2D images into 3D actions. They must overcome progressive challenges in an experience designed for all learners.",
+              "features-small-subheader-3": "Collaborative Learning",
+              "features-small-img-3": "shopify:\/\/shop_images\/CollaborativeLearning_A.png",
+              "features-small-desc-3": "Problem-solving of the future will require students to work with others to design solutions. With Piper, students work together to build, prototype, and test their creative ideas.",
+              "features-small-is-video": false,
+              "features-small-embed-code-1": "",
+              "features-small-embed-code-2": "",
+              "features-small-embed-code-3": ""
+            }
+          },
+          "1555557543029": {
+            "type": "banner-detail",
+            "settings": {
+              "banner-detail-color": "secondary-white",
+              "banner_title": "THE PIPER CLASSROOM EXPERIENCE",
+              "banner_detail": "Piper offers educators a turnkey solution for teaching STEAM with a standards-aligned curriculum and professional development. Our easy to use lesson plans engage all types of learners to develop 21st century skills. With the upgraded Piper Computer Kit, the Piper Classroom Experience is more effective and seamless for all educators.",
+              "banner_image": "shopify:\/\/shop_images\/DECONTSRUCT_PC02_ee786b74-96b9-429e-9ca7-662fba433322.jpg",
+              "banner-detail-image-style": "cover",
+              "overflow": ""
+            }
+          },
+          "1555557589564": {
+            "type": "video-section",
+            "settings": {
+              "video-title": "PIPER IN SCHOOLS",
+              "video-section-title-pos": "top",
+              "video-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/E2yuBcbv6iQ?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "video-desc": "",
+              "video-section-bg-type": "",
+              "video-section-background": "",
+              "video-color": ""
+            }
+          },
+          "1555557633444": {
+            "type": "paragraph-section",
+            "settings": {
+              "paragraph-section-header": "BY EDUCATORS<br>FOR EDUCATORS",
+              "paragraph-section-content": "Our mission is to help educators inspire students using project-based learning, inquiry, and design thinking. Our STEAM experts come from diverse backgrounds and have custom-created the Piper Classroom Experience to serve all students and classroom environments.",
+              "paragraph-section-size": "small",
+              "paragraph-section-padding": "narrow",
+              "paragraph-section-alignment": "center",
+              "paragraph-section-anchor": ""
+            }
+          },
+          "1555557662596": {
+            "type": "features-split",
+            "settings": {
+              "features-split-section-title": "",
+              "features-split-color-scheme": "",
+              "features-split-button-type": "",
+              "features-split-subheader-1": "START WITH A LESSON",
+              "features-split-img-1": "shopify:\/\/shop_images\/PC02_StartWithALesson_1_d970a6be-1f22-4864-9906-26f5dbb0a23e.jpg",
+              "features-split-desc-1": "The Piper Curriculum includes lesson plans that are standards aligned for grades 3-8 and includes slide decks, videos, activities, discussion questions and more. Each lesson plan can be customized to meet the needs of your program.",
+              "features-split-button-1": "VIEW SAMPLE LESSON",
+              "features-split-link-1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0925\/6256\/t\/124\/assets\/piper-lesson-pc02.pdf?15557858933310301467",
+              "features-split-subheader-2": "PIPER IN THE CLASSROOM",
+              "features-split-img-2": "shopify:\/\/shop_images\/PC02_ClassroomOverview_A.png",
+              "features-split-desc-2": "Students are experiencing Piper in schools all over the world to learn STEAM and computer science. We have created professional development and other resources for educators to ensure a successful classroom implementation.",
+              "features-split-button-2": "WATCH NOW",
+              "features-split-link-2": "#openVideo",
+              "features-split-enable-video": true,
+              "features-split-embed-code-1": "",
+              "features-split-embed-code-2": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/TMVJptweIXE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>"
+            }
+          },
+          "1555557802095": {
+            "type": "features-split",
+            "settings": {
+              "features-split-section-title": "TEACHER TESTED<br>TEACHER APPROVED",
+              "features-split-color-scheme": "secondary-white",
+              "features-split-button-type": "white-secondary",
+              "features-split-subheader-1": "KINGS CANYON CASE STUDY",
+              "features-split-img-1": "shopify:\/\/shop_images\/Screen_Shot_2017-09-08_at_6.39.52_PM.png",
+              "features-split-desc-1": "Piper is committed to positive learning outcomes and building confidence in STEAM. Learn how students in one high-need district became highly engaged with STEAM, language arts, problem solving, and cooperative learning.",
+              "features-split-button-1": "VIEW NOW",
+              "features-split-link-1": "https:\/\/cdn.shopify.com\/s\/files\/1\/0925\/6256\/files\/KingsCanyon_CaseStudy.pdf?12410",
+              "features-split-subheader-2": "WHAT EDUCATORS ARE SAYING",
+              "features-split-img-2": "shopify:\/\/shop_images\/Screen_Shot_2019-04-12_at_4.08.10_PM.png",
+              "features-split-desc-2": "Teachers love using Piper to engage their students in hands-on learning. The Piper Computer Kit has been successfully implemented in schools all over the world.",
+              "features-split-button-2": "WATCH NOW",
+              "features-split-link-2": "https:\/\/www.youtube.com\/watch?time_continue=2&v=E2yuBcbv6iQ",
+              "features-split-enable-video": true,
+              "features-split-embed-code-1": "",
+              "features-split-embed-code-2": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/E2yuBcbv6iQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>"
+            }
+          },
+          "1556663604547": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-education-starter-kit",
+              "bundle-breakdown-variant": "0",
+              "bundle-breakdown-desc": "The Education Starter Kit can be used to evaluate the Piper program for schools, or is a standout solution for a homeschool classroom. This bundle comes with the Piper Educator’s Guide that includes curriculum and support materials.",
+              "bundle-breakdown-list": "1x Piper Computer Kit* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1555557987246": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-station",
+              "bundle-breakdown-variant": "0",
+              "bundle-breakdown-desc": "The Piper Station is a perfect solution for maker spaces, library programs, small class sizes, or homeschool programs. This bundle comes with the Piper Educator’s Guide that includes curriculum and support materials.",
+              "bundle-breakdown-list": "3x Piper Computer Kits* \/1x Spare Parts Kit* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1555558032498": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-classroom-bundle",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "The Piper Classroom Bundle is the ideal project-based learning solution for teaching computer science and STEAM. The Piper Classroom Bundle features the  next generation Piper Computer Kit that has been upgraded and re-engineered for greater student engagement and deeper learning.",
+              "bundle-breakdown-list": "10x Piper Computer Kits* \/3x  Spare Parts Kits* \/1x 10-port USB Charger* \/1 Hour Professional Development* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1555558916607": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "CUSTOM PIPER BUNDLES",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Classroom Experience can be adapted for schools and districts at any scale. Volume pricing is available for large implementations.",
+              "banner-link-btn-text": "GET A QUOTE",
+              "banner-link-btn-link": "\/pages\/get-a-quote",
+              "banner-link-img": "shopify:\/\/shop_images\/DISTRICT_PiperCode_Shopbysolution_20190114.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555558705320": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BECOME A PIPER PRO!",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Education Ambassador Program is designed to recognize, engage, and celebrate the exemplary work of pioneer educators. Piper Pros are dedicated to transforming STEAM teaching &amp; learning in their classrooms and beyond and are willing to share their work with the Piper Education Community.",
+              "banner-link-btn-text": "APPLY NOW",
+              "banner-link-btn-link": "\/pages\/piper-pros",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-pro-image.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1555557216581",
+          "1555557290251",
+          "1555557303955",
+          "1555557327017",
+          "1555557543029",
+          "1555557589564",
+          "1555557633444",
+          "1555557662596",
+          "1555557802095",
+          "1556663604547",
+          "1555557987246",
+          "1555558032498",
+          "1555558916607",
+          "1555558705320"
+        ],
+        "settings": {
+        }
+      },
+      "piper-main": {
+        "type": "piper-main",
+        "blocks": {
+          "1556571448539": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/2X7A3558_small_837d2372-4437-44f9-8b62-cf2b5990920a.jpg",
+              "page-hero-title": "INSPIRED<br>EXPLORATION",
+              "page-hero-description": "",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1555617616333": {
+            "type": "banner-testimonial",
+            "settings": {
+              "banner-testimonial-content": "Engaging students has always been one of my passions. How does it apply to the real world? How can we use this for our benefit? ...Piper definitely brings that to the table, and I appreciate it as a teacher.",
+              "banner-testimonial-author": "- Karen Wright, 8th grade teacher",
+              "color": ""
+            }
+          },
+          "1555634695588": {
+            "type": "awards-bar",
+            "settings": {
+            }
+          },
+          "1555616708880": {
+            "type": "paragraph-section",
+            "settings": {
+              "paragraph-section-header": "",
+              "paragraph-section-content": "Piper's experiences are designed to give students the skills in mechanics, electronics, and software to creatively solve with technology.\n<br><br>\nUnlike many STEAM toys, Piper encourages students to build components, connect electronics, and explore through trial and error. Through hands on play and game-based learning, students have early confidence building experiences that spark their curiosity and inspire them to learn more.\n<br><br>\nBased on research at Stanford University, trusted by thousands of schools, and awarded Tech Toy of the Year 2018, the Piper Computer Kit encourages engineering, design, circuitry, coding, hardware building, motor skills, problem solving, and more.",
+              "paragraph-section-size": "small",
+              "paragraph-section-padding": "narrow",
+              "paragraph-section-alignment": "center",
+              "paragraph-section-anchor": ""
+            }
+          },
+          "1555617386280": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "LOOK INSIDE PIPER",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Piper encourages tinkering and learning through hands on play. Innovative, intuitive, and powerfully educational - Piper gives learners an accessible way to connect with technology and develop crucial twenty-first century skills. All learners are empowered by self-directed exploration to unleash their curiosity and unlock the potential of STEAM.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A3695.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/WJorEUp-utY?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617008840": {
+            "type": "features-small",
+            "settings": {
+              "features-small-anchor": "",
+              "features-small-header-color": "",
+              "features-small-title": "WHAT DO YOU LEARN WITH PIPER?",
+              "features-small-subheader-1": "CRITICAL THINKING",
+              "features-small-img-1": "shopify:\/\/shop_images\/2X7A2741.jpg",
+              "features-small-desc-1": "Students develop critical thinking and growth mindset by connecting hardware to complete missions in Piper StoryMode using creative problem solving skills.",
+              "features-small-subheader-2": "BUILDING WITH ELECTRONICS",
+              "features-small-img-2": "shopify:\/\/shop_images\/2X7A1697.jpg",
+              "features-small-desc-2": "By assembling the Piper Computer Kit and connecting components to build controllers, students develop confidence in working with electronics.",
+              "features-small-subheader-3": "CODE WITH PIPERCODE",
+              "features-small-img-3": "shopify:\/\/shop_images\/PC02_ProgramPhysicalDevices_EDIT_5c59ff25-b89d-4b00-9942-53a87e3de643.jpg",
+              "features-small-desc-3": "Using Google's Blockly intuitive drag-and-drop language, students learn the fundamentals of coding with PiperCode and transition to coding with Python.",
+              "features-small-is-video": false,
+              "features-small-embed-code-1": "",
+              "features-small-embed-code-2": "",
+              "features-small-embed-code-3": ""
+            }
+          },
+          "1555617518809": {
+            "type": "full-size-image",
+            "settings": {
+              "full-size-image-anchor": "",
+              "full-size-image-title": "PIPER COMPUTER FEATURES",
+              "full-size-image-color-variant": "gray",
+              "full-size-image-img": "shopify:\/\/shop_images\/818LRd6L0SL._SL1500.jpg",
+              "full-size-image-compress": true,
+              "full-size-image-display-size": 100
+            }
+          },
+          "1555617694746": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "FULLY IMMERSIVE SOFTWARE",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Computer Kit includes immersive software that teaches students complex engineering concepts. Students will learn how to bridge electronics and coding with Piper's unique Minecraft: Raspberry Pi Edition StoryMode. Next, they'll discover physical computing in PiperCode.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/PC02_Screen_Display_20190104_PIPERCODE_IMMERSIVE.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/0CVcoXWdcdU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617745081": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "DIY LEARNING",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Piper drives students to learn what is behind the screen. This educational, DIY experience ranges from building a wooden case, to connecting the hardware of a real working computer.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/link-banner-img-2.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "blue",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617823257": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "VISUAL PROBLEM SOLVING",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Computer Kit provides an engineering blueprint enabling students to engage in a sensory experience that bridges visual and tactile learning.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A1915_ae63f499-cf1b-4f57-b9d7-8a0ec4f9ebab.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617857280": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BUILT TO LAST",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Computer Kit has been designed to be taken apart and put back together multiple times. Whether built, partially built, or disassembled, the purposefully engineered packaging makes storing the Piper Computer Kit incredibly simple.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/link-banner-img-4.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617916346": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "HEALTHY SCREENTIME",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Learners explore the virtual world of Minecraft: Raspberry Pi Edition and learn electronic concepts through engaging, interactive games. Discover new planets, make friends with intergalactic heroes, Pip and Piperbot, and inspire confidence in STEAM to make gaming a valuable and educational experience.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/PC02_Screen_Display_20190104_PIPERSTORY.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1555617992600": {
+            "type": "full-size-image",
+            "settings": {
+              "full-size-image-anchor": "",
+              "full-size-image-title": "WHAT'S INSIDE",
+              "full-size-image-color-variant": "gray",
+              "full-size-image-img": "shopify:\/\/shop_images\/WhatisInside_Callout_2.png",
+              "full-size-image-compress": true,
+              "full-size-image-display-size": 100
+            }
+          },
+          "1555618119696": {
+            "type": "product-info",
+            "settings": {
+              "product-info-subtitle": "Features",
+              "product-info-items": "25+ laser-etched wooden and acrylic pieces,, 50+ hardware pieces,, 20+ electronic components,, 9\" LCD display with HDMI cable,, 7800 mAh rechargeable battery,, Integrated speaker,, 16GB MicroSD card,, Raspberry Pi 3 Model B,, Phillips-head screwdriver,, Wi-Fi Software Updates,, 8 square foot laminated blueprint,, USB Mouse"
+            }
+          },
+          "1555636703797": {
+            "type": "expandable-section",
+            "settings": {
+              "expand-title": "FREQUENTLY ASKED QUESTIONS",
+              "expand-sections": "What is the recommended age range of Piper?\/Where can I go if I have questions about my Piper?\/Does Piper ship internationally?\/How many hours of learning are there?",
+              "expand-section-1": "Piper is recommended for ages 8-13, but learners of all ages have found Piper to be an effective way to discover STEAM, computer science, and electronics.",
+              "expand-section-2": "Piper is designed to stimulate and challenge students.  We believe iteration is an important part of the engineering process, and we encourage active problem solving before seeking assistance. Piper promotes engagement unlike other products, we've found that learners double down, revisit the details, and try again. Building a Piper Computer Kit features growth mindset and inspires grit throughout the process.\n<br><br>\nIf you have questions, try finding an answer in our <a href=\"http:\/\/community.playpiper.com\/\">community forums<\/a>.\n<br><br>\nWe also have a dedicated Customer Care team you can email anytime through our <a href=\"https:\/\/support.playpiper.com\/hc\/en-us\/\">support page<\/a>.",
+              "expand-section-3": "Piper ships internationally. Local taxes may be applied depending on your country.",
+              "expand-section-4": "Assembling a Piper from the blueprint usually takes about two hours. Completing all of the Piper StoryMode missions takes between eight and ten hours. Exploring creative mode can be enjoyed indefinitely! Also included are an internet browser, a word processor, scratch coding, and more. We also have projects to enhance your Piper Computer Kit."
+            }
+          }
+        },
+        "block_order": [
+          "1556571448539",
+          "1555617616333",
+          "1555634695588",
+          "1555616708880",
+          "1555617386280",
+          "1555617008840",
+          "1555617518809",
+          "1555617694746",
+          "1555617745081",
+          "1555617823257",
+          "1555617857280",
+          "1555617916346",
+          "1555617992600",
+          "1555618119696",
+          "1555636703797"
+        ],
+        "settings": {
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "blocks": {
+          "1555726314408": {
+            "type": "collection-section",
+            "settings": {
+              "collection-section-handle": "frontpage",
+              "collection-section-size": "",
+              "collection-section-item-count": 9,
+              "collection-section-view": "View more in this collection"
+            }
+          }
+        },
+        "block_order": [
+          "1555726314408"
+        ],
+        "settings": {
+        }
+      },
+      "product-piper-station": {
+        "type": "product-piper-station",
+        "blocks": {
+          "1556219959264": {
+            "type": "product-hero-main",
+            "settings": {
+              "product-hero-bg-type": "angled-bg",
+              "product-hero-background": ""
+            }
+          },
+          "1556219967550": {
+            "type": "product-gallery",
+            "settings": {
+            }
+          },
+          "1556219994595": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-station",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "",
+              "bundle-breakdown-list": "3x Piper Computer Kits* \/1x Spare Parts Kit* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1556234831242": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "CUSTOM PIPER BUNDLES",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Classroom Experience can be adapted for schools and districts at any scale. Volume pricing is available for large implementations.",
+              "banner-link-btn-text": "GET A QUOTE",
+              "banner-link-btn-link": "\/pages\/get-a-quote",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A4933.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556220446407": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BECOME A PIPER PRO!",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Education Ambassador Program is designed to recognize, engage, and celebrate the exemplary work of pioneer educators. Piper Pros are dedicated to transforming STEAM teaching &amp; learning in their classrooms and beyond and are willing to share their work with the Piper Education Community.",
+              "banner-link-btn-text": "APPLY NOW",
+              "banner-link-btn-link": "\/pages\/piper-pros",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-pro-image.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556219959264",
+          "1556219967550",
+          "1556219994595",
+          "1556234831242",
+          "1556220446407"
+        ],
+        "settings": {
+        }
+      },
+      "product-piper-classroom-bundle": {
+        "type": "product-piper-classroom-bundle",
+        "blocks": {
+          "1556220234396": {
+            "type": "product-hero-main",
+            "settings": {
+              "product-hero-bg-type": "angled-bg",
+              "product-hero-background": ""
+            }
+          },
+          "1556220238944": {
+            "type": "product-gallery",
+            "settings": {
+            }
+          },
+          "1556220257381": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-classroom-bundle",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "",
+              "bundle-breakdown-list": "10x Piper Computer Kits* \/3x  Spare Parts Kits* \/1x 10-port USB Charger* \/1 Hour Professional Development* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more\/"
+            }
+          },
+          "1556234660118": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "CUSTOM PIPER BUNDLES",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Classroom Experience can be adapted for schools and districts at any scale. Volume pricing is available for large implementations.",
+              "banner-link-btn-text": "Learn More",
+              "banner-link-btn-link": "\/pages\/get-a-quote",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A4933.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556220305716": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BECOME A PIPER PRO!",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Education Ambassador Program is designed to recognize, engage, and celebrate the exemplary work of pioneer educators. Piper Pros are dedicated to transforming STEAM teaching &amp; learning in their classrooms and beyond and are willing to share their work with the Piper Education Community.",
+              "banner-link-btn-text": "APPLY NOW",
+              "banner-link-btn-link": "\/pages\/piper-pros",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-pro-image.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556220234396",
+          "1556220238944",
+          "1556220257381",
+          "1556234660118",
+          "1556220305716"
+        ],
+        "settings": {
+        }
+      },
+      "product-piper-education-starter-kit": {
+        "type": "product-piper-education-starter-kit",
+        "blocks": {
+          "1556220511915": {
+            "type": "product-hero-main",
+            "settings": {
+              "product-hero-bg-type": "angled-bg",
+              "product-hero-background": ""
+            }
+          },
+          "1556220517709": {
+            "type": "product-gallery",
+            "settings": {
+            }
+          },
+          "1556309599707": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-education-starter-kit",
+              "bundle-breakdown-variant": "",
+              "bundle-breakdown-desc": "",
+              "bundle-breakdown-list": "1x Piper Computer Kit* \/1x Piper Educator's Guide* \/"
+            }
+          },
+          "1556234928372": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "CUSTOM PIPER BUNDLES",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Classroom Experience can be adapted for schools and districts at any scale. Volume pricing is available for large implementations.",
+              "banner-link-btn-text": "GET A QUOTE",
+              "banner-link-btn-link": "\/pages\/get-a-quote",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A4933.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556220571937": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "BECOME A PIPER PRO!",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "The Piper Education Ambassador Program is designed to recognize, engage, and celebrate the exemplary work of pioneer educators. Piper Pros are dedicated to transforming STEAM teaching &amp; learning in their classrooms and beyond and are willing to share their work with the Piper Education Community.",
+              "banner-link-btn-text": "APPLY NOW",
+              "banner-link-btn-link": "\/pages\/piper-pros",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-pro-image.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556220511915",
+          "1556220517709",
+          "1556309599707",
+          "1556234928372",
+          "1556220571937"
+        ],
+        "settings": {
+        }
+      },
+      "page-default": {
+        "type": "page-default",
+        "blocks": {
+          "1556225144210": {
+            "type": "page-content-container",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "1556225144210"
+        ],
+        "settings": {
+        }
+      },
+      "product-piper-computer-kit": {
+        "type": "product-piper-computer-kit",
+        "blocks": {
+          "1556231015386": {
+            "type": "product-hero-main",
+            "settings": {
+              "product-hero-bg-type": "angled-bg",
+              "product-hero-background": ""
+            }
+          },
+          "1556231036568": {
+            "type": "product-gallery",
+            "settings": {
+            }
+          },
+          "1556231080132": {
+            "type": "full-size-image",
+            "settings": {
+              "full-size-image-anchor": "",
+              "full-size-image-title": "WHAT'S IN THE BOX?",
+              "full-size-image-color-variant": "gray",
+              "full-size-image-img": "shopify:\/\/shop_images\/WhatisInside_Callout_2.png",
+              "full-size-image-compress": true,
+              "full-size-image-display-size": 81
+            }
+          },
+          "1556231067049": {
+            "type": "product-info",
+            "settings": {
+              "product-info-subtitle": "FEATURES",
+              "product-info-items": "25+ laser-etched wooden and acrylic pieces,, 50+ hardware pieces,, 20+ electronic components,, 9\" LCD display with HDMI cable,, 7800 mAh rechargeable battery,, Integrated speaker,, 16GB MicroSD card,, Raspberry Pi 3 Model B,, Phillips-head screwdriver,, Wi-Fi Software Updates,, 8 square foot laminated blueprint,, USB Mouse"
+            }
+          }
+        },
+        "block_order": [
+          "1556231015386",
+          "1556231036568",
+          "1556231080132",
+          "1556231067049"
+        ],
+        "settings": {
+        }
+      },
+      "blog": {
+        "type": "blog",
+        "blocks": {
+          "1556569714921": {
+            "type": "blog-article-list",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "1556569714921"
+        ],
+        "settings": {
+        }
+      },
+      "article": {
+        "type": "article",
+        "blocks": {
+          "1556569731248": {
+            "type": "article-main",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "1556569731248"
+        ],
+        "settings": {
+        }
+      },
+      "engineer-troubleshooter": {
+        "type": "engineer-troubleshooter",
+        "blocks": {
+          "1556586580059": {
+            "type": "eng-ts-start",
+            "settings": {
+              "eng-ts-start-anchor": "#ts-start",
+              "eng-ts-start-img": "shopify:\/\/shop_images\/Troubleshooter_Begin_4e90f280-12c0-4015-a35e-e73aaaea012a.png",
+              "eng-ts-start-header": "Are you having issues with your kit?",
+              "eng-ts-start-content": "It could be because your kit came with a defective part. We apologize for any inconvenience this might have caused. \n<br><br>\n\nLet's start by identifying if your kit has a defective part. Click through the interactive Engineer Troubleshooter to help us diagnose the problem.",
+              "eng-ts-start-btn-copy": "BEGIN",
+              "eng-ts-start-btn-link": "#step-1"
+            }
+          },
+          "1556587374137": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-1",
+              "eng-ts-step-header": "STEP 1: WATCH VIDEO",
+              "eng-ts-step-desc": "",
+              "eng-ts-step-video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/0hGPeZLPnu4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "eng-ts-step-img": "",
+              "eng-ts-step-test": "Did the video solution fix the issue?",
+              "eng-ts-step-btn-link-1": "#success",
+              "eng-ts-step-btn-link-2": "#step-2",
+              "eng-ts-step-device": "",
+              "eng-ts-step-msg": ""
+            }
+          },
+          "1556588215845": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-2",
+              "eng-ts-step-header": "STEP 2: CHARGE BATTERY",
+              "eng-ts-step-desc": "Is the battery charged? If you do not see blue lights, you'll need to charge the battery.",
+              "eng-ts-step-video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/x977tvkrLGU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "eng-ts-step-img": "",
+              "eng-ts-step-test": "Did charging the battery fix the issue?",
+              "eng-ts-step-btn-link-1": "#success",
+              "eng-ts-step-btn-link-2": "#step-3",
+              "eng-ts-step-device": "",
+              "eng-ts-step-msg": ""
+            }
+          },
+          "1556588681570": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-3",
+              "eng-ts-step-header": "STEP 3: CHECK MICRO-USB CABLE",
+              "eng-ts-step-desc": "On the Raspberry Pi, do you see a red light? Check to make sure the micro-USB cable is plugged in correctly. If you do not see a red light swap out your micro-USB cable with a personal one.",
+              "eng-ts-step-video": "",
+              "eng-ts-step-img": "shopify:\/\/shop_images\/RaspberryPi_microusb_1A_f7c1e213-8417-42e9-831d-0681462bb12f.png",
+              "eng-ts-step-test": "Is there a red light?",
+              "eng-ts-step-btn-link-1": "#step-4",
+              "eng-ts-step-btn-link-2": "#result",
+              "eng-ts-step-device": "microusb",
+              "eng-ts-step-msg": "You may have a defective micro-USB Cable."
+            }
+          },
+          "1556588799332": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-4",
+              "eng-ts-step-header": "STEP 4: CHECK SD CARD",
+              "eng-ts-step-desc": "On the Raspberry Pi, do you see a flashing green light? If not, take out your SD Card, check for dust and reinsert the SD Card into the Pi.",
+              "eng-ts-step-video": "",
+              "eng-ts-step-img": "shopify:\/\/shop_images\/RaspberryPi3_A_3832781f-0706-4ffa-a690-b33a24c2a134.png",
+              "eng-ts-step-test": "Is there a flashing green light?",
+              "eng-ts-step-btn-link-1": "#step-5",
+              "eng-ts-step-btn-link-2": "#result",
+              "eng-ts-step-device": "sd",
+              "eng-ts-step-msg": "You may have a defective SD card. Take out the SD card, check for dust, and reinsert it into the Raspberry Pi."
+            }
+          },
+          "1556588860215": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-5",
+              "eng-ts-step-header": "STEP 5: CHECK RASPBERRY PI",
+              "eng-ts-step-desc": "Connect your Raspberry Pi up to another monitor or TV screen with another HDMI Cable.",
+              "eng-ts-step-video": "",
+              "eng-ts-step-img": "shopify:\/\/shop_images\/raspberryPi_blackhdmi_newmonitor_6e86b52c-5cfc-426d-a828-092fcfbe4e28.png",
+              "eng-ts-step-test": "Do you see an image on the display?",
+              "eng-ts-step-btn-link-1": "#step-6",
+              "eng-ts-step-btn-link-2": "#result",
+              "eng-ts-step-device": "pi",
+              "eng-ts-step-msg": "You may have a defective Raspberry Pi."
+            }
+          },
+          "1556589012544": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-6",
+              "eng-ts-step-header": "STEP 6: CHECK HDMI CABLE",
+              "eng-ts-step-desc": "Connect your Raspberry Pi up to another monitor or TV screen with your Piper Computer Kit HDMI Cable.",
+              "eng-ts-step-video": "",
+              "eng-ts-step-img": "shopify:\/\/shop_images\/raspberryPi_piperHDMI_newmonitor_42e38c0d-c2b4-4580-9aa7-a3a8bf4e765c.png",
+              "eng-ts-step-test": "Do you see an image on the display?",
+              "eng-ts-step-btn-link-1": "#step-7",
+              "eng-ts-step-btn-link-2": "#result",
+              "eng-ts-step-device": "hdmi",
+              "eng-ts-step-msg": "You may have a defective HDMI cable."
+            }
+          },
+          "1556589076574": {
+            "type": "eng-ts-step",
+            "settings": {
+              "eng-ts-step-anchor": "#step-7",
+              "eng-ts-step-header": "STEP 7: CHECK DISPLAY",
+              "eng-ts-step-desc": "Connect your Raspberry Pi up to your Piper Computer Kit display with another HDMI Cable.",
+              "eng-ts-step-video": "",
+              "eng-ts-step-img": "shopify:\/\/shop_images\/raspberryPi_blackhdmi_PiperDisplay_7bff0e14-060a-4ada-accf-f58e2c7592f0.png",
+              "eng-ts-step-test": "Do you see an image on the display?",
+              "eng-ts-step-btn-link-1": "#schedule-session",
+              "eng-ts-step-btn-link-2": "#result",
+              "eng-ts-step-device": "display",
+              "eng-ts-step-msg": "You may have a defective display."
+            }
+          },
+          "1556589168544": {
+            "type": "eng-ts-link",
+            "settings": {
+              "eng-ts-link-anchor": "#schedule-session",
+              "eng-ts-link-content": "We’re so sorry that you’re still having issues. We are committed to helping you address this.\n<br><br>\nClick here to contact our Customer Care Team to set up a Piper Engineer Session.",
+              "eng-ts-link-img": "shopify:\/\/shop_images\/Calendar_1A_ddb61ba3-01bc-4301-b08f-c0375f2b5ee4.png",
+              "eng-ts-link-btn-copy": "SCHEDULE A SESSION",
+              "eng-ts-link-btn-link": "https:\/\/calendly.com\/piperengineersessions"
+            }
+          },
+          "1556589299377": {
+            "type": "eng-ts-end",
+            "settings": {
+              "eng-ts-end-anchor": "#result",
+              "eng-ts-end-img": "shopify:\/\/shop_images\/GreenCheck_1A_3f5e1803-ab9f-43ce-a1ab-9c9d8e5b7c49.png",
+              "eng-ts-end-header": "TROUBLESHOOTER COMPLETE",
+              "eng-ts-end-content": "<br><br>\nWe apologize for the inconvenience. Please submit your e-mail so we can continue to troubleshoot with you.",
+              "eng-ts-end-btn-copy": "SUBMIT"
+            }
+          },
+          "1556591151241": {
+            "type": "eng-ts-submit",
+            "settings": {
+              "eng-ts-submit-anchor": "#success",
+              "eng-ts-submit-header": "Congratulations!",
+              "eng-ts-submit-content": "You have successfully troubleshooted the issue.",
+              "eng-ts-submit-btn-link": "http:\/\/support.playpiper.com",
+              "eng-ts-submit-btn-copy": "FINISH"
+            }
+          },
+          "1556591460418": {
+            "type": "eng-ts-submit",
+            "settings": {
+              "eng-ts-submit-anchor": "#troubleshooter-submitted",
+              "eng-ts-submit-header": "We will be in touch shortly!",
+              "eng-ts-submit-content": "We will send you an email about next steps very soon.",
+              "eng-ts-submit-btn-link": "http:\/\/support.playpiper.com",
+              "eng-ts-submit-btn-copy": "FINISH"
+            }
+          }
+        },
+        "block_order": [
+          "1556586580059",
+          "1556587374137",
+          "1556588215845",
+          "1556588681570",
+          "1556588799332",
+          "1556588860215",
+          "1556589012544",
+          "1556589076574",
+          "1556589168544",
+          "1556589299377",
+          "1556591151241",
+          "1556591460418"
+        ],
+        "settings": {
+        }
+      },
+      "pipercode": {
+        "type": "pipercode",
+        "blocks": {
+          "1556602054686": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/2X7A3696_2.jpg",
+              "page-hero-title": "PIPERCODE",
+              "page-hero-description": "YOUR INTRODUCTION TO CODING & PROGRAMMING ELECTRONICS",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1556602262214": {
+            "type": "features-small",
+            "settings": {
+              "features-small-anchor": "",
+              "features-small-header-color": "gray",
+              "features-small-title": "",
+              "features-small-subheader-1": "CODE PHYSICAL GAMES",
+              "features-small-img-1": "shopify:\/\/shop_images\/pipercode-feature-1.png",
+              "features-small-desc-1": "PiperCode includes preloaded projects that allow students to code and program physical electronic games!",
+              "features-small-subheader-2": "FULL CREATIVE CONTROL",
+              "features-small-img-2": "shopify:\/\/shop_images\/pipercode-feature-2_5ceed7cf-0021-43a3-a2ac-3990a5534ee4.png",
+              "features-small-desc-2": "PiperCode uses Blockly by Google, a drag & drop coding language that enables students to modify and change how their electronics work on the Raspberry Pi.",
+              "features-small-subheader-3": "BASIC TO PYTHON PROGRAMMING",
+              "features-small-img-3": "shopify:\/\/shop_images\/pipercode-feature-3.png",
+              "features-small-desc-3": "Learners establish a basic foundation in coding with PiperCode. They will be able to easily transition from Blockly to advanced languages like Python.",
+              "features-small-is-video": false,
+              "features-small-embed-code-1": "",
+              "features-small-embed-code-2": "",
+              "features-small-embed-code-3": ""
+            }
+          },
+          "1556602647301": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "GAME PROJECTS THAT YOU CODE FROM START TO FINISH",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Learn the basics of coding with over 7 fun physical electronic games you code yourself! Follow simple step by step tutorials!",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/PC02_ProgramPhysicalDevices_EDIT_5c59ff25-b89d-4b00-9942-53a87e3de643.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/vY3LmJT9768\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556602828937": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "INFINITE CREATIVE POSSIBILITIES",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Go beyond the box and create your games. Students gain coding skills while having creative control over their own projects.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/big-feature-1.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "orange",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556603139277": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "FROM BASIC TO ADVANCED PROGRAMMING",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Transfer your code from blockly straight to Python! Learn new skills in blockly to prepare for building projects in Python!",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/piper-step7.gif",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1556603381121": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "FOR THE CLASSROOM",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "No experience necessary; whether you're a coding genius or a complete novice, our lesson plans will make PiperCode a huge success for your classroom!",
+              "banner-link-btn-text": "Learn More",
+              "banner-link-btn-link": "\/pages\/educators",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A2718_collage_1a.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556602054686",
+          "1556602262214",
+          "1556602647301",
+          "1556602828937",
+          "1556603139277",
+          "1556603381121"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page": {
+        "type": "landing-page",
+        "blocks": {
+          "1557380967375": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/HeaderBanner2.jpg",
+              "page-hero-title": "This Mother’s Day save $100 on a Piper Computer Kit",
+              "page-hero-description": "Hours of educational fun for you and your child.\n<br>\n<br>\n\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13285654167596\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\" style=\"color: white;\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n        <h6>Promo code automatically applied at checkout<\/h6>\n    <\/div>\n<\/form>",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1557381447497": {
+            "type": "awards-bar",
+            "settings": {
+            }
+          },
+          "1557381451217": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "<span style=\"font-size:2rem;\">FROM CURIOUS TO CAPABLE<\/span>",
+              "banner-link-subtitle": "LEARNING BY BUILDING",
+              "banner-link-desc": "Based on research at Stanford University, trusted by thousands of schools, and awarded Tech Toy of the Year 2018, the Piper Computer Kit encourages engineering, design, circuitry, coding, hardware building, motor skills, problem solving, and more.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A3558_small_837d2372-4437-44f9-8b62-cf2b5990920a.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/d-a_opTohQI?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1557381525072": {
+            "type": "card-cta",
+            "settings": {
+              "cta-title": "",
+              "cta-product": "piper-computer-kit-2",
+              "cta-variant": "0",
+              "cta-compare": false,
+              "cta-desc": "The Piper Computer Kit is the ultimate D.I.Y. computer-building experience, for ages 8-13. Build a REAL computer from start to finish while playing Minecraft: Raspberry Pi Edition to learn how to code and make STEAM connections to the real-world.\n<br><br>\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13285654167596\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n        <h6>Promo code automatically applied at checkout<\/h6>\n    <\/div>\n<\/form>",
+              "cta-button": ""
+            }
+          }
+        },
+        "block_order": [
+          "1557380967375",
+          "1557381447497",
+          "1557381451217",
+          "1557381525072"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page-edu": {
+        "type": "landing-page-edu",
+        "blocks": {
+          "1557380528149": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/2X7A4933.jpg",
+              "page-hero-title": "This Spring, save up to $1,200 on Piper Classroom Bundles",
+              "page-hero-description": "<form class=\"quick-checkout\" data-discount=\"YEAREND\" method=\"post\" action=\"\/cart\/add\">\n                <div class=\"form-group\">\n                    <input type=\"hidden\" name=\"id\" value=\"13298868650028\">\n                    <input type=\"submit\" value=\"ADD TO CART - NO PD $1,990\" class=\"btn btn-primary btn-lg qc-submit\">\n                <\/div>\n            <\/form>\n\n<form class=\"quick-checkout\" data-discount=\"YEARENDPD\" method=\"post\" action=\"\/cart\/add\">\n                <div class=\"form-group\">\n                    <input type=\"hidden\" name=\"id\" value=\"13298868650028\">\n                    <input type=\"submit\" value=\"ADD TO CART - PD INCLUDED $2,340\" class=\"btn btn-primary btn-lg qc-submit\">\n                    <p class=\"form-input-hint qc-hint d-invisible\">Order being created...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n                    <h6>Promo code automatically applied at checkout<\/h6>\n                <\/div>\n            <\/form>",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1557380602920": {
+            "type": "banner-testimonial",
+            "settings": {
+              "banner-testimonial-content": "Engaging students has always been one of my passions. How does it apply to the real world? How can we use this for our benefit? ...Piper definitely brings that to the table, and I appreciate it as a teacher.",
+              "banner-testimonial-author": "- Karen Wright, 8th grade teacher",
+              "color": ""
+            }
+          },
+          "1557380635653": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "THE PIPER CLASSROOM EXPERIENCE",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Piper offers educators a turnkey solution for teaching STEAM with a standards-aligned curriculum and professional development. Our easy to use lesson plans engage all types of learners to develop 21st century skills. With the upgraded Piper Computer Kit, the Piper Classroom Experience is more effective and seamless for all educators.",
+              "banner-link-btn-text": "LEARN MORE",
+              "banner-link-btn-link": "\/pages\/educators",
+              "banner-link-img": "shopify:\/\/shop_images\/DECONTSRUCT_PC02.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/E2yuBcbv6iQ?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1557380765763": {
+            "type": "bundle-promo",
+            "settings": {
+              "bundle-promo-product": "piper-classroom-bundle",
+              "bundle-promo-variant": "0",
+              "bundle-promo-desc": "The Piper Classroom Bundle is the ideal project-based learning solution for teaching computer science and STEAM. The Piper Classroom Bundle features the next generation Piper Computer Kit that has been upgraded and re-engineered for greater student engagement and deeper learning.",
+              "bundle-promo-list": "10x Piper Computer Kits* \/3x Spare Parts Kits* \/1x 10-Port USB Charger* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more"
+            }
+          },
+          "1557380797394": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "ADD PROFESSIONAL DEVELOPMENT",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Get your staff and classroom set up with help from the team at Piper. The Classroom Bundle with Professional Development included is also on sale this Spring!\n<br>\n<br>\n<strong>Piper Classroom Bundle + Professional Development<br>\n<span style=\"font-size: 1.3rem;\">$2,340.00 with promo<\/span><\/strong><br>\n<form class=\"quick-checkout\" data-discount=\"YEARENDPD\" method=\"post\" action=\"\/cart\/add\">\n                <div class=\"form-group\">\n                    <input type=\"hidden\" name=\"id\" value=\"13298868650028\">\n                    <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n                    <p class=\"form-input-hint qc-hint d-invisible\">Order being created...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n                    <h6>Promo code automatically applied at checkout<\/h6>\n                <\/div>\n            <\/form>",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/HeroBANNER_PC02_EDU.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1557380528149",
+          "1557380602920",
+          "1557380635653",
+          "1557380765763",
+          "1557380797394"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page-cc-beta": {
+        "type": "landing-page-cc-beta",
+        "blocks": {
+          "1558152208908": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/piperlab-6.jpg",
+              "page-hero-title": "PIPER<br>COMMAND CENTER <span style=\"font-size: 1.2rem;border-style: solid; border-radius: 1px; border-radius: 5rem; border-color: white; padding: 0.1rem 1rem; vertical-align:middle;\">BETA<\/span>",
+              "page-hero-description": "BUILD. CODE. HACK. PLAY. REPEAT.\n<h4>$49.99<\/h4>\nAn exclusive first look: assemble a real working game controller, understand the basics of an Arduino, and discover physical computing by configuring a joystick, buttons, and more. Ideal for ages 13+.\n<br>\n\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13352427487276\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn  btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\" style=\"color: white;\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n    <\/div>\n<\/form>\n<a href=\"\/pages\/command-center\"><button class=\"btn btn-lg green\">PROJECT HUB<\/button><\/a>",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1558152262579": {
+            "type": "banner-testimonial",
+            "settings": {
+              "banner-testimonial-content": "When I was completing my PhD thesis at Stanford University, the principle that creative computing could empower the next generation became increasingly apparent. This is the next step to democratizing technology beyond a standard computer interface.",
+              "banner-testimonial-author": "- Dr. Joel Sadler, Founder of Piper",
+              "color": ""
+            }
+          },
+          "1558152249362": {
+            "type": "banner-detail",
+            "settings": {
+              "banner-detail-color": "",
+              "banner_title": "BE A PART OF THE BETA",
+              "banner_detail": "<ul style=\"list-style-position: outside;\">\n<li>From coding to creating, Piper Command Center customizations aren’t just for gaming.<\/li>\n<li>Explore creativity: customize the Piper Command Center buttons and joysticks for designing, drawing, and hacking.<\/li>\n<li>Your creations are at your command. With projects and tutorials, the possibilities are endless.<\/li>\n<li>Your feedback is essential. Tell us about your experience and help Piper move into the future of making.<\/li>\n<\/ul>",
+              "banner_image": "shopify:\/\/shop_images\/DSC03577.JPG",
+              "banner-detail-image-style": "cover",
+              "overflow": ""
+            }
+          },
+          "1558152291944": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/piperlab-1_f897465c-d58c-4ca2-8694-e5d98bfd3d83.jpg",
+              "page-hero-title": "<h1 style=\"text-align: center;\">THIS EXCLUSIVE BETA PRICE IS ONLY AVAILABLE FOR A LIMITED TIME<\/h1>",
+              "page-hero-description": "",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": true
+            }
+          }
+        },
+        "block_order": [
+          "1558152208908",
+          "1558152262579",
+          "1558152249362",
+          "1558152291944"
+        ],
+        "settings": {
+        }
+      },
+      "piper-command-center": {
+        "type": "piper-command-center",
+        "blocks": {
+          "1558153292901": {
+            "type": "homepage-hero-main",
+            "settings": {
+              "homepage-hero-show-announcement": true,
+              "homepage-hero-announcement-icon": "shopify:\/\/shop_images\/piper-code-1.png",
+              "homepage-hero-announcement-content": "<p><strong>Want to join the BETA launch? Click here to learn more!<\/strong><\/p>",
+              "homepage-hero-announcement-arrow": "shopify:\/\/shop_images\/arrow-3.png",
+              "homepage-hero-announcement-link": "shopify:\/\/pages\/piper-command-center-beta",
+              "homepage-hero-main-text-color": "",
+              "homepage-hero-main-title": "PIPER COMMAND CENTER",
+              "homepage-hero-main-description": "Ready to launch? Begin here to build, connect, and code your Piper Command Center. Follow the tutorials below to get started.",
+              "homepage-hero-main-button-text": "",
+              "homepage-hero-main-button-link": "",
+              "homepage-hero-main-color": "",
+              "homepage-hero-main-img": "",
+              "homepage-hero-main-img-link": "",
+              "homepage-hero-size": "small",
+              "homepage-hero-main-background": "shopify:\/\/shop_images\/CommandCenter_20190514_Branding_B-06-01.jpg"
+            }
+          },
+          "1558153404665": {
+            "type": "expandable-section",
+            "settings": {
+              "expand-title": "",
+              "expand-sections": "STEP 1: Build Your Command Center\/STEP 2: Install the Arduino IDE on Your Computer\/STEP 3: Configure your Command Center for Gaming",
+              "expand-section-1": "<p>In this step, you will use the Piper Command Center kit, a blueprint, and a screwdriver to build a working game controller with an Arduino microcontroller at its center. In the process, you will learn the main parts of a game controller and how to breadboard the components of your controller to a microcontroller<br><\/p>\n<p>Instructions: Use the blueprint included in the box to build your Command Center. Follow the video below to guide you through the building process:<br><\/p>\n<div class=\"video-responsive\">\n\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/QYByc0ov_sI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>\n<\/div>\n<p>Get the <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0925\/6256\/files\/Piper_Command_Center_Blueprint.pdf?33759\">PDF version<\/a> of the Piper Command Center blueprint on the download. 😎👉<\/p>\n<p>NOTE: The last step of your blueprint instructs you to plug your Command Center into a Raspberry Pi. Ignore that! Instead, plug your command center into a USB port on your computer.<\/p>\n<p>Building is just the beginning! Expect the building process to take you roughly 1 hour. Once you’re finished, just a few quick steps will get you up and running. Then you’ll be able to play games and complete creative projects with your Piper Command Center.<\/p>\n<p>\nDid you enjoy building and wiring your controller? Let us know in the comments section at the bottom of this page.<\/p>",
+              "expand-section-2": "<p>Time to troubleshoot. Wiring is the next step to get your controller working well. Then you’ll be on your way to\n    testing your joystick and buttons, troubleshooting the firmware, and one step closer to coding it exactly as you\n    want.<\/p>\n<h4>Step 1: Install Arduino IDE<\/h4>\n<p>Download the Arduino IDE:<br><br>\n    If on PC, Mac, or Linux download the Arduino IDE <a href=\"https:\/\/www.arduino.cc\/en\/Main\/Software\">here.<\/a>\n    <br>\n    If on a Chromebook, code online with Arduino's web editor <a href=\"https:\/\/create.arduino.cc\/\">here.<\/a>\n    <br><br>\n<\/p>\n<h4>Step 2: Watch Troubleshooting Video<\/h4>\n\n<div class=\"video-responsive\">\n    <iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/6ikpjcbWfEQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>\n\n<\/div>\n<div class=\"toast\">\n    <div class=\"py-2\">If you are having problems, rewatch the video to check your work!<\/div>\n<\/div>\n<p><\/p>\n<p>Note: Follow these steps to properly register the Microcontroller Board with the Command Center Controller Default Firmware:\n    <\/p><ol>\n        <li>Open up the installed Arduino IDE<\/li>\n        <li>Next configure the IDE<\/li>\n            <ol>\n<li>Select Board Type: <code>Tools &gt; Board &gt; “Arduino\/Genuino Micro”<\/code>\n<\/li>\n            <li>Select Port: <code>Tools &gt; Port &gt; “...(Arduino\/Genuino Micro)”<\/code>\n<\/li>\n<\/ol>\n    <\/ol>\n<p><\/p>\n\n<br>\n\n<div id=\"commandCenterTest\" style=\"display: grid; min-height: 25rem;\"><\/div>\n<p><\/p>\n\n<p><\/p>\n<p>\n    NOTE: Once uploaded, remember to attach the top cover: Piece #7 or Piece #8. With the build and code complete, visit\n    the <a href=\"#resources\">Resource Section<\/a> to test your gaming skills.<\/p>\n<p>To use the Piper Command Center as a game controller, try out the <a href=\"#tutorials\">Command Center Firmware Tutorial<\/a> in the Tutorial\n    Section<\/p>",
+              "expand-section-3": "<div class=\"video-responsive\">\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/HiEGAxkHEKU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>\n<\/div>\n\n<p><\/p>\n\n<br>\n\n<div id=\"firmware\" style=\"display: grid; min-height: 35rem;\"><\/div>\n<p><\/p>",
+              "expand-section-4": ""
+            }
+          },
+          "1558153718372": {
+            "type": "link-cards",
+            "settings": {
+              "link-cards-anchor": "tutorials",
+              "link-cards-title": "Tutorials",
+              "link-cards-size": "",
+              "link-cards-item-count": 6,
+              "link-cards-url-1": "shopify:\/\/blogs\/piper-command-center\/uploading-firmware-to-your-controller",
+              "link-cards-img-1": "shopify:\/\/shop_images\/Icons-01.png",
+              "link-cards-copy-1": "<div class=\"card-header\"><h4>FIRMWARE<\/h4><\/div><div class=\"card-body\">Upload the controller's firmware.<\/div>",
+              "link-cards-url-2": "shopify:\/\/blogs\/piper-command-center\/processing",
+              "link-cards-img-2": "shopify:\/\/shop_images\/Icons-02.png",
+              "link-cards-copy-2": "<div class=\"card-header\">\n<h4>PROCESSING<\/h4>  <\/div>\n                                      <div class=\"card-body\">Want to make your own video games? Start here!\n<\/div>",
+              "link-cards-url-3": "shopify:\/\/blogs\/piper-command-center\/mouse-control",
+              "link-cards-img-3": "shopify:\/\/shop_images\/Icons-03.png",
+              "link-cards-copy-3": "<div class=\"card-header\">\n<h4>MOUSE CONTROL<\/h4>  <\/div>\n                                      <div class=\"card-body\">Draw with Processing.\n<\/div>",
+              "link-cards-url-4": "shopify:\/\/blogs\/piper-command-center\/sketching",
+              "link-cards-img-4": "shopify:\/\/shop_images\/Icons-04.png",
+              "link-cards-copy-4": "<div class=\"card-header\">\n<h4>SKETCHING<\/h4>  <\/div>\n                                      <div class=\"card-body\">Sketch with Processing.\n<\/div>",
+              "link-cards-url-5": "shopify:\/\/blogs\/piper-command-center\/hardware-connect",
+              "link-cards-img-5": "shopify:\/\/shop_images\/Icons-05.png",
+              "link-cards-copy-5": "<div class=\"card-header\">\n<h4>HARDWARE CONNECT<\/h4>  <\/div>\n                                      <div class=\"card-body\">Control electronics with Processing.\n<\/div>",
+              "link-cards-url-6": "shopify:\/\/blogs\/piper-command-center\/create-a-synthesizer",
+              "link-cards-img-6": "shopify:\/\/shop_images\/Icons-06.png",
+              "link-cards-copy-6": "<div class=\"card-header\">\n<h4>SYNTHESIZER<\/h4>  <\/div>\n                                      <div class=\"card-body\">Turn your Piper Command Center into a musical instrument.\n<\/div>",
+              "link-cards-url-7": "",
+              "link-cards-img-7": "",
+              "link-cards-copy-7": "",
+              "link-cards-url-8": "",
+              "link-cards-img-8": "",
+              "link-cards-copy-8": "",
+              "link-cards-url-9": "",
+              "link-cards-img-9": "",
+              "link-cards-copy-9": ""
+            }
+          },
+          "1558153751094": {
+            "type": "link-cards",
+            "settings": {
+              "link-cards-anchor": "resources",
+              "link-cards-title": "Resources",
+              "link-cards-size": "",
+              "link-cards-item-count": 9,
+              "link-cards-url-1": "https:\/\/create.arduino.cc\/",
+              "link-cards-img-1": "shopify:\/\/shop_images\/Icons-07.png",
+              "link-cards-copy-1": "<div class=\"card-header\"><h4>ARDUINO<\/h4><\/div><div class=\"card-body\">Start programming your Piper Command Center from scratch.<\/div>",
+              "link-cards-url-2": "https:\/\/processing.org\/examples\/",
+              "link-cards-img-2": "shopify:\/\/shop_images\/Icons-08.png",
+              "link-cards-copy-2": "<div class=\"card-header\"><h4>PROCESSING<\/h4><\/div><div class=\"card-body\">Draw (and much more!) with your Piper Command Center.<\/div>",
+              "link-cards-url-3": "#",
+              "link-cards-img-3": "shopify:\/\/shop_images\/Icons-09.png",
+              "link-cards-copy-3": "<div class=\"card-header\"><h4>GLOSSARY<\/h4><\/div><div class=\"card-body\">Coming soon!<\/div>",
+              "link-cards-url-4": "http:\/\/www.dougmcinnes.com\/html-5-asteroids",
+              "link-cards-img-4": "shopify:\/\/shop_images\/Icons-10.png",
+              "link-cards-copy-4": "<div class=\"card-header\"><h4>ASTEROIDS<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Keyboard Mode and use the top button to fire.<\/div>",
+              "link-cards-url-5": "https:\/\/www.miniclip.com\/games\/crossy-road\/en\/#t-w-c-H",
+              "link-cards-img-5": "shopify:\/\/shop_images\/Icons-11.png",
+              "link-cards-copy-5": "<div class=\"card-header\"><h4>CROSSY ROADS<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Keyboard Mode.<\/div>",
+              "link-cards-url-6": "https:\/\/www.miniclip.com\/games\/flow-mania\/en\/",
+              "link-cards-img-6": "shopify:\/\/shop_images\/Icons-12.png",
+              "link-cards-copy-6": "<div class=\"card-header\"><h4>FLOW MANIA<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Mouse Mode.<\/div>",
+              "link-cards-url-7": "https:\/\/ramblingindiegames.itch.io\/gelda-tvgamejam-edition",
+              "link-cards-img-7": "shopify:\/\/shop_images\/Icons-13.png",
+              "link-cards-copy-7": "<div class=\"card-header\"><h4>GELDA<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Keyboard Mode.<\/div>",
+              "link-cards-url-8": "https:\/\/andrio.itch.io\/shrubnaut",
+              "link-cards-img-8": "shopify:\/\/shop_images\/Icons-14.png",
+              "link-cards-copy-8": "<div class=\"card-header\"><h4>SHRUBNAUT<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Keyboard Mode. Use the right and down buttons.<\/div>",
+              "link-cards-url-9": "https:\/\/chiptune.itch.io\/zepton",
+              "link-cards-img-9": "shopify:\/\/shop_images\/Icons-15.png",
+              "link-cards-copy-9": "<div class=\"card-header\"><h4>ZEPTUNE<\/h4><\/div><div class=\"card-body\">Put your Piper Command Center into Keyboard Mode. Use the left, right, and down buttons.<\/div>"
+            }
+          },
+          "1558663442329": {
+            "type": "paragraph-section",
+            "settings": {
+              "paragraph-section-header": "We need your feedback!",
+              "paragraph-section-content": "Please let us know below if you have any questions or comments, and we will be in touch with you shortly! Your feedback is essential in helping us create the best experience possible. \n<div style=\"max-width: 25rem; margin: 2rem auto;\">\n<form class=\"form-group\" action=\"https:\/\/formspree.io\/hi@playpiper.com\" method=\"POST\">\n\n<div class=\"form-label\" for=\"email\">Email<\/div>\n<input class=\"form-input\" type=\"text\" name=\"email\" placeholder=\"Email\">\n\n<div class=\"form-label\" for=\"feedback-questions\">Feedback\/Questions<\/div>\n<textarea class=\"form-input\" type=\"textarea\" name=\"feedback-questions\" rows=\"5\" placeholder=\"Enter your feedback, questions, or comments here!\"><\/textarea>\n\n<input class=\"form-input btn btn-lg btn-primary\" value=\"SUBMIT\" type=\"submit\">\n<\/form>\n<\/div>",
+              "paragraph-section-size": "small",
+              "paragraph-section-padding": "narrow",
+              "paragraph-section-alignment": "center",
+              "paragraph-section-anchor": ""
+            }
+          }
+        },
+        "block_order": [
+          "1558153292901",
+          "1558153404665",
+          "1558153718372",
+          "1558153751094",
+          "1558663442329"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page-fathers-day": {
+        "type": "landing-page-fathers-day",
+        "blocks": {
+          "1559863033695": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/2X7A4033-min_2ac0eb53-ab71-4a5d-a185-6960f31759ec.jpg",
+              "page-hero-title": "Get a Piper Computer Kit  for $199 with Promo code <code>4DAD<\/code>.",
+              "page-hero-description": "<h3>Dad, spend Father's Day doing what you love with the people you love.<\/h3>\nHours of educational fun for you and your child. \n\n<br>\n\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13285654167596\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\" style=\"color: white;\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n        <h6>Promo code automatically applied at checkout<\/h6>\n    <\/div>\n<\/form>",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": false
+            }
+          },
+          "1559863063437": {
+            "type": "awards-bar",
+            "settings": {
+            }
+          },
+          "1559863071230": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "<span style=\"font-size:2rem;\">FROM CURIOUS TO CAPABLE<\/span>",
+              "banner-link-subtitle": "LEARNING BY BUILDING",
+              "banner-link-desc": "Based on research at Stanford University, trusted by thousands of schools, and awarded Tech Toy of the Year 2018, the Piper Computer Kit encourages engineering, design, circuitry, coding, hardware building, motor skills, problem solving, and more.",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/2X7A4858-min.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/d-a_opTohQI?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1559863149708": {
+            "type": "features-split",
+            "settings": {
+              "features-split-section-title": "",
+              "features-split-color-scheme": "",
+              "features-split-button-type": "",
+              "features-split-subheader-1": "The Piper Computer Kit",
+              "features-split-img-1": "shopify:\/\/shop_images\/piper-split-features.jpg",
+              "features-split-desc-1": "<h5>$199.99 with promo code<\/h5>\n<p>The Piper Computer Kit is the ultimate D.I.Y. computer-building experience, for ages 8-13. Build a REAL computer from start to finish while playing Minecraft: Raspberry Pi Edition to learn how to code and make STEAM connections to the real-world.<\/p>\n<br><br>\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13285654167596\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n        <h6>Promo code automatically applied at checkout<\/h6>\n    <\/div>\n<\/form>",
+              "features-split-button-1": "",
+              "features-split-link-1": "",
+              "features-split-subheader-2": "Piper Command Center BETA",
+              "features-split-img-2": "shopify:\/\/shop_images\/piper-split-features-3.jpg",
+              "features-split-desc-2": "<h5>$49.99 special launch price<\/h5>\n<p>An exclusive first look: assemble a real working game controller, understand the basics of an Arduino, and discover physical computing by configuring a joystick, buttons, and more. Ideal for ages 13+.<\/p>\n<form class=\"quick-checkout\" method=\"post\" action=\"\/cart\/add\">\n    <div class=\"form-group\">\n        <input type=\"hidden\" name=\"id\" value=\"13352427487276\">\n        <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg qc-submit\">\n        <p class=\"form-input-hint qc-hint d-invisible\">Creating your order...<i style=\"padding-right: 2rem\" class=\"form-icon loading\"><\/i><\/p>\n        <h6>Limited time discounted launch price<\/h6>\n    <\/div>\n<\/form>",
+              "features-split-button-2": "",
+              "features-split-link-2": "",
+              "features-split-enable-video": false,
+              "features-split-embed-code-1": "",
+              "features-split-embed-code-2": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559863033695",
+          "1559863063437",
+          "1559863071230",
+          "1559863149708"
+        ],
+        "settings": {
+        }
+      },
+      "landing-page-ppc-launch": {
+        "type": "landing-page-ppc-launch",
+        "blocks": {
+          "1560545437613": {
+            "type": "page-hero-main",
+            "settings": {
+              "page-nav-links": "",
+              "page-hero-background": "shopify:\/\/shop_images\/DSC03563.JPG",
+              "page-hero-title": "<div class=\"text-center text-large\">Piper Premium Curriculum<\/div>",
+              "page-hero-description": "<div class=\"text-center\">\n<h3>Piper is taking STEAM education into the future with the 5E instructional model.<\/h3>\n<p class=\"text-large\">With a digital access portal, educators can use Piper’s engaging project-based STEAM lesson plans for inquiry-based instruction, enhanced with assessments, and vocabulary.\n<br><br>\nPiper supports the Piper Premium Curriculum portal with continuous updates, and includes a forum exclusively for teachers to create connections and ask questions.<br><br><strong>Standards-aligned for grades 3-8.<\/strong> Just $99 per teacher.<\/p>\n<form method=\"post\" action=\"\/cart\/add\"><strong>\n                <div class=\"form-group\">\n                    <input type=\"hidden\" name=\"id\" value=\"14601035153452\">\n                    <input type=\"submit\" value=\"ADD TO CART\" class=\"btn btn-primary btn-lg\">\n                <\/div>\n            <\/strong><\/form>\n<\/div>",
+              "page-hero-button-text": "",
+              "page-hero-button-link": "",
+              "page-hero-image": "",
+              "page-hero-fulltext": true
+            }
+          },
+          "1560545483771": {
+            "type": "edu-badge-bar",
+            "settings": {
+            }
+          },
+          "1560545490627": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "THE PIPER CLASSROOM EXPIERIENCE",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "Piper offers educators a turnkey solution for teaching STEAM with a standards-aligned curriculum and professional development. Our easy to use lesson plans engage all types of learners to develop 21st century skills. With the upgraded Piper Computer Kit, the Piper Classroom Experience is more effective and seamless for all educators.",
+              "banner-link-btn-text": "LEARN MORE",
+              "banner-link-btn-link": "\/pages\/educators",
+              "banner-link-img": "shopify:\/\/shop_images\/DECONTSRUCT_PC02_ee786b74-96b9-429e-9ca7-662fba433322.jpg",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": true,
+              "banner-link-embed-code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/E2yuBcbv6iQ?rel=0&showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>",
+              "banner-link-direction": "",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1560552462961": {
+            "type": "banner-link",
+            "settings": {
+              "banner-link-title": "CURRICULUM DESIGNED BY EDUCATORS FOR EDUCATORS",
+              "banner-link-subtitle": "",
+              "banner-link-desc": "“When I was a teacher, there were many STEAM products on the market- but the curriculum was deeply limited. Most lessons were either very abstract or “edutainment”. Based on this experience, we wanted to ensure that the Piper Premium Curriculum helps students connect deeply with electronics and coding. We also prioritized making the curriculum easy to implement and access through a digital portal.\n<br><br>\nUtilizing the popular 5E Instructional Model for teaching science, this teacher-centered approach ensures that those who know their students the best, teachers themselves, can customize to meet the needs of their classroom and students.”<br><br><h5>Melissa Belardi, Chief Academic Officer<\/h5>",
+              "banner-link-btn-text": "",
+              "banner-link-btn-link": "",
+              "banner-link-img": "shopify:\/\/shop_images\/Screen_Shot_2019-06-14_at_2.02.16_PM.png",
+              "banner-link-img-style": "",
+              "banner-link-theme": "",
+              "banner-link-button-style": "btn-primary",
+              "banner-link-is-video": false,
+              "banner-link-embed-code": "",
+              "banner-link-direction": "right",
+              "banner-link-collection-display": false,
+              "banner-link-collection": ""
+            }
+          },
+          "1560545633783": {
+            "type": "bundle-breakdown",
+            "settings": {
+              "bundle-breakdown-product-display": false,
+              "bundle-breakdown-product-page": "",
+              "bundle-breakdown-product": "piper-classroom-bundle",
+              "bundle-breakdown-variant": "0",
+              "bundle-breakdown-desc": "The Piper Classroom Bundle is the ideal project-based learning solution for teaching computer science and STEAM. The Piper Classroom Bundle features the next generation Piper Computer Kit that has been upgraded and re-engineered for greater student engagement and deeper learning.",
+              "bundle-breakdown-list": "10x Piper Computer Kits* \/3x Spare Parts Kits* \/1x 10-Port USB Charger* \/Premium Support* \/Piper Educator's Guide* with lesson plans, teacher support materials, and more"
+            }
+          }
+        },
+        "block_order": [
+          "1560545437613",
+          "1560545483771",
+          "1560545490627",
+          "1560552462961",
+          "1560545633783"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+      "collection-list",
+      "featured-collection",
+      "featured-product"
+    ]
+  },
   "presets": {
     "Default": {
       "sections": {
@@ -7,20 +1999,28 @@
           "type": "collection-list",
           "blocks": {
             "collection-list-0": {
-              "type": "collection"
+              "type": "collection",
+              "settings": {
+              }
             },
             "collection-list-1": {
-              "type": "collection"
+              "type": "collection",
+              "settings": {
+              }
             },
             "collection-list-2": {
-              "type": "collection"
+              "type": "collection",
+              "settings": {
+              }
             }
           },
           "block_order": [
             "collection-list-0",
             "collection-list-1",
             "collection-list-2"
-          ]
+          ],
+          "settings": {
+          }
         },
         "featured-collection": {
           "type": "featured-collection",
@@ -29,7 +2029,9 @@
           }
         },
         "featured-product": {
-          "type": "featured-product"
+          "type": "featured-product",
+          "settings": {
+          }
         }
       },
       "content_for_index": [

@@ -17,9 +17,11 @@
             </a>
             <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
             <div class="price">
-                {% if item.compare_at_price > 0 %}
-                <span><strike>{{ item.compare_at_price | money }}</strike></span>    
-                {% endif %}
+                <span>
+                    {% if item.compare_at_price > 0 %}
+                        <strike>{{ item.compare_at_price | money }}</strike>
+                    {% endif %}
+                </span>    
                 <span>{{ item.price | money }}</span>
             </div>
 

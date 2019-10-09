@@ -35,21 +35,23 @@
         }
 
         .info {
-            display: flex;
-            flex-basis: 100%;
-            flex-wrap: wrap;
+            display: block;
+            // flex-basis: 100%;
+            // flex-wrap: wrap;
 
             @include tablet {
                 flex-basis: 50%;
             }
 
             * {
-                flex-basis: 100%;
+                // flex-basis: 100%;
+                // width: 85%;
             }
 
             p {
                 @include tablet {
-                    flex-basis: 85%;
+                    // flex-basis: 85%;
+                    width: 85%;
                 }
             }
         }

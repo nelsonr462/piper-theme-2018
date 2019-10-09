@@ -31,11 +31,12 @@
         flex-direction: column;
 
         @include desktop {
-            flex-basis: 70%;
+            // Uncomment to bring sidebar back.
+            // flex-basis: 70%;
         }
 
         @include hi-res {
-            flex-basis: 80%;
+            // flex-basis: 80%;
         }
     }
 
@@ -113,7 +114,8 @@
 
 
     .sidebar {
-        display: flex;
+        // Change to flex to bring back sidebar.
+        display: none; //flex;
         flex-basis: 100%;
         flex-direction: column;
 

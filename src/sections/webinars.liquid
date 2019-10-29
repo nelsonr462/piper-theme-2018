@@ -102,6 +102,9 @@
       {% when 'product-info' %}
       {% include 'product-info' %}
 
+      {% when 'quote-tool' %}
+      {% include 'quote-tool' %}
+
       {% when 'related-products' %}
       {% include 'related-products' %}
 
@@ -1888,6 +1891,18 @@
           "type": "textarea",
           "label": "Item List (Double Comma Separated)",
           "default": "Item 1,, Item 2,, Item 3"
+        }
+      ]
+    },
+    {
+      "type": "quote-tool",
+      "name": "Quote Tool",
+      "settings": [
+        {
+          "id": "title",
+          "label": "Title",
+          "type": "text",
+          "default": "Quote Calculator"
         }
       ]
     },

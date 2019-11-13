@@ -22,7 +22,8 @@
         {
             "name": "cart",
             "template": [
-                "cart-list"
+                "cart-list",
+                "popup"
             ],
             "files": [
                 "cart-section.liquid"
@@ -91,6 +92,7 @@
                 "landing-page-cc-beta.liquid",
                 "landing-page-edu.liquid",
                 "landing-page-fathers-day.liquid",
+                "landing-page-pe01-launch.liquid",
                 "landing-page-ppc-launch.liquid",
                 "legal.liquid",
                 "page-default.liquid",
@@ -98,6 +100,7 @@
                 "piper-main.liquid",
                 "pipercode.liquid",
                 "product.liquid",
+                "product-pe01.liquid",
                 "product-piper-classroom-bundle.liquid",
                 "product-piper-computer-kit.liquid",
                 "product-piper-education-starter-kit.liquid",

@@ -53,9 +53,9 @@
                     <p>{{ product.description }}</p>
         
                     {% comment %} Add To Cart {% endcomment %}
-                    <form method="post" action="/cart/add">
+                    <form class="{{ block.settings.product-hero-show-cta }}" method="post" action="/cart/add">
                         <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                        <input type="submit" value="ADD TO CART" class="btn btn-lg btn-primary" {% unless product.available %}disabled="true"{% endunless %}/>
+                        <input type="submit" value="ADD TO CART" class="btn btn-lg orange" {% unless product.available %}disabled="true"{% endunless %}/>
                     </form>
                 </div>
                  

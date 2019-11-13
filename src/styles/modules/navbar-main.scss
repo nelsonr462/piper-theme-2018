@@ -31,16 +31,16 @@
     font-weight: bold;
     padding: 0.25rem 1.25rem;
     color: white;
-    border-color: $primary-color;
-    background-color: $primary-color;
+    border-color: $secondary-color;
+    background-color: $secondary-color;
 
     &:hover, &:active {
-        background-color: $primary-color-dark;
+        background-color: $secondary-color-dark;
         color: white;
     }
 
     &.inverted {
-        color: $primary-color;
+        color: $secondary-color;
         background-color: white;
     }
 

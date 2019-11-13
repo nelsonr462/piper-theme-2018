@@ -10,7 +10,10 @@
                 <input type="checkbox" id="{{ block.id }}-accordion-{{ forloop.index }}" name="accordion-checkbox" hidden>
                 <label class="accordion-header" for="{{ block.id }}-accordion-{{ forloop.index }}">
                     {{ item }}
-                    <img src="{{ 'rounded-plus.png' | asset_url }}" class="icon"></img>
+                    <div class="icon">
+                        {% include 'icon-expand' %}
+                    </div>
+                    <!-- <img src="{{ 'expand-icon.svg' | asset_url }}" class="icon"></img> -->
                 </label>
                 <div class="accordion-body">
                     <!-- Accordions content -->

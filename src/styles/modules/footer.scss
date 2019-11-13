@@ -128,12 +128,12 @@
             padding: 0.35rem 1.5rem;
             font-size: 0.8rem;
             color: white;
-            background: #f0ca03;
+            background: $secondary-color;
             font-weight: bold;
             border: none;
 
             &:hover, &:focus {
-                background: darken( #f0ca03, 10% );
+                background: darken( $secondary-color, 10% );
             }
 
             @include tablet {

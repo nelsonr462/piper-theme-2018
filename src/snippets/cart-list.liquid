@@ -20,6 +20,12 @@
 
             {% comment %} LINE ITEM TEMPLATE {% endcomment %}
             {% for item in cart.items %}
+                {% if item.variant_id == 13285654167596 %}
+                    <div class="d-none" id="show-ppp" data="true"></div>
+                {% endif %}
+                {% if item.variant_id == 28273986130 %}
+                    <div class="d-none" id="hide-ppp" data="true"></div>
+                {% endif %}
                 <div class="line-item">
                     <div class="item-image">
                         {% if item.image != blank %}

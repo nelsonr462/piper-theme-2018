@@ -6,6 +6,9 @@
       {% when 'cart-list' %}
       {% include 'cart-list' %}
 
+      {% when 'popup' %}
+      {% include 'popup' %}
+
     {% endcase %}
   </div>
   {% endfor %}
@@ -18,6 +21,43 @@
       "type": "cart-list",
       "name": "Cart List",
       "settings": []
+    },
+    {
+      "type": "popup",
+      "name": "Popup",
+      "settings": [
+        {
+          "id": "popup-title",
+          "type": "html",
+          "label": "Popup Title"
+        },
+        {
+          "id": "popup-content",
+          "type": "html",
+          "label": "Popup Content"
+        },
+        {
+          "id": "popup-bg-type",
+          "type": "select",
+          "label": "Popup Background Type",
+          "options": [
+            {
+              "label": "White",
+              "value": ""
+            },
+            {
+              "label": "Image",
+              "value": "bg-img"
+            }
+          ],
+          "default": ""
+        },
+        {
+          "id": "popup-bg-img",
+          "type": "image_picker",
+          "label": "Popup Background Image"
+        }
+      ]
     }
   ]
 }

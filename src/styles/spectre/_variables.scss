@@ -2,12 +2,14 @@
 $version: "0.5.0";
 
 // Core colors
-$primary-color: #ff4f57 !default;
+$primary-color: #005cb9 !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
-$secondary-color: #012855 !default;
+$secondary-color: #ff6c37 !default;
 $secondary-color-dark: darken($secondary-color, 15%) !default;
 $secondary-color-light: lighten($secondary-color, 15%) !default;
+$accent-color-gold: #bda600 !default;
+$accent-color-wood: #f2dab2 !default;
 
 // Gray colors
 $dark-color: #454d5d !default;
@@ -34,6 +36,8 @@ $green-color-dark: darken($green-color, 10%) !default;
 $green-color-overlay: darken($green-color, 10%) !default;
 
 $red-color: #fc0d1b !default;
+
+$price-color: #B12704;
 
 $purple-color: #a864a8 !default;
 $purple-color-light: lighten($purple-color, 17%) !default;
@@ -108,7 +112,7 @@ $line-height: 1rem !default;
 $layout-spacing: $unit-2 !default;
 $layout-spacing-sm: $unit-1 !default;
 $layout-spacing-lg: $unit-4 !default;
-$border-radius: $unit-h !default;
+$border-radius: $unit-16 !default;
 $border-width: $unit-o !default;
 $border-width-lg: $unit-h !default;
 $control-size: $unit-9 !default;

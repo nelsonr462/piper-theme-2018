@@ -27,7 +27,7 @@
                     
                 <form method="post" action="/cart/add">
                     <input type="hidden" name="id" value="{{ variant.id }}" />
-                    <input type="submit" value="{{ block.settings.cta-button }}" class="btn btn-primary btn-lg" {% unless item.available %}disabled="true"{% endunless %}/>
+                    <input type="submit" value="{{ block.settings.cta-button }}" class="btn btn-lg orange" {% unless item.available %}disabled="true"{% endunless %}/>
                 </form>
 
                 {% endif %}

@@ -101,6 +101,7 @@
     }
 
     .action-btn .icon {
+        cursor: pointer;
         position: absolute;
         top: 0;
         bottom: 0.25rem;
@@ -109,7 +110,7 @@
         margin: auto;
         width: 4rem;
         height: 4rem;
-        color: $primary-color;
+        color: $secondary-color;
         background: white;
         border-radius: 100%;
     }

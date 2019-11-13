@@ -17,8 +17,8 @@
         }
             
         .info .chip {
-            border-color: $primary-color;
-            color: $primary-color;
+            border-color: $secondary-color;
+            color: $secondary-color;
         }
     }
 
@@ -169,6 +169,8 @@
 
         span:last-child {
             font-size: 1.6rem;
+            font-weight: bold;
+            color: $price-color;
         }
     }
 

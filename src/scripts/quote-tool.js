@@ -9,11 +9,13 @@ window.onload = function() {
     var downloadInvoiceButton = document.getElementById("downloadInvoice");
     var invoiceModal = document.getElementById("invoice-modal");
     var closeModalButtons = document.querySelectorAll("[href='#close-modal']");
-    var thresholds = [1, 3, 3, 10, 10, 10, 10]
+    var thresholds = [1, 3, 10, 0, 0]
     var bundleItems = [];
 
-    var kitPrice = 24999;
+    var kitPrice = 29900;
     var comparePrice = kitPrice + 5000;
+    var vpdPrice = 35000;
+    var ppcPrice = 10000;
 
     // ========== MAIN ==========
 
@@ -26,12 +28,14 @@ window.onload = function() {
     // Update price and list to intial kit count of 3
     updateList(3);
     updatePrice(3);
+    updateImage(3);
 
     // Add input change listener to update bundle items
     // according to kit count
     kitInput.addEventListener('change', function( event ) {
         updateList(this.value);
         updatePrice(this.value);
+        updateImage(this.value);
     })
 
     createInvoiceButton.addEventListener('click', function( event ) {
@@ -75,7 +79,11 @@ window.onload = function() {
         };
 
         this.update = function( kitCount ) {
-            this.setCount( Math.floor(kitCount/this.kitMultiplier) );
+            if(this.kitMultiplier > 0) {
+                this.setCount( Math.floor(kitCount/this.kitMultiplier) );
+            } else if(this.kitMultiplier === 0) {
+                this.setCount(kitCount > 0 ? 1 : 0);
+            }
         }
     }
 
@@ -86,11 +94,37 @@ window.onload = function() {
         }
     }
 
+    // Update Bundle Image
+    function updateImage( kitCount ) {
+        var bundleImages = document.querySelectorAll(".bundle-img");
+        var display = ["", "block", ""];
+
+        if ((kitCount >= 0) && (kitCount < 3)) {
+            display = ["block", "", ""]; 
+        } else if ((kitCount >= 3) && (kitCount < 10)) {
+            display = ["", "block", ""];
+        } else if (kitCount >= 10) {
+            display = ["", "", "block"];
+        }
+
+        bundleImages.forEach(function(image, index) {
+            if(image.style.display != display[index]) {
+                image.style.display = display[index];
+            }
+        })
+    }
+
     // Update price, comparePrice, and discount
     function updatePrice( kitCount ) {
         var totalPrice = kitCount*kitPrice;
         var totalCompare = kitCount*comparePrice;
         var totalSavings = totalCompare - totalPrice;
+
+        if( kitCount === 1 ) {
+            totalPrice = kitCount*comparePrice + 5000;
+            totalCompare = kitCount*comparePrice + ppcPrice;
+            totalSavings = totalCompare - totalPrice;
+        }
 
         totalPrice = formatMoney(totalPrice, "normal");
         totalCompare = formatMoney(totalCompare, "strike");

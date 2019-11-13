@@ -907,11 +907,11 @@
             "options": [
               {
                 "value": "",
-                "label": "White/Blue"
+                "label": "White/Primary"
               },
               {
                 "value": "blue",
-                "label": "Blue/White"
+                "label": "Primary/White"
               },
               {
                 "value": "purple",
@@ -944,6 +944,10 @@
               {
                 "value": "gray-outline",
                 "label": "Gray Transparent"
+              },
+              {
+                "value": "orange",
+                "label": "Orange"
               }
             ]
           },
@@ -1613,7 +1617,7 @@
         "name": "Quote Tool",
         "settings": [
           {
-            "id": "title",
+            "id": "quote-tool-title",
             "label": "Title",
             "type": "text",
             "default": "Quote Calculator"
@@ -1755,6 +1759,16 @@
             "id": "product-hero-background",
             "type": "image_picker",
             "label": "Hero Background"
+          },
+          {
+            "id": "product-hero-show-cta",
+            "type": "select",
+            "label": "Show Add to Cart button",
+            "options": [
+              {"label": "Show button", "value": ""},
+              {"label": "Hide button", "value":"d-none"}
+            ],
+            "default": ""
           }
         ]
       },

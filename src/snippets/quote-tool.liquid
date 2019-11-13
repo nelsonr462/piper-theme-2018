@@ -1,14 +1,20 @@
 <div class="quote-tool">
     
     <div class="content">
-        <h1>Quote Calculator</h1>
+        <h1>Customize Your Bundle</h1>
         <div class="input">
-            <p class="form">I need <input id="kitInput" type="number" min="1" max="9999" value="3"> Piper Computer Kits</p>
-            <p class="note">*Recommended 2 students per Piper Computer Kit</p>
+            <img id="bundle-1" class="bundle-img" src="{{ 'PC02_StarterBundle.png' | asset_img_url: '500x' }}" alt="Classroom Bundle Image">
+            <img id="bundle-2" class="bundle-img" src="{{ 'PC02_StationBundle.png' | asset_img_url: '500x' }}" alt="Classroom Bundle Image">
+            <img id="bundle-3" class="bundle-img" src="{{ 'PC02_ClassroomBundle.png' | asset_img_url: '500x' }}" alt="Classroom Bundle Image">
+            <!-- <p class="form">I need <input id="kitInput" type="number" min="1" max="9999" value="3"> Piper Computer Kits</p>
+            <p class="note">*Recommended 2 students per Piper Computer Kit</p> -->
         </div>
 
         <div class="output">
-            <h4>Your special price</h4>
+            <p class="form">I need <input id="kitInput" type="number" min="1" max="9999" value="3"> Piper Computer Kits</p>
+            <p class="note">*Recommended 2 students per Piper Computer Kit</p>
+
+            <h4>Your bundle price</h4>
             <div class="price">
                 <h1 id="total">$749.<sup>97</sup></h1>
                 <h2 id="compare"><strike>$899.<sup>97</sup></strike></h2>
@@ -17,40 +23,31 @@
         </div>
 
         <div class="detail">
-            <h3>Your customized order includes:</h3>
+            <h3>Your recommended bundle includes:</h3>
 
             <ul>
                 <li class="result" data-item-name="Piper Computer Kit">
-                    <strong><span class="amount">3</span></strong> Piper Computer Kits<i class="icon icon-check"></i>
+                    <strong><span class="amount">3</span>x</strong> <a href="https://www.playpiper.com/products/piper-computer-kit-2" alt="Piper Computer Kit 2 - Product Page">Piper Computer Kit</a><i class="icon icon-check"></i>
                 </li>
 
                 <li class="result" data-item-name="Spare Parts Kit">
-                    <strong><span class="amount">1</span></strong> Spare Parts Kits<i class="icon icon-check"></i>
-                </li>
-
-                <li class="result" data-item-name="Lesson Plans">
-                    <strong>12</strong> Lesson Plans<i class="icon icon-check"></i>
+                    <strong><span class="amount">1</span>x</strong> <a href="https://www.playpiper.com/products/piper-computer-2-spare-parts-kit" alt="Piper Computer 2 Spare Parts Kit - Product Page">Spare Parts Kits</a><i class="icon icon-check"></i>
                 </li>
 
                 <li class="result" data-item-name="10-Port Battery Charger">
-                    <strong><span class="amount">0</span></strong> 10-Port Battery Charger<i class="icon icon-cross"></i>
+                    <strong><span class="amount">0</span>x</strong> 10-Port Battery Chargers<i class="icon icon-cross"></i>
                 </li>
-
+                
                 <li class="result">
-                    <strong>1 Hour</strong> Professional Development<i class="icon icon-cross"></i>
+                    <strong>1 Year Access</strong> to the <a href="https://www.playpiper.com/products/premium-curriculum-annual-license" alt="Piper Premium Curriculum Annual License - Product Page">Piper Premium Curriculum</a><i class="icon icon-cross"></i>
                 </li>
-
+                
                 <li class="result">
-                    <strong>STEM</strong> Lesson Integration<i class="icon icon-cross"></i>
+                    <strong>1 Hour</strong> of <a href="https://www.playpiper.com/products/virtual-professional-development" alt="Virtual Professonal Development - Product Page">Virtual Professional Development</a><i class="icon icon-cross"></i>
                 </li>
-
-                <li class="result">
-                    <strong>Premium</strong> Support<i class="icon icon-cross"></i>
-                </li>
-
             </ul>
 
-            <button id="createInvoice" class="btn btn-lg orange">Create Invoice</button>
+            <button id="createInvoice" class="btn btn-lg orange">ADD TO CART</button>
         </div>
 
     </div>

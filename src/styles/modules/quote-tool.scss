@@ -10,7 +10,7 @@
 
     h1 {
         flex-basis: 100%;
-        color: $purple-color;
+        color: $gray-color-dark;
         font-weight: bold;
     }
 
@@ -18,13 +18,17 @@
         font-weight: lighter;
     }
 
+    .bundle-img {
+        margin: auto;
+        display: none;
+    }
+
     .input {
         flex-basis: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 1.5rem 0;
 
-        @include tablet {
+        @include desktop {
             flex-basis: 65%;
         }
 
@@ -32,7 +36,8 @@
             font-size: 1rem;
             font-weight: bold;
             flex-basis: 100%;
-            align-self: flex-end;
+            // align-self: flex-end;
+            text-align: center;
 
             @include hi-res {
                 padding-top: 0.25rem;
@@ -45,6 +50,7 @@
         }
 
         .note {
+            text-align: center;
             font-size: 0.7rem;
             flex-basis: 100%;
         }
@@ -54,7 +60,7 @@
         flex-basis: 100%;
         text-align: center;
 
-        @include tablet {
+        @include desktop {
             flex-basis: 35%;
         }
 
@@ -71,6 +77,33 @@
             border: 1px solid $gray-color;
             border-radius: 0.25rem;
             padding: 1rem;
+        }
+
+        #total {
+            color: #B12704;
+        }
+
+        .form {
+            font-size: 1rem;
+            font-weight: bold;
+            flex-basis: 100%;
+            // align-self: flex-end;
+            text-align: center;
+
+            @include hi-res {
+                padding-top: 0.25rem;
+            }
+
+            input {
+                max-width: 3rem;
+                text-align: center;
+            }
+        }
+
+        .note {
+            text-align: center;
+            font-size: 0.7rem;
+            flex-basis: 100%;
         }
 
     }
@@ -90,12 +123,14 @@
         }
 
         li {
-            padding: 1rem 0;
+            padding: 0.5rem 0;
             margin: 0;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+            list-style-position: outside;
             border-bottom: 1px solid #e0e0e0;
 
             @include tablet {
+                list-style-position: inside;
                 font-size: 0.9rem;
             }
 

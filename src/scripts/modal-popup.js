@@ -1,7 +1,13 @@
 $(document).ready(function() {
     var popup = $("#popupModal");
     var closePopupButtons = $("#popupModal [href='#close-modal']");
-    if(document.cookie.match('(^|;) ?' + "ccpopup" + '=([^;]*)(;|$)') == null) {
+    // if(document.cookie.match('(^|;) ?' + "ccpopup" + '=([^;]*)(;|$)') == null) {
+    //     popup.addClass("active");
+    // }
+    var cartCheck = $("#show-ppp").attr("data");
+    var pppCheck = $("#hide-ppp").attr("data");
+    console.log(pppCheck);
+    if(cartCheck && pppCheck != "true") {
         popup.addClass("active");
     }
 
@@ -9,11 +15,11 @@ $(document).ready(function() {
         button.addEventListener('click', function(event) {
             popup.removeClass("active");
             // Set cookie on close
-            var date = new Date();
-            var maxAgeDays = 30;
-            date.setTime(date.getTime() + (maxAgeDays*24*60*60*1000));
-            var expires = "expires="+date.toUTCString();
-            document.cookie = "ccpopup=false;" + expires + ";path=/";
+            // var date = new Date();
+            // var maxAgeDays = 30;
+            // date.setTime(date.getTime() + (maxAgeDays*24*60*60*1000));
+            // var expires = "expires="+date.toUTCString();
+            // document.cookie = "ccpopup=false;" + expires + ";path=/";
         })
     })
 

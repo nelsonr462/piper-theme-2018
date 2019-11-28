@@ -30,7 +30,7 @@
                     <div class="item-image">
                         {% if item.image != blank %}
                         <a href="{{ item.url | within: collections.all }}">
-                            {{ item | img_url: '240x240' | img_tag: item.title }}
+                            {{ item | img_url: '144x144' | img_tag: item.title }}
                         </a>
                         {% endif %}
                         
@@ -120,14 +120,18 @@
         <div class="btn-container">
             <button id="triggerQuote" class="btn btn-lg green">Create Quote</button>
         </div>
+
+        <div class="btn-container">
+            <a class="keep-shopping" href="/products">
+                <button class="btn btn-lg btn-primary">Continue Shopping</button>
+            </a>
+        </div>
         
         {% include 'quote-modal' %}
 
 
     </form>
-    <a class="keep-shopping" href="/products">
-        <button class="btn btn-lg btn-primary">Continue Shopping</button>
-    </a>
+    
 {% else %}        
     {% comment %}
     Cart empty state

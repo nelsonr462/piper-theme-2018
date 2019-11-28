@@ -832,10 +832,20 @@
           },
           {
             "id": "related-products-collection",
-            "label": "Collection Handle",
-            "type": "text",
-            "placeholder": "frontpage",
+            "label": "Collection",
+            "type": "collection",
             "info": "Collection to pull from and display"
+          },
+          {
+            "id": "related-products-item-count",
+            "label": "Item Count",
+            "type": "range",
+            "info": "Number of items to display",
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "unit": "pcs",
+            "default": 1
           }
         ]
       },
@@ -1349,6 +1359,13 @@
             "id": "page-hero-image",
             "type": "image_picker",
             "label": "Hero Image"
+          },
+          {
+            "id": "page-hero-main-compress",
+            "label": "Compress Image (Recommended)",
+            "type": "checkbox",
+            "info": "If transparency is required, uncheck this.",
+            "default": true
           },
           {
             "id": "page-hero-fulltext",

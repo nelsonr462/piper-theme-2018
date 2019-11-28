@@ -1,6 +1,11 @@
 <div class="page-hero-main"
     {% if block.settings.page-hero-background %}
-        style="background-image: url({{ block.settings.page-hero-background | img_url: '1200x', format: 'pjpg' }});"
+        {% if block.settings.page-hero-main-compress %}
+            style="background-image: url({{ block.settings.page-hero-background | img_url: '1200x', format: 'pjpg' }});"
+        {% else %}
+            style="background-image: url({{ block.settings.page-hero-background | img_url: '1200x' }});"
+        {% endif %}
+        
     {% endif %}
 >
     

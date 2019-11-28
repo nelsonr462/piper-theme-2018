@@ -21,7 +21,7 @@ body {
   text-rendering: optimizeLegibility;
 
   @include desktop {
-    font-size: $font-size-lg;
+    font-size: $font-size;
   }
 }
 

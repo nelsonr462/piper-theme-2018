@@ -12,13 +12,13 @@
                 <a href="{{ block.settings.homepage-hero-announcement-link }}">
                 
                     {% if block.settings.homepage-hero-announcement-icon %}
-                        <img class="leading" src="{{ block.settings.homepage-hero-announcement-icon | img_url: 'x40' }}" />
+                        <img class="leading" src="{{ block.settings.homepage-hero-announcement-icon | img_url: 'x25' }}" />
                     {% endif %}
 
                     {{ block.settings.homepage-hero-announcement-content }}
 
                     {% if block.settings.homepage-hero-announcement-arrow %}
-                        <img class="trailing" src="{{ block.settings.homepage-hero-announcement-arrow | img_url: 'x40' }}" />
+                        <img class="trailing" src="{{ block.settings.homepage-hero-announcement-arrow | img_url: 'x25' }}" />
                     {% endif %}
                 </a>
             </div>
@@ -58,7 +58,7 @@
                 {% assign closingTag = "</div>" %}
             {% endif %}
                     {% if  block.settings.homepage-hero-main-img %}
-                    <img src="{{ block.settings.homepage-hero-main-img | img_url: '750x' }}" alt="">
+                    <img src="{{ block.settings.homepage-hero-main-img | img_url: '400x' }}" alt="">
                     {% endif %}
             {{ closingTag }}
             

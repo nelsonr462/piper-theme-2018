@@ -4,10 +4,10 @@
     background-size: cover;
 
     .overlay {
-        background: rgba($primary-color, 0.8);
+        background: rgba($primary-color, 1);
 
         &.purple {
-            background: rgba($purple-color-light, 0.8);
+            background: rgba($purple-color-light, 1);
         }
 
         &.white {

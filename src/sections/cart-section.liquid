@@ -6,8 +6,14 @@
       {% when 'cart-list' %}
       {% include 'cart-list' %}
 
+      {% when 'collection-section' %}
+      {% include 'collection-section' %}
+
       {% when 'popup' %}
       {% include 'popup' %}
+
+      {% when 'related-products' %}
+      {% include 'related-products' %}
 
     {% endcase %}
   </div>
@@ -21,6 +27,50 @@
       "type": "cart-list",
       "name": "Cart List",
       "settings": []
+    },
+    {
+      "type": "collection-section",
+      "name": "Collection Section",
+      "settings": [
+        {
+          "id": "collection-section-handle",
+          "label": "Collection Handle",
+          "type": "text",
+          "default": "frontpage",
+          "info": "Handle of collection to display"
+        },
+        {
+          "id": "collection-section-size",
+          "label": "Card Size",
+          "type": "select",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Normal"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ]
+        },
+        {
+          "id": "collection-section-item-count",
+          "label": "Section Item Count",
+          "type": "range",
+          "min": 3,
+          "max": 12,
+          "step": 3,
+          "default": 3
+        },
+        {
+          "id": "collection-section-view",
+          "label": "View More Copy",
+          "type": "text",
+          "default": "View more in this collection"
+        }
+      ]
     },
     {
       "type": "popup",
@@ -56,6 +106,35 @@
           "id": "popup-bg-img",
           "type": "image_picker",
           "label": "Popup Background Image"
+        }
+      ]
+    },
+    {
+      "type": "related-products",
+      "name": "Related Products",
+      "settings": [
+        {
+          "id": "related-products-title",
+          "label": "Title",
+          "type": "text",
+          "default": "Other related products"
+        },
+        {
+          "id": "related-products-collection",
+          "label": "Collection",
+          "type": "collection",
+          "info": "Collection to pull from and display"
+        },
+        {
+          "id": "related-products-item-count",
+          "label": "Item Count",
+          "type": "range",
+          "info": "Number of items to display",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "unit": "pcs",
+          "default": 1
         }
       ]
     }

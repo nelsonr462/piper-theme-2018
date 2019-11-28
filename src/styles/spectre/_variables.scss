@@ -54,29 +54,30 @@ $link-color-dark: darken($link-color, 5%) !default;
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 @font-face {
-    src: url("../assets/ProximaNova-Bold.ttf") format("truetype"),
-        url("../assets/ProximaNova-Bold.woff") format("woff"),
-        url("../assets/ProximaNova-Bold.woff2") format("woff2");
-    font-family: 'Proxima Nova';
+    src: url("../assets/montserrat-regular.ttf") format("truetype"),
+        url("../assets/montserrat-regular.woff") format("woff"),
+        url("../assets/montserrat-regular.woff2") format("woff2");
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("../assets/montserrat-bold.ttf") format("truetype"),
+        url("../assets/montserrat-bold.woff") format("woff"),
+        url("../assets/montserrat-bold.woff2") format("woff2");
+    font-family: 'Montserrat';
     font-weight: bold;
 }
 
 @font-face {
-    src: url("../assets/ProximaNova-Light.ttf") format("truetype"),
-        url("../assets/ProximaNova-Light.woff") format("woff"),
-        url("../assets/ProximaNova-Light.woff2") format("woff2");
-    font-family: 'Proxima Nova';
+    src: url("../assets/montserrat-light.ttf") format("truetype"),
+        url("../assets/montserrat-light.woff") format("woff"),
+        url("../assets/montserrat-light.woff2") format("woff2");
+    font-family: 'Montserrat';
     font-weight: lighter;
 }
 
-@font-face {
-    src: url("../assets/ProximaNova-Regular.ttf") format("truetype"),
-        url("../assets/ProximaNova-Regular.woff") format("woff"),
-        url("../assets/ProximaNova-Regular.woff2") format("woff2");
-    font-family: 'Proxima Nova';
-    font-weight: normal;
-}
-$base-font-family: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+$base-font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
 $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $fallback-font-family: "Helvetica Neue", sans-serif !default;
 $cjk-zh-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", $fallback-font-family !default;
@@ -101,7 +102,7 @@ $unit-12: 2.4rem !default;
 $unit-16: 3.2rem !default;
 
 // Font sizes
-$html-font-size: 20px !default;
+$html-font-size: 18px !default;
 $html-line-height: 1.5 !default;
 $font-size: .8rem !default;
 $font-size-sm: .7rem !default;

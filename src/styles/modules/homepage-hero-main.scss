@@ -2,7 +2,7 @@
     @extend .page-hero-main;
 
     .announcement-container {
-        background: rgba(4, 96, 186, 1);
+        background: #FAC81A;
         padding: 0.75rem 0;
     }
 
@@ -11,7 +11,7 @@
         text-align: center;
 
         a {
-            color: white;
+            color: black;
 
             * {
                 margin: 0;
@@ -38,7 +38,7 @@
 
     .hero-overlay .hero-content {
         // flex-wrap: wrap; 
-        min-height: 30rem;
+        min-height: 23rem;
 
         &.small {
             min-height: 15rem;

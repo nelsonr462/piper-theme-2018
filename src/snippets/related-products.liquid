@@ -14,7 +14,7 @@
                     
                     <div class="image">
                         <a href="{{ item.url }}">
-                            <img src="{{ item.images[0] | img_url: '250x' }}" alt="">
+                            <img src="{{ item.images[0] | img_url: '200x' }}" alt="">
                         </a>
                     </div>
 
@@ -33,10 +33,14 @@
     
                         <p class="desc">{{ item.description | strip_html | truncatewords: 15 }}</p>
                         
-    
-                        <a class="view-link" href="{{ item.url }}">
-                            <button class="btn orange inverted">View</button>
-                        </a>
+                        <form class="view-link" method="post" action="/cart/add">
+                            <strong>
+                                <div class="form-group">
+                                    <input type="hidden" name="id" value="{{item.variants.first.id}}">
+                                    <input type="submit" value="ADD TO CART" class="btn btn-lg orange">
+                                </div>
+                            </strong>
+                        </form>
                     </div>
                     
                 </div>

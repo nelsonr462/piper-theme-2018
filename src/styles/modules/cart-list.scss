@@ -204,8 +204,12 @@
 
     .btn-container {
         flex-basis: 100%;
-        text-align: right;
-        padding: 0.5rem 0;
+        text-align: center;
+
+        @include tablet {
+            text-align: right;
+            padding: 0.5rem 0;
+        }
     }
 
     #checkout, #triggerQuote {
@@ -219,10 +223,10 @@
 
     .keep-shopping {
         display: block;
-        margin: 1rem auto 0 auto;
+        margin: 0.5rem auto 0 auto;
 
         @include tablet {
-            margin: 1rem 0 0 auto;
+            margin: 0 0 0 auto;
         }
         
         button {

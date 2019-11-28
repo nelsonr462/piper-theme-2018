@@ -23,7 +23,9 @@
             "name": "cart",
             "template": [
                 "cart-list",
-                "popup"
+                "collection-section",
+                "popup",
+                "related-products"
             ],
             "files": [
                 "cart-section.liquid"
@@ -105,6 +107,7 @@
                 "product-piper-computer-kit.liquid",
                 "product-piper-education-starter-kit.liquid",
                 "product-piper-station.liquid",
+                "product-ppp.liquid",
                 "storefront.liquid",
                 "webinars.liquid"
             ]

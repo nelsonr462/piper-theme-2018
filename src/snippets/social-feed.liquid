@@ -64,9 +64,9 @@
                         {% assign author = "social-feed-author-" | append: forloop.index %}
                         {% assign position = "social-feed-position-" | append: forloop.index %}
                         <div class="ambassador">
-                            <div class="profile">
+                            <!-- <div class="profile">
                                 <img src="{{ 'amazon-5-stars.png' | asset_img_url: '150x' }}" alt="">
-                            </div>
+                            </div> -->
                             <p class="testimonial">{{ block.settings[testimonial] }}</p>
                             <h5>{{ block.settings[author] }}</h5>
                             <p class="position"><strong>{{ block.settings[position] }}</strong></p>

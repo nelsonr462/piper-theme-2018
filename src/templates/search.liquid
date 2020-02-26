@@ -1,31 +1,39 @@
+<div class="search">
 {% paginate search.results by 10 %}
+  <div class="search-form">
+    <h1>
+      {% if search.performed %}
+        Search Results
+      {% else %}
+        {{ 'general.search.title' | t }}
+      {% endif %}
+    </h1>
 
-  <h1>
     {% if search.performed %}
       {% if search.results_count == 0 %}
-        {{ 'general.search.no_results_html' | t: terms: search.terms }}
+        <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
       {% else %}
-        {{ 'general.search.results_for_html' | t: terms: search.terms }}
+        <p>{{ 'general.search.results_for_html' | t: terms: search.terms }}</p>
       {% endif %}
     {% else %}
-      {{ 'general.search.title' | t }}
+      <p>{{ 'general.search.title' | t }}</p>
     {% endif %}
-  </h1>
 
-  <form action="/search" method="get" role="search">
-    <label for="Search" class="label-hidden">
-      {{ 'general.search.placeholder' | t }}
-    </label>
-    <input type="search"
-           name="q"
-           id="Search"
-           value="{{ search.terms | escape }}"
-           placeholder="{{ 'general.search.placeholder' | t }}">
-    <button type="submit" class="btn">
-      {% include 'icon-search' %}
-      <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
-    </button>
-  </form>
+    <form action="/search" method="get" role="search">
+      <label for="Search" class="label-hidden">
+        {{ 'general.search.placeholder' | t }}
+      </label>
+      <input type="search"
+            name="q"
+            id="Search"
+            value="{{ search.terms | escape }}"
+            placeholder="{{ 'general.search.placeholder' | t }}">
+      <button type="submit" class="btn">
+        {% include 'icon-search' %}
+        <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
+      </button>
+    </form>
+  </div>
 
 
 {% if search.performed %}
@@ -77,5 +85,5 @@
       {% include 'pagination' %}
     {% endif %}
   {% endif %}
-
 {% endpaginate %}
+</div>

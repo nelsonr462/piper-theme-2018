@@ -1,0 +1,10 @@
+.search {
+    @extend .page-width;
+    min-height: 75vh;
+    padding: 2rem 0;
+
+    ul {
+        list-style: none;
+    }
+
+}

@@ -49,9 +49,14 @@
     };
   </script>
 
-  <!-- Start of playpiper Zendesk Widget script -->
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4cb84fcf-6982-425b-8dda-944b5759daef"> </script>
-  {%- comment -%} Custom Settings {%- endcomment -%}
+{%- comment -%} // Zendesk widget disabled, hubspot chat widget replaced it
+<!-- Start of playpiper Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=4cb84fcf-6982-425b-8dda-944b5759daef"> </script>
+{%- endcomment -%}
+
+{%- comment -%} Custom Settings {%- endcomment -%}
+
+{%- comment -%} // Zendesk widget disabled, hubspot chat widget replaced it
   <script type="text/javascript">
     window.zESettings = {
       webWidget: {
@@ -70,7 +75,7 @@
         }
       }
     };
-
+    
     function showZendeskWidget() {
       if (zE('webWidget:get', 'display') === "hidden" ) {
         window.location.href = "https://www.playpiper.com/pages/contact-us";
@@ -79,11 +84,23 @@
       }
     }
   </script>
-
+  {%- endcomment -%}
+  
   <!-- End of playpiper Zendesk Widget script -->
+
+  <!-- Start of ShareASale affiliate tracking code -->
+  <script>var shareasaleShopifySSCID=shareasaleShopifyGetParameterByName("sscid");function shareasaleShopifySetCookie(e,a,o,i,r){if(e&&a){var s,S=i?"; path="+i:"",h=r?"; domain="+r:"",t="";o&&((s=new Date).setTime(s.getTime()+o),t="; expires="+s.toUTCString()),document.cookie=e+"="+a+t+S+h}}function shareasaleShopifyGetParameterByName(e,a){a||(a=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var o=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(a);return o?o[2]?decodeURIComponent(o[2].replace(/\+/g," ")):"":null}shareasaleShopifySSCID&&shareasaleShopifySetCookie("shareasaleShopifySSCID",shareasaleShopifySSCID,94670778e4,"/");</script>
+  <!-- End of ShareASale affiliate tracking code -->
 
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5654926.js"></script>
+  <script>
+  
+  function showHubspotWidget() {
+    window.HubSpotConversations.widget.open();
+  }
+
+  </script>
   <!-- End of HubSpot Embed Code -->
 
   {% if template.directory == 'customers' %}

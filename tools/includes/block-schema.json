@@ -231,6 +231,10 @@
               {
                 "value": "gray",
                 "label": "Gray"
+              },
+              {
+                "value": "black",
+                "label": "Black"
               }
             ]
           },
